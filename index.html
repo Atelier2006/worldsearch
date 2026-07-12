@@ -80,7 +80,6 @@
   .card:hover{transform:translateY(-4px);border-color:var(--accent)}
   .thumb{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#232a3d,#171b28);overflow:hidden}
   .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-  .thumb .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:44px;color:#454f6b;font-weight:800}
   .thumb .sub{position:absolute;left:10px;top:10px;background:rgba(10,12,20,.72);backdrop-filter:blur(4px);font-size:11px;padding:4px 10px;border-radius:999px;color:var(--text);border:1px solid rgba(255,255,255,.08)}
   .thumb .cap{position:absolute;right:10px;top:10px;background:rgba(10,12,20,.72);backdrop-filter:blur(4px);font-size:11px;padding:4px 10px;border-radius:999px;color:var(--good);border:1px solid rgba(255,255,255,.08);font-weight:600}
   .body{padding:14px 15px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
@@ -257,7 +256,6 @@
       const tags = (w.tags||[]).slice(0,4).map(t=>`<span class="ctag">#${esc(t)}</span>`).join("");
       return `<div class="card" data-i="${idx}">
         <div class="thumb">
-          <div class="ph">${esc(initial(w.name))}</div>
           <img loading="lazy" src="${esc(w.thumb)}" alt="" onerror="this.style.display='none'">
           ${w.subtype?`<span class="sub">${esc(w.subtype)}</span>`:""}
           <span class="cap">👥 ${w.capacity||"?"}</span>

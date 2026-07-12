@@ -3,16 +3,59 @@
  * VRChatお気に入りグループ「展覧会系」(vrcPlusWorlds3) より抽出。
  * ワールド/カテゴリの追加・説明(note)の編集はこのファイルを直接編集。
  * note = 各ワールドの説明欄（初期値はVRChat説明の要約。自由に書き換え可）
+ * tags = 日本語の統合タグ（検索・絞り込み用）
  * ===================================================================== */
 
 window.CATEGORIES = [
-  { id:"exhibition", name:"展覧会系", icon:"🖼️", desc:"美術館・ギャラリー・写真展・博物館など、じっくり鑑賞して回るワールド", ready:true },
-  { id:"particle",   name:"パーティクル", icon:"✨", desc:"パーティクル・映像演出が魅力のワールド", ready:false },
-  { id:"misc",       name:"雑多",       icon:"🗂️", desc:"ジャンル問わずのお気に入り", ready:false },
-  { id:"recommend",  name:"本当におすすめ", icon:"⭐", desc:"とにかくおすすめしたい珠玉のワールド", ready:false },
-  { id:"todo",       name:"まだ行ってない", icon:"🧭", desc:"気になっている未訪問ワールド", ready:false },
-  { id:"chill",      name:"チルワ",     icon:"🌙", desc:"のんびり過ごせる癒やし・雰囲気系", ready:false },
-  { id:"game",       name:"ゲムワ",     icon:"🎮", desc:"みんなで遊べるゲーム系ワールド", ready:false }
+  {
+    "id": "exhibition",
+    "name": "展覧会系",
+    "icon": "🖼️",
+    "desc": "美術館・ギャラリー・写真展・博物館など、じっくり鑑賞して回るワールド",
+    "ready": true
+  },
+  {
+    "id": "particle",
+    "name": "パーティクル",
+    "icon": "✨",
+    "desc": "パーティクル・映像演出が魅力のワールド",
+    "ready": false
+  },
+  {
+    "id": "misc",
+    "name": "雑多",
+    "icon": "🗂️",
+    "desc": "ジャンル問わずのお気に入り",
+    "ready": false
+  },
+  {
+    "id": "recommend",
+    "name": "本当におすすめ",
+    "icon": "⭐",
+    "desc": "とにかくおすすめしたい珠玉のワールド",
+    "ready": false
+  },
+  {
+    "id": "todo",
+    "name": "まだ行ってない",
+    "icon": "🧭",
+    "desc": "気になっている未訪問ワールド",
+    "ready": false
+  },
+  {
+    "id": "chill",
+    "name": "チルワ",
+    "icon": "🌙",
+    "desc": "のんびり過ごせる癒やし・雰囲気系",
+    "ready": false
+  },
+  {
+    "id": "game",
+    "name": "ゲムワ",
+    "icon": "🎮",
+    "desc": "みんなで遊べるゲーム系ワールド",
+    "ready": false
+  }
 ];
 
 window.WORLDS = [
@@ -26,10 +69,10 @@ window.WORLDS = [
     "favorites": 1253,
     "visits": 8760,
     "tags": [
-      "art",
-      "museum",
-      "gallery",
-      "nihonga"
+      "アート",
+      "美術館・博物館",
+      "ギャラリー",
+      "日本画"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bf566f70-75af-4387-9056-badeb34a9ab3/1/256",
     "note": "『風神雷神図屏風』で知られる江戸時代の芸術流派「琳派（りんぱ）」の作品、計112点（うち国宝10点、重要文化財21点、有形文化財1点）を展示しているギャラリーワールドです。",
@@ -45,11 +88,10 @@ window.WORLDS = [
     "favorites": 161,
     "visits": 1742,
     "tags": [
-      "photo",
-      "sound",
-      "gallery",
-      "photography",
-      "Art"
+      "写真",
+      "サウンド",
+      "ギャラリー",
+      "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0f96c528-c2ec-4832-88b8-a0ab6fddf9fc/1/256",
     "note": "リアル写真×音をテーマにした藍香の写真展です。写真とともにその場所の音を記録しているため、静かな環境での鑑賞を推奨します。",
@@ -79,11 +121,10 @@ window.WORLDS = [
     "favorites": 1212,
     "visits": 10030,
     "tags": [
-      "space",
-      "science",
-      "museum",
-      "exhibition",
-      "nuclear"
+      "宇宙",
+      "科学",
+      "美術館・博物館",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ab3b161b-9f22-4430-94f3-689bb462f342/1/256",
     "note": "한국어 KR, English EN,日本語 JP Support.",
@@ -99,9 +140,9 @@ window.WORLDS = [
     "favorites": 878,
     "visits": 7585,
     "tags": [
-      "aquarium",
-      "chill",
-      "sightseeing"
+      "水族館",
+      "チル",
+      "風景・観光"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bd704220-9e3f-4adb-9633-d3a4d8b60446/4/256",
     "note": "可愛い日用品が泳ぎ回る小さな水族館です。 おひとり様でも、ご友人連れでも、是非ゆったりとお過ごしください。",
@@ -117,9 +158,9 @@ window.WORLDS = [
     "favorites": 48,
     "visits": 559,
     "tags": [
-      "exhibition",
-      "boardgame",
-      "idol"
+      "展示会",
+      "ゲーム",
+      "アニメ・キャラ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f106cd01-6291-4525-b0ce-d54f19da810f/3/256",
     "note": "ボードゲームからアイドルを生み出す「Projec-IDOL-A-LIVE」の今とこれからがすべてわかる！",
@@ -135,11 +176,9 @@ window.WORLDS = [
     "favorites": 55,
     "visits": 1162,
     "tags": [
-      "kokun_",
-      "picture",
-      "museum",
-      "meal",
-      "food"
+      "写真",
+      "美術館・博物館",
+      "カフェ・飲食"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_efae5bf0-231f-4195-a456-afa9bc7a12d4/4/256",
     "note": "外食の時に撮った写真を飾っています。構造が微妙なので作り直すかもしれません。インスタ映えを想定していないので散らかっています。",
@@ -155,10 +194,8 @@ window.WORLDS = [
     "favorites": 556,
     "visits": 4617,
     "tags": [
-      "japan",
-      "coin",
-      "currency",
-      "museum"
+      "日本",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d422b28f-a97f-4eef-b840-64c9fb678b90/6/256",
     "note": "日本の近代に造られた貨幣の一部を展示した博物館です。今後別の言語も追加予定です。",
@@ -174,11 +211,9 @@ window.WORLDS = [
     "favorites": 1203,
     "visits": 11433,
     "tags": [
-      "taiwan",
-      "germany",
-      "expo",
-      "theme_park",
-      "dragon_boat"
+      "海外",
+      "展示会",
+      "イベント"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_91dbf77d-74c5-402e-b8c6-19734b59b3fd/2/256",
     "note": "Experience the Taiwan Excellence Virtual Theme Park at the Taiwan EXPO in Berlin!",
@@ -208,11 +243,8 @@ window.WORLDS = [
     "favorites": 7258,
     "visits": 42174,
     "tags": [
-      "factory",
-      "horror",
-      "gore",
-      "scientificfiction",
-      "SF"
+      "ホラー",
+      "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ab9d78cd-f11b-4fba-87e4-52f032545ceb/2/256",
     "note": "メタニウム製品でメタバースをもっと便利に。星島工業とメタニウムについて遊んで学べるバーチャル工場見学ワールドです。",
@@ -228,8 +260,8 @@ window.WORLDS = [
     "favorites": 3791,
     "visits": 28265,
     "tags": [
-      "gimmick",
-      "exhibition"
+      "ギミック",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9a7d5d9a-f334-49f7-a5c0-1e8292279910/5/256",
     "note": "様々なクリエイターの作った、ワールド/アバターギミックを手にとって試せるワールドです。",
@@ -273,11 +305,8 @@ window.WORLDS = [
     "favorites": 749,
     "visits": 5070,
     "tags": [
-      "avatar",
-      "cthulhu",
-      "クトゥルフ",
-      "avatars",
-      "NPC"
+      "衣装・アバター",
+      "ホラー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1e67a6fb-13dd-4176-9b03-fc2925c5f30b/4/256",
     "note": "キツネツキの制作したアバターなどの3D作品を展示しています。",
@@ -293,11 +322,7 @@ window.WORLDS = [
     "favorites": 5634,
     "visits": 80651,
     "tags": [
-      "y23586",
-      "flare",
-      "project",
-      "summer",
-      "projectsummerflare"
+      "演出"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0ba3beee-4fc5-49df-8a11-c7e63ebf0b88/2/256",
     "note": "A PROJECT˸ SUMMER FLARE episode. JA, EN, VR, Desktop supported.",
@@ -313,9 +338,7 @@ window.WORLDS = [
     "favorites": 7383,
     "visits": 76275,
     "tags": [
-      "y23586",
-      "projectsummerflare",
-      "newkyoto"
+      "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6df7eca5-e0f3-44da-98fe-66401df53acd/1/256",
     "note": "An experimental World to exhibit something.",
@@ -359,10 +382,9 @@ window.WORLDS = [
     "favorites": 1309,
     "visits": 8337,
     "tags": [
-      "gallery",
-      "exhibition",
-      "photo",
-      "写真展"
+      "ギャラリー",
+      "展示会",
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6d7abfa0-c1c4-47cc-ad10-87e8bd5f4525/1/256",
     "note": "合同写真展\"Experiment ˸ 1\" 撮影された写真は「＃VR_EXPERIMENT_1」のハッシュタグをつけていただけると励みになります。",
@@ -378,7 +400,7 @@ window.WORLDS = [
     "favorites": 9303,
     "visits": 95182,
     "tags": [
-      "exhibition"
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0fb1a2a6-42d0-4d23-9b24-c3da3051e6d2/15/256",
     "note": "Anique Museumは、デジタルとリアルを融合し、日本のアニメ、マンガ、ゲームコンテンツを幅広く展示するとともに、クリエイターとの積極的なコラボレーションを通じて新たな文化創造を育み、没入感とアクセス性に優れた体験",
@@ -394,11 +416,8 @@ window.WORLDS = [
     "favorites": 4071,
     "visits": 37921,
     "tags": [
-      "hololive",
-      "art",
-      "ina",
-      "tako",
-      "holoen"
+      "アニメ・キャラ",
+      "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_24de82ec-91cb-42ee-9c20-3e3f3188fb05/2/256",
     "note": "I want to dedicate this to all the takodachis out there for your continuous support!",
@@ -414,9 +433,9 @@ window.WORLDS = [
     "favorites": 38,
     "visits": 464,
     "tags": [
-      "gallery",
-      "photo",
-      "cafe"
+      "ギャラリー",
+      "写真",
+      "カフェ・飲食"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6856f70f-9722-41fc-aaf0-def979fbae30/1/256",
     "note": "しょくぱんがこれまでVRChat内で撮影してきた写真を展示したワールドです。パンをついでに売っているカフェのイメージで作成いたしましたので、お気軽にどうぞ。",
@@ -432,11 +451,9 @@ window.WORLDS = [
     "favorites": 164,
     "visits": 1422,
     "tags": [
-      "travel",
-      "3DScan",
-      "vtuber",
-      "lidar",
-      "scaniverse"
+      "風景・観光",
+      "フォトグラメトリ",
+      "アニメ・キャラ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f1abe779-cfc5-4007-bad3-3d12ae978eec/4/256",
     "note": "バーチャルハムスター「もちはむ」と「おじはむ」の世界2周目の旅応援企画「旅するハムと世界のカケラ展」のワールドです。",
@@ -452,11 +469,9 @@ window.WORLDS = [
     "favorites": 2559,
     "visits": 18086,
     "tags": [
-      "game",
-      "academic",
-      "science",
-      "educational",
-      "museum"
+      "ゲーム",
+      "科学",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d2cf4721-9095-442c-87bb-7c1a63f51c3f/1/256",
     "note": "トライボロジー（摩擦・摩耗・潤滑に関する学問分野）について、実際にモノを動かして体験したり、学べるワールドです。",
@@ -472,11 +487,7 @@ window.WORLDS = [
     "favorites": 1676,
     "visits": 7868,
     "tags": [
-      "World",
-      "Create",
-      "Blender",
-      "Substance_Painter",
-      "Unity"
+      "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f4636c46-f76b-45c5-b7fb-aebcc393dc77/3/256",
     "note": "VRCワールドベイカーズは、３Dモデリングソフト「Blender」を触ったことのない人がVRChatのワールド作成をゼロから学ぶための学校です。",
@@ -492,11 +503,9 @@ window.WORLDS = [
     "favorites": 865,
     "visits": 12392,
     "tags": [
-      "anime",
-      "animation",
-      "jp",
-      "toei",
-      "japan"
+      "アニメ・キャラ",
+      "アート",
+      "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7295f046-1876-49f8-af5b-95b0c6848abb/2/256",
     "note": "1956年当時、東洋一を誇る最新最大のアニメーション制作スタジオ「東映動画スタジオ 」を再現!",
@@ -512,11 +521,8 @@ window.WORLDS = [
     "favorites": 6217,
     "visits": 84207,
     "tags": [
-      "vrchat",
-      "japanese",
-      "museum",
-      "nihon",
-      "kokokara"
+      "日本",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_638dd25e-ecfa-47ca-8176-baddde275748/14/256",
     "note": "VisitorはTrustedに、TrustedはVisitorに、なってゆきます。",
@@ -532,11 +538,9 @@ window.WORLDS = [
     "favorites": 1524,
     "visits": 13424,
     "tags": [
-      "懺悔",
-      "教会",
-      "懺悔室",
-      "jp",
-      "chill"
+      "教会・宗教",
+      "日本",
+      "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ccb85554-a7cd-4bf9-b47e-a59eaaf9d270/30/256",
     "note": "あなたもしませんか？懺悔を....",
@@ -552,11 +556,9 @@ window.WORLDS = [
     "favorites": 15006,
     "visits": 126304,
     "tags": [
-      "7dww",
-      "chill",
-      "sweets",
-      "witch",
-      "story"
+      "チル",
+      "カフェ・飲食",
+      "教会・宗教"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1947c01f-2bf7-41fd-b5ea-a5fe6806a990/2/256",
     "note": "7DaysWorldWorks参加作品。お題『童話』で制作し、その後期間外でQuest対応や調整などを行っています。",
@@ -572,9 +574,8 @@ window.WORLDS = [
     "favorites": 156,
     "visits": 2050,
     "tags": [
-      "gallery",
-      "poster",
-      "Exhibition"
+      "ギャラリー",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6ffd2825-8bb6-4bd4-a731-095f3ad23f93/1/256",
     "note": "皆で作成した仮想の映画ポスターを展示したワールドです。 感想は ＃VRC仮想映画ポスター1 でつぶやいてもらえると嬉しいです！",
@@ -618,11 +619,7 @@ window.WORLDS = [
     "favorites": 1251,
     "visits": 12890,
     "tags": [
-      "ニコニコ動画",
-      "ニコニコ",
-      "niconico",
-      "tutorial",
-      "meme"
+      "アニメ・キャラ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f7073232-44f0-411d-9a86-ba1bd5498897/57/256",
     "note": "ニコニコ動画についての解説や面白いネタをパネル形式で紹介するワールドです。外観は「VRCニコニコ集会（vR）」の会場を使用しており、動画視聴やイベント会場に最適化されています。",
@@ -638,9 +635,8 @@ window.WORLDS = [
     "favorites": 182,
     "visits": 1252,
     "tags": [
-      "gallery",
-      "photo",
-      "photograph"
+      "ギャラリー",
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_457f71e8-8834-4c4f-95e1-ada9791a90c7/2/256",
     "note": "参加者46名で世界の色合計120点の写真を集めた合同展示です。",
@@ -656,11 +652,9 @@ window.WORLDS = [
     "favorites": 38,
     "visits": 567,
     "tags": [
-      "photo",
-      "gallery",
-      "night",
-      "relax",
-      "photography"
+      "写真",
+      "ギャラリー",
+      "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5f713942-c280-4818-a229-508773b07a54/2/256",
     "note": "This world contain's a selection of hand picked photos that I took during 2023.",
@@ -676,11 +670,9 @@ window.WORLDS = [
     "favorites": 568,
     "visits": 3326,
     "tags": [
-      "Chill",
-      "ShowRoom",
-      "Shop",
-      "Black",
-      "Photo"
+      "チル",
+      "展示会",
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9a4c8742-e236-48f7-bb1e-f44ccb34c65d/7/256",
     "note": "まめふれんず向けBOOTHショップ \"nSignature（エヌシグ）\"で販売中の衣装を、実際に確かめたり、試着して楽しめる。",
@@ -696,11 +688,10 @@ window.WORLDS = [
     "favorites": 2951,
     "visits": 23289,
     "tags": [
-      "Eexhibition",
-      "cloth",
-      "Gallery",
-      "chill",
-      "Avatar"
+      "展示会",
+      "衣装・アバター",
+      "ギャラリー",
+      "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ae9ae5df-9933-44d9-ad4e-9794e09d0e0c/10/256",
     "note": "アバター改変を楽しく、身近に。 総合的な衣装展示ワールド-ENCLO- 常に新しい衣装が展示されております。",
@@ -716,11 +707,8 @@ window.WORLDS = [
     "favorites": 7182,
     "visits": 70212,
     "tags": [
-      "toy",
-      "hobby",
-      "virtualhobbyfes2026",
-      "virtualhobbyfes",
-      "vhf"
+      "ゲーム",
+      "イベント"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ab9b2c12-900a-4ebe-ab2f-3d40241b4a20/2/256",
     "note": "Virtual Hobby Fes 2026 （バチャホビ2026）is a toy festival built on the concept of \"See, Learn, Touch, and Play!",
@@ -750,11 +738,9 @@ window.WORLDS = [
     "favorites": 17,
     "visits": 340,
     "tags": [
-      "photogrammetry",
-      "jp",
-      "scan",
-      "photo",
-      "hokkaido"
+      "フォトグラメトリ",
+      "日本",
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d7795620-84b2-4c58-a435-dd76e596f2f3/9/256",
     "note": "いろんなフォトグラを展示しています。時に現地写真も添えて。 Scaniverseを使用。",
@@ -770,11 +756,9 @@ window.WORLDS = [
     "favorites": 1199,
     "visits": 10192,
     "tags": [
-      "tsukurunomori",
-      "avatar",
-      "exhibition",
-      "chill",
-      "avatarworld"
+      "衣装・アバター",
+      "展示会",
+      "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e4eb4c79-8bf1-4725-8994-59da03c57116/1/256",
     "note": "ツクルノモリ株式会社の公式アバターワールドです。 全27体の公式アバターを展示・試着いただけるほか、ツクルノモリVRの歩みを知る展示コーナーも併設。",
@@ -804,11 +788,9 @@ window.WORLDS = [
     "favorites": 6339,
     "visits": 43424,
     "tags": [
-      "museum",
-      "vdpm",
-      "cn",
-      "tech",
-      "chinese"
+      "美術館・博物館",
+      "海外",
+      "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6068dadb-90a4-476b-9b1d-1d4d564cc9cc/7/256",
     "note": "《虚拟数码博物馆》是一个以消费类电子产品为主题的虚拟博物馆，目前已经开放游览中，正在 Beta 测试中，可能会有部分错误和问题，可以进群交流和反馈建议。",
@@ -838,9 +820,8 @@ window.WORLDS = [
     "favorites": 22887,
     "visits": 212257,
     "tags": [
-      "aquarium",
-      "fish",
-      "water"
+      "水族館",
+      "海・水"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2499a487-ec46-49d0-af5b-3c2e2cddf06e/4/256",
     "note": "世界の淡水魚などを展示している水族館ワールドです（展示数44種類）。kaiiiiiiiiiさんから公開されている続編ワールド「Sushi Aquarium 海洋棟」では海の生き物たちを展示しています。",
@@ -856,11 +837,9 @@ window.WORLDS = [
     "favorites": 47428,
     "visits": 390226,
     "tags": [
-      "Fish",
-      "Sea",
-      "chill",
-      "Date",
-      "aquarium"
+      "海・水",
+      "チル",
+      "水族館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b360f855-3f02-43e5-8603-342f40fcf918/6/256",
     "note": "魚を中心とした海洋生物を展示している水族館ワールドです。（現在展示数70種）long-potatoさんより公開されている続編ワールド「Sushi Aquarium 淡水棟」では世界各地の淡水魚を展示しております。",
@@ -890,11 +869,9 @@ window.WORLDS = [
     "favorites": 5830,
     "visits": 24565,
     "tags": [
-      "museum",
-      "dinosaur",
-      "science",
-      "fossil",
-      "skeleton"
+      "美術館・博物館",
+      "恐竜・化石",
+      "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2b0e3b0a-0536-48c8-9085-3512783e7d30/1/256",
     "note": "【ワールド容量かなり大きいので事前ダウンロード推奨です】 クリエイティブ・コモンズ・ライセンスの元で配布されている古生物に関する3Dモデルを集めた博物館です。",
@@ -910,8 +887,8 @@ window.WORLDS = [
     "favorites": 26,
     "visits": 521,
     "tags": [
-      "photo",
-      "gallery"
+      "写真",
+      "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ccd7436e-3761-425d-aead-0c014a0f5064/3/256",
     "note": "思い立ったが吉日。ノリと勢い100％、ワールド制作知識0％で、正月休みのラスト三日間をフルに使って\"突貫工事\"でフォトギャラリー兼ホームワールド兼撮影ワールドを作ってみました！",
@@ -927,9 +904,8 @@ window.WORLDS = [
     "favorites": 1623,
     "visits": 10492,
     "tags": [
-      "photo",
-      "photograph",
-      "exhibition"
+      "写真",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_15ecaeee-2040-436d-923e-054f813b215d/2/256",
     "note": "仮想写真研究所（Virtual Photography Lab）",
@@ -944,12 +920,7 @@ window.WORLDS = [
     "recommendedCapacity": 25,
     "favorites": 1512,
     "visits": 8938,
-    "tags": [
-      "okamura",
-      "roomietale",
-      "ルミテ",
-      "ルミコン"
-    ],
+    "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fbfb27d5-692a-4103-83a6-329cfdc3a120/4/256",
     "note": "RoomieTale バーチャルのくらし研究所ツアー （アーカイブ） 2024年7月15日に行われた３D空間コンペ入賞作品発表イベントのアーカイブワールドです。",
     "official": "RoomieTale バーチャルのくらし研究所ツアー （アーカイブ） 2024年7月15日に行われた３D空間コンペ入賞作品発表イベントのアーカイブワールドです。イベントの様子（Youtube）https˸//www.youtube.com/live/0d0wZZqFVl8?si＝uJEmd_FTFRe4QDlb ［コンテンツ］ ・RoomieTale ホームワールドコンペティション入賞者作品 ・RoomieTale フィーチャー展作品 ・MetroMew パフォーマンス RoomieTale Virtual LifeStyle Lab Tour （archive） Archived world of the event held on 15 July 2024 to present the winning entries of the 3D spatial competition. the event movie （Youtube）https˸//www.youtube.com/live/0d0wZZqFVl8?si＝uJEmd_FTFRe4QDlb ［Contents］ ・RoomieTale Homeworld Competition Winners' Works ・RoomieTale Feature Exibition ・MetroMew Performance"
@@ -964,8 +935,7 @@ window.WORLDS = [
     "favorites": 21741,
     "visits": 113757,
     "tags": [
-      "photo",
-      "photoreal"
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_29128513-9eb3-4bc1-add5-e7c1af10b3c7/9/256",
     "note": "現実の写真の中に入れるワールドです。写真は随時追加予定。It's a world that puts you in the picture of reality.",
@@ -981,9 +951,9 @@ window.WORLDS = [
     "favorites": 191,
     "visits": 2080,
     "tags": [
-      "gallery",
-      "art",
-      "exhibition"
+      "ギャラリー",
+      "アート",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8309f7a3-ba80-4638-bffc-57166d56ef1b/2/256",
     "note": "A daisy, a person, a collection of arts.",
@@ -999,9 +969,9 @@ window.WORLDS = [
     "favorites": 412,
     "visits": 3765,
     "tags": [
-      "exhibition",
-      "chill",
-      "art"
+      "展示会",
+      "チル",
+      "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a67040a0-e786-4436-b45f-2dba528dc222/6/256",
     "note": "工芸作家磁佑第2回個展「自由工芸展」のVRChat会場です。展示を見た後に雑談もできるラウンジ完備。",
@@ -1017,10 +987,8 @@ window.WORLDS = [
     "favorites": 6851,
     "visits": 74053,
     "tags": [
-      "frog",
-      "toad",
-      "kaeru",
-      "museum"
+      "生き物",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4834e4ed-6b44-4e32-9eff-2946e67d078a/2/256",
     "note": "VirtualFrogMuseum Keronmo introduces approximately 100 types of frogs from around the world!",
@@ -1036,9 +1004,9 @@ window.WORLDS = [
     "favorites": 7014,
     "visits": 123454,
     "tags": [
-      "shader",
-      "art",
-      "festival"
+      "シェーダー",
+      "アート",
+      "イベント"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f72701e9-9ad7-4d36-bb91-b68adf1fb7e0/1/256",
     "note": "様々なクリエイターによる100以上のシェーダー作品を展示しています。Over 100 shader works by various creators are on display.",
@@ -1054,8 +1022,8 @@ window.WORLDS = [
     "favorites": 7196,
     "visits": 36767,
     "tags": [
-      "art",
-      "museum"
+      "アート",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3e3b7287-b34f-432f-9b23-1556adf49730/11/256",
     "note": "【JP/EN/ZH/KO】古典絵画から19世紀頃までのパブリックドメインの絵画を原寸大で展示しています。",
@@ -1071,9 +1039,9 @@ window.WORLDS = [
     "favorites": 4739,
     "visits": 29351,
     "tags": [
-      "artwork",
-      "exhibition",
-      "japan"
+      "アート",
+      "展示会",
+      "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e7bdedff-4d20-4aef-b5a7-a4b3336ae908/1/256",
     "note": "キツネイロが制作したイラストの展示ワールドです / Kitsuneiro's Artwork Exhibition World",
@@ -1089,11 +1057,9 @@ window.WORLDS = [
     "favorites": 7117,
     "visits": 59608,
     "tags": [
-      "dinosaur",
-      "museum",
-      "gallery",
-      "topgunsi",
-      "skeleton"
+      "恐竜・化石",
+      "美術館・博物館",
+      "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11175ac6-95b1-49da-8f0f-88104ea361f3/16/256",
     "note": "A prehistoric Dinosaur Museum with everything handmade from scratch in SculptrVR, Masterpiece Studio Pro, Tilt",
@@ -1123,11 +1089,9 @@ window.WORLDS = [
     "favorites": 1754,
     "visits": 14833,
     "tags": [
-      "gallery",
-      "museum",
-      "art",
-      "painting",
-      "tiltbrush"
+      "ギャラリー",
+      "美術館・博物館",
+      "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_77e2a3cf-28e0-4ade-baed-dda68f9406d2/1/256",
     "note": "This is gallery of tilt brush art by artist 'Jaehyuk Lee', directed by VRC streamer GreatMoonAroma.",
@@ -1157,11 +1121,11 @@ window.WORLDS = [
     "favorites": 978,
     "visits": 7566,
     "tags": [
-      "shader",
-      "art",
-      "Japan",
-      "gallery",
-      "museum"
+      "シェーダー",
+      "アート",
+      "日本",
+      "ギャラリー",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6006335d-3df9-4612-a5fc-7bfd8680e263/2/256",
     "note": "切り絵シェーダーアート展のワールドです。不思議な作品をお楽しみください。 （ It's the World of Kirie Shader Art Exhibition.",
@@ -1177,9 +1141,9 @@ window.WORLDS = [
     "favorites": 592,
     "visits": 5568,
     "tags": [
-      "cave",
-      "illustration",
-      "space"
+      "風景・観光",
+      "イラスト",
+      "宇宙"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_def452c9-2143-4bc9-b8b0-4ec7a5215a1f/2/256",
     "note": "宇宙機や宇宙関連施設がテーマのイラストギャラリーです。現在34枚展示中、全てのイラストに解説がいれてあります。",
@@ -1223,11 +1187,8 @@ window.WORLDS = [
     "favorites": 996,
     "visits": 8642,
     "tags": [
-      "exhibition",
-      "math",
-      "mathematics",
-      "educational",
-      "large_number"
+      "展示会",
+      "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ffec6f77-f546-49b6-83d4-1da4b1da041e/1/256",
     "note": "ただただ大きい数について考える。 そんなロマン溢れる巨大数の世界をあなたも覗いてみませんか？",
@@ -1243,11 +1204,11 @@ window.WORLDS = [
     "favorites": 235,
     "visits": 2762,
     "tags": [
-      "vtuber",
-      "art",
-      "Aozuki",
-      "chill",
-      "museum"
+      "アニメ・キャラ",
+      "アート",
+      "日本画",
+      "チル",
+      "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1a3afe4e-d39c-46c3-b93b-da8611eeccca/5/256",
     "note": "初めてのワールド制作です。60名を超えるVTuberのパネル展示、30枚以上の写真、15名のイラストレーターによるイラスト展示！",
@@ -1263,7 +1224,7 @@ window.WORLDS = [
     "favorites": 492,
     "visits": 4092,
     "tags": [
-      "gallery"
+      "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2b40e6f0-13a7-4610-af72-6f1b797db6e7/3/256",
     "note": "スクエアの良さが伝われば幸いです。 「＃正方形に納まる世界展」で感想とよかったと思った写真をツイートしてもらえると嬉しいです。",
@@ -1279,11 +1240,10 @@ window.WORLDS = [
     "favorites": 2414,
     "visits": 9646,
     "tags": [
-      "art",
-      "museum",
-      "gallery",
-      "Ito_Jakuchu",
-      "Nihonga"
+      "アート",
+      "美術館・博物館",
+      "ギャラリー",
+      "日本画"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a0016dbd-d21a-4996-9f8a-adf17fd3a204/1/256",
     "note": "江戸時代の日本画家・伊藤若冲の代表作『動植綵絵』および『釈迦三尊像』を展示したギャラリーワールドです。",
@@ -1299,11 +1259,7 @@ window.WORLDS = [
     "favorites": 2655,
     "visits": 21739,
     "tags": [
-      "costume",
-      "Kikyo",
-      "clothes",
-      "outfit",
-      "fitting"
+      "衣装・アバター"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3f9ca8aa-f23c-4b21-bdda-56df4662819f/3/256",
     "note": "コスチュームミュージアムの入り口です。 コスチュームミュージアムの遊び方を確認することができます。",
@@ -1319,9 +1275,9 @@ window.WORLDS = [
     "favorites": 854,
     "visits": 6505,
     "tags": [
-      "photo",
-      "gallery",
-      "exhibition"
+      "写真",
+      "ギャラリー",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_00f26c18-4e03-4461-a2a7-f540ce83c84f/2/256",
     "note": "2025年6月現在こちらのワールドは更新されていません。 March exhibition-感想や好きな写真については「＃Record_BtL」を付けてXやBlueskyなどでポストして頂けると嬉しいです。",
@@ -1351,11 +1307,11 @@ window.WORLDS = [
     "favorites": 1662,
     "visits": 13464,
     "tags": [
-      "Exhibition",
-      "grassfield",
-      "art_gallery",
-      "gallery",
-      "chill"
+      "展示会",
+      "風景・観光",
+      "アート",
+      "ギャラリー",
+      "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2d8283a7-0352-49d2-a394-0d30aaab9406/1/256",
     "note": "A daisy, a person, a grassfield, a collection of arts.",
@@ -1371,10 +1327,9 @@ window.WORLDS = [
     "favorites": 486,
     "visits": 2990,
     "tags": [
-      "photo",
-      "Gallery",
-      "exhibition",
-      "photography"
+      "写真",
+      "ギャラリー",
+      "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1ae21ca9-7e5a-418e-8473-0028f3f6a50f/3/256",
     "note": "私、ねおぽんずのフォトギャラリーと４つの企画展からなる複合展示ワールドです。 感想は「＃NPGallery」か「＃VRC_AnotherDay」でXに投稿していただけると嬉しいです。",
@@ -1390,11 +1345,11 @@ window.WORLDS = [
     "favorites": 4428,
     "visits": 22084,
     "tags": [
-      "art",
-      "chill",
-      "sea",
-      "Gallery",
-      "aquarium"
+      "アート",
+      "チル",
+      "海・水",
+      "ギャラリー",
+      "水族館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_65e40868-a238-489d-8877-0fa347f0f575/1/256",
     "note": "画家・中島華映の海底の美術館ワールド。 このワールドには巨大生物が登場する演出があります。",
@@ -1424,11 +1379,9 @@ window.WORLDS = [
     "favorites": 9124,
     "visits": 73480,
     "tags": [
-      "Moscow",
-      "Bar",
-      "Cafe",
-      "club",
-      "city"
+      "海外",
+      "カフェ・飲食",
+      "風景・観光"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_63313f6c-77ff-43ef-9f2d-ca350b8f997f/2/256",
     "note": "Patriki VR is a small world from the 'Moscow Trip' series.",
@@ -1458,8 +1411,8 @@ window.WORLDS = [
     "favorites": 3387,
     "visits": 16624,
     "tags": [
-      "gallery",
-      "photo"
+      "ギャラリー",
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7cf1a453-51f5-4fae-984d-3d7d6dc30f55/2/256",
     "note": "期間展示と常設展示からなるギャラリーです。一周見た後ボタンを調べて、ぜひ二周楽しんでいただけたら嬉しいです。",
@@ -1475,11 +1428,9 @@ window.WORLDS = [
     "favorites": 1962,
     "visits": 16698,
     "tags": [
-      "photo",
-      "Gallery",
-      "Chill",
-      "Photo",
-      "gallery"
+      "写真",
+      "ギャラリー",
+      "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_78a4d911-0229-4c32-a346-0289dac4fc0e/3/256",
     "note": "深夜のオフィスビル リアルなのかVRなのか、作品なのか記録なのか、果たしてこの写真展は開催されてるのかされていないのか.",
@@ -1495,11 +1446,9 @@ window.WORLDS = [
     "favorites": 3323,
     "visits": 20179,
     "tags": [
-      "HondaMotanion",
-      "Museum",
-      "Motorcycle",
-      "Bike",
-      "Photo"
+      "乗り物",
+      "美術館・博物館",
+      "写真"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_17ca8fc3-65da-433b-b852-4a6fba1553f0/3/256",
     "note": "ここは未来のHondaの秘密研究所。 皆様はHondaの特別調査員として、ワールド内のバイクに触れながら「乗る」「カスタム」「写真撮影」といった体験をお楽しみいただけます。",
@@ -1529,10 +1478,9 @@ window.WORLDS = [
     "favorites": 159,
     "visits": 3870,
     "tags": [
-      "anime",
-      "manga",
-      "art",
-      "illustration"
+      "アニメ・キャラ",
+      "アート",
+      "イラスト"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8cf0c294-c6c2-4d9d-8478-a2ca5fb13e44/7/256",
     "note": "VRchatユーザーのイラスト作品などを展示するワールドです。毎月第１水曜日に集会を行っています。",
@@ -1562,9 +1510,8 @@ window.WORLDS = [
     "favorites": 337,
     "visits": 2454,
     "tags": [
-      "photo",
-      "PhotoGallery",
-      "VirtualPhotography"
+      "写真",
+      "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_64380a97-92f2-48ae-9700-1292be1e8dd9/3/256",
     "note": "総勢35名のVRChatter及びVirtualPhotographerの「撮り始めの一カ月」と「今の一カ月」を記録した合同展示となります。",
@@ -1580,11 +1527,10 @@ window.WORLDS = [
     "favorites": 14746,
     "visits": 80643,
     "tags": [
-      "photo",
-      "photograph",
-      "exhibition",
-      "udon",
-      "shader"
+      "写真",
+      "展示会",
+      "カフェ・飲食",
+      "シェーダー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a6438f27-4d80-4201-ab41-3a476758d8bd/4/256",
     "note": "常設展「額縁の庇護を逃れて」",
@@ -1600,10 +1546,9 @@ window.WORLDS = [
     "favorites": 276,
     "visits": 7207,
     "tags": [
-      "anime",
-      "manga",
-      "illustration",
-      "gallery"
+      "アニメ・キャラ",
+      "イラスト",
+      "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_27a0f9f5-c690-4833-92b2-c7028b5fa941/6/256",
     "note": "「Realize」はイラストレーターであるクロイヌヨウヘイのVRChatの二次創作イラストのシリーズです。",
@@ -1619,11 +1564,10 @@ window.WORLDS = [
     "favorites": 2805,
     "visits": 18891,
     "tags": [
-      "museum",
-      "japan",
-      "japanese",
-      "game",
-      "PHOTOGRAMMETRY"
+      "美術館・博物館",
+      "日本",
+      "ゲーム",
+      "フォトグラメトリ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f69bfcf1-1848-4434-b1cf-0ef02c1665f9/12/256",
     "note": "フォトグラメトリによってVRCに持ち込んだ、携帯ゲーム機たちを展示する博物館です。",
@@ -1653,11 +1597,9 @@ window.WORLDS = [
     "favorites": 1527,
     "visits": 11629,
     "tags": [
-      "picture",
-      "sea",
-      "studio",
-      "photo",
-      "gallery"
+      "写真",
+      "海・水",
+      "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0ad84dc0-6821-4a1f-b584-7dc724566cc9/2/256",
     "note": "Photographer ˸ Uncle_B, Ganna Kamui Creator ˸ ReCube 기분져아 take at the world with a camera.",
@@ -1687,11 +1629,8 @@ window.WORLDS = [
     "favorites": 17572,
     "visits": 163277,
     "tags": [
-      "scale",
-      "space",
-      "anomaly",
-      "gravity",
-      "planet"
+      "宇宙",
+      "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_566a3e2f-2e79-4900-9309-933fc34dab80/3/256",
     "note": "Eccentric Rooms",
@@ -1707,11 +1646,8 @@ window.WORLDS = [
     "favorites": 13979,
     "visits": 68539,
     "tags": [
-      "Atom",
-      "Space",
-      "Universe",
-      "sifi",
-      "Science"
+      "宇宙",
+      "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3a51dc95-d78c-4f82-9a6b-e32f51921e58/9/256",
     "note": "素粒子から宇宙まで、スケールを旅するワールドです。 Created by S_Asagiri",
@@ -1727,7 +1663,7 @@ window.WORLDS = [
     "favorites": 7745,
     "visits": 38502,
     "tags": [
-      "Realsense"
+      "フォトグラメトリ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c70852b2-28db-45a6-af01-8f8c1d16c006/3/256",
     "note": "沢山のご来場ありがとうございます。 これからも展示物の追加やギミックの追加・調整を行う予定です。",
@@ -1743,8 +1679,8 @@ window.WORLDS = [
     "favorites": 12108,
     "visits": 95080,
     "tags": [
-      "sound",
-      "udon"
+      "サウンド",
+      "カフェ・飲食"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a30e1077-85e5-4581-8e32-3c5db3abd38b/5/256",
     "note": "音響システムWavePathSystemとその他技術検証ワールドです。音の位置や反響をよりリアルに再現し、聞く位置や環境によって音が変化します。",
@@ -1760,10 +1696,10 @@ window.WORLDS = [
     "favorites": 26734,
     "visits": 252692,
     "tags": [
-      "shader",
-      "exhibition",
-      "museum",
-      "art"
+      "シェーダー",
+      "展示会",
+      "美術館・博物館",
+      "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11b99f64-00ea-446b-8dd5-29f4caf4aa9d/2/256",
     "note": "様々なクリエイターによる200以上のシェーダー作品を展示しています。More than 200 shader works are on display.",
@@ -1778,10 +1714,7 @@ window.WORLDS = [
     "recommendedCapacity": 40,
     "favorites": 5801,
     "visits": 48645,
-    "tags": [
-      "eccentric",
-      "objects"
-    ],
+    "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e2077bb2-8bfc-4e84-ae44-35b1ea0f6c9a/5/256",
     "note": "",
     "official": ""
