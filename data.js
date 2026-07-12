@@ -1,6 +1,6 @@
 /* =====================================================================
  * アスユイ お気に入りワールド データ（自動生成）
- * VRChatお気に入りグループ「展覧会系」(vrcPlusWorlds3) より抽出。
+ * 展覧会系(vrcPlusWorlds3) / パーティクル(vrcPlusWorlds1) より抽出。
  * ワールド/カテゴリの追加・説明(note)の編集はこのファイルを直接編集。
  * note = 各ワールドの説明欄（初期値はVRChat説明の要約。自由に書き換え可）
  * tags = 日本語の統合タグ（検索・絞り込み用）
@@ -19,7 +19,7 @@ window.CATEGORIES = [
     "name": "パーティクル",
     "icon": "✨",
     "desc": "パーティクル・映像演出が魅力のワールド",
-    "ready": false
+    "ready": true
   },
   {
     "id": "misc",
@@ -1718,5 +1718,1434 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e2077bb2-8bfc-4e84-ae44-35b1ea0f6c9a/5/256",
     "note": "",
     "official": ""
+  },
+  {
+    "id": "wrld_dde0f69c-a09c-48dc-bbf7-e00a28f5ee87",
+    "name": "遥か先の君へ。/To the One Waiting Beyond.",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 80,
+    "recommendedCapacity": 16,
+    "favorites": 2016,
+    "visits": 13595,
+    "tags": [
+      "チル",
+      "パーティクルライブ",
+      "音楽",
+      "宇宙"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_4f2133c3-5165-4b3e-93e4-926bdefa83bf/5/256",
+    "note": "夏の限定ライブイベント「SecretLIVE」へ続く 告知用パーティクルライブワールド。",
+    "official": "夏の限定ライブイベント「SecretLIVE」へ続く 告知用パーティクルライブワールド。 ベンチに置かれた腕輪と、その言葉が全ての始まりだった。「君の夢が、僕の生きる理由になったんだ」"
+  },
+  {
+    "id": "wrld_fab25276-98ce-4320-84ca-1362cfb64abf",
+    "name": "雲 - The Cloud We Chase",
+    "category": "particle",
+    "subtype": "幻想・風景",
+    "capacity": 8,
+    "recommendedCapacity": 2,
+    "favorites": 8193,
+    "visits": 86713,
+    "tags": [
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_00d4d252-6da0-4640-8162-45b9c7ac7f33/1/256",
+    "note": "Under the roof where we dream.",
+    "official": "Under the roof where we dream."
+  },
+  {
+    "id": "wrld_2f1a7677-f023-4e82-acdf-c85ea1f79b82",
+    "name": "陽だまりの向日葵/Sunflowers in a sunlit spot",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 2004,
+    "visits": 18500,
+    "tags": [
+      "自然・風景",
+      "海・水",
+      "ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d40c3cb9-5e19-4e85-98e9-bb7df1f527ac/1/256",
+    "note": "I opened my eyes and forgot everything except for the sunset.",
+    "official": "I opened my eyes and forgot everything except for the sunset.私は目を覚ましてすべてのことを忘れて、ただ夕日だけを見ました"
+  },
+  {
+    "id": "wrld_8a8f04ba-1181-4a7e-aaf2-bdcd200852a5",
+    "name": "Beside",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 16,
+    "recommendedCapacity": 1,
+    "favorites": 6366,
+    "visits": 47277,
+    "tags": [
+      "音楽",
+      "アニメーション",
+      "風景・観光",
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_67ae638d-5aa5-461c-8f4f-3434bd2fca7a/2/256",
+    "note": "Animation world: ZUTOMAYO - MIRROR TUNE (2025 HNY)",
+    "official": "Animation world: ZUTOMAYO - MIRROR TUNE (2025 HNY)"
+  },
+  {
+    "id": "wrld_88c85201-35fa-4dad-87a9-eb6cfecd8987",
+    "name": "Particle Live World Collection",
+    "category": "particle",
+    "subtype": "ポータル集",
+    "capacity": 80,
+    "recommendedCapacity": 8,
+    "favorites": 9268,
+    "visits": 69387,
+    "tags": [
+      "ポータル集",
+      "VRMV",
+      "アニメーション",
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_86c2efc2-a022-4289-8edd-2e178ce7e4d0/14/256",
+    "note": "The hub features VRMVs, Animations and Music Experiences.",
+    "official": "The hub features VRMVs, Animations and Music Experiences. このワールドはパーティクルライブワールドを巡るグループがまとめたデータを基に作成されました。"
+  },
+  {
+    "id": "wrld_cd085851-4baf-4fb8-9a2a-e0e20f686502",
+    "name": "Cycle of Life",
+    "category": "particle",
+    "subtype": "幻想・風景",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 9853,
+    "visits": 84345,
+    "tags": [
+      "宇宙",
+      "アニメーション",
+      "チル",
+      "自然・風景",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_dafeb754-646f-4d9d-a4bb-bf9ec28e04b8/2/256",
+    "note": "a cycle begins ... take the rock to the lake to link the cycle of life and fulfill your duty, the drone will guide you",
+    "official": "a cycle begins ... take the rock to the lake to link the cycle of life and fulfill your duty, the drone will guide you"
+  },
+  {
+    "id": "wrld_9b4ebb1a-56a6-4c7a-9617-90113fa6d26b",
+    "name": "雨催いの悼辞 - My tears will be rain",
+    "category": "particle",
+    "subtype": "幻想・風景",
+    "capacity": 40,
+    "recommendedCapacity": 16,
+    "favorites": 644,
+    "visits": 5577,
+    "tags": [
+      "日本",
+      "チル",
+      "自然・風景",
+      "ホラー"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_49e22ec1-6ac7-48b1-8769-06761c914b9a/1/256",
+    "note": "この期に及んで私は、本当はあの人が生きていて、明日にでも私のもとへひょっこり顔を出すんじゃないかと、そう思っているのです。",
+    "official": "この期に及んで私は、本当はあの人が生きていて、明日にでも私のもとへひょっこり顔を出すんじゃないかと、そう思っているのです。"
+  },
+  {
+    "id": "wrld_073eae65-fff8-4039-96bd-b4f3158826b8",
+    "name": "[VRMV]One by One",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 732,
+    "visits": 6310,
+    "tags": [
+      "VRMV",
+      "パーティクルライブ",
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5061ead9-8e77-4651-ae20-60227fdbfbb7/3/256",
+    "note": "Music:One by One (feat. KMNZ LIZ) Direction:あっぷるてぃー/Appletea VRChat4年目を記念して制作した楽曲「One by one」のParticle Liveです。",
+    "official": "Music:One by One (feat. KMNZ LIZ) Direction:あっぷるてぃー/Appletea VRChat4年目を記念して制作した楽曲「One by one」のParticle Liveです。 花をインタラクトしたら始まります。"
+  },
+  {
+    "id": "wrld_2d50c1ab-170b-41a0-9697-fa92aa0ab7a6",
+    "name": "Summer Leap",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 1436,
+    "visits": 18166,
+    "tags": [
+      "音楽",
+      "ライブ",
+      "パーティクルライブ",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_425fb3b0-a367-4b8d-a7fa-80246423abed/1/256",
+    "note": "VRライブ",
+    "official": "VRライブ"
+  },
+  {
+    "id": "wrld_e6f93974-7a3e-487f-91c8-9ce5ee8c6fee",
+    "name": "Miku EXPO Live",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 80,
+    "recommendedCapacity": 39,
+    "favorites": 1083,
+    "visits": 12212,
+    "tags": [
+      "音楽",
+      "ライブ",
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_74411054-bf20-41c7-aa72-56c9aab60404/8/256",
+    "note": "Welcome to Miku EXPO! There are nearly 100 VOCALOID virtual projections on the map, most of them featuring Hatsune Miku.",
+    "official": "Welcome to Miku EXPO! There are nearly 100 VOCALOID virtual projections on the map, most of them featuring Hatsune Miku."
+  },
+  {
+    "id": "wrld_798c944b-03ff-4edb-854a-4d96da5dfa80",
+    "name": "Sky Ocean Planet",
+    "category": "particle",
+    "subtype": "幻想・風景",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 8502,
+    "visits": 89123,
+    "tags": [
+      "ゲーム",
+      "乗り物",
+      "海・水"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_80f06c69-0de7-48c2-9eae-8a6db934fb3b/1/256",
+    "note": "Sky Ocean Planet",
+    "official": "Sky Ocean Planet"
+  },
+  {
+    "id": "wrld_c003d327-3128-4d73-8c0e-12dfe31a43c8",
+    "name": "VRMV-下弦の月(JP/CN)",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 30,
+    "recommendedCapacity": 20,
+    "favorites": 878,
+    "visits": 6383,
+    "tags": [
+      "VRMV",
+      "ライブ",
+      "パーティクルライブ",
+      "アニメーション",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a38c6f82-6181-43de-a2f3-eb52f33171d3/5/256",
+    "note": "ここはVRMVワールドです(非公式)。音楽：下弦の月；作詞・作曲：黒うさP；歌：96猫、めらみぽっぷ；VRMV制作：Fallen_ice。",
+    "official": "ここはVRMVワールドです(非公式)。音楽：下弦の月；作詞・作曲：黒うさP；歌：96猫、めらみぽっぷ；VRMV制作：Fallen_ice。"
+  },
+  {
+    "id": "wrld_c9164f70-cb58-4bf7-9c44-f083f424ba81",
+    "name": "ParticleLIve Fixer (フィクサー)",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 4615,
+    "visits": 37386,
+    "tags": [
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_cdea81df-2337-4647-902e-1c28c651e8f1/2/256",
+    "note": "ParticleLIve Fixer",
+    "official": "ParticleLIve Fixer"
+  },
+  {
+    "id": "wrld_85571ac6-3e1f-4d5c-bdc6-eafb2f12e4b7",
+    "name": "【VRMV】 STIGMA",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 80,
+    "recommendedCapacity": 8,
+    "favorites": 254,
+    "visits": 1851,
+    "tags": [
+      "VRMV",
+      "パーティクルライブ",
+      "アニメーション",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5cce2bed-1914-4a25-a4c4-73b0988fd971/2/256",
+    "note": "STIGMA - DUSTCELL クレジットはローカルでランダムに3種類から変わります",
+    "official": "STIGMA - DUSTCELL クレジットはローカルでランダムに3種類から変わります"
+  },
+  {
+    "id": "wrld_6a1f00c0-5eda-4a60-8876-f51b46c075cb",
+    "name": "Disneyland Paris: Illuminations",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 80,
+    "recommendedCapacity": 80,
+    "favorites": 8107,
+    "visits": 72879,
+    "tags": [
+      "アニメ・キャラ",
+      "映像演出"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_49f13266-96c8-4a64-ba63-ad6b76258a16/1/256",
+    "note": "Immerse yourself in a virtual recreation of the Disney Illuminations fireworks show from Disneyland Paris!",
+    "official": "Immerse yourself in a virtual recreation of the Disney Illuminations fireworks show from Disneyland Paris! This world features the iconic castle as the centerpiece."
+  },
+  {
+    "id": "wrld_0aed64fa-b806-4278-aed5-0e34ce3ca2f1",
+    "name": "BLUMEA...",
+    "category": "particle",
+    "subtype": "幻想・風景",
+    "capacity": 80,
+    "recommendedCapacity": 32,
+    "favorites": 13948,
+    "visits": 87723,
+    "tags": [
+      "宇宙",
+      "写真",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_b0ec1e4d-84f5-447b-a030-1cb740a7ce82/2/256",
+    "note": "A star has just been born tiny, fragile, but destined for an extraordinary future.",
+    "official": "A star has just been born tiny, fragile, but destined for an extraordinary future. That name, now etched in our memories, is Blumea. (EPILEPSY WARNING)"
+  },
+  {
+    "id": "wrld_34693736-118a-4a1f-9b4d-95b866ed83a7",
+    "name": "Astral Bounds",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 110880,
+    "visits": 2184871,
+    "tags": [
+      "自然・風景",
+      "海・水",
+      "パーティクルライブ",
+      "音楽",
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_9a679a4c-2f88-42d9-8043-e616fc2ff6bc/7/256",
+    "note": "A wall to preserve the edge of the world from being filled up by reality.",
+    "official": "A wall to preserve the edge of the world from being filled up by reality. Recent Update: Made whales slightly easier to ride."
+  },
+  {
+    "id": "wrld_18d86de9-ddf5-4d2e-9470-bf178f67ed56",
+    "name": "Found Me",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 936,
+    "visits": 23677,
+    "tags": [
+      "音楽",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e7ebca9e-a277-4287-a4ad-d10f38fd5579/6/256",
+    "note": "Animation World Music: Metric - lost kitten",
+    "official": "Animation World Music: Metric - lost kitten"
+  },
+  {
+    "id": "wrld_dc1ab8bf-b7c7-4de7-9e92-e0b375b2676c",
+    "name": "青言葉 - Words and her blue",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 7885,
+    "visits": 78161,
+    "tags": [
+      "学校",
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_4034c553-e1f9-4757-b74c-36350730dd3a/2/256",
+    "note": "Classroom in the evening when everyone is enjoying their life.",
+    "official": "Classroom in the evening when everyone is enjoying their life."
+  },
+  {
+    "id": "wrld_d217cd82-3851-488b-b50b-f53e21765ec1",
+    "name": "一千光年 VRMV 初音ミクバージョン",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 15,
+    "favorites": 1120,
+    "visits": 7838,
+    "tags": [
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_09e0c1d4-f2ca-4dff-a7ac-642d338f0189/2/256",
+    "note": "一千光年 issenkounen いよわ 初音ミクバージョン",
+    "official": "一千光年 issenkounen いよわ 初音ミクバージョン"
+  },
+  {
+    "id": "wrld_0e476efb-330a-45df-89c8-d28bea253cc1",
+    "name": "Dew",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 141,
+    "visits": 1233,
+    "tags": [
+      "VRMV",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_bc317f7e-ba58-40da-853f-9d1bf1a3b9aa/2/256",
+    "note": "テーブルの上のドリンクは飲みたい人がいるらしいので飲まないでください。",
+    "official": "テーブルの上のドリンクは飲みたい人がいるらしいので飲まないでください。"
+  },
+  {
+    "id": "wrld_0ae7a021-ead5-4bf9-943c-16f85b2b926d",
+    "name": "MANA's VR LIVE Portal World",
+    "category": "particle",
+    "subtype": "ポータル集",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 2382,
+    "visits": 30354,
+    "tags": [
+      "ライブ",
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_7588894c-769e-4c20-bda3-9b4dcb868a14/6/256",
+    "note": "いろいろなパーティクルライブのワールドのポータルを置いたワールドです。おまけで私の作ったパーティクルライブが置いてあります。",
+    "official": "いろいろなパーティクルライブのワールドのポータルを置いたワールドです。おまけで私の作ったパーティクルライブが置いてあります。"
+  },
+  {
+    "id": "wrld_de9ce32c-26a9-42ad-b66f-f2eee24887fe",
+    "name": "パーティクルライブ全部見るPort",
+    "category": "particle",
+    "subtype": "ポータル集",
+    "capacity": 32,
+    "recommendedCapacity": 32,
+    "favorites": 10243,
+    "visits": 68531,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_340a5d99-d89a-417f-bcd1-afea2057338e/5/256",
+    "note": "音と光、約300のポータル集です。VRCのパーティクルライブ、VRMV、Particle Animation、VR lightshowを全部見るグループへのお礼に。",
+    "official": "音と光、約300のポータル集です。VRCのパーティクルライブ、VRMV、Particle Animation、VR lightshowを全部見るグループへのお礼に。"
+  },
+  {
+    "id": "wrld_2020eb60-3f60-4d4a-a50d-8c485f3252a8",
+    "name": "【XRMV】CodeAnswer",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 60,
+    "recommendedCapacity": 30,
+    "favorites": 108,
+    "visits": 1045,
+    "tags": [
+      "VRMV",
+      "パーティクルライブ",
+      "ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_542dc6e8-532f-43a6-b77b-a970662bfe97/1/256",
+    "note": "【XRMV】CodeAnswer",
+    "official": "【XRMV】CodeAnswer"
+  },
+  {
+    "id": "wrld_4054e5ee-1426-47e0-bb5e-62399b5f1071",
+    "name": "【VRMV】デザイン【パーティクルライブ】",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 335,
+    "visits": 2360,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV",
+      "ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_05b08bc0-2845-4c78-9d02-e49dd9f2d24e/1/256",
+    "note": "本ライブには点滅・強い光・大量のパーティクル演出が含まれます。原曲：「デザイン feat.",
+    "official": "本ライブには点滅・強い光・大量のパーティクル演出が含まれます。原曲：「デザイン feat. Miku」。ファンメイド作品です。"
+  },
+  {
+    "id": "wrld_c6959e8a-7a70-4a18-b88f-f55ea7faf442",
+    "name": "『アルビレオ』 ~ 決して交わることのない二重星",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 8,
+    "recommendedCapacity": 4,
+    "favorites": 1656,
+    "visits": 14651,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d1caee56-c41f-45f4-9114-22e42438c49b/1/256",
+    "note": "ロクデナシさんの楽曲『アルビレオ』をモチーフに制作したワールドです。簡単なパーティクルライブも作ってみたので良ければご覧ください。",
+    "official": "ロクデナシさんの楽曲『アルビレオ』をモチーフに制作したワールドです。簡単なパーティクルライブも作ってみたので良ければご覧ください。"
+  },
+  {
+    "id": "wrld_ecc3e12e-9e41-4cc1-8fb8-d5873b06d265",
+    "name": "world.execute(me);",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 4760,
+    "visits": 70892,
+    "tags": [
+      "映像演出"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_43c745e5-6550-48c3-8136-9416bbc2a21d/1/256",
+    "note": "Shader visualization of World.Execute(me); by Mili",
+    "official": "Shader visualization of World.Execute(me); by Mili"
+  },
+  {
+    "id": "wrld_07ee8176-a235-4af7-ace3-161285fee446",
+    "name": "祈りの固執 -The Persistence of Prayer",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 831,
+    "visits": 18337,
+    "tags": [
+      "チル",
+      "教会・宗教",
+      "VRMV",
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ddfd12b2-31a3-4865-a1c9-e713fdd375b0/3/256",
+    "note": "祈り、願うchillワールドです、よかったらおいで。ベランダにVRMVがあります。",
+    "official": "祈り、願うchillワールドです、よかったらおいで。ベランダにVRMVがあります。"
+  },
+  {
+    "id": "wrld_0f2e25a6-1c09-4f25-9fdb-2c8cd009edfd",
+    "name": "Rain of you",
+    "category": "particle",
+    "subtype": "幻想・風景",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 15964,
+    "visits": 222546,
+    "tags": [
+      "乗り物",
+      "海・水",
+      "チル",
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5061ff00-882b-4910-8789-3d3080426f12/2/256",
+    "note": "The train station is opening on a rainy day, where I showed my artwork.",
+    "official": "The train station is opening on a rainy day, where I showed my artwork."
+  },
+  {
+    "id": "wrld_86438af7-fb6d-4371-bf68-c336b65e715f",
+    "name": "悲鳴 - For you who scream",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 32,
+    "recommendedCapacity": 8,
+    "favorites": 17585,
+    "visits": 211350,
+    "tags": [
+      "チル",
+      "音楽",
+      "自然・風景",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_9e0dcf3b-ca72-43fd-ad63-d304418033b6/1/256",
+    "note": "Old Bicycle parking lot behind the school.",
+    "official": "Old Bicycle parking lot behind the school."
+  },
+  {
+    "id": "wrld_d53bc575-ad36-4157-92bb-8a4a217e7845",
+    "name": "Particle LiVE 《WAVE》",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 60,
+    "recommendedCapacity": 30,
+    "favorites": 11601,
+    "visits": 181853,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ea5cf4c0-9796-4a9f-acd3-298c6420c1f7/5/256",
+    "note": "【Oculus Quest対応】パーティクルライブ《WAVE》",
+    "official": "【Oculus Quest対応】パーティクルライブ《WAVE》"
+  },
+  {
+    "id": "wrld_0eee8678-4110-4b3c-8034-2d100877ec5f",
+    "name": "【VRMV】回る空うさぎ",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 3073,
+    "visits": 28012,
+    "tags": [
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_71576918-2d11-436e-97d0-e4cddd62d907/1/256",
+    "note": "17作目",
+    "official": "17作目"
+  },
+  {
+    "id": "wrld_cf6ab04f-412f-4b9f-9ef1-6470afe5fc60",
+    "name": "【VRMV】いますぐ輪廻",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 8353,
+    "visits": 55795,
+    "tags": [
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6860442c-7b02-46c4-906d-ad0adc3b3fc9/3/256",
+    "note": "16作目 いますぐ輪廻",
+    "official": "16作目 いますぐ輪廻"
+  },
+  {
+    "id": "wrld_1f522eeb-a6c4-45af-96c3-6c647fdf82e9",
+    "name": "【VRMV】Pavlovian Love",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1418,
+    "visits": 17147,
+    "tags": [
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_0864fc57-3c80-4d1b-8b71-4216e8227b26/1/256",
+    "note": "15作目 ただ無垢な還元主義",
+    "official": "15作目 ただ無垢な還元主義"
+  },
+  {
+    "id": "wrld_440f9450-34db-4509-abef-0a769279e98b",
+    "name": "【VRMV】あけたらしめろよ星人",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1593,
+    "visits": 17034,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5f1652f1-4d4d-4766-a341-69446835e4bf/1/256",
+    "note": "13作目 こんなに何度も言われれば覚えるはずなのに！",
+    "official": "13作目 こんなに何度も言われれば覚えるはずなのに！"
+  },
+  {
+    "id": "wrld_45a11ca4-c025-48c8-a500-a1eca789832c",
+    "name": "【VRMV】 TETORIS",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1131,
+    "visits": 13945,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV",
+      "音楽",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_64d2dfa8-536d-4534-8969-451523b8d3b8/5/256",
+    "note": "VRMV TETORIS",
+    "official": "VRMV TETORIS"
+  },
+  {
+    "id": "wrld_5349ea34-be00-4b98-9de7-e5fcc37c67fa",
+    "name": "Battle Animation Particle Live Vol2「武装小惑星決戦」",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 35,
+    "recommendedCapacity": 30,
+    "favorites": 1816,
+    "visits": 20702,
+    "tags": [
+      "パーティクルライブ",
+      "ライブ",
+      "VRMV",
+      "乗り物"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_3e519cf6-7b9c-4554-a197-6895a37d17b8/7/256",
+    "note": "パーティクルライブと戦闘アニメーションの融合ワールドです！ 見るのもよし、合わせて踊ってみるのもよし、楽しんでくださいな！",
+    "official": "パーティクルライブと戦闘アニメーションの融合ワールドです！ 見るのもよし、合わせて踊ってみるのもよし、楽しんでくださいな！"
+  },
+  {
+    "id": "wrld_1d725df2-8679-4f90-9f5a-b06febc8c8b0",
+    "name": "Alternoise『現実譚』Particle Live",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 16,
+    "recommendedCapacity": 16,
+    "favorites": 5694,
+    "visits": 35583,
+    "tags": [
+      "パーティクルライブ",
+      "音楽",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_51250b30-adcc-4ed6-b880-83d7ac6e4d75/2/256",
+    "note": "バーチャル３ピースバンドAlternoiseの1st Full Album 『現実譚』 リリースを記念し作られたパーティクルライブです。",
+    "official": "バーチャル３ピースバンドAlternoiseの1st Full Album 『現実譚』 リリースを記念し作られたパーティクルライブです。電車を通して各曲の世界観を表現した演出をご堪能ください。"
+  },
+  {
+    "id": "wrld_79032971-f3eb-473b-a3c1-3e74e3e255f3",
+    "name": "【VRMV】 命ばっかり",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 3826,
+    "visits": 28774,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV",
+      "音楽",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_19d505a5-96dd-4258-a6d4-42250c41f06f/1/256",
+    "note": "VRMV 命ばっかり",
+    "official": "VRMV 命ばっかり"
+  },
+  {
+    "id": "wrld_5126151e-171a-4d64-b654-9731f2919452",
+    "name": "【VRMV】アイデア / 星野源 covered by 初音ミク",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1774,
+    "visits": 13092,
+    "tags": [
+      "VRMV",
+      "ライブ",
+      "パーティクルライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f463d834-59fa-4756-9d5b-9d6c7f15a204/1/256",
+    "note": "星野源の楽曲「アイデア」のMVを再現したファンメイドワールドです。初音ミクが歌って踊るMVの世界をお楽しみください。",
+    "official": "星野源の楽曲「アイデア」のMVを再現したファンメイドワールドです。初音ミクが歌って踊るMVの世界をお楽しみください。"
+  },
+  {
+    "id": "wrld_e8860b9d-e370-4535-8cec-6bf8047d6e27",
+    "name": "【particle/VRMV】Wonderland",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 1638,
+    "visits": 12230,
+    "tags": [
+      "パーティクルライブ",
+      "ライブ",
+      "VRMV",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_10d166e9-be79-4877-8cc5-cc51ede1f881/2/256",
+    "note": "Music:Wonderland たなか&Flehmann ParticleVRMV:ru--san",
+    "official": "Music:Wonderland たなか&Flehmann ParticleVRMV:ru--san"
+  },
+  {
+    "id": "wrld_a50c9ef1-d7a4-4140-9b64-fb9d223359e9",
+    "name": "讐復を能える。for VRChat",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 12,
+    "recommendedCapacity": 1,
+    "favorites": 5230,
+    "visits": 30151,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5b310283-fc51-4df5-8e3e-41c121d73f87/7/256",
+    "note": "讐復を能える。/アメリカ実行委員会。アバター側にカメラを用いたギミックを導入している場合、ワールド演出に不具合が発生する可能性がございます。",
+    "official": "讐復を能える。/アメリカ実行委員会。アバター側にカメラを用いたギミックを導入している場合、ワールド演出に不具合が発生する可能性がございます。"
+  },
+  {
+    "id": "wrld_1fab6c16-7c7a-4e5d-921e-d7a77d625b89",
+    "name": "【VRMV】サクラんBEATS",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 30,
+    "recommendedCapacity": 6,
+    "favorites": 1031,
+    "visits": 13836,
+    "tags": [
+      "パーティクルライブ",
+      "日本",
+      "自然・風景",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_74bfa7bd-3859-4485-b90a-d8ca68bc209b/5/256",
+    "note": "自作曲をパーティクルライブ化。夢を追う人、追うのをやめた人、すべての人へ送る。憧れと挫折と小さな希望の歌。",
+    "official": "自作曲をパーティクルライブ化。夢を追う人、追うのをやめた人、すべての人へ送る。憧れと挫折と小さな希望の歌。"
+  },
+  {
+    "id": "wrld_696b82bb-1006-44a6-8f14-cc314335c893",
+    "name": "Celeste -Particle live-",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 1020,
+    "visits": 14269,
+    "tags": [
+      "パーティクルライブ",
+      "ライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_85068f56-89ef-421f-90f1-9c8d2660a87c/2/256",
+    "note": "暗い部屋です。レコードに触れると曲が再生されます。",
+    "official": "暗い部屋です。レコードに触れると曲が再生されます。"
+  },
+  {
+    "id": "wrld_8d9d0556-88ed-41f3-8703-de8d6bc6e013",
+    "name": "【VRMV】蜜月アン・ドゥ・トロワ / Honey Moon Un Deux Trois",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 3709,
+    "visits": 31404,
+    "tags": [
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_511d9d6d-a229-47b7-8f8b-d0f90d2576cc/1/256",
+    "note": "11作目 蜂蜜酒を貴方に",
+    "official": "11作目 蜂蜜酒を貴方に"
+  },
+  {
+    "id": "wrld_f72d7139-dae8-4372-a28e-fb50ec161689",
+    "name": "Everything Goes On",
+    "category": "particle",
+    "subtype": "ポータル集",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 3740,
+    "visits": 47279,
+    "tags": [
+      "パーティクルライブ",
+      "アニメーション",
+      "ポータル集",
+      "映像演出",
+      "ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_4a23ad1b-94fb-4720-a84e-a16fc2e24bed/1/256",
+    "note": "Porter Robinson - Everything Goes On Animation By Gyle and Redd",
+    "official": "Porter Robinson - Everything Goes On Animation By Gyle and Redd"
+  },
+  {
+    "id": "wrld_94394c3d-6955-4a55-a766-ad17da9db979",
+    "name": "ParticleLiVE\"JITTER DOLL\"",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 60,
+    "recommendedCapacity": 30,
+    "favorites": 1636,
+    "visits": 24599,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_995c7619-9f3e-421b-ae04-18282ca54782/3/256",
+    "note": "Music by \"niki\" Created by \"YORIMIYA\"",
+    "official": "Music by \"niki\" Created by \"YORIMIYA\""
+  },
+  {
+    "id": "wrld_4797adf6-f86c-4194-91ae-e298daf7add3",
+    "name": "ParticleLiVE\"FACE\"",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 60,
+    "recommendedCapacity": 30,
+    "favorites": 1599,
+    "visits": 21007,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_97fbaed1-30cb-47f4-8ada-3ff6f5920d7b/2/256",
+    "note": "\"子守唄 響く眠りにつくまで\" Music by niki Created by YORIMIYA",
+    "official": "\"子守唄 響く眠りにつくまで\" Music by niki Created by YORIMIYA"
+  },
+  {
+    "id": "wrld_2d2e738a-b399-43dd-863e-779e30bd75bf",
+    "name": "CQCQ -Particle Live-",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1769,
+    "visits": 19584,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1548b3c0-31f7-46f5-b552-e9c032096e98/1/256",
+    "note": "神様、僕は気づいてしまった の「CQCQ」のVRMVです。CQCQ、聞こえますか",
+    "official": "神様、僕は気づいてしまった の「CQCQ」のVRMVです。CQCQ、聞こえますか"
+  },
+  {
+    "id": "wrld_2cd55537-ba90-4f82-b28f-52b88f4c0536",
+    "name": "マオ -Particle Live-",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 663,
+    "visits": 8612,
+    "tags": [
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_18ea60e3-c66e-4b8e-9df6-425f3b8cac2f/2/256",
+    "note": "かいりきベアさんとまふまふさん共作の「マオ」のVRMVです。",
+    "official": "かいりきベアさんとまふまふさん共作の「マオ」のVRMVです。"
+  },
+  {
+    "id": "wrld_6999f8d2-feb6-4d95-bfbd-05203632161a",
+    "name": "Get Your Wish",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 12299,
+    "visits": 165580,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_54794eed-f3e1-4f65-9174-9b9bbde2e67b/1/256",
+    "note": "Made in direct collaboration with Porter Robinson",
+    "official": "Made in direct collaboration with Porter Robinson"
+  },
+  {
+    "id": "wrld_6faa929b-7867-485b-b36a-04d141163202",
+    "name": "Battle Animation Particle Live Vol1《VA1》",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 35,
+    "recommendedCapacity": 30,
+    "favorites": 5271,
+    "visits": 52703,
+    "tags": [
+      "パーティクルライブ",
+      "アニメ・キャラ",
+      "ライブ",
+      "ゲーム",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_03941158-4718-4d43-87da-197c84ac0ee7/3/256",
+    "note": "曲に合わせて戦闘する高速可変機、VariableAircraft1のVRMV！ 楽曲:煉獄セレナーデ 音楽:魔王魂",
+    "official": "曲に合わせて戦闘する高速可変機、VariableAircraft1のVRMV！ 楽曲:煉獄セレナーデ 音楽:魔王魂"
+  },
+  {
+    "id": "wrld_a1071eb7-e16c-4a52-bd6e-c0efdb1b5ea5",
+    "name": "CUE[Archive]",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 18,
+    "recommendedCapacity": 9,
+    "favorites": 9356,
+    "visits": 93311,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_36b66b47-7716-44dc-a559-c551f861edd7/2/256",
+    "note": "Music: ow (2022-edit) Director / Composer: 0b4k3, Artist / Coding: phi16",
+    "official": "Music: ow (2022-edit) Director / Composer: 0b4k3, Artist / Coding: phi16"
+  },
+  {
+    "id": "wrld_3dcabc45-b66b-4d38-abaa-d2922ca4d678",
+    "name": "Beyond a bit - 想像のちょっと先へ",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 64,
+    "recommendedCapacity": 64,
+    "favorites": 198459,
+    "visits": 3455480,
+    "tags": [
+      "音楽",
+      "チル",
+      "宇宙",
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_831d3277-b373-4deb-bc6a-04a0227682e0/7/256",
+    "note": "From a seed's dream, tailes unravel. Stars and lives blossom beyond our reach.",
+    "official": "From a seed's dream, tailes unravel. Stars and lives blossom beyond our reach. Created by team:beyond_a_bit."
+  },
+  {
+    "id": "wrld_1f40b1c1-ab04-4607-aba3-0a97b2378af2",
+    "name": "砂の惑星 FANMADE in VRChat / Sand Planet unofficial VRMV",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 38,
+    "recommendedCapacity": 19,
+    "favorites": 3968,
+    "visits": 32270,
+    "tags": [
+      "VRMV",
+      "パーティクルライブ",
+      "ライブ",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_2e5d28ce-e15d-4734-8508-de978a7187f9/1/256",
+    "note": "ハチの楽曲『砂の惑星』のMVを再現したものです。東京大学のVRサークルUT-virtualが制作し、第96回五月祭にて展示していました。",
+    "official": "ハチの楽曲『砂の惑星』のMVを再現したものです。東京大学のVRサークルUT-virtualが制作し、第96回五月祭にて展示していました。"
+  },
+  {
+    "id": "wrld_89e06b28-1431-4fc8-aa74-0cf6d3142894",
+    "name": "MONDO GROSSO / FORGOTTEN",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 1,
+    "recommendedCapacity": 1,
+    "favorites": 6921,
+    "visits": 27765,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_336e5259-842c-4c1d-a0ef-7ba7aed8bf77/2/256",
+    "note": "Artist: MONDO GROSSO Vocal: ermhoi Director: 0b4k3 Visual Artist, Engineer: fotfla",
+    "official": "Artist: MONDO GROSSO Vocal: ermhoi Director: 0b4k3 Visual Artist, Engineer: fotfla"
+  },
+  {
+    "id": "wrld_9b313d06-ee33-4531-af12-c23626b146e9",
+    "name": "ParticleLiVE《GURAVE》",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 60,
+    "recommendedCapacity": 30,
+    "favorites": 2759,
+    "visits": 42922,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_3c9a3806-a4c9-4676-844b-ee07232c0cee/2/256",
+    "note": "Music by niki",
+    "official": "Music by niki"
+  },
+  {
+    "id": "wrld_a160ce14-ef91-451b-9255-c908cdd1dad2",
+    "name": "[ParticleLive]TEMPLATE",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 5393,
+    "visits": 38767,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV",
+      "音楽",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_b492a40e-9ad5-4a52-96fb-b0dd8e63e622/1/256",
+    "note": "本ワールドは星街すいせいの楽曲「TEMPLATE」のファンメイドパーティクルライブワールドです。",
+    "official": "本ワールドは星街すいせいの楽曲「TEMPLATE」のファンメイドパーティクルライブワールドです。酔いやてんかんなどもご注意ください。"
+  },
+  {
+    "id": "wrld_c2ee9b12-ae71-432c-9128-95c6e1708227",
+    "name": "[VRMV]アンダーマリン - Under Marine",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 1108,
+    "visits": 10323,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV",
+      "音楽",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6ff60079-235f-4a16-80e0-9fb844d99c5b/7/256",
+    "note": "My 1st Particle live world. Music: Endorfin.",
+    "official": "My 1st Particle live world. Music: Endorfin. -「アンダーマリン」"
+  },
+  {
+    "id": "wrld_46f5492c-b1ab-4fe6-ab42-3449b7b89918",
+    "name": "六甲灯夜 -夜景音響-",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 80,
+    "recommendedCapacity": 10,
+    "favorites": 17419,
+    "visits": 100248,
+    "tags": [
+      "ゲーム",
+      "乗り物",
+      "パーティクルライブ",
+      "アニメ・キャラ",
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6a163bd2-c1c7-4815-9fb4-5c59d04d7272/1/256",
+    "note": "現実の六甲山をモチーフにした、夜景×イルミ×ライブの体験型WORLD。今夜だけの響く夜景を、あなたの目で。",
+    "official": "現実の六甲山をモチーフにした、夜景×イルミ×ライブの体験型WORLD。今夜だけの響く夜景を、あなたの目で。沢山の隠し要素お楽しみください。"
+  },
+  {
+    "id": "wrld_32f24b12-dee2-4297-a81c-06841765248c",
+    "name": "PARTICLELIVE 【パノプティコン】",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 1742,
+    "visits": 19015,
+    "tags": [
+      "VRMV",
+      "音楽",
+      "日本",
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1dd48915-9689-4bb1-b391-2718dec93b5c/2/256",
+    "note": "VRMV【パノプティコン】",
+    "official": "VRMV【パノプティコン】"
+  },
+  {
+    "id": "wrld_46ed1f40-b5b2-44f6-89e1-1afc09747410",
+    "name": "VRMV【週刊少年バイバイ】",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 375,
+    "visits": 6950,
+    "tags": [
+      "VRMV",
+      "日本",
+      "音楽",
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d2d4ef3f-ae60-41a0-b98c-80c72472cd18/1/256",
+    "note": "本ワールドは「週刊少年バイバイ」のVRMVワールドです。",
+    "official": "本ワールドは「週刊少年バイバイ」のVRMVワールドです。"
+  },
+  {
+    "id": "wrld_1368c6c7-d882-44c5-9134-2488fc5265a8",
+    "name": "Reimhak's Virtual Live World v2",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 1833,
+    "visits": 26409,
+    "tags": [
+      "パーティクルライブ",
+      "ライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_773be417-f0f0-4d48-9b6f-144a9d2fa120/4/256",
+    "note": "Some Virtual Live placed in this World! Created by Reimhak",
+    "official": "Some Virtual Live placed in this World! Created by Reimhak"
+  },
+  {
+    "id": "wrld_edb67ce3-c088-40f8-9e0f-871f65714c1b",
+    "name": "[VRMV]うみなおし",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 48,
+    "recommendedCapacity": 24,
+    "favorites": 1476,
+    "visits": 18343,
+    "tags": [
+      "VRMV",
+      "パーティクルライブ",
+      "アニメーション",
+      "ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_936b7bb2-fb2f-4caf-ba73-da4e9fdc1dee/2/256",
+    "note": "うみなおし - MARETU / VRMV - Reimhak",
+    "official": "うみなおし - MARETU / VRMV - Reimhak"
+  },
+  {
+    "id": "wrld_24ee2e9f-fb41-411c-a1d1-4e7fbc4b9585",
+    "name": "[VRMV]Anonymous fanfare",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 48,
+    "recommendedCapacity": 24,
+    "favorites": 1423,
+    "visits": 15301,
+    "tags": [
+      "パーティクルライブ",
+      "アニメーション",
+      "VRMV",
+      "ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f8dded83-db6a-48d3-a218-a6667f0c4c78/1/256",
+    "note": "Anonymous fanfare - tsumiki / VRMV - Reimhak / WARNING: PHOTOSENSITIVITY / EPILEPSY SEIZURES.",
+    "official": "Anonymous fanfare - tsumiki / VRMV - Reimhak / WARNING: PHOTOSENSITIVITY / EPILEPSY SEIZURES."
+  },
+  {
+    "id": "wrld_b26818da-5b7c-4dbc-9608-1b184210b843",
+    "name": "ParticleLIve LUVORATORRRRRY",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 589,
+    "visits": 6302,
+    "tags": [
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c3c8502c-2a6f-4eda-b2ac-9d65a8062d7f/1/256",
+    "note": "ParticleLive LUVORATORRRRRY",
+    "official": "ParticleLive LUVORATORRRRRY"
+  },
+  {
+    "id": "wrld_afd31ae6-cc60-4de8-b27c-bff1e8243e87",
+    "name": "ParticleLIve ECHO",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 2897,
+    "visits": 29358,
+    "tags": [
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_759d41c2-662e-4734-8945-6dcf42fb0997/1/256",
+    "note": "ParticleLive!!! ECHO",
+    "official": "ParticleLive!!! ECHO"
+  },
+  {
+    "id": "wrld_b1aa37c9-77dc-4653-816d-b54548e8fc09",
+    "name": "[VRMV]ABLATION'S ECHO (Remake)",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1254,
+    "visits": 10633,
+    "tags": [
+      "パーティクルライブ",
+      "VRMV",
+      "音楽",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f041b675-3482-4f5a-ae1e-a86e53226d4a/2/256",
+    "note": "My 3nd Particle live world. (Remake) Music: ABLATION'S ECHO - K1UCH1 feat.",
+    "official": "My 3nd Particle live world. (Remake) Music: ABLATION'S ECHO - K1UCH1 feat.Lunon"
+  },
+  {
+    "id": "wrld_6691632b-92df-4b2f-b0c0-a1823dbc8fea",
+    "name": "【パーティクルライブ】呼び込み商事テーマソング",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 880,
+    "visits": 6475,
+    "tags": [
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_813ed1fd-9c22-4a97-97a6-b91d1556b7d2/2/256",
+    "note": "パーティクルライブです。視界ジャックきつめな場面があります。Music:Leaf",
+    "official": "パーティクルライブです。視界ジャックきつめな場面があります。Music:Leaf"
+  },
+  {
+    "id": "wrld_c7c96481-b753-4328-a3d6-c70b05d72532",
+    "name": "MANA's Particle Live ナンセンス文学",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 4027,
+    "visits": 42755,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e40a54f3-1fa4-486d-9b71-0e3d10aaa6f7/2/256",
+    "note": "Particle Live ナンセンス文学 まな(MANA)が製作したパーティクルライブです。",
+    "official": "Particle Live ナンセンス文学 まな(MANA)が製作したパーティクルライブです。"
+  },
+  {
+    "id": "wrld_854f1b5e-fb78-4e8f-9bb6-7ee36a88f8cd",
+    "name": "PARTICLELIVE 【すきなことだけでいいです】",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 2116,
+    "visits": 26449,
+    "tags": [
+      "VRMV",
+      "日本",
+      "パーティクルライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_43b5d18e-a056-45fc-8717-8e00584b99e5/1/256",
+    "note": "本ワールドは「れみーと」が作成したVRMV観賞用のワールドです。",
+    "official": "本ワールドは「れみーと」が作成したVRMV観賞用のワールドです。"
+  },
+  {
+    "id": "wrld_1bba0674-4059-4fb8-903e-09977cf72b8e",
+    "name": "Cinematic Neon Club LIVE WORLD _ LEve Future",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 921,
+    "visits": 4404,
+    "tags": [
+      "ライブ",
+      "音楽",
+      "パーティクルライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_000dfc77-0d10-4e6a-9d86-95aad1a291bb/4/256",
+    "note": "L Eve Future is a Cinematic Neon Club Live World",
+    "official": "L Eve Future is a Cinematic Neon Club Live World"
+  },
+  {
+    "id": "wrld_aa00d789-03b9-4e1b-93c0-7bd4a7369fc5",
+    "name": "【VRMV】キスキツネ / HIMEHINA【ParticleLive】",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 713,
+    "visits": 5126,
+    "tags": [
+      "VRMV",
+      "パーティクルライブ",
+      "日本",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1725eb35-d302-49bb-834b-f7864a2bf7df/1/256",
+    "note": "ヒメヒナのキスキツネのVRMVです。歌唱：HIMEHINA 作詞：Gohgo 作曲：Kengo Minamida",
+    "official": "ヒメヒナのキスキツネのVRMVです。歌唱：HIMEHINA 作詞：Gohgo 作曲：Kengo Minamida"
+  },
+  {
+    "id": "wrld_d13027bc-fc2b-4422-a6f1-8fa232222446",
+    "name": "The Edge",
+    "category": "particle",
+    "subtype": "パーティクル",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 63782,
+    "visits": 787189,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d7e021ff-ecd7-48a7-a97e-8c9143c5a77b/3/256",
+    "note": "Patreon.com/MochieShaders",
+    "official": "Patreon.com/MochieShaders"
+  },
+  {
+    "id": "wrld_6909d0e8-cf53-4f0d-8dea-fd50b5c2113a",
+    "name": "[VRMV] U [FAN MADE]",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 10375,
+    "visits": 90394,
+    "tags": [
+      "パーティクルライブ",
+      "ライブ",
+      "アニメーション",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_b203574a-fdc1-4b89-9dcb-c53c079502df/1/256",
+    "note": "『竜とそばかすの姫』の主題歌「U」で制作したファンメイドのパーティクルライブワールドです！",
+    "official": "『竜とそばかすの姫』の主題歌「U」で制作したファンメイドのパーティクルライブワールドです！ U - millennium parade / VRMV - Reimhak"
+  },
+  {
+    "id": "wrld_8d73daf0-1b12-4a1e-bdcd-167db7289e69",
+    "name": "VRMV [シャルル]",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 28,
+    "recommendedCapacity": 14,
+    "favorites": 4137,
+    "visits": 64166,
+    "tags": [
+      "ライブ",
+      "パーティクルライブ",
+      "VRMV"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_4f5a6587-8ab9-42e0-ba48-df073b57bb7b/3/256",
+    "note": "シャルルのMV再現ワールドになります。",
+    "official": "シャルルのMV再現ワールドになります。"
+  },
+  {
+    "id": "wrld_5ba0a512-7734-4d71-837d-d9b4b59b0018",
+    "name": "Particle Live: ヒトリゴト",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 10391,
+    "visits": 100720,
+    "tags": [
+      "ライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e9f198f6-6b3b-4ef2-8209-12e290b91d9f/1/256",
+    "note": "約束の10作目ワールド化した！ 可愛い世界観、感謝の気持ちと大切な思いが溢れています！",
+    "official": "約束の10作目ワールド化した！ 可愛い世界観、感謝の気持ちと大切な思いが溢れています！"
+  },
+  {
+    "id": "wrld_59e5c557-f159-41f8-8581-54255c5fb50a",
+    "name": "周波数0の合言葉 ~ particle live ~",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 4,
+    "recommendedCapacity": 2,
+    "favorites": 1437,
+    "visits": 11673,
+    "tags": [
+      "パーティクルライブ",
+      "ライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_654bf498-de81-4609-be18-95ee6c37944d/1/256",
+    "note": "vurtual singer 花譜さんの『周波数0の合言葉』を使ったパーティクルライブです。",
+    "official": "vurtual singer 花譜さんの『周波数0の合言葉』を使ったパーティクルライブです。"
+  },
+  {
+    "id": "wrld_f473bdea-ef31-4794-8a95-664ff04c193c",
+    "name": "【VRMV】無意識レクイエム",
+    "category": "particle",
+    "subtype": "VRMV",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 4600,
+    "visits": 34047,
+    "tags": [
+      "VRMV",
+      "ホラー"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_85b45c46-95bb-4266-8a50-47f6c34798e7/2/256",
+    "note": "14作目 わたしのこと、気づいてくれた？",
+    "official": "14作目 わたしのこと、気づいてくれた？"
+  },
+  {
+    "id": "wrld_6579ebee-0e8b-49fa-b9e7-20021c887f5e",
+    "name": "Particle Live: 可愛くなりたい 1.4",
+    "category": "particle",
+    "subtype": "パーティクルライブ",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 6977,
+    "visits": 82929,
+    "tags": [
+      "ライブ",
+      "音楽"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c39edd03-0428-4c95-af28-0194b68e70f4/1/256",
+    "note": "約束の7作目(可愛くなりたい)ワールド化しました！ 隠し要素もあり！",
+    "official": "約束の7作目(可愛くなりたい)ワールド化しました！ 隠し要素もあり！"
+  },
+  {
+    "id": "wrld_e7cadfb6-0e3b-4489-9398-fa4c5477a7f7",
+    "name": "Walk",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 16,
+    "recommendedCapacity": 4,
+    "favorites": 9414,
+    "visits": 77452,
+    "tags": [
+      "音楽",
+      "アニメーション"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_92402615-1bf0-4a5d-b000-82c3f6fd3729/2/256",
+    "note": "Animation world: Yorushika - sun (2024 HNY)",
+    "official": "Animation world: Yorushika - sun (2024 HNY)"
+  },
+  {
+    "id": "wrld_8bbb6f61-61cf-4243-a58e-2000f2740e2b",
+    "name": "よるとうげ -Yorutouge-",
+    "category": "particle",
+    "subtype": "音楽ライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 76980,
+    "visits": 364538,
+    "tags": [
+      "音楽",
+      "アニメーション",
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ead62acd-6833-43d8-841b-a3d84e4e3d8a/1/256",
+    "note": "-星くんが誘うKikuo音楽体験世界- この夜をこえよう。何度でもこの夜をこえよう。",
+    "official": "-星くんが誘うKikuo音楽体験世界- この夜をこえよう。何度でもこの夜をこえよう。 #よるとうげ #yorutouge"
   }
 ];
