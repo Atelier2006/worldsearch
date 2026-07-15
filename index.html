@@ -16,6 +16,7 @@
     --dim:#66666f;
     --accent:#c8a45c;
     --accent-soft:#3a3020;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",Georgia,serif;
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
@@ -25,27 +26,43 @@
     font-size:15px; line-height:1.7; -webkit-font-smoothing:antialiased;
   }
   a{color:inherit;text-decoration:none}
+  button{font-family:inherit}
   .wrap{width:100%; max-width:2000px; margin:0 auto; padding:0 clamp(16px,2.5vw,44px) 96px;}
 
   /* ---------- header ---------- */
   header{padding:40px 0 0;}
   .masthead{display:flex; align-items:baseline; justify-content:space-between; gap:24px; flex-wrap:wrap;
     padding-bottom:20px; border-bottom:1px solid var(--line);}
-  h1{
-    margin:0; font-size:27px; font-weight:500; letter-spacing:.04em;
-    font-family:"Yu Mincho","Hiragino Mincho ProN",Georgia,serif;
-  }
+  h1{margin:0; font-size:27px; font-weight:500; letter-spacing:.04em; font-family:var(--serif);}
   h1 .thin{color:var(--muted); font-size:19px; margin-left:14px; letter-spacing:.08em;}
   .byline{font-size:12.5px; color:var(--dim); letter-spacing:.12em; text-transform:uppercase;}
   .byline b{color:var(--muted); font-weight:500;}
 
+  /* ---------- 本日の一枚 ---------- */
+  .feature{display:flex; gap:30px; padding:26px 0 26px; border-bottom:1px solid var(--line-soft); align-items:stretch;}
+  .fthumb{flex:0 0 min(44%,560px); aspect-ratio:16/9; border:1px solid var(--line); border-radius:3px;
+    overflow:hidden; background:var(--surface-2); cursor:pointer;}
+  .fthumb img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease;}
+  .fthumb:hover img{transform:scale(1.03)}
+  .fbody{flex:1; min-width:0; display:flex; flex-direction:column; gap:9px; padding:4px 0;}
+  .flabel{font-size:11px; letter-spacing:.2em; color:var(--accent);}
+  .flabel .fdate{color:var(--dim); margin-left:12px; letter-spacing:.08em;}
+  .fname{font-family:var(--serif); font-size:23px; font-weight:500; line-height:1.5; cursor:pointer;}
+  .fname:hover{color:var(--accent)}
+  .fcat{font-size:12px; color:var(--muted); letter-spacing:.05em;}
+  .fnote{color:var(--muted); font-size:13.5px; line-height:1.8;
+    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;}
+  .fbtns{margin-top:auto; display:flex; gap:10px; flex-wrap:wrap; padding-top:12px;}
+  .ghost{background:none; border:1px solid var(--line); color:var(--muted); padding:8px 16px;
+    border-radius:3px; font-size:12.5px; cursor:pointer; letter-spacing:.04em; transition:.12s;}
+  .ghost:hover{color:var(--text); border-color:#3d3d46}
+  .ghost.gold{border-color:var(--accent); color:var(--accent);}
+  .ghost.gold:hover{background:var(--accent); color:#14100a}
+
   /* ---------- category nav ---------- */
   nav.cats{display:flex; gap:30px; flex-wrap:wrap; padding:16px 0 0; border-bottom:1px solid var(--line-soft);}
-  .cat{
-    padding:8px 0 14px; cursor:pointer; color:var(--muted); font-size:15px;
-    border-bottom:2px solid transparent; margin-bottom:-1px; transition:color .12s;
-    white-space:nowrap;
-  }
+  .cat{padding:8px 0 14px; cursor:pointer; color:var(--muted); font-size:15px;
+    border-bottom:2px solid transparent; margin-bottom:-1px; transition:color .12s; white-space:nowrap;}
   .cat:hover{color:var(--text)}
   .cat.active{color:var(--text); border-bottom-color:var(--accent)}
   .cat .n{font-size:11.5px; color:var(--dim); margin-left:7px; font-variant-numeric:tabular-nums;}
@@ -54,49 +71,46 @@
 
   /* ---------- controls ---------- */
   .controls{display:flex; gap:14px; align-items:center; flex-wrap:wrap; padding:20px 0 0;}
-  .search{flex:1; min-width:260px; position:relative;}
-  .search input{
-    width:100%; padding:11px 14px; border:1px solid var(--line); background:var(--surface);
-    color:var(--text); font-size:14px; border-radius:4px; outline:none; font-family:inherit;
-  }
+  .search{flex:1; min-width:240px; position:relative;}
+  .search input{width:100%; padding:11px 14px; border:1px solid var(--line); background:var(--surface);
+    color:var(--text); font-size:14px; border-radius:4px; outline:none; font-family:inherit;}
   .search input::placeholder{color:var(--dim)}
   .search input:focus{border-color:#454550}
-  select{
-    padding:11px 12px; border:1px solid var(--line); background:var(--surface); color:var(--text);
-    font-size:13.5px; border-radius:4px; outline:none; cursor:pointer; font-family:inherit;
-  }
+  .search .kbd{position:absolute; right:12px; top:50%; transform:translateY(-50%);
+    font-size:10.5px; color:var(--dim); border:1px solid var(--line); border-radius:3px; padding:1px 6px;}
+  select{padding:11px 12px; border:1px solid var(--line); background:var(--surface); color:var(--text);
+    font-size:13.5px; border-radius:4px; outline:none; cursor:pointer; font-family:inherit;}
+  .views{display:flex; border:1px solid var(--line); border-radius:4px; overflow:hidden;}
+  .views button{background:none; border:none; border-left:1px solid var(--line); color:var(--muted);
+    padding:10px 15px; font-size:12.5px; cursor:pointer; letter-spacing:.03em; transition:.12s;}
+  .views button:first-child{border-left:none}
+  .views button:hover{color:var(--text)}
+  .views button.on{background:var(--surface-2); color:var(--text)}
   .count{font-size:12.5px; color:var(--dim); font-variant-numeric:tabular-nums; white-space:nowrap;}
 
   /* ---------- tag filter ---------- */
   .chips{display:flex; gap:7px; flex-wrap:wrap; padding:16px 0 0;}
-  .chip{
-    font-size:12px; padding:4px 10px; border:1px solid var(--line); border-radius:3px;
-    color:var(--muted); cursor:pointer; background:transparent; transition:.12s; white-space:nowrap;
-  }
+  .chip{font-size:12px; padding:4px 10px; border:1px solid var(--line); border-radius:3px;
+    color:var(--muted); cursor:pointer; background:transparent; transition:.12s; white-space:nowrap;}
   .chip:hover{color:var(--text); border-color:#3d3d46}
   .chip.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent)}
   .chip .n{color:var(--dim); margin-left:5px; font-variant-numeric:tabular-nums;}
   .chip.on .n{color:var(--accent); opacity:.7}
 
-  /* ---------- grid ---------- */
-  .grid{
-    display:grid; grid-template-columns:repeat(auto-fill,minmax(248px,1fr));
-    gap:26px 20px; padding:30px 0 0;
-  }
+  /* ---------- card view ---------- */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(248px,1fr)); gap:26px 20px; padding:30px 0 0;}
   .card{cursor:pointer; display:flex; flex-direction:column;}
-  .thumb{
-    position:relative; aspect-ratio:16/10; background:var(--surface-2); overflow:hidden;
-    border:1px solid var(--line-soft); border-radius:3px;
-  }
+  .thumb{position:relative; aspect-ratio:16/10; background:var(--surface-2); overflow:hidden;
+    border:1px solid var(--line-soft); border-radius:3px;}
   .thumb img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .35s ease;}
   .card:hover .thumb img{transform:scale(1.035)}
   .card:hover .thumb{border-color:#3d3d46}
-  .thumb .cap{
-    position:absolute; right:8px; bottom:8px; background:rgba(10,10,12,.82);
+  .thumb .cap{position:absolute; right:8px; bottom:8px; background:rgba(10,10,12,.82);
     font-size:11px; padding:2px 7px; border-radius:2px; color:var(--text);
-    font-variant-numeric:tabular-nums; letter-spacing:.02em;
-  }
+    font-variant-numeric:tabular-nums; letter-spacing:.02em;}
   .body{padding:11px 2px 0; display:flex; flex-direction:column; gap:6px;}
+  .cardtop{display:flex; justify-content:space-between; align-items:baseline; gap:10px;}
+  .exno{font-size:10.5px; color:var(--dim); letter-spacing:.1em; font-variant-numeric:tabular-nums;}
   .sub{font-size:11px; color:var(--accent); letter-spacing:.06em;}
   .cardname{font-size:14.5px; font-weight:600; line-height:1.45;
     display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
@@ -104,20 +118,54 @@
     display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
   .meta{font-size:11.5px; color:var(--dim); display:flex; gap:14px; font-variant-numeric:tabular-nums;}
 
+  /* ---------- list view ---------- */
+  .rows{padding-top:24px;}
+  .rowhead,.row{display:grid; grid-template-columns:104px minmax(0,1fr) 72px 100px 100px; gap:18px; align-items:center;}
+  .rowhead{padding:0 6px 9px; font-size:10.5px; color:var(--dim); letter-spacing:.1em;
+    border-bottom:1px solid var(--line);}
+  .rowhead span:nth-child(n+3),.row .num{text-align:right; font-variant-numeric:tabular-nums;}
+  .row{padding:9px 6px; border-bottom:1px solid var(--line-soft); cursor:pointer; transition:background .1s;}
+  .row:hover{background:var(--surface)}
+  .rthumb{width:104px; aspect-ratio:16/10; object-fit:cover; display:block;
+    border:1px solid var(--line-soft); border-radius:2px; background:var(--surface-2);}
+  .rmain{min-width:0}
+  .rname{font-size:13.5px; font-weight:600; line-height:1.4;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .rsub{font-size:11px; color:var(--dim); margin-top:2px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .rsub .a{color:var(--accent)}
+  .row .num{font-size:12.5px; color:var(--muted);}
+
+  /* ---------- wall view ---------- */
+  .wall{display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:38px 28px; padding:34px 0 0;}
+  .wcard{cursor:pointer; text-align:center;}
+  .wthumb{aspect-ratio:16/9; overflow:hidden; border:1px solid var(--line-soft); border-radius:3px; background:var(--surface-2);}
+  .wthumb img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease;}
+  .wcard:hover .wthumb img{transform:scale(1.03)}
+  .wcard:hover .wthumb{border-color:#3d3d46}
+  .wcap{padding:12px 8px 0;}
+  .wno{font-size:10.5px; color:var(--dim); letter-spacing:.16em; font-variant-numeric:tabular-nums;}
+  .wname{font-family:var(--serif); font-size:16.5px; margin-top:3px; line-height:1.5;}
+  .wsub{font-size:11px; color:var(--accent); letter-spacing:.08em; margin-top:3px;}
+
   .empty{grid-column:1/-1; text-align:center; padding:90px 20px; color:var(--dim); font-size:14px;}
 
   /* ---------- modal ---------- */
   .overlay{position:fixed; inset:0; background:rgba(6,6,8,.86); display:none;
     align-items:flex-start; justify-content:center; padding:56px 20px; z-index:50; overflow:auto;}
   .overlay.show{display:flex}
-  .modal{background:var(--surface); border:1px solid var(--line); border-radius:5px;
-    max-width:720px; width:100%;}
+  .modal{background:var(--surface); border:1px solid var(--line); border-radius:5px; max-width:720px; width:100%;}
   .mhero{position:relative; aspect-ratio:16/9; background:var(--surface-2); overflow:hidden;}
   .mhero img{width:100%; height:100%; object-fit:cover}
   .close{position:absolute; top:12px; right:12px; width:32px; height:32px; border-radius:3px;
     background:rgba(10,10,12,.8); border:1px solid var(--line); color:var(--text); font-size:15px;
     display:flex; align-items:center; justify-content:center; cursor:pointer;}
   .close:hover{background:rgba(10,10,12,.95)}
+  .mnav{position:absolute; top:50%; transform:translateY(-50%); width:36px; height:58px;
+    background:rgba(10,10,12,.72); border:1px solid var(--line); color:var(--text); font-size:17px;
+    display:flex; align-items:center; justify-content:center; cursor:pointer; border-radius:3px; user-select:none;}
+  .mnav:hover{background:rgba(10,10,12,.95)}
+  .mnav.prev{left:12px} .mnav.next{right:12px}
   .mbody{padding:26px 30px 32px}
   .mbody h2{margin:0 0 6px; font-size:20px; font-weight:600; line-height:1.45}
   .msub{color:var(--dim); font-size:12px; margin-bottom:22px; letter-spacing:.03em}
@@ -128,7 +176,15 @@
   .sect{font-size:11px; color:var(--dim); letter-spacing:.14em; margin:0 0 8px}
   .desc{font-size:14px; line-height:1.85; margin-bottom:24px; white-space:pre-wrap}
   .official{font-size:12.5px; color:var(--muted); line-height:1.75; margin-bottom:24px; white-space:pre-wrap}
-  .mtags{display:flex; gap:7px; flex-wrap:wrap; margin-bottom:28px}
+  .mtags{display:flex; gap:7px; flex-wrap:wrap; margin-bottom:26px}
+  .rel{display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:14px; margin-bottom:28px;}
+  .relcard{cursor:pointer}
+  .relcard img{width:100%; aspect-ratio:16/10; object-fit:cover; display:block;
+    border:1px solid var(--line-soft); border-radius:2px; background:var(--surface-2);}
+  .relcard:hover img{border-color:#3d3d46}
+  .relname{font-size:11.5px; line-height:1.45; margin-top:6px; color:var(--muted);
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+  .relcard:hover .relname{color:var(--text)}
   .openbtn{display:inline-block; border:1px solid var(--accent); color:var(--accent);
     padding:10px 22px; border-radius:3px; font-size:13.5px; letter-spacing:.04em; transition:.12s;}
   .openbtn:hover{background:var(--accent); color:#14100a}
@@ -137,11 +193,21 @@
     color:var(--dim); font-size:12px; line-height:1.9;}
   footer code{color:var(--muted); font-size:11.5px}
 
+  @media(max-width:860px){
+    .feature{flex-direction:column; gap:16px}
+    .fthumb{flex:none; width:100%}
+    .rowhead,.row{grid-template-columns:84px minmax(0,1fr) 58px; gap:12px}
+    .rowhead span:nth-child(n+4),.row .num.hidez{display:none}
+    .rthumb{width:84px}
+  }
   @media(max-width:640px){
     h1{font-size:21px} h1 .thin{display:none}
     nav.cats{gap:20px}
     .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:20px 12px}
+    .wall{grid-template-columns:1fr 1fr; gap:24px 14px}
+    .wname{font-size:13.5px}
     .mbody{padding:20px}
+    .search .kbd{display:none}
   }
 </style>
 </head>
@@ -152,6 +218,7 @@
       <h1>お気に入りワールド<span class="thin">VRChat</span></h1>
       <div class="byline">Curated by <b>アスユイ</b></div>
     </div>
+    <section class="feature" id="feature"></section>
     <nav class="cats" id="cats"></nav>
     <div class="catdesc" id="catdesc"></div>
   </header>
@@ -159,6 +226,7 @@
   <div class="controls">
     <div class="search">
       <input id="q" type="text" placeholder="ワールド名・タグ・説明・定員で検索" autocomplete="off">
+      <span class="kbd">/</span>
     </div>
     <select id="sort">
       <option value="fav">お気に入りが多い順</option>
@@ -167,14 +235,21 @@
       <option value="cap">定員が多い順</option>
       <option value="capmin">定員が少ない順</option>
     </select>
+    <div class="views" id="views">
+      <button data-v="card">カード</button>
+      <button data-v="list">リスト</button>
+      <button data-v="wall">ギャラリー</button>
+    </div>
+    <button class="ghost" id="lucky">ランダムに開く</button>
     <span class="count" id="count"></span>
   </div>
 
   <div class="chips" id="chips"></div>
-  <div class="grid" id="grid"></div>
+  <div id="stage"></div>
 
   <footer>
-    VRChatのお気に入りグループから同期。ワールドの追加・説明の編集は <code>data.js</code> を編集します。
+    VRChatのお気に入りグループから同期。ワールドの追加・説明の編集は <code>data.js</code> を編集します。<br>
+    「/」キーで検索、詳細表示中は ← → で前後のワールドに移動できます。
   </footer>
 </div>
 
@@ -185,19 +260,80 @@
 (function(){
   const WORLDS = window.WORLDS || [];
   const CATEGORIES = (window.CATEGORIES || []).filter(c=>c.ready!==false);
+
+  /* ---------- state ---------- */
   let activeCat = (CATEGORIES[0] || {}).id;
   let activeTags = new Set();
   let query = "", sortBy = "fav";
+  let viewMode = localStorage.getItem("ws-view") || "card";
+  if(!["card","list","wall"].includes(viewMode)) viewMode = "card";
+  let currentList = [];      // 描画中の一覧（モーダルの前後移動に使う）
+  let modalIdx = -1;
+
+  /* URLハッシュから状態を復元（共有リンク対応） */
+  (function(){
+    const h = new URLSearchParams(location.hash.replace(/^#/,""));
+    if(h.get("c") && CATEGORIES.some(c=>c.id===h.get("c"))) activeCat = h.get("c");
+    if(["card","list","wall"].includes(h.get("v"))) viewMode = h.get("v");
+    if(h.get("t")) h.get("t").split(",").filter(Boolean).forEach(t=>activeTags.add(t));
+    if(h.get("q")) query = h.get("q");
+    if(["fav","visits","name","cap","capmin"].includes(h.get("s"))) sortBy = h.get("s");
+  })();
 
   const $ = s => document.querySelector(s);
   const catsEl=$("#cats"), catDescEl=$("#catdesc"), chipsEl=$("#chips"),
-        gridEl=$("#grid"), countEl=$("#count"), qEl=$("#q"), sortEl=$("#sort");
+        stageEl=$("#stage"), countEl=$("#count"), qEl=$("#q"), sortEl=$("#sort"),
+        viewsEl=$("#views"), featEl=$("#feature");
+  qEl.value = query; sortEl.value = sortBy;
 
   const worldsIn = id => WORLDS.filter(w => w.category === id);
   const esc = s => (s||"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const worldUrl = id => "https://vrchat.com/home/world/" + id;
   const num = n => (n||0).toLocaleString();
+  const catName = id => (CATEGORIES.find(c=>c.id===id)||{}).name || "";
 
+  function syncHash(){
+    const p = new URLSearchParams();
+    p.set("c",activeCat); p.set("v",viewMode);
+    if(activeTags.size) p.set("t",[...activeTags].join(","));
+    if(query) p.set("q",query);
+    if(sortBy!=="fav") p.set("s",sortBy);
+    history.replaceState(null,"","#"+p.toString());
+  }
+
+  /* ---------- 本日の一枚（日付で決まる日替わり展示） ---------- */
+  function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function renderFeature(w, isDaily){
+    if(!w){ featEl.style.display="none"; return; }
+    const d = new Date();
+    const dateStr = d.getFullYear()+"年"+(d.getMonth()+1)+"月"+d.getDate()+"日";
+    featEl.innerHTML = `
+      <div class="fthumb" id="fgo"><img src="${esc(w.thumb)}" alt="" onerror="this.style.opacity=0"></div>
+      <div class="fbody">
+        <div class="flabel">${isDaily?"本日の一枚":"気まぐれの一枚"}<span class="fdate">${dateStr}</span></div>
+        <div class="fname" id="fgo2">${esc(w.name)}</div>
+        <div class="fcat">${esc(catName(w.category))}${w.subtype?" ─ "+esc(w.subtype):""}　/　定員 ${w.capacity||"?"}　/　お気に入り ${num(w.favorites)}</div>
+        <div class="fnote">${esc(w.note||"")}</div>
+        <div class="fbtns">
+          <button class="ghost gold" id="fopen">詳しく見る</button>
+          <button class="ghost" id="freroll">別の一枚</button>
+        </div>
+      </div>`;
+    const open = ()=>openModal(w,[w]);
+    $("#fgo").addEventListener("click",open);
+    $("#fgo2").addEventListener("click",open);
+    $("#fopen").addEventListener("click",open);
+    $("#freroll").addEventListener("click",()=>{
+      renderFeature(WORLDS[Math.floor(Math.random()*WORLDS.length)], false);
+    });
+  }
+  (function(){
+    if(!WORLDS.length) return;
+    const d=new Date(), seed=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();
+    renderFeature(WORLDS[Math.floor(mulberry32(seed)()*WORLDS.length)], true);
+  })();
+
+  /* ---------- categories ---------- */
   function renderCats(){
     catsEl.innerHTML = CATEGORIES.map(c=>
       `<div class="cat${c.id===activeCat?" active":""}" data-cat="${c.id}">${esc(c.name)}<span class="n">${worldsIn(c.id).length}</span></div>`
@@ -212,6 +348,7 @@
     catDescEl.textContent = c ? c.desc : "";
   }
 
+  /* ---------- tag chips ---------- */
   function renderChips(){
     const counts = {};
     worldsIn(activeCat).forEach(w => (w.tags||[]).forEach(t => counts[t]=(counts[t]||0)+1));
@@ -228,6 +365,7 @@
     });
   }
 
+  /* ---------- filter + sort ---------- */
   function matches(w){
     for(const t of activeTags){ if(!(w.tags||[]).includes(t)) return false; }
     if(query){
@@ -248,47 +386,121 @@
     return a;
   }
 
+  /* ---------- 展示番号（カテゴリ内の収蔵順で固定） ---------- */
+  function exhibitNos(){
+    const m = new Map();
+    worldsIn(activeCat).forEach((w,i)=>m.set(w.id,i+1));
+    return m;
+  }
+  const noFmt = n => "No." + String(n).padStart(3,"0");
+
+  /* ---------- views ---------- */
+  function renderViews(){
+    viewsEl.querySelectorAll("button").forEach(b=>{
+      b.classList.toggle("on", b.dataset.v===viewMode);
+    });
+  }
+  viewsEl.querySelectorAll("button").forEach(b=>{
+    b.addEventListener("click",()=>{
+      viewMode = b.dataset.v;
+      localStorage.setItem("ws-view",viewMode);
+      renderViews(); render();
+    });
+  });
+
   function render(){
-    const list = sortWorlds(worldsIn(activeCat).filter(matches));
-    countEl.textContent = list.length + " 件";
-    if(!list.length){
-      gridEl.innerHTML = `<div class="empty">条件に合うワールドが見つかりませんでした。</div>`;
+    currentList = sortWorlds(worldsIn(activeCat).filter(matches));
+    countEl.textContent = currentList.length + " 件";
+    syncHash();
+    if(!currentList.length){
+      stageEl.innerHTML = `<div class="grid"><div class="empty">条件に合うワールドが見つかりませんでした。</div></div>`;
       return;
     }
-    gridEl.innerHTML = list.map(w=>{
-      const idx = WORLDS.indexOf(w);
-      return `<div class="card" data-i="${idx}">
-        <div class="thumb">
-          <img loading="lazy" src="${esc(w.thumb)}" alt="" onerror="this.style.display='none'">
-          <span class="cap">定員 ${w.capacity||"?"}</span>
-        </div>
-        <div class="body">
-          ${w.subtype?`<div class="sub">${esc(w.subtype)}</div>`:""}
-          <div class="cardname">${esc(w.name)}</div>
-          <div class="note">${esc(w.note||"")}</div>
-          <div class="meta">
-            ${w.favorites?`<span>お気に入り ${num(w.favorites)}</span>`:""}
-            ${w.visits?`<span>訪問 ${num(w.visits)}</span>`:""}
+    const nos = exhibitNos();
+    if(viewMode==="card"){
+      stageEl.innerHTML = `<div class="grid">` + currentList.map(w=>`
+        <div class="card" data-id="${w.id}">
+          <div class="thumb">
+            <img loading="lazy" src="${esc(w.thumb)}" alt="" onerror="this.style.display='none'">
+            <span class="cap">定員 ${w.capacity||"?"}</span>
           </div>
-        </div>
-      </div>`;
-    }).join("");
-    gridEl.querySelectorAll(".card").forEach(el=>{
-      el.addEventListener("click",()=>openModal(WORLDS[+el.dataset.i]));
+          <div class="body">
+            <div class="cardtop"><span class="exno">${noFmt(nos.get(w.id)||0)}</span>${w.subtype?`<span class="sub">${esc(w.subtype)}</span>`:""}</div>
+            <div class="cardname">${esc(w.name)}</div>
+            <div class="note">${esc(w.note||"")}</div>
+            <div class="meta">
+              ${w.favorites?`<span>お気に入り ${num(w.favorites)}</span>`:""}
+              ${w.visits?`<span>訪問 ${num(w.visits)}</span>`:""}
+            </div>
+          </div>
+        </div>`).join("") + `</div>`;
+    }
+    else if(viewMode==="list"){
+      stageEl.innerHTML = `<div class="rows">
+        <div class="rowhead"><span></span><span>ワールド</span><span>定員</span><span>お気に入り</span><span>訪問</span></div>`
+        + currentList.map(w=>`
+        <div class="row" data-id="${w.id}">
+          <img class="rthumb" loading="lazy" src="${esc(w.thumb)}" alt="" onerror="this.style.visibility='hidden'">
+          <div class="rmain">
+            <div class="rname">${esc(w.name)}</div>
+            <div class="rsub">${noFmt(nos.get(w.id)||0)}${w.subtype?`　<span class="a">${esc(w.subtype)}</span>`:""}${(w.tags&&w.tags.length)?`　${esc(w.tags.slice(0,3).join(" / "))}`:""}</div>
+          </div>
+          <span class="num">${w.capacity||"?"}</span>
+          <span class="num hidez">${num(w.favorites)}</span>
+          <span class="num hidez">${num(w.visits)}</span>
+        </div>`).join("") + `</div>`;
+    }
+    else{ /* wall: 額装ギャラリー */
+      stageEl.innerHTML = `<div class="wall">` + currentList.map(w=>`
+        <div class="wcard" data-id="${w.id}">
+          <div class="wthumb"><img loading="lazy" src="${esc(w.thumb)}" alt="" onerror="this.style.opacity=0"></div>
+          <div class="wcap">
+            <div class="wno">${noFmt(nos.get(w.id)||0)}</div>
+            <div class="wname">${esc(w.name)}</div>
+            ${w.subtype?`<div class="wsub">${esc(w.subtype)}</div>`:""}
+          </div>
+        </div>`).join("") + `</div>`;
+    }
+    stageEl.querySelectorAll("[data-id]").forEach(el=>{
+      el.addEventListener("click",()=>{
+        const w = WORLDS.find(x=>x.id===el.dataset.id);
+        if(w) openModal(w, currentList);
+      });
     });
   }
 
-  function openModal(w){
+  /* ---------- 関連ワールド（共有タグ数 → お気に入り数で選出） ---------- */
+  function related(w, max){
+    const mine = new Set(w.tags||[]);
+    const scored = WORLDS.filter(x=>x.id!==w.id).map(x=>{
+      let s = 0;
+      (x.tags||[]).forEach(t=>{ if(mine.has(t)) s++; });
+      if(x.subtype && x.subtype===w.subtype) s += 0.5;
+      if(x.category===w.category) s += 0.25;
+      return {x, s};
+    }).filter(o=>o.s>0);
+    scored.sort((a,b)=> b.s-a.s || (b.x.favorites||0)-(a.x.favorites||0));
+    return scored.slice(0,max).map(o=>o.x);
+  }
+
+  /* ---------- modal ---------- */
+  let modalList = [];
+  function openModal(w, list){
+    modalList = list || currentList;
+    modalIdx = modalList.indexOf(w);
+    const hasNav = modalList.length > 1 && modalIdx >= 0;
     const tags = (w.tags||[]).map(t=>`<span class="chip" data-tag="${esc(t)}">${esc(t)}</span>`).join("");
+    const rel = related(w, 4);
     $("#modal").innerHTML = `
       <div class="mhero">
         <img src="${esc(w.thumb)}" alt="" onerror="this.style.opacity=0">
+        ${hasNav?`<div class="mnav prev" id="mprev">‹</div><div class="mnav next" id="mnext">›</div>`:""}
         <div class="close" id="closeM">✕</div>
       </div>
       <div class="mbody">
         ${w.subtype?`<div class="sub" style="margin-bottom:4px">${esc(w.subtype)}</div>`:""}
         <h2>${esc(w.name)}</h2>
-        <div class="msub">${esc(w.id)}</div>
+        <div class="msub">${esc(catName(w.category))}　${esc(w.id)}</div>
         <div class="stats">
           <div class="stat"><div class="n">${w.capacity||"?"}</div><div class="l">最大人数</div></div>
           <div class="stat"><div class="n">${w.recommendedCapacity||"?"}</div><div class="l">推奨人数</div></div>
@@ -299,25 +511,63 @@
         <div class="desc">${esc(w.note||"（未記入）")}</div>
         ${w.official?`<p class="sect">VRCHAT 原文</p><div class="official">${esc(w.official)}</div>`:""}
         ${tags?`<p class="sect">タグ</p><div class="mtags">${tags}</div>`:""}
+        ${rel.length?`<p class="sect">近いワールド</p><div class="rel">`+rel.map(r=>`
+          <div class="relcard" data-rid="${r.id}">
+            <img loading="lazy" src="${esc(r.thumb)}" alt="" onerror="this.style.opacity=0">
+            <div class="relname">${esc(r.name)}</div>
+          </div>`).join("")+`</div>`:""}
         <a class="openbtn" href="${worldUrl(w.id)}" target="_blank" rel="noopener">VRChatで開く</a>
       </div>`;
     $("#overlay").classList.add("show");
+    $("#overlay").scrollTop = 0;
     $("#closeM").addEventListener("click",closeModal);
+    if(hasNav){
+      $("#mprev").addEventListener("click",e=>{e.stopPropagation(); stepModal(-1);});
+      $("#mnext").addEventListener("click",e=>{e.stopPropagation(); stepModal(1);});
+    }
     $("#modal").querySelectorAll(".mtags .chip").forEach(el=>{
       el.addEventListener("click",()=>{
         activeTags = new Set([el.dataset.tag]); closeModal(); renderChips(); render();
         window.scrollTo({top:0,behavior:"smooth"});
       });
     });
+    $("#modal").querySelectorAll(".relcard").forEach(el=>{
+      el.addEventListener("click",()=>{
+        const r = WORLDS.find(x=>x.id===el.dataset.rid);
+        if(r) openModal(r, [r]);
+      });
+    });
+  }
+  function stepModal(d){
+    if(modalIdx<0 || modalList.length<2) return;
+    modalIdx = (modalIdx + d + modalList.length) % modalList.length;
+    openModal(modalList[modalIdx], modalList);
   }
   function closeModal(){ $("#overlay").classList.remove("show"); }
   $("#overlay").addEventListener("click",e=>{ if(e.target.id==="overlay") closeModal(); });
-  document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeModal(); });
+
+  /* ---------- ランダムに開く ---------- */
+  $("#lucky").addEventListener("click",()=>{
+    if(!currentList.length) return;
+    openModal(currentList[Math.floor(Math.random()*currentList.length)], currentList);
+  });
+
+  /* ---------- keyboard ---------- */
+  document.addEventListener("keydown",e=>{
+    const typing = /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName);
+    if($("#overlay").classList.contains("show")){
+      if(e.key==="Escape") closeModal();
+      if(e.key==="ArrowLeft") stepModal(-1);
+      if(e.key==="ArrowRight") stepModal(1);
+      return;
+    }
+    if(e.key==="/" && !typing){ e.preventDefault(); qEl.focus(); }
+  });
 
   qEl.addEventListener("input",e=>{ query=e.target.value.trim(); render(); });
   sortEl.addEventListener("change",e=>{ sortBy=e.target.value; render(); });
 
-  renderCats(); renderChips(); render();
+  renderCats(); renderChips(); renderViews(); render();
 })();
 </script>
 </body>
