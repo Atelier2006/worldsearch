@@ -1,9 +1,9 @@
 /* =====================================================================
  * アスユイ お気に入りワールド データ（自動生成）
- * VRChatの全お気に入りグループ（通常4 + VRC+拡張）から抽出。
+ * VRChatのお気に入りグループ（通常4 + VRC+拡張3）から抽出・同期。
  * カテゴリ: 展覧会系 / パーティクル / 雑多 / 本当におすすめ / まだ行ってない / チルワ / ゲムワ
- * note = 各ワールドの説明欄（初期値はVRChat説明の要約。自由に書き換え可）
- * tags = 日本語の統合タグ（テーマ分類。検索・絞り込み用）
+ * note = 各ワールドの説明欄（日本語。自由に書き換え可）
+ * tags = 日本語のテーマタグ（検索・絞り込み用）
  * ===================================================================== */
 
 window.CATEGORIES = [
@@ -108,7 +108,7 @@ window.WORLDS = [
     "visits": 134828,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8fbaeea9-59cc-46d7-822e-79f2fca66e50/1/256",
-    "note": "Inspired by Amelia's love for marine life and ocean conservation, explore the wonders of the ocean in a relaxi",
+    "note": "Amelia Watsonの海洋生物と海洋保護への想いから生まれた、リラックスしながら海の不思議を探索できるワールド。",
     "official": "Inspired by Amelia's love for marine life and ocean conservation, explore the wonders of the ocean in a relaxing aquarium, populated by strange, fascinating and familiar marine life featuring all members of hololive and holostars, an unforgettable experience awaits you! Thank you for all the love and support over the years! Credits: Producer: Amelia Watson holoAquarium World Map: Seafoam Creature Modelers: Twi, stupah, joules, pyroxene, Gon, Slvan, ROOJINALD, Rei21, Priichu, Hask Scripting: nullrefrepro Translations: Gomadare, Yuri, arc_, tototo Project Manager: Henma"
   },
   {
@@ -216,7 +216,7 @@ window.WORLDS = [
       "イベント"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_91dbf77d-74c5-402e-b8c6-19734b59b3fd/2/256",
-    "note": "Experience the Taiwan Excellence Virtual Theme Park at the Taiwan EXPO in Berlin!",
+    "note": "ベルリンの台湾EXPOに出展された「台湾エクセレンス・バーチャルテーマパーク」を体験できるワールド。",
     "official": "Experience the Taiwan Excellence Virtual Theme Park at the Taiwan EXPO in Berlin! From June 10 to 12, 2024, we invite you to immerse yourself in the world of Virtual Dragon Boat Racing - a unique sport that embodies the spirit and culture of Taiwan."
   },
   {
@@ -278,7 +278,7 @@ window.WORLDS = [
     "visits": 2277,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_64f46bf3-dfd5-4409-87d7-b73c218c4a6c/1/256",
-    "note": "tesuto mameko2",
+    "note": "まめっ子モール2のPC版・常設展示ワールド（テスト版）。",
     "official": "tesuto mameko2"
   },
   {
@@ -292,7 +292,7 @@ window.WORLDS = [
     "visits": 31781,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5a95cf80-982b-4f4c-9842-dcaf3f2ab334/4/256",
-    "note": "URBAN TRAGEDY ｜ 2050 ｜ A Virtual Voyage in Times of Cataclysm ｜ A PCVR Animation Demo ｜ An immersive education",
+    "note": "大災害の時代を巡るバーチャルな航海。没入型の教育的PCVRアニメーションデモ。",
     "official": "URBAN TRAGEDY ｜ 2050 ｜ A Virtual Voyage in Times of Cataclysm ｜ A PCVR Animation Demo ｜ An immersive educational experience ｜ Sequence 1: Preshow / Sequence 2: The Time Machine / Sequence 3: Urban Tragedy - Rotterdam City 2050 ｜ Instructions : Use the START button to activate the amination. In case you wish to synchronize the experience for users who have joined latter, use the RESET button - this will reset the animation and allow you to start again with your new guests ｜ Note: This experience was designed for PwC GMBH in Düsseldorf and was initially presented 13-09-2024 in Rotterdam （The Netherlands） and was used as an educational VR presentation for students. Produced by : vm-people（https://vm-people.de/）and Immersive-X （https://immersive-x.de/-Designed by VRium Creative Team-Niko∗ ＆ THE SHUSHU"
   },
   {
@@ -325,7 +325,7 @@ window.WORLDS = [
       "演出"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0ba3beee-4fc5-49df-8a11-c7e63ebf0b88/2/256",
-    "note": "A PROJECT: SUMMER FLARE episode. JA, EN, VR, Desktop supported.",
+    "note": "「PROJECT: SUMMER FLARE」のエピソード作品。日本語・英語、VR・デスクトップ対応。",
     "official": "A PROJECT: SUMMER FLARE episode. JA, EN, VR, Desktop supported. Made with Udon. Twitter: ＃PROJECT_SF ＃夏が始まる一日前"
   },
   {
@@ -341,7 +341,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6df7eca5-e0f3-44da-98fe-66401df53acd/1/256",
-    "note": "An experimental World to exhibit something.",
+    "note": "何かを展示するための実験的なワールド。",
     "official": "An experimental World to exhibit something."
   },
   {
@@ -355,7 +355,7 @@ window.WORLDS = [
     "visits": 48950,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f5056793-e4cb-4cc8-b211-afd32fac9106/2/256",
-    "note": "VRC Museum Monet Exibition.",
+    "note": "VRC Museumのモネ展。",
     "official": "VRC Museum Monet Exibition. This special exhibition allows you to fully enjoy the beautiful works of the Impressionist master Claude Monet, as well as recreated spaces of his paintings and the garden he spent time in, all in the virtual reality world."
   },
   {
@@ -369,7 +369,7 @@ window.WORLDS = [
     "visits": 19366,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0d6c16ed-bdd3-4413-b3b0-df1a6668a3d8/2/256",
-    "note": "Beyond Reality is a virtual exhibition world maintained by various artists.",
+    "note": "さまざまなアーティストによって運営されているバーチャル展示ワールド。",
     "official": "Beyond Reality is a virtual exhibition world maintained by various artists."
   },
   {
@@ -420,7 +420,7 @@ window.WORLDS = [
       "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_24de82ec-91cb-42ee-9c20-3e3f3188fb05/2/256",
-    "note": "I want to dedicate this to all the takodachis out there for your continuous support!",
+    "note": "いつも応援してくれるtakodachiのみんなへ捧げるワールド。",
     "official": "I want to dedicate this to all the takodachis out there for your continuous support! Happy birthday to us! You will find a collection of some of my beloved pieces and a little story behind them! Hope you like it!"
   },
   {
@@ -592,7 +592,7 @@ window.WORLDS = [
     "visits": 117337,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ce57cc62-fd30-42b4-9276-3e9c5eae103a/2/256",
-    "note": "vr-painting",
+    "note": "VRペインティング作品を集めたミュージアム。",
     "official": "vr-painting"
   },
   {
@@ -606,7 +606,7 @@ window.WORLDS = [
     "visits": 25459,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c830c760-e305-4f81-8208-71d0c245835b/2/256",
-    "note": "Spatialography is a coined term that links Spatial （denoting space） with -graphy （denoting modes of depiction）.",
+    "note": "Spatial（空間）と-graphy（描写法）を組み合わせた造語「Spatialography」がテーマ。",
     "official": "Spatialography is a coined term that links Spatial （denoting space） with -graphy （denoting modes of depiction）. Technologies such as photogrammetry and Gaussian splatting have brought new means to record and reconstruct real-world places. Just as photography and film evolved from mere documentation into expressive media, so too will media that handle space develop techniques that go beyond simple recording. This world exhibits a series of prototype works created with questions in mind: how can these techniques be used as modes of expression? which methods are suited to the format of space? is it possible to make works that seem to speak through space? Spatialography is not a single work title; rather, it is a term we use to denote the ongoing practice and inquiry of transforming recorded space into expressive form."
   },
   {
@@ -657,7 +657,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5f713942-c280-4818-a229-508773b07a54/2/256",
-    "note": "This world contain's a selection of hand picked photos that I took during 2023.",
+    "note": "制作者が2023年に撮影した写真の中から厳選した作品を展示するギャラリー。",
     "official": "This world contain's a selection of hand picked photos that I took during 2023. Enjoy!"
   },
   {
@@ -956,7 +956,7 @@ window.WORLDS = [
       "展示会"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8309f7a3-ba80-4638-bffc-57166d56ef1b/2/256",
-    "note": "A daisy, a person, a collection of arts.",
+    "note": "一輪のひなぎくと、一人の人間と、アート作品のコレクション。",
     "official": "A daisy, a person, a collection of arts. Credits to friends : ＠chowchow0704 ＠shaefyr.vr ＠niem.vr ＠HakujaVR"
   },
   {
@@ -991,7 +991,7 @@ window.WORLDS = [
       "美術館・博物館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4834e4ed-6b44-4e32-9eff-2946e67d078a/2/256",
-    "note": "VirtualFrogMuseum Keronmo introduces approximately 100 types of frogs from around the world!",
+    "note": "世界中の約100種類のカエルを紹介するバーチャルカエル博物館。",
     "official": "VirtualFrogMuseum Keronmo introduces approximately 100 types of frogs from around the world! I hope you'll have a great time."
   },
   {
@@ -1062,7 +1062,7 @@ window.WORLDS = [
       "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11175ac6-95b1-49da-8f0f-88104ea361f3/16/256",
-    "note": "A prehistoric Dinosaur Museum with everything handmade from scratch in SculptrVR, Masterpiece Studio Pro, Tilt",
+    "note": "SculptrVRやMasterpiece Studio Pro、Tilt Brushで一から手作りされた、先史時代の恐竜博物館。",
     "official": "A prehistoric Dinosaur Museum with everything handmade from scratch in SculptrVR, Masterpiece Studio Pro, Tiltbrush, Shapelabs and Blender for tidy up. Added Find my friends prefab, for help for late joiners to tours. I'm currently working on a new improved version of this for a standalone museum experience. Updated portals and entrance for the 79th Annual 2022 Venice Film Festival."
   },
   {
@@ -1094,7 +1094,7 @@ window.WORLDS = [
       "アート"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_77e2a3cf-28e0-4ade-baed-dda68f9406d2/1/256",
-    "note": "This is gallery of tilt brush art by artist 'Jaehyuk Lee', directed by VRC streamer GreatMoonAroma.",
+    "note": "アーティストJaehyuk LeeのTilt Brush作品を、VRC配信者GreatMoonAromaのディレクションで展示するギャラリー。",
     "official": "This is gallery of tilt brush art by artist 'Jaehyuk Lee', directed by VRC streamer GreatMoonAroma. if you like 3d art. enjoy!"
   },
   {
@@ -1108,7 +1108,7 @@ window.WORLDS = [
     "visits": 17949,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_edcae0d9-56e2-40c0-896d-872a4c9ea8d2/7/256",
-    "note": "omochi museum: An exhibition of interactive user interface design experiments",
+    "note": "インタラクティブなUIデザインの実験作を集めた展示ワールド。",
     "official": "omochi museum: An exhibition of interactive user interface design experiments"
   },
   {
@@ -1160,7 +1160,7 @@ window.WORLDS = [
     "visits": 20163,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bd852516-d9b2-4bc6-bf14-8769a06ff94a/6/256",
-    "note": "backside",
+    "note": "裏側を見る展示。",
     "official": "backside"
   },
   {
@@ -1174,7 +1174,7 @@ window.WORLDS = [
     "visits": 3752,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d84fa634-ca78-4464-93b4-632bf71b32bb/4/256",
-    "note": "into",
+    "note": "内側へ。",
     "official": "into"
   },
   {
@@ -1294,7 +1294,7 @@ window.WORLDS = [
     "visits": 12182,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1b0f8291-e6df-4d73-8f35-d25b7d8ac08d/4/256",
-    "note": "fake ?",
+    "note": "これは偽物？",
     "official": "fake ?"
   },
   {
@@ -1314,7 +1314,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2d8283a7-0352-49d2-a394-0d30aaab9406/1/256",
-    "note": "A daisy, a person, a grassfield, a collection of arts.",
+    "note": "一輪のひなぎくと、一人の人間と、草原と、アート作品のコレクション。",
     "official": "A daisy, a person, a grassfield, a collection of arts."
   },
   {
@@ -1358,7 +1358,7 @@ window.WORLDS = [
   {
     "id": "wrld_10ffd05e-2023-4fe8-a4b4-70c27b00e489",
     "name": "Tokogrammetry Museum",
-    "category": "exhibition",
+    "category": "recommend",
     "subtype": "ミュージアム",
     "capacity": 64,
     "recommendedCapacity": 64,
@@ -1384,7 +1384,7 @@ window.WORLDS = [
       "風景・観光"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_63313f6c-77ff-43ef-9f2d-ca350b8f997f/2/256",
-    "note": "Patriki VR is a small world from the 'Moscow Trip' series.",
+    "note": "「Moscow Trip」シリーズの小さなワールド。",
     "official": "Patriki VR is a small world from the 'Moscow Trip' series. I invite you to take a stroll through Patriarchs Ponds, one of the most recognizable corners of old Moscow. You can sit on the very bench where the heroes of 'The Master and Margarita' met at the beginning of the novel, visit a gallery featuring several exhibitions, stop by the old 'Margarita' cafe or Griboedov club. Enjoy your walk!"
   },
   {
@@ -1584,7 +1584,7 @@ window.WORLDS = [
     "visits": 16628,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f61e5190-a06d-429c-8698-efa2961a5e43/5/256",
-    "note": "lie?",
+    "note": "それは嘘？",
     "official": "lie?"
   },
   {
@@ -1602,7 +1602,7 @@ window.WORLDS = [
       "ギャラリー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0ad84dc0-6821-4a1f-b584-7dc724566cc9/2/256",
-    "note": "Photographer : Uncle_B, Ganna Kamui Creator : ReCube 기분져아 take at the world with a camera.",
+    "note": "写真: Uncle_B、Ganna Kamui／制作: ReCube。カメラを持ってワールドを撮り歩こう。",
     "official": "Photographer : Uncle_B, Ganna Kamui Creator : ReCube 기분져아 take at the world with a camera. ・After watching, press setting（system） - art character to activate teleport ・감상끝나고 설정에 art character를 누르시면 텔레포트를 활성화 할수 있습니다. ・鑑賞終了後、設定に art character を押すとテレポートを有効にできます"
   },
   {
@@ -1616,7 +1616,7 @@ window.WORLDS = [
     "visits": 7871,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f6fe801b-5b08-475d-9ec3-896cacb534bb/6/256",
-    "note": "causal relationship",
+    "note": "因果関係をテーマにしたワールド。",
     "official": "causal relationship"
   },
   {
@@ -1633,7 +1633,7 @@ window.WORLDS = [
       "科学"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_566a3e2f-2e79-4900-9309-933fc34dab80/3/256",
-    "note": "Eccentric Rooms",
+    "note": "風変わりな部屋たち。",
     "official": "Eccentric Rooms"
   },
   {
@@ -1751,7 +1751,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_00d4d252-6da0-4640-8162-45b9c7ac7f33/1/256",
-    "note": "Under the roof where we dream.",
+    "note": "私たちが夢を見る、あの屋根の下で。",
     "official": "Under the roof where we dream."
   },
   {
@@ -1769,7 +1769,7 @@ window.WORLDS = [
       "ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d40c3cb9-5e19-4e85-98e9-bb7df1f527ac/1/256",
-    "note": "I opened my eyes and forgot everything except for the sunset.",
+    "note": "目を覚まして、夕日以外のすべてを忘れてしまった。",
     "official": "I opened my eyes and forgot everything except for the sunset.私は目を覚ましてすべてのことを忘れて、ただ夕日だけを見ました"
   },
   {
@@ -1788,7 +1788,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_67ae638d-5aa5-461c-8f4f-3434bd2fca7a/2/256",
-    "note": "Animation world: ZUTOMAYO - MIRROR TUNE (2025 HNY)",
+    "note": "アニメーションワールド。楽曲: ずっと真夜中でいいのに。 - MIRROR TUNE（2025年新年）。",
     "official": "Animation world: ZUTOMAYO - MIRROR TUNE (2025 HNY)"
   },
   {
@@ -1807,7 +1807,7 @@ window.WORLDS = [
       "パーティクルライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_86c2efc2-a022-4289-8edd-2e178ce7e4d0/14/256",
-    "note": "The hub features VRMVs, Animations and Music Experiences.",
+    "note": "VRMV・アニメーション・音楽体験ワールドを巡れるハブワールド。",
     "official": "The hub features VRMVs, Animations and Music Experiences. このワールドはパーティクルライブワールドを巡るグループがまとめたデータを基に作成されました。"
   },
   {
@@ -1827,7 +1827,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_dafeb754-646f-4d9d-a4bb-bf9ec28e04b8/2/256",
-    "note": "a cycle begins ... take the rock to the lake to link the cycle of life and fulfill your duty, the drone will guide you",
+    "note": "循環が始まる。岩を湖へ運んで生命の輪をつなぎ、使命を果たそう。ドローンが導いてくれる。",
     "official": "a cycle begins ... take the rock to the lake to link the cycle of life and fulfill your duty, the drone will guide you"
   },
   {
@@ -1901,7 +1901,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_74411054-bf20-41c7-aa72-56c9aab60404/8/256",
-    "note": "Welcome to Miku EXPO! There are nearly 100 VOCALOID virtual projections on the map, most of them featuring Hatsune Miku.",
+    "note": "Miku EXPOへようこそ！初音ミクを中心に、約100本のVOCALOIDバーチャル映像が設置されている。",
     "official": "Welcome to Miku EXPO! There are nearly 100 VOCALOID virtual projections on the map, most of them featuring Hatsune Miku."
   },
   {
@@ -1919,7 +1919,7 @@ window.WORLDS = [
       "海・水"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_80f06c69-0de7-48c2-9eae-8a6db934fb3b/1/256",
-    "note": "Sky Ocean Planet",
+    "note": "空と海の惑星を巡るワールド。",
     "official": "Sky Ocean Planet"
   },
   {
@@ -1955,7 +1955,7 @@ window.WORLDS = [
       "パーティクルライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_cdea81df-2337-4647-902e-1c28c651e8f1/2/256",
-    "note": "ParticleLIve Fixer",
+    "note": "パーティクルライブ「フィクサー」。",
     "official": "ParticleLIve Fixer"
   },
   {
@@ -1991,7 +1991,7 @@ window.WORLDS = [
       "映像演出"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_49f13266-96c8-4a64-ba63-ad6b76258a16/1/256",
-    "note": "Immerse yourself in a virtual recreation of the Disney Illuminations fireworks show from Disneyland Paris!",
+    "note": "パリのディズニーランドの花火ショー「Disney Illuminations」をバーチャルで再現したワールド。",
     "official": "Immerse yourself in a virtual recreation of the Disney Illuminations fireworks show from Disneyland Paris! This world features the iconic castle as the centerpiece."
   },
   {
@@ -2009,7 +2009,7 @@ window.WORLDS = [
       "アニメーション"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b0ec1e4d-84f5-447b-a030-1cb740a7ce82/2/256",
-    "note": "A star has just been born tiny, fragile, but destined for an extraordinary future.",
+    "note": "生まれたばかりの小さくか弱い、しかし非凡な未来を約束された星の物語。",
     "official": "A star has just been born tiny, fragile, but destined for an extraordinary future. That name, now etched in our memories, is Blumea. (EPILEPSY WARNING)"
   },
   {
@@ -2029,7 +2029,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9a679a4c-2f88-42d9-8043-e616fc2ff6bc/7/256",
-    "note": "A wall to preserve the edge of the world from being filled up by reality.",
+    "note": "世界の果てが現実に埋め尽くされないよう守るための、壁。",
     "official": "A wall to preserve the edge of the world from being filled up by reality. Recent Update: Made whales slightly easier to ride."
   },
   {
@@ -2046,7 +2046,7 @@ window.WORLDS = [
       "VRMV"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e7ebca9e-a277-4287-a4ad-d10f38fd5579/6/256",
-    "note": "Animation World Music: Metric - lost kitten",
+    "note": "アニメーションワールド。楽曲: Metric - lost kitten。",
     "official": "Animation World Music: Metric - lost kitten"
   },
   {
@@ -2063,7 +2063,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4034c553-e1f9-4757-b74c-36350730dd3a/2/256",
-    "note": "Classroom in the evening when everyone is enjoying their life.",
+    "note": "みんなが思い思いに過ごす、夕暮れの教室。",
     "official": "Classroom in the evening when everyone is enjoying their life."
   },
   {
@@ -2145,7 +2145,7 @@ window.WORLDS = [
       "ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_542dc6e8-532f-43a6-b77b-a970662bfe97/1/256",
-    "note": "【XRMV】CodeAnswer",
+    "note": "XRMV作品「CodeAnswer」。",
     "official": "【XRMV】CodeAnswer"
   },
   {
@@ -2193,7 +2193,7 @@ window.WORLDS = [
       "映像演出"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_43c745e5-6550-48c3-8136-9416bbc2a21d/1/256",
-    "note": "Shader visualization of World.Execute(me); by Mili",
+    "note": "Miliの楽曲「World.Execute(me);」をシェーダーで視覚化したワールド。",
     "official": "Shader visualization of World.Execute(me); by Mili"
   },
   {
@@ -2231,7 +2231,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5061ff00-882b-4910-8789-3d3080426f12/2/256",
-    "note": "The train station is opening on a rainy day, where I showed my artwork.",
+    "note": "雨の日に開く駅。ここに私の作品を展示した。",
     "official": "The train station is opening on a rainy day, where I showed my artwork."
   },
   {
@@ -2250,7 +2250,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9e0dcf3b-ca72-43fd-ad63-d304418033b6/1/256",
-    "note": "Old Bicycle parking lot behind the school.",
+    "note": "学校の裏にある、古い駐輪場。",
     "official": "Old Bicycle parking lot behind the school."
   },
   {
@@ -2345,7 +2345,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_64d2dfa8-536d-4534-8969-451523b8d3b8/5/256",
-    "note": "VRMV TETORIS",
+    "note": "VRMV作品「TETORIS」。",
     "official": "VRMV TETORIS"
   },
   {
@@ -2526,7 +2526,7 @@ window.WORLDS = [
       "ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4a23ad1b-94fb-4720-a84e-a16fc2e24bed/1/256",
-    "note": "Porter Robinson - Everything Goes On Animation By Gyle and Redd",
+    "note": "Porter Robinson「Everything Goes On」。アニメーション制作: Gyle、Redd。",
     "official": "Porter Robinson - Everything Goes On Animation By Gyle and Redd"
   },
   {
@@ -2540,7 +2540,7 @@ window.WORLDS = [
     "visits": 24599,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_995c7619-9f3e-421b-ae04-18282ca54782/3/256",
-    "note": "Music by \"niki\" Created by \"YORIMIYA\"",
+    "note": "楽曲: niki／制作: YORIMIYA。",
     "official": "Music by \"niki\" Created by \"YORIMIYA\""
   },
   {
@@ -2601,7 +2601,7 @@ window.WORLDS = [
     "visits": 165580,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_54794eed-f3e1-4f65-9174-9b9bbde2e67b/1/256",
-    "note": "Made in direct collaboration with Porter Robinson",
+    "note": "Porter Robinsonとの直接コラボレーションで制作されたワールド。",
     "official": "Made in direct collaboration with Porter Robinson"
   },
   {
@@ -2635,7 +2635,7 @@ window.WORLDS = [
     "visits": 93311,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_36b66b47-7716-44dc-a559-c551f861edd7/2/256",
-    "note": "Music: ow (2022-edit) Director / Composer: 0b4k3, Artist / Coding: phi16",
+    "note": "楽曲: ow（2022 edit）／監督・作曲: 0b4k3／アート・コーディング: phi16。",
     "official": "Music: ow (2022-edit) Director / Composer: 0b4k3, Artist / Coding: phi16"
   },
   {
@@ -2654,7 +2654,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_831d3277-b373-4deb-bc6a-04a0227682e0/7/256",
-    "note": "From a seed's dream, tailes unravel. Stars and lives blossom beyond our reach.",
+    "note": "一粒の種の夢から物語がほどけていく。手の届かない彼方で、星と生命が花開く。",
     "official": "From a seed's dream, tailes unravel. Stars and lives blossom beyond our reach. Created by team:beyond_a_bit."
   },
   {
@@ -2687,7 +2687,7 @@ window.WORLDS = [
     "visits": 27765,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_336e5259-842c-4c1d-a0ef-7ba7aed8bf77/2/256",
-    "note": "Artist: MONDO GROSSO Vocal: ermhoi Director: 0b4k3 Visual Artist, Engineer: fotfla",
+    "note": "アーティスト: MONDO GROSSO／ボーカル: ermhoi／監督: 0b4k3／ビジュアル・エンジニア: fotfla。",
     "official": "Artist: MONDO GROSSO Vocal: ermhoi Director: 0b4k3 Visual Artist, Engineer: fotfla"
   },
   {
@@ -2701,7 +2701,7 @@ window.WORLDS = [
     "visits": 42922,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3c9a3806-a4c9-4676-844b-ee07232c0cee/2/256",
-    "note": "Music by niki",
+    "note": "楽曲: niki。",
     "official": "Music by niki"
   },
   {
@@ -2739,7 +2739,7 @@ window.WORLDS = [
       "アニメーション"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6ff60079-235f-4a16-80e0-9fb844d99c5b/7/256",
-    "note": "My 1st Particle live world. Music: Endorfin.",
+    "note": "制作者初のパーティクルライブワールド。楽曲: Endorfin.「アンダーマリン」。",
     "official": "My 1st Particle live world. Music: Endorfin. -「アンダーマリン」"
   },
   {
@@ -2815,7 +2815,7 @@ window.WORLDS = [
       "音楽"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_773be417-f0f0-4d48-9b6f-144a9d2fa120/4/256",
-    "note": "Some Virtual Live placed in this World! Created by Reimhak",
+    "note": "Reimhak制作のバーチャルライブをいくつか設置したワールド。",
     "official": "Some Virtual Live placed in this World! Created by Reimhak"
   },
   {
@@ -2853,7 +2853,7 @@ window.WORLDS = [
       "ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f8dded83-db6a-48d3-a218-a6667f0c4c78/1/256",
-    "note": "Anonymous fanfare - tsumiki / VRMV - Reimhak / WARNING: PHOTOSENSITIVITY / EPILEPSY SEIZURES.",
+    "note": "楽曲: Anonymous fanfare - tsumiki／VRMV制作: Reimhak。強い光の点滅にご注意ください。",
     "official": "Anonymous fanfare - tsumiki / VRMV - Reimhak / WARNING: PHOTOSENSITIVITY / EPILEPSY SEIZURES."
   },
   {
@@ -2869,7 +2869,7 @@ window.WORLDS = [
       "パーティクルライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c3c8502c-2a6f-4eda-b2ac-9d65a8062d7f/1/256",
-    "note": "ParticleLive LUVORATORRRRRY",
+    "note": "パーティクルライブ「LUVORATORRRRRY」。",
     "official": "ParticleLive LUVORATORRRRRY"
   },
   {
@@ -2885,7 +2885,7 @@ window.WORLDS = [
       "パーティクルライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_759d41c2-662e-4734-8945-6dcf42fb0997/1/256",
-    "note": "ParticleLive!!! ECHO",
+    "note": "パーティクルライブ「ECHO」。",
     "official": "ParticleLive!!! ECHO"
   },
   {
@@ -2904,7 +2904,7 @@ window.WORLDS = [
       "アニメーション"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f041b675-3482-4f5a-ae1e-a86e53226d4a/2/256",
-    "note": "My 3nd Particle live world. (Remake) Music: ABLATION'S ECHO - K1UCH1 feat.",
+    "note": "制作者3作目のパーティクルライブワールド（リメイク版）。楽曲: ABLATION'S ECHO - K1UCH1 feat. Lunon。",
     "official": "My 3nd Particle live world. (Remake) Music: ABLATION'S ECHO - K1UCH1 feat.Lunon"
   },
   {
@@ -2971,7 +2971,7 @@ window.WORLDS = [
       "パーティクルライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_000dfc77-0d10-4e6a-9d86-95aad1a291bb/4/256",
-    "note": "L Eve Future is a Cinematic Neon Club Live World",
+    "note": "映画のようなネオンきらめくクラブライブワールド。",
     "official": "L Eve Future is a Cinematic Neon Club Live World"
   },
   {
@@ -3004,7 +3004,7 @@ window.WORLDS = [
     "visits": 787189,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d7e021ff-ecd7-48a7-a97e-8c9143c5a77b/3/256",
-    "note": "Patreon.com/MochieShaders",
+    "note": "Mochie Shaders制作のワールド。",
     "official": "Patreon.com/MochieShaders"
   },
   {
@@ -3127,7 +3127,7 @@ window.WORLDS = [
       "アニメーション"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_92402615-1bf0-4a5d-b000-82c3f6fd3729/2/256",
-    "note": "Animation world: Yorushika - sun (2024 HNY)",
+    "note": "アニメーションワールド。楽曲: ヨルシカ - 「サン」（2024年新年）。",
     "official": "Animation world: Yorushika - sun (2024 HNY)"
   },
   {
@@ -3161,7 +3161,7 @@ window.WORLDS = [
       "夜・夜景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e86d8695-1bbc-43a0-b8c8-02778f2777da/3/256",
-    "note": "Hm. Bigger on the inside. From South of Midnight",
+    "note": "見た目より中は広い。ゲーム「South of Midnight」より。",
     "official": "Hm. Bigger on the inside. From South of Midnight"
   },
   {
@@ -3194,7 +3194,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9f7c60ad-7d46-4132-8e3a-2bae6161940e/1/256",
-    "note": "Cave grotto",
+    "note": "洞窟の中の岩屋。",
     "official": "Cave grotto"
   },
   {
@@ -3212,7 +3212,7 @@ window.WORLDS = [
       "ノスタルジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_80774cdc-a3bc-4b83-9662-a018f1c9759d/1/256",
-    "note": "Alpha v1.02",
+    "note": "アルファ版 v1.02。",
     "official": "Alpha v1.02"
   },
   {
@@ -3230,7 +3230,7 @@ window.WORLDS = [
       "電車・駅"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4d2c1c63-20d0-4b4b-9954-4cbfd0edbfd8/1/256",
-    "note": "If you turn on the sky lantern and look at it with the moon, it's pretty.",
+    "note": "スカイランタンを灯して月と一緒に眺めると、とても綺麗。",
     "official": "If you turn on the sky lantern and look at it with the moon, it's pretty. スカイレランタンをつけ月と一緒に見たら綺麗です。스카이랜턴 버튼 키고 달이랑 같이 봐보세요.."
   },
   {
@@ -3248,7 +3248,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_21a91871-9716-4ddc-9b43-ce6653766c43/6/256",
-    "note": "Welcome to the world!",
+    "note": "ようこそ！新しく調整した航空機の性能やエフェクトを試せるワールド。",
     "official": "Welcome to the world! In this world, you can try out newly tuned effects and adjusted aircraft performance created by me. Please enjoy expressions and"
   },
   {
@@ -3264,7 +3264,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_115d6c7e-68af-432c-9a21-a784ee7e7d8c/8/256",
-    "note": "EDEN - A storydriven adventure into the Eden Sphere, a full biosphere for the player to explore!",
+    "note": "生物圏「エデン・スフィア」を探索する、物語重視のアドベンチャーワールド。",
     "official": "EDEN - A storydriven adventure into the Eden Sphere, a full biosphere for the player to explore! （WARNING ｜ GPU INTENSIVE）LAST UPDATE : 7/26/2021"
   },
   {
@@ -3280,7 +3280,7 @@ window.WORLDS = [
       "電車・駅"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ef49063d-9ad7-4bd3-b69b-5879d486a8c3/1/256",
-    "note": "Visitation Rooms at Police Stations and Detention Centers （Criminal Facilities）: These are rooms whe",
+    "note": "警察署や拘置所などの刑事施設にある面会室を再現したワールド。",
     "official": "Visitation Rooms at Police Stations and Detention Centers （Criminal Facilities）: These are rooms where visitors can meet with suspects or defendants w"
   },
   {
@@ -3422,7 +3422,7 @@ window.WORLDS = [
       "雪・冬"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_60094b5f-1cd1-4c6d-9916-7dac82a5c1ac/5/256",
-    "note": "EVEREST WALKING SIMULATOR: A 1:1 scale world of Mt.",
+    "note": "世界最高峰エベレストを1:1スケールで再現したワールド。",
     "official": "EVEREST WALKING SIMULATOR: A 1:1 scale world of Mt. Everest, the tallest mountain in the world. Created by: Theslythief ＆ SwaMusic"
   },
   {
@@ -3438,7 +3438,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4ffc3728-597c-4a86-8c8b-e550b3514a2b/3/256",
-    "note": "This astrological clock moves in real-time, showing the current planetary positions from a geocentri",
+    "note": "実時間で動く天文時計。地球から見た現在の惑星の位置を表示し、過去や未来の日付も入力できる。",
     "official": "This astrological clock moves in real-time, showing the current planetary positions from a geocentric perspective. Input any date, past or future. App"
   },
   {
@@ -3597,7 +3597,7 @@ window.WORLDS = [
       "ファンタジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_53ea8b4c-9a6c-474e-92e0-9122e810d8a4/6/256",
-    "note": "A faithful fan-recreation of Dracula's Castle from Netflix's Castlevania.",
+    "note": "Netflixアニメ「キャッスルヴァニア」のドラキュラ城を忠実に再現したファンワールド。",
     "official": "A faithful fan-recreation of Dracula's Castle from Netflix's Castlevania. Almost entirely built from scratch and optimized for VRChat! ［No AI was used"
   },
   {
@@ -3613,7 +3613,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3801ac3c-bb49-4357-9219-77fe6e462b84/1/256",
-    "note": "A realistic open desert driving environment featuring a wide variety of vehicles and locations to visit.",
+    "note": "多彩な車両と見どころを備えた、リアルなオープン砂漠ドライブ環境。",
     "official": "A realistic open desert driving environment featuring a wide variety of vehicles and locations to visit. Please note: This world is currently in Open"
   },
   {
@@ -3749,27 +3749,8 @@ window.WORLDS = [
       "雪・冬"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_507a1b36-5f18-4d75-b987-9248a197fe80/7/256",
-    "note": "In the frozen silence, an old research station still listens to the signals No one remembers who bui",
+    "note": "凍てついた静寂の中、古い研究基地が今も信号を聴き続けている。誰が建てたのかも、何を探していたのかも、誰も覚えていない。",
     "official": "In the frozen silence, an old research station still listens to the signals No one remembers who built it or what they were searching for, but somethi"
-  },
-  {
-    "id": "wrld_99924ad6-6bb9-479c-8835-282f0a634f60",
-    "category": "misc",
-    "name": "［JP］NDC Library",
-    "subtype": "チル",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 14835,
-    "visits": 120632,
-    "tags": [
-      "チル",
-      "自然・風景",
-      "図書館・本",
-      "日本"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_c3e9ecf4-4b82-4cf1-9765-fadc7fc69ebb/5/256",
-    "note": "",
-    "official": ""
   },
   {
     "id": "wrld_020d2f7f-d586-4ded-8a70-d5245201a638",
@@ -3832,7 +3813,7 @@ window.WORLDS = [
     "visits": 45251,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fa2fa27d-936f-441b-b765-08744969503e/8/256",
-    "note": "Gather the pieces of your obsession to finally let them go.",
+    "note": "執着のかけらを拾い集めて、最後にそれを手放す。",
     "official": "Gather the pieces of your obsession to finally let them go./目を覚ますと、白い部屋にいた。 散らばったかけらを、ひとつずつ拾い集めていく。 指先は、それを知っているような気がする。"
   },
   {
@@ -3850,7 +3831,7 @@ window.WORLDS = [
       "ホラー・不気味"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2acc5a4d-1aab-455f-b2c6-c36f6617df7d/4/256",
-    "note": "Apocalypse Classroom World.",
+    "note": "黙示録の世界の教室ワールド。",
     "official": "Apocalypse Classroom World."
   },
   {
@@ -3941,7 +3922,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ca8b84de-e679-4cd6-9e7a-173ad3340428/3/256",
-    "note": "Love is a tragedy to me. / with Music artist 'GYE0M' collaboration.",
+    "note": "私にとって、愛は悲劇。音楽アーティスト「GYE0M」とのコラボ作品。",
     "official": "Love is a tragedy to me. / with Music artist 'GYE0M' collaboration."
   },
   {
@@ -3960,7 +3941,7 @@ window.WORLDS = [
       "演出・パーティクル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e1c36591-1eb5-4d5d-b17f-3c7c55eb62cb/9/256",
-    "note": "Not horror world",
+    "note": "ホラーワールドではありません。",
     "official": "Not horror world"
   },
   {
@@ -3995,7 +3976,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b31880e4-5d30-46a7-b6f6-1b4bf926947b/2/256",
-    "note": "Attention visitors! there is no puzzles, and no definitive answer.",
+    "note": "パズルも明確な答えもありません。「Organism（生命体）」が何かを決めるのは、あなた。",
     "official": "Attention visitors! there is no puzzles, and no definitive answer. You decide what an \"Organism\" is. 1.5- Boosty link added （check for some bonuses ）,"
   },
   {
@@ -4027,7 +4008,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_21f602bd-53e6-4166-9005-8792856383d8/43/256",
-    "note": "Anyway, time passes and generations change.",
+    "note": "ともあれ時は流れ、世代は移り変わる。",
     "official": "Anyway, time passes and generations change. ［ Special thanks to 'HANI.' ］"
   },
   {
@@ -4044,7 +4025,7 @@ window.WORLDS = [
       "SF・近未来"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_abdd5731-ff8c-4b3a-a204-e243a7b1e4e9/4/256",
-    "note": "A slice of District Roboto, Paradisa is a safe haven for cats located outside of Complex 7.",
+    "note": "District Robotoの一角。コンプレックス7の外にある、猫たちの安息の地。",
     "official": "A slice of District Roboto, Paradisa is a safe haven for cats located outside of Complex 7. Refreshing waves, surfing board, kites, far from the dark"
   },
   {
@@ -4154,7 +4135,7 @@ window.WORLDS = [
       "電車・駅"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b1c6ba5c-838f-4815-be9e-a8bb21de287d/1/256",
-    "note": "a dreamy train running deep into the sea",
+    "note": "深い海の中を走る、夢のような列車。",
     "official": "a dreamy train running deep into the sea"
   },
   {
@@ -4208,7 +4189,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b9255187-95e9-4c51-8c5e-795a6191650e/3/256",
-    "note": "Enjoy a cold but heartwarming sunset, fly through the sky or lay down on the vast field, the choice is yours.",
+    "note": "冷たくも心温まる夕日を楽しもう。空を飛ぶのも、広大な草原に寝転ぶのも自由。",
     "official": "Enjoy a cold but heartwarming sunset, fly through the sky or lay down on the vast field, the choice is yours. Or maybe there's something that you must"
   },
   {
@@ -4226,7 +4207,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_618f8c41-3cbc-447c-8d56-801bb0783e5c/3/256",
-    "note": "Take a ride to the depths below, 1-2 player world, please use a private instance.",
+    "note": "深海へと潜っていく1〜2人用ワールド。プライベートインスタンス推奨。",
     "official": "Take a ride to the depths below, 1-2 player world, please use a private instance. - Spookality 2019 Updated for 2018 Unity. fixed FBT station"
   },
   {
@@ -4260,7 +4241,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5ed72ae3-85ed-4b5b-a324-e95a53086bd5/4/256",
-    "note": "［Mochi Earth］ Immerse yourself in the vastness of nature.",
+    "note": "広大な自然に包まれて癒される、没入感たっぷりのワールド。",
     "official": "［Mochi Earth］ Immerse yourself in the vastness of nature. 広大な自然に囲まれて癒されよう！ちょっと重いかも！"
   },
   {
@@ -4278,7 +4259,7 @@ window.WORLDS = [
       "ファンタジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_39d53bb0-9745-40f1-aeb2-d863cf5dfb76/1/256",
-    "note": "\"The last dream I had for the summer.",
+    "note": "「この夏に見た、最後の夢」。中庭にMIDIピアノを設置。",
     "official": "\"The last dream I had for the summer...\" MIDI piano added in courtyard area."
   },
   {
@@ -4296,7 +4277,7 @@ window.WORLDS = [
       "電車・駅"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9aaa3e26-da4b-4abe-bfd0-29c8feccb3a2/3/256",
-    "note": "Hello! Welcome to NEWGRASS Station!",
+    "note": "NEWGRASS駅へようこそ！",
     "official": "Hello! Welcome to NEWGRASS Station! This platform stands tall above the clouds, accompanied by the budding of new life, depicting a story about the bi"
   },
   {
@@ -4315,7 +4296,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_15784fd2-6e37-4b93-968d-2458dfa9415c/11/256",
-    "note": "The way I take to see you is so beautifully breathtaking.",
+    "note": "君に会いに行くこの道が、どうしようもなく美しい。",
     "official": "The way I take to see you is so beautifully breathtaking. 君に会いに行く道が、なんて美しいんだろう"
   },
   {
@@ -4381,7 +4362,7 @@ window.WORLDS = [
       "神社仏閣・宗教"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8cd61034-edde-41ef-b42d-9a287f03ef60/2/256",
-    "note": "An ancient cathedral with lots of flickering candles.",
+    "note": "揺らめく無数のろうそくに照らされた、古い大聖堂。",
     "official": "An ancient cathedral with lots of flickering candles. Uses clustered forward shading （CBIRP） from z3y. The world is a bit unfinished but I can't get m"
   },
   {
@@ -4398,7 +4379,7 @@ window.WORLDS = [
       "集会・交流"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_45f95e36-5cab-4321-bf63-f12a3169ad6d/4/256",
-    "note": "Welcome world sailors, to the It's a Small World Showcase!",
+    "note": "アナハイムのディズニーランドの名物アトラクション「イッツ・ア・スモールワールド」を1:1で再現。",
     "official": "Welcome world sailors, to the It's a Small World Showcase! A lifelike 1:1 replica of the famous \"it's a small world\" attraction at Disneyland in Anahe"
   },
   {
@@ -4430,7 +4411,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3630b876-49ef-46b2-b7c5-bbd1188ae73c/4/256",
-    "note": "Now powered with UDON",
+    "note": "UDON対応になりました。",
     "official": "Now powered with UDON"
   },
   {
@@ -4447,24 +4428,8 @@ window.WORLDS = [
       "ノスタルジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11b1ae88-426e-40d6-a2fd-18a03dd92cff/2/256",
-    "note": "Great Scott Relive the classic 1991 Universal Studios ride based on the popular movie, Back to the Future.",
+    "note": "映画「バック・トゥ・ザ・フューチャー」を題材にした1991年のユニバーサル・スタジオの名物ライドを再現。",
     "official": "Great Scott Relive the classic 1991 Universal Studios ride based on the popular movie, Back to the Future."
-  },
-  {
-    "id": "wrld_3712146c-5c0b-48cf-80b8-792824b84eea",
-    "category": "misc",
-    "name": "朱鷺ヶ谷神経科前バス乗り場",
-    "subtype": "ホラー・不気味",
-    "capacity": 32,
-    "recommendedCapacity": 20,
-    "favorites": 3348,
-    "visits": 24229,
-    "tags": [
-      "ホラー・不気味"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_656a7604-94ec-4f88-b0be-4b9939fe6380/3/256",
-    "note": "1/13ギミック修正しました。7Days WorldWorks参加作品。",
-    "official": "1/13ギミック修正しました。7Days WorldWorks参加作品。 （ホラーワールドではありません。） ワールド内に物語が視聴できるポイントが6箇所あります。 使用素材：VOICEVOX冥鳴ひまり。 一部ギミックが壊れています。"
   },
   {
     "id": "wrld_218fceaf-e950-4d7f-bbe4-cecb68b8df18",
@@ -4496,7 +4461,7 @@ window.WORLDS = [
       "電車・駅"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_77b8a72b-9052-4966-b134-2bd420b4b555/4/256",
-    "note": "Just Zero Gravity Spaceship",
+    "note": "無重力の宇宙船を体験できるワールド。",
     "official": "Just Zero Gravity Spaceship"
   },
   {
@@ -4513,7 +4478,7 @@ window.WORLDS = [
       "アバター"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bd96f8ce-be34-4e37-8cd7-9dfc2241b3e6/7/256",
-    "note": "The sequel to District Roboto, Complex 7 features a world 7 times larger, full of NPC, collectible,",
+    "note": "District Robotoの続編。7倍の広さのワールドにNPCや収集要素が満載。",
     "official": "The sequel to District Roboto, Complex 7 features a world 7 times larger, full of NPC, collectible, unlockable avatars, and hidden secrets. Discover t"
   },
   {
@@ -4530,7 +4495,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e3edaa27-6365-4e55-a9c9-cdac5a1521be/4/256",
-    "note": "An interactive VR planetary showcase with dynamic spatial animations ｜ A captivating fusion of art a",
+    "note": "動的な空間アニメーションで見せるインタラクティブな惑星展示。アートと科学の魅力的な融合。",
     "official": "An interactive VR planetary showcase with dynamic spatial animations ｜ A captivating fusion of art and science ｜ An immersive educational experience ｜"
   },
   {
@@ -4549,7 +4514,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1cdc5ba7-95c4-4379-a3c4-816d579d34e1/5/256",
-    "note": "Time is art and masterpiece is you.",
+    "note": "時間は芸術であり、その傑作はあなた自身。",
     "official": "Time is art and masterpiece is you. （Time change updated）"
   },
   {
@@ -4579,7 +4544,7 @@ window.WORLDS = [
     "visits": 1353813,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a9918fe8-bb94-448f-b2f7-80a3a80222c3/4/256",
-    "note": "A world where you can break the glass （and some other things）using various methods If you wish to su",
+    "note": "さまざまな方法でガラス（やその他のもの）を割れるワールド。",
     "official": "A world where you can break the glass （and some other things）using various methods If you wish to support me and get breaking glass prefab follow my b"
   },
   {
@@ -4596,7 +4561,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bc70224a-5332-403b-98e7-52ab232e22f8/11/256",
-    "note": "In 2088, a mysterious unknown star system is detected by Hexalab Industries.",
+    "note": "2088年、Hexalab Industriesが謎の未知の恒星系を検出した。",
     "official": "In 2088, a mysterious unknown star system is detected by Hexalab Industries. An exploration team sent there disappears without a trace. You take on th"
   },
   {
@@ -4612,7 +4577,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a1e78de0-d231-4768-af49-6707170c43dd/1/256",
-    "note": "- See, Hear, Experience the Space Shuttle Launch - The Space Shuttle Endeavour made its final launch",
+    "note": "スペースシャトルの打ち上げを見て、聴いて、体験する。エンデバー号の最後の打ち上げを再現。",
     "official": "- See, Hear, Experience the Space Shuttle Launch - The Space Shuttle Endeavour made its final launch （STS-134） on May 16, 2011. This is a Fan World, w"
   },
   {
@@ -4659,7 +4624,7 @@ window.WORLDS = [
       "写真・撮影"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fc47a21b-1598-406c-b694-95213d23e0c8/3/256",
-    "note": "Pressing F12 in desktop mode breaks the screen.",
+    "note": "デスクトップモードでF12を押すと画面が壊れます。",
     "official": "Pressing F12 in desktop mode breaks the screen."
   },
   {
@@ -4677,7 +4642,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_429a3496-4794-4e8a-94e4-f0dd33eb9993/1/256",
-    "note": "Have a special time with your favorite music.",
+    "note": "好きな音楽と一緒に、特別な時間を。",
     "official": "Have a special time with your favorite music."
   },
   {
@@ -4747,7 +4712,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ab2899ed-6a95-4d6b-b7d9-f87519bd1159/10/256",
-    "note": "Embark on a unique chillout journey to five extraordinary planets in the universe, from exploring ru",
+    "note": "宇宙に浮かぶ5つの並外れた惑星を巡る、唯一無二のチルな旅。",
     "official": "Embark on a unique chillout journey to five extraordinary planets in the universe, from exploring rugged terrains to witnessing the raw power of natur"
   },
   {
@@ -4765,7 +4730,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_501bcfbc-bf2e-4f8a-b6fd-e575a62ff5ac/6/256",
-    "note": "Recreation of a railway station located in the city of Mitaka, Tokyo, Japan.",
+    "note": "東京都三鷹市にある井の頭公園駅を再現したワールド。",
     "official": "Recreation of a railway station located in the city of Mitaka, Tokyo, Japan. 東京都三鷹市井の頭三丁目にある、京王電鉄井の頭線の井の頭公園駅の再現ワールドです。 Port to sdk3 and android versio"
   },
   {
@@ -4781,7 +4746,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6ffce690-59ee-45f5-865f-e1f3f3725034/2/256",
-    "note": "Do not dive into deep.",
+    "note": "深くまで潜ってはいけない。",
     "official": "Do not dive into deep."
   },
   {
@@ -4813,7 +4778,7 @@ window.WORLDS = [
     "visits": 71015,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c6148d4c-e2fe-42a8-883a-815d130d78f4/1/256",
-    "note": "made by Ozen",
+    "note": "Ozen制作のワールド。",
     "official": "made by Ozen"
   },
   {
@@ -4832,7 +4797,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5c091cd3-e28f-4999-ad47-7400e8556bae/19/256",
-    "note": "A life severed from the world, lowering oneself.",
+    "note": "世界から断たれた生。身を落としていく。",
     "official": "A life severed from the world, lowering oneself. ［ bgm: \"Song of a Succubus\" https://www.youtube.com/＠NECORDMUSIC ］"
   },
   {
@@ -4849,7 +4814,7 @@ window.WORLDS = [
       "SF・近未来"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5135c58b-40b1-4658-9e4a-23688058faba/3/256",
-    "note": "Welcome to District Roboto!",
+    "note": "District Robotoへようこそ！",
     "official": "Welcome to District Roboto! home to the unique and curious droids inhabitants, explore this humble district and maybe find your own little spot in thi"
   },
   {
@@ -4868,7 +4833,7 @@ window.WORLDS = [
       "SF・近未来"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_863a91d8-9341-4652-8d0c-8e51c81d6615/6/256",
-    "note": "PLEASE PRELOAD THE WORLD!",
+    "note": "ワールドを必ずプリロードしてください！",
     "official": "PLEASE PRELOAD THE WORLD! Part One: Journey to Erios - Step aboard the ASTORIA and travel across the stars to Erios, one of the distant twin moons far"
   },
   {
@@ -4885,7 +4850,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_81a1b351-dd5e-43fd-8e38-32448be7d6bd/2/256",
-    "note": "The \"Unbreakable Watch\" G-SHOCK.",
+    "note": "「壊れない時計」G-SHOCKをテーマにしたライドワールド。",
     "official": "The \"Unbreakable Watch\" G-SHOCK. In a certain laboratory, there is a suspicious man researching the \"G-SHOCK of the future\"-Kikuo Ibe, the developer o"
   },
   {
@@ -4899,7 +4864,7 @@ window.WORLDS = [
     "visits": 620422,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d82d4e33-15bb-4a97-8250-7cd527edef8e/1/256",
-    "note": "Break the Summer. Break the tower. Complete the Meridian Loop.",
+    "note": "夏を壊せ。塔を壊せ。メリディアン・ループを完成させろ。",
     "official": "Break the Summer. Break the tower. Complete the Meridian Loop. A story about reality and humanity."
   },
   {
@@ -4946,7 +4911,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d6adda16-e8dc-4c1f-9fc7-39ff5efd4a09/2/256",
-    "note": "Welcome to \"Monet Gallery\". This is a fan world showcasing 69 works by the painter Claude Monet.",
+    "note": "「Monet Gallery」へようこそ。画家クロード・モネの作品69点を展示するファンワールド。",
     "official": "Welcome to \"Monet Gallery\". This is a fan world showcasing 69 works by the painter Claude Monet. _____『Monet Gallery モネ展』へようこそ。画家クロード・モネの作品69点が展示されたファ"
   },
   {
@@ -4962,7 +4927,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2a0e9957-3a17-4c04-9254-3ce8830a1d7e/1/256",
-    "note": "This is a fan-made world showcasing 62 works by the artist Vincent van Gogh.",
+    "note": "画家フィンセント・ファン・ゴッホの作品62点を展示したファンメイドワールド。",
     "official": "This is a fan-made world showcasing 62 works by the artist Vincent van Gogh.__画家フィンセント・ファン・ゴッホの作品62点を展示したファンワールドです。すべての作品にキャプションを添えており、どなたでも気軽にお楽しみいただ"
   },
   {
@@ -4995,7 +4960,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c5c2293f-53ed-4426-86e0-b3e5c904ee3f/2/256",
-    "note": "Welcome to our group exhibition ［What Is Virtual Art - Volume 1］, available in English, Chinese and Japanese.",
+    "note": "グループ展「What Is Virtual Art - Volume 1」へようこそ。英語・中国語・日本語に対応。",
     "official": "Welcome to our group exhibition ［What Is Virtual Art - Volume 1］, available in English, Chinese and Japanese. 丨 20260327 English voice narration added"
   },
   {
@@ -5096,7 +5061,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5c9449fc-02df-4e63-9a5e-7adceb19e7dc/2/256",
-    "note": "This is gallery of tilt brush's art by artist 'Jaehyuk Lee', and directing by VRC streamer GreatMoonAroma.",
+    "note": "アーティストJaehyuk LeeのTilt Brush作品のギャラリー。VRC配信者GreatMoonAromaがディレクションを担当。",
     "official": "This is gallery of tilt brush's art by artist 'Jaehyuk Lee', and directing by VRC streamer GreatMoonAroma. if you like 3d art. enjoy!"
   },
   {
@@ -5113,7 +5078,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a0dd2118-a01b-417e-a6ea-ea3a7bbc63f2/1/256",
-    "note": "This is a world where anyone can experience the feeling of being the star of a large-scale music festival!",
+    "note": "大規模な音楽フェスの主役になった気分を、誰でも味わえるワールド。",
     "official": "This is a world where anyone can experience the feeling of being the star of a large-scale music festival!"
   },
   {
@@ -5147,7 +5112,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_cc3066d8-0379-4f5c-8352-dfb591fa3313/1/256",
-    "note": "\"Where words fail, music speaks\"",
+    "note": "「言葉が尽きるところで、音楽が語りだす」",
     "official": "\"Where words fail, music speaks\""
   },
   {
@@ -5166,7 +5131,7 @@ window.WORLDS = [
       "演出・パーティクル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2e450045-f4f0-4a11-991b-7c845b4ded3a/4/256",
-    "note": "Models and Animation are Created by S_ASAGIRI.",
+    "note": "モデルとアニメーションはS_ASAGIRIが制作。",
     "official": "Models and Animation are Created by S_ASAGIRI."
   },
   {
@@ -5250,7 +5215,7 @@ window.WORLDS = [
       "演出・パーティクル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_67bfd973-e2fd-4780-84a7-1d999c7cbf19/12/256",
-    "note": "［Real-time light update］ Test your emissions, reflections, height, polygons/normals, and more!",
+    "note": "リアルタイムでライトが更新されるアバターテスト用ワールド。エミッションや反射、身長、ポリゴン・法線などを確認できる。",
     "official": "［Real-time light update］ Test your emissions, reflections, height, polygons/normals, and more! Video player with texture streaming, AudioLink, Light V"
   },
   {
@@ -5300,7 +5265,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5bfcdfe1-3686-4729-b2a9-53c319384589/1/256",
-    "note": "【COSMORIA: VR Museum of Space】［EN / JP / KR / zh-CN / zh-TW］",
+    "note": "【COSMORIA: 宇宙のVR博物館】5言語対応（英語／日本語／韓国語／中国語簡体・繁体）。",
     "official": "【COSMORIA: VR Museum of Space】［EN / JP / KR / zh-CN / zh-TW］"
   },
   {
@@ -5321,7 +5286,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_97366019-bb5d-4c2d-987d-b1d8b2481e32",
-    "category": "todo",
+    "category": "chill",
     "name": "限界激狭睡眠部屋（Tiny bedroom）",
     "subtype": "",
     "capacity": 16,
@@ -5334,22 +5299,8 @@ window.WORLDS = [
     "official": "今回は高さ方向にこだわりました。Quest対応"
   },
   {
-    "id": "wrld_4d2bfac4-f86a-4d55-b768-bba6a4584770",
-    "category": "todo",
-    "name": "お喋りすごろく Osyaberi Sugoroku",
-    "subtype": "",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 10442,
-    "visits": 80190,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_0fda46ab-2e0a-4049-92d5-f2c81a822e30/7/256",
-    "note": "サイコロを振って出てきた話題でお話ししよう！",
-    "official": "サイコロを振って出てきた話題でお話ししよう！"
-  },
-  {
     "id": "wrld_b4eef105-5db1-4c1f-8800-a6e6de4a20e7",
-    "category": "todo",
+    "category": "chill",
     "name": "こういう部屋に住みたい",
     "subtype": "チル",
     "capacity": 6,
@@ -5360,12 +5311,12 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6f61b4e7-671d-466b-b24f-33ea377b5a6c/1/256",
-    "note": "peak male happiness.",
+    "note": "男の幸福の極み。",
     "official": "peak male happiness."
   },
   {
     "id": "wrld_13c49cf7-9fcb-46f5-9944-33f442d1955b",
-    "category": "todo",
+    "category": "game",
     "name": "ロシアンセリフ読み",
     "subtype": "",
     "capacity": 40,
@@ -5409,22 +5360,6 @@ window.WORLDS = [
     "official": "『めたモグ』Sanrio VIRTUAL PURO MetaMog - Metamogphose Lab."
   },
   {
-    "id": "wrld_9c6eb05c-7158-40da-8d8a-1ecc30b03aef",
-    "category": "todo",
-    "name": "sea monster",
-    "subtype": "海・水中",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 27,
-    "visits": 3208,
-    "tags": [
-      "海・水中"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_bc6a9a6f-36cb-4d5e-81a5-4ecd418356c3/2/256",
-    "note": "テスト中,キル攻撃なし、訓練所オート Ver 0.9 Beta 回復スキルにSE 2026/6/18 ラボVer 0.",
-    "official": "テスト中,キル攻撃なし、訓練所オート Ver 0.9 Beta 回復スキルにSE 2026/6/18 ラボVer 0.9.5BetaバトルSEのON,OFF追加ガチャモンス３体追加、タコモンスにヒール、リバイブ、エフェ追加、LV巻き戻し防止追加、アリーナNPC追加、所有モンス１体～６体に変更、ランキ"
-  },
-  {
     "id": "wrld_577c4af3-1de7-40f4-88ad-7bf10ab3a1ee",
     "category": "todo",
     "name": "TITANIC: Beyond Reality - Sinking Experience",
@@ -5437,7 +5372,7 @@ window.WORLDS = [
       "夜・夜景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_211768ab-f084-40b7-a2cd-f802064948d2/9/256",
-    "note": "v1.4 ｜ Welcome aboard the RMS Titanic!",
+    "note": "RMSタイタニック号へようこそ！沈没を追体験できるワールド。",
     "official": "v1.4 ｜ Welcome aboard the RMS Titanic! Take a journey back in time and experience the glory of the legendary ship herself, and the fateful night that"
   },
   {
@@ -5458,7 +5393,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_0815c129-feb3-46de-8363-618e36a5cd61",
-    "category": "todo",
+    "category": "game",
     "name": "友谊鉴定 / Friendship Test / フレンド鑑定",
     "subtype": "ゲーム",
     "capacity": 32,
@@ -5519,7 +5454,7 @@ window.WORLDS = [
     "visits": 1489,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0f6b447b-1c94-41e0-970a-5a5bd12ba18b/2/256",
-    "note": "A psychedelic exploration world created with Open Brush.",
+    "note": "Open Brushで制作された、サイケデリックな探索ワールド。",
     "official": "A psychedelic exploration world created with Open Brush."
   },
   {
@@ -5600,7 +5535,7 @@ window.WORLDS = [
       "アバター"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e6210db7-8589-4893-9fda-071d6bb25f24/2/256",
-    "note": "AvatarTowerBattle is a gameworld where you build up pictures of your avatar on the spot.",
+    "note": "その場で自分のアバターの画像を積み上げていくゲームワールド。",
     "official": "AvatarTowerBattle is a gameworld where you build up pictures of your avatar on the spot. アバタータワーバトル !! - AvatarTowarBattle , AvaterTowerBattle , Avate"
   },
   {
@@ -5618,7 +5553,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_658eea47-595e-4f10-b19e-7dc00101e86d/2/256",
-    "note": "Join the world's largest market festival in the virtual space, held from Dec.",
+    "note": "バーチャル空間最大のマーケット祭「バーチャルマーケット2021」の一般出展会場（12月開催）。",
     "official": "Join the world's largest market festival in the virtual space, held from Dec.4 through 19! Vket2021 Vket Academy - Night is an exhibition venue of Vke"
   },
   {
@@ -5635,7 +5570,7 @@ window.WORLDS = [
       "街・都市"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6927ac7d-b2af-4a18-9057-3c04500fd38b/7/256",
-    "note": "Welcome to the recreation of shibuya, in this place you can grow 100 meters or be a tiny person of 1",
+    "note": "渋谷を再現したワールド。100mの巨人にも、1cmの小人にもなれる。",
     "official": "Welcome to the recreation of shibuya, in this place you can grow 100 meters or be a tiny person of 10cm, you can relax with your friends, and explore"
   },
   {
@@ -5672,7 +5607,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_6bfb2407-1f1d-411b-bb6b-ccd13288774a",
-    "category": "todo",
+    "category": "recommend",
     "name": "NUCLEUS",
     "subtype": "ホラー・不気味",
     "capacity": 80,
@@ -5683,7 +5618,7 @@ window.WORLDS = [
       "ホラー・不気味"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_69f36cdb-4a49-46af-92ad-9a754284ec6f/1/256",
-    "note": "Explore a huge brutalist waterpark",
+    "note": "巨大なブルータリズム建築のウォーターパークを探索しよう。",
     "official": "Explore a huge brutalist waterpark"
   },
   {
@@ -5715,7 +5650,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_df778941-9073-4df8-be71-8118704ec145/5/256",
-    "note": "Accurate Beat Saber in VRChat that features full BeatSaver integration, online Leaderboard and optim",
+    "note": "VRChat内で本格的なBeat Saberが遊べるワールド。BeatSaver連携・オンラインリーダーボード対応。",
     "official": "Accurate Beat Saber in VRChat that features full BeatSaver integration, online Leaderboard and optimized gameplay. VRChatでBeat Saberを忠実に再現。BeatSaverとの"
   },
   {
@@ -5731,7 +5666,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5e5ca2ba-9b81-4c1a-a255-ee5e9ced9d5b/1/256",
-    "note": "- Multiplayer PvP game - Shoot bombs at each other to defeat your opponents!",
+    "note": "マルチプレイPvPゲーム。爆弾を撃ち合って相手を倒そう！",
     "official": "- Multiplayer PvP game - Shoot bombs at each other to defeat your opponents!"
   },
   {
@@ -5811,7 +5746,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_dbebc0f3-8443-48ba-8453-d424b3179543/6/256",
-    "note": "It's 0400 hours, everyone has gone to sleep, and you decide to take a early morning stroll aboard th",
+    "note": "午前4時、みんなが寝静まった頃。早朝の船内を散歩することにした。",
     "official": "It's 0400 hours, everyone has gone to sleep, and you decide to take a early morning stroll aboard the Space Planetary Orbiter Luminary. The planetary"
   },
   {
@@ -5859,7 +5794,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b9d1e45b-a3b8-4053-a63c-d75d9ac4de28/48/256",
-    "note": "Vertical sliding chalkboard （blackboard） ＆ whiteboard, just like those in lecture rooms （with QV pen",
+    "note": "講義室にあるような上下スライド式の黒板とホワイトボード（QVペン付き）。",
     "official": "Vertical sliding chalkboard （blackboard） ＆ whiteboard, just like those in lecture rooms （with QV pen ＆ mirror）. QV-pen lines drawn on the board surfac"
   },
   {
@@ -5909,7 +5844,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_50eda44e-1113-43a8-a5dc-e6ede6c2a66a/13/256",
-    "note": "Automatic UNO! Card game. Sit back, relax, and give your friends ＋4s!",
+    "note": "自動化されたUNO！くつろぎながら、フレンドに＋4を叩き込もう。",
     "official": "Automatic UNO! Card game. Sit back, relax, and give your friends ＋4s! Supports Desktop and up to 8 players."
   },
   {
@@ -6020,7 +5955,7 @@ window.WORLDS = [
     "visits": 16777,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_896e7a24-edc9-46f2-b2fc-0084a181745f/4/256",
-    "note": "welcome to oasis",
+    "note": "オアシスへようこそ。",
     "official": "welcome to oasis"
   },
   {
@@ -6034,7 +5969,7 @@ window.WORLDS = [
     "visits": 74479,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_086bd27b-f8fb-4351-9f95-7e88fe6fa756/2/256",
-    "note": "desafio no me fio",
+    "note": "パルクールに挑戦できるワールド。",
     "official": "desafio no me fio"
   },
   {
@@ -6084,7 +6019,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bd95fbaf-d263-4a63-b31a-cc4221e0d448/3/256",
-    "note": "This is a game world that refers like FF14 and TON.",
+    "note": "FF14やTONを参考にして作られたゲームワールド。",
     "official": "This is a game world that refers like FF14 and TON. Combine your skills, hone your techniques, defeat the BOSS and get rewards. Find your comrades, fo"
   },
   {
@@ -6101,7 +6036,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_387222be-5994-48db-b11d-6b7a0c40791e/4/256",
-    "note": "Get into the Capsule and blow away your opponents!",
+    "note": "カプセルに乗り込んで、相手を吹き飛ばそう！",
     "official": "Get into the Capsule and blow away your opponents! A party game for 2 to 8 people!【Play with: Touch, Game Pad, Keyboard, VR Controller】 カプセルに乗り込んで相手を吹"
   },
   {
@@ -6164,7 +6099,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e5c58c35-52f5-4cec-85e9-6cca01525354/24/256",
-    "note": "［ Tag＝≻ ＃VRCAbydos ］ This is a fan-made world of Blue Archive.",
+    "note": "ブルーアーカイブのファンメイドワールド（アビドス）。",
     "official": "［ Tag＝≻ ＃VRCAbydos ］ This is a fan-made world of Blue Archive. It may be different from the original game."
   },
   {
@@ -6180,7 +6115,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_301d5044-48be-4a25-9956-e5827dde6c10/11/256",
-    "note": "［ Tag＝≻ ＃VRCMillennium ］This is a fan-made world of Blue Archive.",
+    "note": "ブルーアーカイブのファンメイドワールド（ミレニアム）。",
     "official": "［ Tag＝≻ ＃VRCMillennium ］This is a fan-made world of Blue Archive. It may be different from the original game."
   },
   {
@@ -6242,7 +6177,7 @@ window.WORLDS = [
     "visits": 91095,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8a983eaa-3c13-47f4-afaf-9a2722c04e83/5/256",
-    "note": "clock_tower",
+    "note": "時計塔のワールド。",
     "official": "clock_tower"
   },
   {
@@ -6256,7 +6191,7 @@ window.WORLDS = [
     "visits": 22792,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bb7413fd-884d-4704-b9b9-c1fccc1553bc/5/256",
-    "note": "Playing MH in VR is always my ambition, develop the world in my past time probably make the world de",
+    "note": "VRでモンハンを遊ぶのが夢だった制作者が、余暇に作り上げたワールド。",
     "official": "Playing MH in VR is always my ambition, develop the world in my past time probably make the world development very slow. However, please enjoy the wor"
   },
   {
@@ -6289,7 +6224,7 @@ window.WORLDS = [
       "街・都市"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9576c8d9-4799-4c24-8b8f-8bcaf0ba8421/2/256",
-    "note": "Active limbHitbox to destroy buildings.",
+    "note": "手足の当たり判定をオンにして、建物を破壊しよう。",
     "official": "Active limbHitbox to destroy buildings.Enter the world already playing may cause laggy!!!!!!!. Instance owner should make sure limbcollideris on when"
   },
   {
@@ -6337,7 +6272,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0ac875d3-ab5c-47f7-8797-9ea25be24ecb/2/256",
-    "note": "Supports English ＆ Japanese - Updated 2025/08/12 \"Corpses do not retain your perception.",
+    "note": "日本語・英語対応。「死体はあなたの知覚を保持しない」",
     "official": "Supports English ＆ Japanese - Updated 2025/08/12 \"Corpses do not retain your perception.\" - A psychological metafictional horror - 日本語と英語対応 -「死体はあなたの認"
   },
   {
@@ -6405,7 +6340,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4b1dde88-0ebb-4d58-afd9-ec50433adc03/1/256",
-    "note": "\"Epilogue\" is the backstory of Organism.",
+    "note": "「Epilogue」はOrganismの前日譚にあたる物語。",
     "official": "\"Epilogue\" is the backstory of Organism. Here is the first chapter-The Story of the Man in the Hat"
   },
   {
@@ -6421,7 +6356,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_be840602-6e91-4853-b242-73962335db0e/3/256",
-    "note": "Shooting and Building PVP Game! For 2-20 Players.",
+    "note": "建築＆シューティングのPvPゲーム！2〜20人用。",
     "official": "Shooting and Building PVP Game! For 2-20 Players. Support VR / Desktop / Quest. 建築系対戦シューティングゲームです。2～20人で遊べます。VR / デスクトップ / Quest対応！"
   },
   {
@@ -6454,7 +6389,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c6956a0c-7107-4c71-9ab2-e6265a7a6502/10/256",
-    "note": "Adopt your very own furry. It's easy!",
+    "note": "自分だけのファーリーを引き取ろう。とっても簡単！",
     "official": "Adopt your very own furry. It's easy! Come, fill out the application, and then pick out your preferred fuzzie. Pay the fee and be on your own. Leashes"
   },
   {
@@ -6500,7 +6435,7 @@ window.WORLDS = [
     "visits": 43277,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c99f1bcd-7970-4ce2-a838-db3afd8e2190/1/256",
-    "note": "From ＃INTRODUCTIONS （2015） by LaBeouf, Rönkkö ＆ Turner; https:／／vimeo.",
+    "note": "LaBeouf, Rönkkö & Turnerの作品「#INTRODUCTIONS」（2015）より。",
     "official": "From ＃INTRODUCTIONS （2015） by LaBeouf, Rönkkö ＆ Turner; https:／／vimeo.com／125095515exit CC-BY 2.0"
   },
   {
@@ -6534,7 +6469,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7f6daa76-03f5-4b4e-96fd-bdd8c8ac8d9f/1/256",
-    "note": "Step into Buckshot Roulette, Inspired by the tense and unpredictable gameplay of the original, this",
+    "note": "緊張感と予測不能さが魅力の原作にインスパイアされた「Buckshot Roulette」の世界へ。",
     "official": "Step into Buckshot Roulette, Inspired by the tense and unpredictable gameplay of the original, this world is a VRChat remake of the Gmod map by Drowne"
   },
   {
@@ -6584,7 +6519,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_16bd0e8c-fa52-4ef3-9dac-a8cdef1f9559/2/256",
-    "note": "Time for battle! （2-10 players）",
+    "note": "戦いの時間だ！（2〜10人）",
     "official": "Time for battle! （2-10 players）"
   },
   {
@@ -6657,20 +6592,6 @@ window.WORLDS = [
     "official": "窓の外に広がる都市と魚を眺めながらゆったり過ごせるチル/睡眠ワールドです。YamaPlayer/QvPen/RTab/RBS ｜ This is a chill/sleep world where you can relax while gazing at the cityscape and fis"
   },
   {
-    "id": "wrld_ce3d5b50-b247-4442-9078-758ca0127bce",
-    "category": "chill",
-    "name": "Thad Recursive Room",
-    "subtype": "",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 27754,
-    "visits": 254098,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_2788572f-b07d-4ec7-a4d5-6722fa2e32f3/2/256",
-    "note": "A room in a room in a room. And it comes with toys!",
-    "official": "A room in a room in a room. And it comes with toys!"
-  },
-  {
     "id": "wrld_c2c5a78b-d84b-4073-8f6d-fbe36229fa61",
     "category": "chill",
     "name": "子どもと住む家 FamilyWithChildren",
@@ -6683,23 +6604,6 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c8207c14-a1d2-40ba-8c7e-53d3074fa053/3/256",
     "note": "絶賛子育て中のおうちです。子供の年齢は0~3歳児を想定しています。/左手トリガー2回押しでメニューが出ます。",
     "official": "絶賛子育て中のおうちです。子供の年齢は0~3歳児を想定しています。/左手トリガー2回押しでメニューが出ます。おくるみは座れるようになってるので赤ちゃんにもなれます"
-  },
-  {
-    "id": "wrld_d7067277-4ee9-4706-9582-0b103dbacbe1",
-    "category": "chill",
-    "name": "深海のすみか - deep sea apartment",
-    "subtype": "チル",
-    "capacity": 32,
-    "recommendedCapacity": 32,
-    "favorites": 3900,
-    "visits": 67370,
-    "tags": [
-      "チル",
-      "海・水中"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_c97e9c3b-93c8-4434-8287-986bb6395343/2/256",
-    "note": "海底の静かな時間",
-    "official": "海底の静かな時間"
   },
   {
     "id": "wrld_3d884169-dbf8-4ab0-bad4-5572aa8675d7",
@@ -6801,7 +6705,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4b615d3f-1bbe-441b-a9cc-69f660b8314e/3/256",
-    "note": "A very cozy Airbus A321. Relax in the skies with VRChat Airlines in The Chill Airbus.",
+    "note": "とても居心地の良いエアバスA321。VRChat航空で、空の上のチルタイムを。",
     "official": "A very cozy Airbus A321. Relax in the skies with VRChat Airlines in The Chill Airbus. Contains a Video Player, Pens, Stress toys, an Arcade, and two P"
   },
   {
@@ -6863,7 +6767,7 @@ window.WORLDS = [
       "海・水中"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_83364dc6-f0a0-4a5f-9db8-ca65d6c103cf/2/256",
-    "note": "A optimized ambience world with fish to look at and a bed with Sleep（Dark） Mode.",
+    "note": "眺められる魚と、スリープ（ダーク）モード付きのベッドを備えた、軽量な雰囲気系ワールド。",
     "official": "A optimized ambience world with fish to look at and a bed with Sleep（Dark） Mode."
   },
   {
@@ -6894,7 +6798,7 @@ window.WORLDS = [
     "visits": 19264,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d135e0c9-0521-4216-88c4-3cccbf92bc9c/2/256",
-    "note": "The secret base of the nine children.",
+    "note": "9人の子どもたちの秘密基地。",
     "official": "The secret base of the nine children."
   },
   {
@@ -7173,7 +7077,7 @@ window.WORLDS = [
       "海・水中"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f62a3edc-b32a-4a9a-a0a6-c4307fc5e60b/1/256",
-    "note": "Calm bedroom with Aquarium",
+    "note": "水槽のある、落ち着いた寝室。",
     "official": "Calm bedroom with Aquarium"
   },
   {
@@ -7276,7 +7180,7 @@ window.WORLDS = [
       "夜・夜景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b02fbb05-6326-439e-b444-755ac4a199a4/15/256",
-    "note": "A chill world wrapped in the warmth of wood and the colors of greenery and autumn leaves.",
+    "note": "木の温もりと、緑や紅葉の彩りに包まれたチルワールド。",
     "official": "A chill world wrapped in the warmth of wood and the colors of greenery and autumn leaves. Now available on Booth as Autumn Midnight. 木の温もりと緑や紅葉の彩りに包まれ"
   },
   {
@@ -7311,7 +7215,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_87998165-e3e9-4c4a-bcee-f609ed64c662/4/256",
-    "note": "Small garage / lounge featuring the beautiful McLaren P1, added Polaroid camera",
+    "note": "美しいMcLaren P1を配した小さなガレージ／ラウンジ。ポラロイドカメラを追加。",
     "official": "Small garage / lounge featuring the beautiful McLaren P1, added Polaroid camera"
   },
   {
@@ -7365,7 +7269,7 @@ window.WORLDS = [
       "電車・駅"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0eddf331-33f7-4e9c-9989-60926cfa6acd/4/256",
-    "note": "Look At The Beautiful Deep Sea World.",
+    "note": "美しい深海の世界を眺めよう。",
     "official": "Look At The Beautiful Deep Sea World. If you want to take the train of this world, go to Deep Sea Train World（Emperor AngelFish 90） （Double Saddle Fis"
   },
   {
@@ -7383,7 +7287,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_89872b90-9045-40bc-8d02-fe856ab7c423/1/256",
-    "note": "There is a tablet available at the red chair that allows for various settings, including World optimization.",
+    "note": "赤い椅子のところにタブレットがあり、ワールドの軽量化など各種設定ができる。",
     "official": "There is a tablet available at the red chair that allows for various settings, including World optimization. If you find it too heavy, please feel fre"
   },
   {
@@ -7564,7 +7468,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_14b42dfd-e34a-4238-ad75-fa421c44e541/3/256",
-    "note": "Welcome to Dream Ocean. Your dreamy, cozy home world by the sea!",
+    "note": "Dream Oceanへようこそ。海辺にある、夢のように居心地の良いホームワールド。",
     "official": "Welcome to Dream Ocean. Your dreamy, cozy home world by the sea! Enjoy endless relaxing music and experience the perfect blend of high FPS and a beaut"
   },
   {
@@ -7601,7 +7505,7 @@ window.WORLDS = [
       "演出・パーティクル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b4207f84-a913-4ede-b333-c2a208f61297/3/256",
-    "note": "Something once shaped by pressure, now to bloom like flowers.",
+    "note": "かつて圧力によって形づくられたものが、今、花のように咲こうとしている。",
     "official": "Something once shaped by pressure, now to bloom like flowers. It does not ask to be admired, only to exist. 02/01/26 : HOTFIXED Massive Performance Is"
   },
   {
@@ -7687,7 +7591,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_768dff28-1eda-4ee1-960e-dec35ca63ac6/3/256",
-    "note": "A place where all the stories begin.",
+    "note": "すべての物語が始まる場所。",
     "official": "A place where all the stories begin. A small, underwater-themed bedroom with basic necessities, you might found some relic from past adventures. May y"
   },
   {
@@ -7791,7 +7695,7 @@ window.WORLDS = [
       "演出・パーティクル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_82319573-b27b-4d8a-bf44-ee45aa3be6cd/6/256",
-    "note": "VIZVID、Audiolink",
+    "note": "VIZVID、Audiolink対応の音楽ワールド。",
     "official": "VIZVID、Audiolink"
   },
   {
@@ -7844,7 +7748,7 @@ window.WORLDS = [
       "雪・冬"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_702b26c9-4c6a-4210-b627-5f8a8b9d5aa8/14/256",
-    "note": "Ride on the Polar Express through the arctic on a peaceful Christmas night :3 This world was a passi",
+    "note": "静かなクリスマスの夜、北極特急に乗って極北を旅しよう。",
     "official": "Ride on the Polar Express through the arctic on a peaceful Christmas night :3 This world was a passion project I've been working on for about a year,"
   },
   {
@@ -7876,7 +7780,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8a071cc6-c589-4268-9f5b-013fed8d9cd0/1/256",
-    "note": "Cats! Fluffy beds await you, come relax!",
+    "note": "猫！ふかふかのベッドがあなたを待っています。くつろぎに来て！",
     "official": "Cats! Fluffy beds await you, come relax!"
   },
   {
@@ -7912,7 +7816,7 @@ window.WORLDS = [
       "写真・撮影"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5f246f7c-c39a-4333-874b-f86ced8f307c/2/256",
-    "note": "Stellix by xpmmm ｜ The tablet can be brought up by pressing the left trigger twice.",
+    "note": "xpmmm制作のワールド。左トリガーを2回押すとタブレットを出せる。",
     "official": "Stellix by xpmmm ｜ The tablet can be brought up by pressing the left trigger twice. ｜ 左トリガー2回でMenuのタブレットが出せます. 描画がおかしくなる場合はGraphicsのForced Camera Near"
   },
   {
@@ -8114,7 +8018,7 @@ window.WORLDS = [
       "海・水中"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bac6102a-ebd2-4bf2-a1b0-0510a2c8d9bd/3/256",
-    "note": "Aquarius is a multi-biomes aquarium experience, come and gaze upon the marine life, and learn something new.",
+    "note": "複数のバイオームを持つ水族館体験ワールド。海の生き物を眺めながら学べる。",
     "official": "Aquarius is a multi-biomes aquarium experience, come and gaze upon the marine life, and learn something new. Updated to support Red Sim's Light Volume"
   },
   {
@@ -8133,7 +8037,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0e84963e-5632-401a-be6f-d5ffaadd4de6/7/256",
-    "note": "A chill café ＆ bar with a DJ space.",
+    "note": "DJスペースのある、チルなカフェ＆バー。",
     "official": "A chill café ＆ bar with a DJ space. Features atmospheric lighting using LTCGI and Light Volumes, plus a quiet sleep room with RBS SleepKit support./DJ"
   },
   {
@@ -8185,7 +8089,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a0e9ee15-285d-4e7e-b683-b049033e1a7b/2/256",
-    "note": "Enjoy your supersonic journey through the skies.",
+    "note": "超音速で、空の旅を楽しもう。",
     "official": "Enjoy your supersonic journey through the skies."
   },
   {
@@ -8203,7 +8107,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c21372ad-1f54-40dd-b16e-afbe327854e6/6/256",
-    "note": "나무 사이의 별빛이 만드는 자연의 지붕 ｜ A natural roof made by starlight between trees ｜ Thx to HANI.",
+    "note": "木々の間の星明かりが作る、自然の屋根。",
     "official": "나무 사이의 별빛이 만드는 자연의 지붕 ｜ A natural roof made by starlight between trees ｜ Thx to HANI."
   },
   {
@@ -8282,7 +8186,7 @@ window.WORLDS = [
     "visits": 759570,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_eaaff155-c335-40ad-b170-fb8ac6588abd/2/256",
-    "note": "Boat Inn",
+    "note": "船の宿「Boat Inn」。",
     "official": "Boat Inn"
   },
   {
@@ -8371,7 +8275,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_847f0a00-ea70-42a6-b101-c350603df7ce/16/256",
-    "note": "11airplanes! Let`s flight training!",
+    "note": "11機の航空機を収録！飛行訓練を楽しもう。",
     "official": "11airplanes! Let`s flight training!! formation＆acrobat Flight! 推奨ハッシュタグ「＃VRC_SSYWorld 」日本の成田空港を舞台に自由に飛びましょう！ 豊富な種類の機体を用意してます！武器はついていないのでのんびり飛べますよ～"
   },
   {
@@ -8387,7 +8291,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fbad214d-1200-40e8-879d-1eb083b4bf5f/2/256",
-    "note": "【EN】 PvP High-speed roguelite action.",
+    "note": "PvPの高速ローグライトアクション。",
     "official": "【EN】 PvP High-speed roguelite action. Build your deck and defeat opponents in fast-paced duels. 2~16 players. 【JP】PvP高速ローグライトアクション。デッキを構築し、高速なデュエルで相手を"
   },
   {
@@ -8437,7 +8341,7 @@ window.WORLDS = [
       "ノスタルジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2aed45e1-e331-4610-90fb-7f3eeb33d3d3/7/256",
-    "note": "Best Immersive World, Raindance Immersive 2023.",
+    "note": "Raindance Immersive 2023 最優秀没入型ワールド受賞作。",
     "official": "Best Immersive World, Raindance Immersive 2023. The air is thick with the scent of mothballs and old books. Sparse trinkets and treasures fill shelves"
   },
   {
@@ -8489,7 +8393,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_484004b4-69cc-4b64-b99f-d17831bf08a5/1/256",
-    "note": "Grab your laser and dive into the deep.",
+    "note": "レーザーを手に、深海へと潜ろう。",
     "official": "Grab your laser and dive into the deep. Mine valuable resources, battle sea creatures, return to base with your haul, and upgrade your gear so your cr"
   },
   {
@@ -8557,7 +8461,7 @@ window.WORLDS = [
       "音楽・ライブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_82207ce0-9506-407c-b44c-2c6ef4a685a0/20/256",
-    "note": "2000＋ Songs ｜ PCVR / Quest / Desktop ｜ 1 - 8 Player Co-op ｜ Customization ｜ Persistence ｜ Drum Hero",
+    "note": "2000曲以上収録。PCVR／Quest／デスクトップ対応、1〜8人の協力プレイ、カスタマイズ・データ保存対応。",
     "official": "2000＋ Songs ｜ PCVR / Quest / Desktop ｜ 1 - 8 Player Co-op ｜ Customization ｜ Persistence ｜ Drum Hero is a rhythm game inspired by Clone Hero but adapte"
   },
   {
@@ -8643,7 +8547,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_32c72b6b-2d1b-4d19-8fba-581735500ad2/5/256",
-    "note": "［Enjoy a full progression system and catch over 20000＋ unique fish!",
+    "note": "充実の成長システムで、2万種類以上のユニークな魚を釣り上げよう！",
     "official": "［Enjoy a full progression system and catch over 20000＋ unique fish! ］·［ CATCH ≻ SELL ≻ UPGRADE! ］·［Start Fishing and become the strongest Angler!］FISH"
   },
   {
@@ -8710,7 +8614,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ce3b61c0-4a9f-4d16-b1c1-d2ba307cd5ee/13/256",
-    "note": "A highly polished, easy to understand Tower Defense game made for VRChat.",
+    "note": "VRChat向けに作られた、分かりやすく完成度の高いタワーディフェンスゲーム。",
     "official": "A highly polished, easy to understand Tower Defense game made for VRChat. Place down towers to stop the Cars from reaching your hearts. Both Desktop a"
   },
   {
@@ -8812,7 +8716,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8748abb2-81db-4f00-a3bc-722b5379dca5/3/256",
-    "note": "Multiplayer PvP game （2~4） - Create a path that gives you an advantage and reach the goal faster tha",
+    "note": "マルチプレイPvPゲーム（2〜4人）。有利な足場を作って、誰より早くゴールを目指そう。",
     "official": "Multiplayer PvP game （2~4） - Create a path that gives you an advantage and reach the goal faster than anyone else!"
   },
   {
@@ -8848,7 +8752,7 @@ window.WORLDS = [
       "ノスタルジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_099180d0-9656-460d-8db7-3b937a734976/20/256",
-    "note": "NeoWorlds transforms you and your friends into pixelated sprites!",
+    "note": "自分とフレンドがドット絵のスプライトに変身するワールド。",
     "official": "NeoWorlds transforms you and your friends into pixelated sprites! Explore rich environments, play minigames to earn coins, and buy furniture to decora"
   },
   {
@@ -8864,7 +8768,7 @@ window.WORLDS = [
       "チル"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8b0b050b-52df-4a91-9b52-fbd619bdc044/1/256",
-    "note": "A cozy world to raise some chickens!",
+    "note": "ニワトリを育てられる、居心地の良いワールド。",
     "official": "A cozy world to raise some chickens! ~ Feed the chickens seeds to get regular eggs, raise your chickens and sell regular chickens to get rare eggs! ~"
   },
   {
@@ -8878,7 +8782,7 @@ window.WORLDS = [
     "visits": 7960,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f9b47212-c0b9-4b51-a5ca-4b6ecf25f707/2/256",
-    "note": "Rhapsody ep.2 - Scherzando",
+    "note": "音楽をテーマにした連作ワールド「Rhapsody」の第2話。楽章「Scherzando（戯れるように）」。",
     "official": "Rhapsody ep.2 - Scherzando"
   },
   {
@@ -8894,7 +8798,7 @@ window.WORLDS = [
       "ファンタジー"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f801cc2d-3a76-4af1-b589-7b12fca6a00a/3/256",
-    "note": "Rhapsody ep.1 - Grave",
+    "note": "音楽をテーマにした連作ワールド「Rhapsody」の第1話。楽章「Grave（重々しく）」。",
     "official": "Rhapsody ep.1 - Grave"
   },
   {
@@ -8930,7 +8834,7 @@ window.WORLDS = [
       "集会・交流"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3f9c61ef-e340-42c7-a827-d0e8879ae9b7/2/256",
-    "note": "gamerpuppy's Jigsaw Puzzle World! Put together jigsaw puzzles with your friends!",
+    "note": "gamerpuppy制作のジグソーパズルワールド！フレンドと一緒にパズルを組み立てよう。",
     "official": "gamerpuppy's Jigsaw Puzzle World! Put together jigsaw puzzles with your friends! 12 images, 200＋ pieces"
   },
   {
@@ -8944,7 +8848,7 @@ window.WORLDS = [
     "visits": 170261,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7494509e-5704-44e2-95bd-f1d631887181/3/256",
-    "note": "man i love paper mario",
+    "note": "ペーパーマリオが大好きなんだ。",
     "official": "man i love paper mario"
   },
   {
@@ -8961,7 +8865,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ab972499-f99c-43cd-992f-d25aa20ae2ab/1/256",
-    "note": "This is a interactive battle game where you can work with you friends to destroy the ememy.",
+    "note": "フレンドと協力して敵を撃破する、インタラクティブな戦闘ゲーム。",
     "official": "This is a interactive battle game where you can work with you friends to destroy the ememy. Fly helicopters, fire tanks, and shot guns to destroy the"
   },
   {
@@ -9042,7 +8946,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2b167073-abc0-4b14-b8e5-2c59463996ae/23/256",
-    "note": "For those who love flying.",
+    "note": "飛ぶことが好きな人のためのワールド。",
     "official": "For those who love flying."
   },
   {
@@ -9058,7 +8962,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9163ee63-177a-420b-a023-dfef508b2c8b/26/256",
-    "note": "Aircraft Carrier Jets: F-14 ｜ Dominate the skies with the Iconic Tomcat and more.",
+    "note": "名機トムキャットなどを操って、大空を制圧しよう。",
     "official": "Aircraft Carrier Jets: F-14 ｜ Dominate the skies with the Iconic Tomcat and more."
   },
   {
@@ -9075,7 +8979,7 @@ window.WORLDS = [
       "カフェ・飲食"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f48bcb8e-e85a-4e4f-a1ce-3868c0311b8c/2/256",
-    "note": "A Texas Hold'em world for poker, chat ＆ drink.",
+    "note": "テキサスホールデムを楽しめる、ポーカー＆歓談＆お酒のワールド。",
     "official": "A Texas Hold'em world for poker, chat ＆ drink."
   },
   {
@@ -9105,7 +9009,7 @@ window.WORLDS = [
     "visits": 1111504,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3b90a6f5-2fc2-4f5b-82d2-9b4dfacb5110/3/256",
-    "note": "A creative sandbox world where you can build anything out of plastic bricks.",
+    "note": "プラスチックのブロックで何でも作れる、クリエイティブなサンドボックスワールド。",
     "official": "A creative sandbox world where you can build anything out of plastic bricks."
   },
   {
@@ -9149,7 +9053,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a65e1549-f8fd-43f7-93cd-beaa700a638e/8/256",
-    "note": "Challenge your friends to a series of fast-paced minigames!",
+    "note": "テンポの速いミニゲームの数々で、フレンドと勝負しよう！",
     "official": "Challenge your friends to a series of fast-paced minigames!次々と出されるミニゲームでフレンドと挑戦！"
   },
   {
@@ -9167,24 +9071,8 @@ window.WORLDS = [
       "集会・交流"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0d57be38-8b29-4d2f-ab34-8b2d54114df8/11/256",
-    "note": "Welcome to The Beyblade Pitstop- A chill, Beyblade-themed hangout world!",
+    "note": "ベイブレードをテーマにした、まったり過ごせるハングアウトワールド。",
     "official": "Welcome to The Beyblade Pitstop- A chill, Beyblade-themed hangout world! Here, you can battle Beyblades against your friends using any of the 63 beys"
-  },
-  {
-    "id": "wrld_cf570793-4fd0-4225-ada6-faf1094551cf",
-    "category": "game",
-    "name": "フライングサーカス/FlyingCircus",
-    "subtype": "ゲーム",
-    "capacity": 48,
-    "recommendedCapacity": 24,
-    "favorites": 4083,
-    "visits": 27322,
-    "tags": [
-      "ゲーム"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_0bd67353-dd8e-4c01-b91e-56ba1cf232da/3/256",
-    "note": "蒼の彼方のフォーリズムに出てくる架空のスポーツ、フライングサーカスができるワールドです。",
-    "official": "蒼の彼方のフォーリズムに出てくる架空のスポーツ、フライングサーカスができるワールドです。VR/Desktop"
   },
   {
     "id": "wrld_038969d5-1a77-43d9-a435-ad1e9bf12542",
@@ -9234,7 +9122,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b2786230-7ccc-4a90-84b6-e95f6a4e18fa/2/256",
-    "note": "VERSION 1.4.4 - You are an employee of the CRATE Mega Corporation - your task?",
+    "note": "あなたはCRATEメガコーポレーションの従業員。さて、任務は？",
     "official": "VERSION 1.4.4 - You are an employee of the CRATE Mega Corporation - your task? Open More Crates. Upgrades, Promotions with a side of Gambling and NUMB"
   },
   {
@@ -9285,7 +9173,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_90027981-6a50-4097-86e7-d7ea62050a14/13/256",
-    "note": "Join the fight between Prisoners and Guards in this VR prison!",
+    "note": "VR刑務所で、囚人と看守の戦いに参加しよう！",
     "official": "Join the fight between Prisoners and Guards in this VR prison! Plot your escape with friends or keep the prisoners in line!"
   },
   {
@@ -9335,7 +9223,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6993e606-ec95-447e-9b4f-c631ce29435c/8/256",
-    "note": "An asymmetrical PvP game in which a gigantic VR player battles a team of human players.",
+    "note": "巨大なVRプレイヤーと人間チームが戦う、非対称型PvPゲーム。",
     "official": "An asymmetrical PvP game in which a gigantic VR player battles a team of human players."
   },
   {
@@ -9385,7 +9273,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6170d2e9-898f-433f-b52a-7bb33a50a021/8/256",
-    "note": "Tower Defense with team play and the ability to take control of the towers.",
+    "note": "チームプレイと、タワーを直接操作できるのが特徴のタワーディフェンス。",
     "official": "Tower Defense with team play and the ability to take control of the towers. Become a miniature on the game board and fight the hoards alone or with up"
   },
   {
@@ -9461,7 +9349,7 @@ window.WORLDS = [
     "visits": 789848,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4da1ba36-8cec-42c5-8189-db6d25ad77d1/5/256",
-    "note": "FloatLab Industries: Experimental Tower A",
+    "note": "FloatLab Industries: 実験塔A。",
     "official": "FloatLab Industries: Experimental Tower A"
   },
   {
@@ -9478,7 +9366,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ce8cec04-e6b6-4caa-bc29-f1ad4739c7af/7/256",
-    "note": "4/14/26 - v0.8.53｜ A Survival Stealth Horror Co-op game.",
+    "note": "サバイバル・ステルスホラーの協力プレイゲーム。",
     "official": "4/14/26 - v0.8.53｜ A Survival Stealth Horror Co-op game. WARNING: Contains loud sounds, flashing images and profanity. VRC Group ≻ SLASH.3139"
   },
   {
@@ -9495,7 +9383,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11b8c1d5-9003-4258-92c8-9dc91763ba5f/3/256",
-    "note": "A simple 2＋ Player game where you shoot without seeing your opponents.",
+    "note": "相手が見えない状態で撃ち合う、シンプルな2人以上用ゲーム。",
     "official": "A simple 2＋ Player game where you shoot without seeing your opponents. Win Games, Earn Coins, and Gamble for Guns."
   },
   {
@@ -9592,7 +9480,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_df0c540e-b91b-4b20-abfd-f649ddad5500/1/256",
-    "note": "［Any Languages OK］Solve puzzles and riddles.",
+    "note": "言語不問。パズルと謎解きに挑戦しよう。",
     "official": "［Any Languages OK］Solve puzzles and riddles. ／about 30 min to complete 3 levels."
   },
   {
@@ -9609,7 +9497,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_72b45fac-670d-4d71-9b66-94277c7baa73/19/256",
-    "note": "Reach for the stars as you put your luck to the ultimate test.",
+    "note": "運を極限まで試して、星を掴み取れ。",
     "official": "Reach for the stars as you put your luck to the ultimate test. Roll for Auras of various chances and display your luckiness to your friends with hundr"
   },
   {
@@ -9695,22 +9583,8 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0d00e2d3-c315-4947-9595-a4d3534725b0/4/256",
-    "note": "Nsuka is a virtual circuit known as 'Naruto Skyline' in Naruto city, Tokushima, Japan.",
+    "note": "徳島県鳴門市の「ナルトスカイライン」を再現したバーチャルサーキット。",
     "official": "Nsuka is a virtual circuit known as 'Naruto Skyline' in Naruto city, Tokushima, Japan. Its reading is \"enu suka\". This is a map port and credits to Ta"
-  },
-  {
-    "id": "wrld_358c8602-a6fd-430c-9d56-b9c1e90971aa",
-    "category": "game",
-    "name": "Realtime Farm / リアルタイム農業ワールド - リアルVRChat2",
-    "subtype": "",
-    "capacity": 24,
-    "recommendedCapacity": 24,
-    "favorites": 4796,
-    "visits": 115351,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_34a75db3-fd65-493d-b769-b7a2b1f32986/5/256",
-    "note": "リアル時間で農業が出来るワールドです。リアル。",
-    "official": "リアル時間で農業が出来るワールドです。リアル。"
   },
   {
     "id": "wrld_7a7c4dc4-16f8-4eab-8d47-486e12d2c797",
@@ -9725,7 +9599,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_62a66fc9-ddb7-4589-8e28-0db9224cd060/3/256",
-    "note": "This is an afk game. And offers a few other games.",
+    "note": "放置系ゲーム。他のゲームもいくつか遊べる。",
     "official": "This is an afk game. And offers a few other games. Surrounded by mattresses, it looks like a secret base that you can make your home. My Twitter: ＠Heh"
   },
   {
@@ -9741,7 +9615,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9eaac6d4-f960-4b72-8b7e-a246e31ca759/4/256",
-    "note": "Riding cars ＆ motorcycles on Touge.",
+    "note": "峠で車やバイクを走らせよう。",
     "official": "Riding cars ＆ motorcycles on Touge. UraRokkou map made by ＠gobeyond_fps Powerd by CHIKUWA VEHICLE SYSTEM 2"
   },
   {
@@ -9757,7 +9631,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_eface5d5-e4a3-4edc-81cd-af4ded52f84a/1/256",
-    "note": "Full-Scale VR FPS World Enters Early Access!",
+    "note": "本格スケールのVR FPSワールドがアーリーアクセス開始！",
     "official": "Full-Scale VR FPS World Enters Early Access! Over 70 unique weapons. A fully customizable stat system. More than 10 diverse game modes. Everything is"
   },
   {
@@ -9790,7 +9664,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_100de8e0-64b8-4868-9e95-c78ca6ea78e6/3/256",
-    "note": "Beware the Overseer! Blend in. Steal coins.",
+    "note": "監視者に気をつけろ。周囲に紛れて、コインを盗め。",
     "official": "Beware the Overseer! Blend in. Steal coins. Run away."
   },
   {
@@ -9843,7 +9717,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_13eae77c-b9e2-427f-83a7-1c28424598bf/7/256",
-    "note": "The Timer Update! Explore the inky black halls with only your scanner to guide you.",
+    "note": "タイマー実装アップデート。スキャナーだけを頼りに、漆黒の廊下を探索しよう。",
     "official": "The Timer Update! Explore the inky black halls with only your scanner to guide you. Powered by Udon, inspired by Scanner Sombre. Recommended 1 - 10 pl"
   },
   {
@@ -9889,7 +9763,7 @@ window.WORLDS = [
     "visits": 53805,
     "tags": [],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3c65eec5-d246-49cb-b70e-8b1406c7e838/2/256",
-    "note": "All models from Assetto corsa",
+    "note": "モデルはすべてAssetto Corsaより。",
     "official": "All models from Assetto corsa"
   },
   {
@@ -9941,7 +9815,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e64ab59f-00e8-4704-a561-98d0ea69c76c/33/256",
-    "note": "Friends＋ or Group heavily recommended.",
+    "note": "フレンド＋またはグループインスタンスでのプレイを強く推奨。",
     "official": "Friends＋ or Group heavily recommended. ｜（HEAVY WORLD）This world contains flashing lights and jumpscares.｜ A chaotic udon survival game. Supports 16 pl"
   },
   {
@@ -9993,7 +9867,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_715f4677-1e6c-4853-940d-e1d84febedab/4/256",
-    "note": "A sequel to Meat Grinder ＆ Thermal Treatment.",
+    "note": "「Meat Grinder」「Thermal Treatment」の続編。",
     "official": "A sequel to Meat Grinder ＆ Thermal Treatment. Survive high-velocity props thrown by a fellow player on unstable platforms. Models ＆ textures by Chim-C"
   },
   {
@@ -10011,5 +9885,55 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d559291e-d660-4ce0-a0af-f01e03f77ceb/12/256",
     "note": "メダルゲームが遊べるワールドです。現在17機種で遊べます。メダルを増やしてランクを上げよう！",
     "official": "メダルゲームが遊べるワールドです。現在17機種で遊べます。メダルを増やしてランクを上げよう！"
+  },
+  {
+    "id": "wrld_653dabc5-4958-4d66-95de-62cd964a2397",
+    "category": "misc",
+    "name": "Forest Environment",
+    "subtype": "自然・風景",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 8587,
+    "visits": 68165,
+    "tags": [
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d2353d4d-1e83-4eee-b1a4-3df3ff3e3da9/2/256",
+    "note": "高スペック推奨。NatureManufactureによる森林環境ワールド。Quest非対応。",
+    "official": "Required HIGH PERFORM ｜ Forest Environment ｜ By NatureManufacture ｜ Quest not compatible ｜ Ko-Fi : Maxime66410 ｜ vrcpicture.com"
+  },
+  {
+    "id": "wrld_362befbb-f431-4c46-a4c5-5d631c7420eb",
+    "category": "recommend",
+    "name": "NUCLEUS II",
+    "subtype": "ホラー・不気味",
+    "capacity": 80,
+    "recommendedCapacity": 20,
+    "favorites": 7166,
+    "visits": 73392,
+    "tags": [
+      "ホラー・不気味",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_fa554a7f-33b8-477b-afcf-02426154a525/1/256",
+    "note": "パートII: ブルータリズムのウォーターパークの探索を終えた。さあ、家に帰ろう。",
+    "official": "Part II : You finished exploring the brutalist waterpark, now it's time to go home..."
+  },
+  {
+    "id": "wrld_8843035e-1e79-4280-80a4-9cca37af1122",
+    "category": "todo",
+    "name": "Imitated Amaurot 2024",
+    "subtype": "ゲーム",
+    "capacity": 40,
+    "recommendedCapacity": 30,
+    "favorites": 7373,
+    "visits": 57812,
+    "tags": [
+      "ゲーム",
+      "音楽・ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_74a23017-77eb-47bd-8077-5aa5d46d22bd/12/256",
+    "note": "背景モデルはほぼすべてフルスクラッチで作ったファンメイドの二次創作ワールドです/ BGMもゲーム内音源を使用していません/ 制作期間は２ヶ月程度 !",
+    "official": "背景モデルはほぼすべてフルスクラッチで作ったファンメイドの二次創作ワールドです/ BGMもゲーム内音源を使用していません/ 制作期間は２ヶ月程度 !This world does not use ripped data! made with blender/substance painter/fre"
   }
 ];
