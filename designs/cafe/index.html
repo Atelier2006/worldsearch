@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="アスユイのお気に入りVRChatワールドを集めた喫茶店" />
+        <title>喫茶アスユイ｜お気に入りワールド</title>
+        <!-- Theme: Business Casual by Start Bootstrap (MIT) https://startbootstrap.com/theme/business-casual -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;800&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="custom.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">VRChat World Café</span>
+                <span class="site-heading-lower">喫茶アスユイ</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="#">喫茶アスユイ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="メニュー"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#today">本日のおすすめ</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#picks">店主のおすすめ</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#catalog">メニュー</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#store">店舗案内</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#" id="lucky">おまかせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 本日のおすすめ (index.html: intro)-->
+        <section class="page-section clearfix" id="today">
+            <div class="container">
+                <div class="intro" id="intro"></div>
+            </div>
+        </section>
+        <!-- 店主より (index.html: cta)-->
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">From the Owner</span>
+                                <span class="section-heading-lower">店主より</span>
+                            </h2>
+                            <p class="mb-0" id="promise">VRChatで出会ったワールドを、一杯ずつ淹れるように集めています。展覧会、パーティクルライブ、ゲーム、のんびりできる場所。気になる一杯を見つけたら、そのままVRChatで訪ねてみてください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 店主のおすすめ (products.html: product-item)-->
+        <div id="picks"></div>
+        <!-- メニュー -->
+        <section class="page-section" id="catalog">
+            <div class="container wide">
+                <div class="bg-faded rounded p-4 p-lg-5">
+                    <h2 class="section-heading mb-4 text-center">
+                        <span class="section-heading-upper">Menu</span>
+                        <span class="section-heading-lower">メニュー</span>
+                    </h2>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="cattabs"></div>
+                    <p class="text-center mb-4" id="cdesc"></p>
+                    <div class="row g-2 align-items-center mb-3">
+                        <div class="col-12 col-lg"><input class="form-control" id="q" data-ws-search type="search" placeholder="ワールド名・タグ・説明・定員で探す（ / ）" aria-label="検索" /></div>
+                        <div class="col-auto"><select class="form-select" id="sort" aria-label="並び替え">
+                            <option value="fav">人気順</option><option value="new">新着順</option><option value="visits">訪問数順</option>
+                            <option value="name">名前順</option><option value="cap">定員が多い順</option><option value="capmin">定員が少ない順</option>
+                        </select></div>
+                        <div class="col-auto"><div class="btn-group" id="views"><button type="button" class="btn btn-outline-dark" data-v="grid">写真で見る</button><button type="button" class="btn btn-outline-dark" data-v="list">お品書き</button></div></div>
+                        <div class="col-auto"><span class="fst-italic" id="count"></span></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-4" id="chips"></div>
+                    <div id="stage"></div>
+                </div>
+            </div>
+        </section>
+        <!-- 店舗案内 (store.html: cta + list-hours)-->
+        <section class="page-section cta" id="store">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Come On In</span>
+                                <span class="section-heading-lower">営業時間</span>
+                            </h2>
+                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                                <li class="list-unstyled-item list-hours-item d-flex">日曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                                <li class="list-unstyled-item list-hours-item d-flex">月曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                                <li class="list-unstyled-item list-hours-item d-flex">火曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                                <li class="list-unstyled-item list-hours-item d-flex">水曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                                <li class="list-unstyled-item list-hours-item d-flex">木曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                                <li class="list-unstyled-item list-hours-item d-flex">金曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                                <li class="list-unstyled-item list-hours-item d-flex">土曜日<span class="ms-auto">0:00 〜 24:00</span></li>
+                            </ul>
+                            <p class="address mb-5"><em><strong>VRChat 内</strong><br />お気に入りから随時入荷しています</em></p>
+                            <p class="mb-0"><small><em>店主</em></small><br />アスユイ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container">
+                <p class="m-0 small">&copy; 喫茶アスユイ</p>
+                <p class="m-0 mt-1 small opacity-75">Theme: <a class="text-faded" href="https://startbootstrap.com/theme/business-casual" target="_blank" rel="noopener">Business Casual</a> by Start Bootstrap (MIT)</p>
+            </div>
+        </footer>
+        <!-- 詳細 -->
+        <div class="modal fade" id="detail" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-faded border-0" id="detailBody"></div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS (営業時間の今日の曜日を強調)-->
+        <script src="js/scripts.js"></script>
+        <script>document.write('<script src="../../data.js?v=' + Date.now() + '"><\/script>');</script>
+        <script src="../core.js"></script>
+        <script>
+        (function () {
+            const { esc, num, img, url, catName } = WS;
+            const $ = s => document.querySelector(s);
+
+            /* 本日のおすすめ (intro) */
+            let off = 0;
+            function renderToday(w) {
+                $('#intro').innerHTML = `
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="${esc(img(w, 2048))}" alt="" data-open="${w.id}" onerror="this.style.visibility='hidden'" />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">本日のおすすめ ・ ${WS.todayLabel()}</span>
+                            <span class="section-heading-lower">${esc(w.name)}</span>
+                        </h2>
+                        <p class="mb-3">${esc(w.note || '')}</p>
+                        <p class="small mb-4 fst-italic">${esc(catName(w.category))}${w.subtype ? ' ・ ' + esc(w.subtype) : ''} ・ 定員 ${w.capacity || '?'}名</p>
+                        <div class="intro-button mx-auto"><button class="btn btn-primary btn-xl" type="button" data-open="${w.id}">詳しく見る</button></div>
+                        <button class="btn btn-link btn-sm text-dark mt-3 mt-lg-0" type="button" id="reroll">別の一杯にする</button>
+                    </div>`;
+                $('#reroll').onclick = () => renderToday(WS.daily(++off));
+            }
+            renderToday(WS.daily(0));
+
+            /* 店主のおすすめ: 本当におすすめから日替わりで3つ (product-item) */
+            const rec = WS.inCat('recommend'); const picks = [];
+            for (let i = 0; picks.length < 3 && i < 60 && rec.length; i++) { const r = rec[(new Date().getDate() * 7 + i * 13) % rec.length]; if (!picks.includes(r)) picks.push(r); }
+            $('#picks').innerHTML = picks.map((w, i) => `
+                <section class="page-section">
+                    <div class="container">
+                        <div class="product-item">
+                            <div class="product-item-title d-flex">
+                                <div class="bg-faded p-5 d-flex ${i % 2 ? 'me-auto' : 'ms-auto'} rounded">
+                                    <h2 class="section-heading mb-0">
+                                        <span class="section-heading-upper">${i === 0 ? '店主のおすすめ ・ ' : ''}${esc(w.subtype || catName(w.category))}</span>
+                                        <span class="section-heading-lower">${esc(w.name)}</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" loading="lazy" src="${esc(img(w, 2048))}" alt="" data-open="${w.id}" data-pick="1" onerror="this.style.visibility='hidden'" />
+                            <div class="product-item-description d-flex ${i % 2 ? 'ms-auto' : 'me-auto'}">
+                                <div class="bg-faded p-5 rounded"><p class="mb-3">${esc(w.note || '')}</p><button class="btn btn-primary" type="button" data-open="${w.id}" data-pick="1">詳しく見る</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>`).join('');
+
+            /* メニュー */
+            const qEl = $('#q'), sortEl = $('#sort');
+            const card = w => `
+                <div class="col mb-4">
+                    <div class="card h-100 border-0 shadow-sm menu-card" role="button" tabindex="0" data-id="${w.id}">
+                        <img class="card-img-top" loading="lazy" decoding="async" src="${esc(img(w, 512))}" alt="" onerror="this.style.visibility='hidden'" />
+                        <div class="card-body">
+                            <div class="small text-primary-dark fst-italic mb-1">${esc(w.subtype || catName(w.category))}</div>
+                            <h3 class="menu-name">${esc(w.name)}</h3>
+                            <p class="small mb-0 menu-note">${esc(w.note || '')}</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pt-0 small fst-italic d-flex"><span>定員 ${w.capacity || '?'}名</span><span class="ms-auto">お気に入り ${num(w.favorites)}</span></div>
+                    </div>
+                </div>`;
+            function render(S) {
+                const c = WS.C.find(x => x.id === S.cat) || {};
+                $('#cdesc').textContent = c.desc || '';
+                $('#cattabs').innerHTML = WS.C.map(x => `<button type="button" class="btn ${x.id === S.cat ? 'btn-primary' : 'btn-outline-dark'}" data-cat="${x.id}">${esc(x.name)} <small class="opacity-75">${WS.inCat(x.id).length}</small></button>`).join('');
+                if (document.activeElement !== qEl) qEl.value = S.q;
+                sortEl.value = S.sort;
+                document.querySelectorAll('#views button').forEach(b => b.classList.toggle('active', b.dataset.v === S.view));
+                $('#chips').innerHTML = WS.tagCounts().map(([t, n]) => `<button type="button" class="btn btn-sm rounded-pill ${S.tags.has(t) ? 'btn-primary' : 'btn-outline-dark'}" data-tag="${esc(t)}">${esc(t)} <small class="opacity-75">${n}</small></button>`).join('');
+                const L = WS.list();
+                $('#count').textContent = L.length + ' 品';
+                if (!L.length) { $('#stage').innerHTML = '<p class="text-center fst-italic py-5 mb-0">あいにく、条件に合う一杯は品切れです。</p>'; return; }
+                $('#stage').innerHTML = S.view === 'list'
+                    ? `<ul class="list-unstyled menu-list mb-0">` + L.map(w => `<li class="menu-list-item d-flex align-items-center" role="button" tabindex="0" data-id="${w.id}">
+                        <img class="rounded me-3" loading="lazy" decoding="async" src="${esc(img(w, 256))}" alt="" onerror="this.style.visibility='hidden'" />
+                        <span class="flex-grow-1 min-w-0"><span class="d-block menu-list-name">${esc(w.name)}</span><span class="d-block small fst-italic opacity-75 text-truncate">${esc(w.subtype || '')}${(w.tags || []).length ? ' ・ ' + esc(w.tags.slice(0, 3).join(' / ')) : ''}</span></span>
+                        <span class="leader d-none d-md-block"></span>
+                        <span class="text-end ms-2 menu-list-meta">定員 ${w.capacity || '?'}名<br /><small>お気に入り ${num(w.favorites)}</small></span></li>`).join('') + `</ul>`
+                    : `<div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 g-3">${L.map(card).join('')}</div>`;
+            }
+            WS.on(render);
+
+            let t; qEl.addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => WS.set({ q: e.target.value.trim() }), 120); });
+            sortEl.addEventListener('change', e => WS.set({ sort: e.target.value }));
+            $('#views').addEventListener('click', e => { const b = e.target.closest('button'); if (b) WS.set({ view: b.dataset.v }); });
+            const openFrom = el => WS.modal.open(WS.W.find(x => x.id === el.dataset.id), WS.list());
+            const goTo = id => { const el = id ? document.getElementById(id) : null; el ? el.scrollIntoView({ behavior: 'smooth' }) : window.scrollTo({ top: 0, behavior: 'smooth' }); };
+            document.addEventListener('click', e => {
+                if (e.target.closest('#lucky')) { e.preventDefault(); const L = WS.list(); const w = WS.random(L.length ? L : WS.W); WS.modal.open(w, L.length ? L : [w]); return; }
+                const a = e.target.closest('a[href^="#"]:not([data-bs-toggle])'); if (a) { e.preventDefault(); goTo(a.getAttribute('href').slice(1)); return; }
+                const f = e.target.closest('[data-cat]'); if (f) { WS.set({ cat: f.dataset.cat }); return; }
+                const ch = e.target.closest('#chips [data-tag]'); if (ch) { WS.toggleTag(ch.dataset.tag); return; }
+                const o = e.target.closest('[data-open]'); if (o) { const w = WS.W.find(x => x.id === o.dataset.open); WS.modal.open(w, o.dataset.pick ? picks : [w]); return; }
+                const c = e.target.closest('#stage [data-id]'); if (c) openFrom(c);
+            });
+            document.addEventListener('keydown', e => { if (e.key === 'Enter') { const c = e.target.closest && e.target.closest('#stage [data-id]'); if (c) openFrom(c); } });
+
+            /* 詳細 (Bootstrap modal にテーマの部品を配置) */
+            const modalEl = $('#detail');
+            const bsModal = new bootstrap.Modal(modalEl);
+            modalEl.addEventListener('hidden.bs.modal', () => WS.modal.markClosed());
+            WS.modal.mount(modalEl, $('#detailBody'), (w, m) => `
+                <div class="modal-body p-4 p-lg-5">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-ws-close aria-label="閉じる"></button>
+                    <div class="row g-4 g-lg-5 align-items-center">
+                        <div class="col-lg-7"><img class="img-fluid rounded w-100 detail-img" src="${esc(img(w, 1024))}" alt="" onerror="this.style.visibility='hidden'" /></div>
+                        <div class="col-lg-5">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">${esc(catName(w.category))}${w.subtype ? ' ・ ' + esc(w.subtype) : ''}</span>
+                                <span class="section-heading-lower detail-name">${esc(w.name)}</span>
+                            </h2>
+                            <ul class="list-unstyled spec-list mb-4">
+                                <li class="d-flex">最大人数<span class="ms-auto">${w.capacity || '?'}名</span></li>
+                                <li class="d-flex">推奨人数<span class="ms-auto">${w.recommendedCapacity || '?'}名</span></li>
+                                <li class="d-flex">お気に入り<span class="ms-auto">${num(w.favorites)}</span></li>
+                                <li class="d-flex">訪問数<span class="ms-auto">${num(w.visits)}</span></li>
+                            </ul>
+                            <a class="btn btn-primary btn-xl" href="${url(w.id)}" target="_blank" rel="noopener">VRChatで開く</a>
+                            ${m.hasNav ? `<div class="d-flex align-items-center gap-2 mt-3"><button class="btn btn-outline-dark btn-sm" type="button" data-ws-prev>&larr; まえ</button><span class="small fst-italic">${m.pos} / ${m.total}</span><button class="btn btn-outline-dark btn-sm" type="button" data-ws-next>つぎ &rarr;</button></div>` : ''}
+                        </div>
+                    </div>
+                    <div class="row g-4 g-lg-5 mt-1">
+                        <div class="col-lg-7">
+                            <h3 class="section-heading-upper h6 mb-2">店主メモ</h3><p>${esc(w.note || '（未記入）')}</p>
+                            ${w.official ? `<h3 class="section-heading-upper h6 mb-2">VRChat原文</h3><p class="small fst-italic">${esc(w.official)}</p>` : ''}
+                            ${(w.tags || []).length ? `<div class="d-flex flex-wrap gap-2">${w.tags.map(t => `<button type="button" class="btn btn-sm btn-outline-dark rounded-pill" data-ws-tag="${esc(t)}">${esc(t)}</button>`).join('')}</div>` : ''}
+                        </div>
+                        <div class="col-lg-5">
+                            ${m.rel.length ? `<h3 class="section-heading-upper h6 mb-2">こちらもどうぞ</h3><div class="row row-cols-2 g-2">${m.rel.map(r => `<div class="col"><div class="rel" role="button" data-ws-rel="${r.id}"><img class="img-fluid rounded" loading="lazy" src="${esc(img(r, 256))}" alt="" onerror="this.style.visibility='hidden'" /><div class="small mt-1 rel-name">${esc(r.name)}</div></div></div>`).join('')}</div>` : ''}
+                        </div>
+                    </div>
+                </div>`, { show: () => bsModal.show(), hide: () => bsModal.hide() });
+        })();
+        </script>
+    </body>
+</html>

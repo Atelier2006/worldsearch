@@ -110,10 +110,11 @@
   const on = fn => { subs.push(fn); fn(S); };
 
   /* ---------- 詳細モーダル ---------- */
+  /* hooks: テンプレート側のモーダル(Bootstrapなど)で開閉したい場合に {show, hide} を渡す */
   const M = {
-    overlay: null, box: null, render: null, list: [], idx: -1,
-    mount(overlay, box, render) {
-      this.overlay = overlay; this.box = box; this.render = render;
+    overlay: null, box: null, render: null, hooks: null, opened: false, list: [], idx: -1,
+    mount(overlay, box, render, hooks) {
+      this.overlay = overlay; this.box = box; this.render = render; this.hooks = hooks || null;
       overlay.addEventListener('click', e => { if (e.target === overlay) M.close(); });
       box.addEventListener('click', e => {
         const el = e.target.closest('[data-ws-close],[data-ws-prev],[data-ws-next],[data-ws-rel],[data-ws-tag]');
@@ -135,14 +136,25 @@
       this.list = lst && lst.length ? lst : [w];
       this.idx = Math.max(0, this.list.indexOf(w));
       this.box.innerHTML = this.render(w, { hasNav: this.list.length > 1, pos: this.idx + 1, total: this.list.length, rel: related(w, 4) });
-      this.overlay.classList.add('show');
+      if (this.hooks) { if (!this.opened) this.hooks.show(); }
+      else { this.overlay.classList.add('show'); document.documentElement.style.overflow = 'hidden'; }
+      this.opened = true;
       this.overlay.scrollTop = 0;
-      document.documentElement.style.overflow = 'hidden';
     },
     step(d) { if (this.list.length < 2) return; this.idx = (this.idx + d + this.list.length) % this.list.length; this.open(this.list[this.idx], this.list); },
-    close() { if (!this.overlay) return; this.overlay.classList.remove('show'); document.documentElement.style.overflow = ''; },
-    isOpen() { return !!(this.overlay && this.overlay.classList.contains('show')); }
+    close() {
+      if (!this.overlay || !this.opened) return;
+      this.opened = false;
+      if (this.hooks) this.hooks.hide();
+      else { this.overlay.classList.remove('show'); document.documentElement.style.overflow = ''; }
+    },
+    markClosed() { this.opened = false; },
+    isOpen() { return this.opened; }
   };
+  window.addEventListener('hashchange', () => {
+    const c = new URLSearchParams(location.hash.slice(1)).get('c');
+    if (c && c !== S.cat && C.some(x => x.id === c)) set({ cat: c });
+  });
 
   document.addEventListener('keydown', e => {
     if (M.isOpen()) {
