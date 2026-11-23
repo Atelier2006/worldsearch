@@ -7,15 +7,14 @@
 -->
 <html lang="ja">
 	<head>
-		<title>ASUYUI｜アスユイのお気に入りワールド</title>
+		<title>アスユイのお気に入りワールド</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;800&display=swap" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=20261123" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -23,55 +22,35 @@
 					<header id="header">
 						<div class="inner">
 
-							<!-- Logo -->
-								<a href="#" class="logo" id="toTop">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">ASUYUI</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+							<div>
+								<p class="site-type">VRChat</p>
+								<h1>アスユイのお気に入りワールド</h1>
+							</div>
+							<section id="today" aria-label="今日のワールド">
+								<div id="todayRow"></div>
+							</section>
 
 						</div>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>売り場</h2>
-						<ul id="menuList"></ul>
-					</nav>
-
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-								<h1>アスユイのお気に入りワールド</h1>
-								<p id="lead">VRChatで出会ったワールドを、売り場ごとに並べています。気になるタイルを開けば、そのままVRChatで訪ねられます。</p>
-							</header>
-
-							<!-- 本日の一点 -->
-							<section id="today">
-								<div class="row gtr-uniform" id="todayRow"></div>
-							</section>
-
-							<!-- 売り場 -->
-							<section id="catalog">
-								<h2 id="ctitle"></h2>
-								<p id="cdesc"></p>
-								<ul class="actions small cats" id="cattabs"></ul>
-								<div class="row gtr-uniform controls">
-									<div class="col-7 col-12-small"><input type="text" id="q" data-ws-search placeholder="ワールド名・タグ・説明・定員で探す（ / ）" autocomplete="off" /></div>
-									<div class="col-3 col-6-small"><select id="sort" aria-label="並び替え">
-										<option value="fav">人気順</option><option value="new">新着順</option><option value="visits">訪問数順</option>
+							<section id="catalog" aria-label="ワールド一覧">
+								<nav aria-label="カテゴリ"><ul class="cats" id="cattabs"></ul></nav>
+								<div class="controls">
+									<input type="search" id="q" data-ws-search placeholder="名前・タグ・説明・定員で検索" aria-label="ワールドを検索" autocomplete="off" />
+									<select id="sort" aria-label="並び替え">
+										<option value="fav">お気に入り数順</option><option value="new">新着順</option><option value="visits">訪問数順</option>
 										<option value="name">名前順</option><option value="cap">定員が多い順</option><option value="capmin">定員が少ない順</option>
-									</select></div>
-									<div class="col-2 col-6-small"><ul class="actions small views" id="views"><li><button type="button" class="button small" data-v="grid">タイル</button></li><li><button type="button" class="button small" data-v="list">表</button></li></ul></div>
+									</select>
+									<div class="views" id="views" role="group" aria-label="表示形式"><button type="button" data-v="grid">写真</button><button type="button" data-v="list">一覧</button></div>
 								</div>
-								<p class="count" id="count"></p>
-								<ul class="actions small tags" id="chips"></ul>
+								<ul class="tags" id="chips" aria-label="タグで絞り込む"></ul>
+								<div class="result-bar">
+									<p class="count" id="count" role="status"></p>
+									<button type="button" id="random">ランダムに開く</button>
+								</div>
 								<div id="stage"></div>
 							</section>
 						</div>
@@ -80,21 +59,8 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>ご案内</h2>
-								<ul class="alt">
-									<li>営業時間　24時間（VRChat内）</li>
-									<li>店主　アスユイ</li>
-									<li>入荷　VRChatのお気に入りから随時</li>
-									<li><a href="#random">おまかせで1つ開く</a></li>
-								</ul>
-							</section>
-							<section>
-								<h2>売り場</h2>
-								<ul class="alt" id="footCats"></ul>
-							</section>
 							<ul class="copyright">
-								<li>&copy; アスユイ</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; アスユイ</li><li>テンプレート <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
@@ -102,73 +68,71 @@
 			</div>
 
 		<!-- 詳細 -->
-			<div id="detail" class="ws-overlay"><div class="ws-sheet" id="detailBody" role="dialog" aria-modal="true"></div></div>
+			<div id="detail" class="ws-overlay"><div class="ws-sheet" id="detailBody" role="dialog" aria-modal="true" aria-labelledby="worldTitle"></div></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 			<script>document.write('<script src="data.js?v=' + Date.now() + '"><\/script>');</script>
 			<script src="assets/js/core.js"></script>
 			<script>
 			(function () {
 				const { esc, num, img, url, catName } = WS;
 				const $ = s => document.querySelector(s);
-				const lucky = () => { const L = WS.list(); const w = WS.random(L.length ? L : WS.W); WS.modal.open(w, L.length ? L : [w]); };
+				$('#random').onclick = () => {
+					const results = WS.list();
+					WS.modal.open(WS.random(results), results);
+				};
 
-				/* 本日の一点 (generic.html の image + 本文) */
+				/* 日替わりのワールド */
 				let off = 0;
 				function renderToday(w) {
+					if (!w) { $('#today').hidden = true; return; }
 					$('#todayRow').innerHTML = `
-						<div class="col-7 col-12-medium"><span class="image fit today-img" data-open="${w.id}"><img src="${esc(img(w, 2048))}" alt="" onerror="this.style.visibility='hidden'" /></span></div>
-						<div class="col-5 col-12-medium">
-							<p class="eyebrow">本日の一点　${WS.todayLabel()}</p>
-							<h2>${esc(w.name)}</h2>
-							<p class="meta">${esc(catName(w.category))}${w.subtype ? '　/　' + esc(w.subtype) : ''}　/　定員 ${w.capacity || '?'}名</p>
-							<p>${esc(w.note || '')}</p>
-							<ul class="actions">
-								<li><button type="button" class="button primary" data-open="${w.id}">詳しく見る</button></li>
-								<li><button type="button" class="button" id="reroll">別の一点</button></li>
-							</ul>
-						</div>`;
-					$('#reroll').onclick = () => renderToday(WS.daily(++off));
+						<button type="button" class="today-link" data-open="${w.id}">
+							<img src="${esc(img(w, 256))}" alt="" onerror="this.style.visibility='hidden'" />
+							<span><small>今日のワールド</small><strong>${esc(w.name)}</strong></span>
+						</button>
+						<button type="button" id="reroll">別のワールド</button>`;
+					$('#reroll').onclick = () => {
+						renderToday(WS.daily(++off));
+						$('#reroll').focus();
+					};
 				}
 				renderToday(WS.daily(0));
 
-				/* メニュー(スライドイン)とフッターの売り場リンク */
-				$('#menuList').innerHTML = WS.C.map(c => `<li><a href="#c=${c.id}">${esc(c.name)}（${WS.inCat(c.id).length}）</a></li>`).join('') + '<li><a href="#random">おまかせで1つ</a></li>';
-				$('#footCats').innerHTML = WS.C.map(c => `<li><a href="#c=${c.id}" data-cat="${c.id}">${esc(c.name)}</a></li>`).join('');
-
-				/* 売り場 */
 				const qEl = $('#q'), sortEl = $('#sort');
-				const tile = (w, i) => `
-					<article class="style${(i % 6) + 1}">
-						<span class="image"><img loading="lazy" decoding="async" src="${esc(img(w, 512))}" alt="" onerror="this.style.visibility='hidden'" /></span>
-						<a href="#" data-id="${w.id}">
-							<h2>${esc(w.name)}</h2>
-							<div class="content"><p>${esc(w.note || w.subtype || '')}</p><p class="tile-meta">定員 ${w.capacity || '?'}名　お気に入り ${num(w.favorites)}</p></div>
-						</a>
+				const thumbnail = (w, size) => `<span class="world-photo"><img loading="lazy" decoding="async" src="${esc(img(w, size))}" alt="" onerror="this.style.visibility='hidden'" /></span>`;
+				const tile = w => `
+					<article class="world">
+						<button type="button" class="world-link" data-id="${w.id}">
+							${thumbnail(w, 512)}
+							<span class="world-name">${esc(w.name)}</span>
+							<span class="world-meta">定員 ${w.capacity || '–'}人 <span>お気に入り ${num(w.favorites)}</span></span>
+							${w.note ? `<span class="world-note">${esc(w.note)}</span>` : ''}
+						</button>
 					</article>`;
+				$('#cattabs').innerHTML = WS.C.map(c => `<li><button type="button" data-cat="${c.id}">${esc(c.name)}</button></li>`).join('');
+				let tagsFor;
 				function render(S) {
 					const c = WS.C.find(x => x.id === S.cat) || {};
-					$('#ctitle').textContent = c.name || '';
-					$('#cdesc').textContent = c.desc || '';
-					$('#cattabs').innerHTML = WS.C.map(x => `<li><button type="button" class="button small${x.id === S.cat ? ' primary' : ''}" data-cat="${x.id}">${esc(x.name)}</button></li>`).join('');
+					document.querySelectorAll('#cattabs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === S.cat));
 					if (document.activeElement !== qEl) qEl.value = S.q;
 					sortEl.value = S.sort;
-					document.querySelectorAll('#views button').forEach(b => b.classList.toggle('primary', b.dataset.v === S.view));
-					$('#chips').innerHTML = WS.tagCounts().map(([t, n]) => `<li><button type="button" class="button small${S.tags.has(t) ? ' primary' : ''}" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button></li>`).join('');
+					document.querySelectorAll('#views button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === S.view));
+					if (tagsFor !== S.cat) {
+						$('#chips').innerHTML = WS.tagCounts().map(([t, n]) => `<li><button type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button></li>`).join('');
+						tagsFor = S.cat;
+					}
+					document.querySelectorAll('#chips button').forEach(b => b.setAttribute('aria-pressed', S.tags.has(b.dataset.tag)));
 					const L = WS.list();
-					$('#count').textContent = L.length + ' 点';
-					if (!L.length) { $('#stage').innerHTML = '<p>条件に合うワールドは見つかりませんでした。</p>'; return; }
+					$('#count').textContent = c.name + '　' + num(L.length) + '件';
+					$('#random').disabled = !L.length;
+					if (!L.length) { $('#stage').innerHTML = '<p class="empty">該当するワールドがありません。検索語やタグを変えてみてください。</p>'; return; }
 					$('#stage').innerHTML = S.view === 'list'
 						? `<div class="table-wrapper"><table class="alt"><thead><tr><th></th><th>ワールド</th><th>定員</th><th class="hide-s">お気に入り</th><th class="hide-s">訪問</th></tr></thead><tbody>`
 							+ L.map(w => `<tr data-id="${w.id}"><td class="thumb"><img loading="lazy" decoding="async" src="${esc(img(w, 256))}" alt="" onerror="this.style.visibility='hidden'" /></td>
-								<td><strong>${esc(w.name)}</strong><br /><small>${esc(w.subtype || '')}${(w.tags || []).length ? '　' + esc(w.tags.slice(0, 3).join(' / ')) : ''}</small></td>
+								<td><button type="button" class="table-world" data-id="${w.id}">${esc(w.name)}</button><br /><small>${esc(w.subtype || '')}${(w.tags || []).length ? '　' + esc(w.tags.slice(0, 3).join(' / ')) : ''}</small></td>
 								<td>${w.capacity || '?'}</td><td class="hide-s">${num(w.favorites)}</td><td class="hide-s">${num(w.visits)}</td></tr>`).join('') + `</tbody></table></div>`
-						: `<section class="tiles">${L.map(tile).join('')}</section>`;
+						: `<section class="world-grid" aria-label="ワールドの写真">${L.map(tile).join('')}</section>`;
 				}
 				WS.on(render);
 
@@ -176,20 +140,13 @@
 				sortEl.addEventListener('change', e => WS.set({ sort: e.target.value }));
 				$('#views').addEventListener('click', e => { const b = e.target.closest('button'); if (b) WS.set({ view: b.dataset.v }); });
 				document.addEventListener('click', e => {
-					if (e.target.closest('#toTop')) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
-					const r = e.target.closest('a[href="#random"]'); if (r) { e.preventDefault(); lucky(); return; }
-					const f = e.target.closest('[data-cat]'); if (f) { e.preventDefault(); WS.set({ cat: f.dataset.cat }); if (f.closest('#footer')) $('#catalog').scrollIntoView({ behavior: 'smooth' }); return; }
+					const f = e.target.closest('[data-cat]'); if (f) { clearTimeout(t); WS.set({ cat: f.dataset.cat }); return; }
 					const ch = e.target.closest('#chips [data-tag]'); if (ch) { WS.toggleTag(ch.dataset.tag); return; }
 					const o = e.target.closest('[data-open]'); if (o) { const w = WS.W.find(x => x.id === o.dataset.open); WS.modal.open(w, [w]); return; }
 					const c = e.target.closest('#stage [data-id]'); if (c) { e.preventDefault(); WS.modal.open(WS.W.find(x => x.id === c.dataset.id), WS.list()); }
 				});
-				/* スライドインメニューのリンクは location.hash 経由で届く */
-				window.addEventListener('hashchange', () => {
-					if (location.hash === '#random') { history.replaceState(null, '', '#c=' + WS.S.cat); lucky(); return; }
-					if (new URLSearchParams(location.hash.slice(1)).get('c')) $('#catalog').scrollIntoView({ behavior: 'smooth' });
-				});
 
-				/* 詳細 (Phantom の部品で組んだオーバーレイ) */
+				/* ワールド詳細 */
 				WS.modal.mount($('#detail'), $('#detailBody'), (w, m) => `
 					<button type="button" class="ws-close" data-ws-close aria-label="閉じる">閉じる</button>
 					<div class="row gtr-uniform">
@@ -198,7 +155,7 @@
 						</div>
 						<div class="col-5 col-12-medium">
 							<p class="eyebrow">${esc(catName(w.category))}${w.subtype ? '　/　' + esc(w.subtype) : ''}</p>
-							<h2>${esc(w.name)}</h2>
+							<h2 id="worldTitle">${esc(w.name)}</h2>
 							<div class="table-wrapper"><table class="alt spec"><tbody>
 								<tr><td>最大人数</td><td>${w.capacity || '?'}名</td></tr><tr><td>推奨人数</td><td>${w.recommendedCapacity || '?'}名</td></tr>
 								<tr><td>お気に入り</td><td>${num(w.favorites)}</td></tr><tr><td>訪問数</td><td>${num(w.visits)}</td></tr>
@@ -206,12 +163,11 @@
 							<ul class="actions"><li><a class="button primary" href="${url(w.id)}" target="_blank" rel="noopener">VRChatで開く</a></li></ul>
 						</div>
 					</div>
-					<h3>ワールド説明</h3>
-					<p>${esc(w.note || '（未記入）')}</p>
-					${w.official ? `<p class="orig">VRChat原文：${esc(w.official)}</p>` : ''}
-					${(w.tags || []).length ? `<ul class="actions small tags">${w.tags.map(t => `<li><button type="button" class="button small" data-ws-tag="${esc(t)}">${esc(t)}</button></li>`).join('')}</ul>` : ''}
-					${m.rel.length ? `<h3>近いワールド</h3><section class="tiles mini">${m.rel.map((r, i) => `<article class="style${(i % 6) + 1}"><span class="image"><img loading="lazy" src="${esc(img(r, 256))}" alt="" onerror="this.style.visibility='hidden'" /></span><a href="#" data-ws-rel="${r.id}"><h2>${esc(r.name)}</h2></a></article>`).join('')}</section>` : ''}`);
-				document.getElementById('detailBody').addEventListener('click', e => { if (e.target.closest('a[href="#"]')) e.preventDefault(); });
+					<h3>ワールドの説明</h3>
+					<p class="description">${esc(w.note || '説明はありません。')}</p>
+					${w.official ? `<details class="orig"><summary>VRChatに掲載されている説明</summary><p>${esc(w.official)}</p></details>` : ''}
+					${(w.tags || []).length ? `<ul class="tags" aria-label="タグで絞り込む">${w.tags.map(t => `<li><button type="button" data-ws-tag="${esc(t)}">${esc(t)}</button></li>`).join('')}</ul>` : ''}
+					${m.rel.length ? `<h3>関連ワールド</h3><section class="world-grid related">${m.rel.map(r => `<button type="button" class="world-link" data-ws-rel="${r.id}">${thumbnail(r, 256)}<span class="world-name">${esc(r.name)}</span></button>`).join('')}</section>` : ''}`);
 			})();
 			</script>
 	</body>
