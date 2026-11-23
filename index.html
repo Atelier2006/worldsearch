@@ -11,7 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css?v=20261123b" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=20261123c" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
@@ -21,35 +21,53 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
-
-							<div>
-								<p class="site-type">VRChat</p>
-								<h1>アスユイのお気に入りワールド</h1>
-							</div>
-							<section id="today" aria-label="今日のワールド">
-								<div id="todayRow"></div>
-							</section>
-
+							<p class="site-type">VRChat</p>
+							<h1>アスユイのお気に入りワールド</h1>
+							<p class="site-lead" id="siteLead"></p>
 						</div>
 					</header>
+
+				<!-- 今日のワールド / まずはこの5件 -->
+					<section id="picks" aria-label="今日のワールドとおすすめ">
+						<div class="inner">
+							<div class="today" id="today"></div>
+							<div class="starter">
+								<h2 class="band-label" id="starterLabel">まずはこの5件</h2>
+								<ul id="starter" aria-labelledby="starterLabel"></ul>
+							</div>
+						</div>
+					</section>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<section id="catalog" aria-label="ワールド一覧">
-								<nav aria-label="カテゴリ"><ul class="cats" id="cattabs"></ul></nav>
+								<h2 class="row-label" id="purposeLabel">目的から探す</h2>
+								<ul class="purposes" id="purposes" aria-labelledby="purposeLabel"></ul>
+								<h2 class="row-label" id="catLabel">売り場から探す</h2>
+								<nav aria-labelledby="catLabel"><ul class="cats" id="cattabs"></ul></nav>
+								<p class="scope-desc" id="scopeDesc"></p>
 								<div class="controls">
-									<input type="search" id="q" data-ws-search placeholder="名前・タグ・説明・定員で検索" aria-label="ワールドを検索" autocomplete="off" />
-									<select id="sort" aria-label="並び替え">
-										<option value="fav">お気に入り数順</option><option value="new">新着順</option><option value="visits">訪問数順</option>
-										<option value="name">名前順</option><option value="cap">定員が多い順</option><option value="capmin">定員が少ない順</option>
-									</select>
-									<div class="views" id="views" role="group" aria-label="表示形式"><button type="button" data-v="grid">写真</button><button type="button" data-v="list">一覧</button></div>
+									<input type="search" id="q" data-ws-search placeholder="名前・タグ・説明・定員で検索（/ キー）" aria-label="ワールドを検索" autocomplete="off" />
+									<button type="button" id="filterToggle" aria-expanded="false" aria-controls="filters">絞り込み・並び替え<span class="n" id="filterN"></span></button>
 								</div>
-								<ul class="tags" id="chips" aria-label="タグで絞り込む"></ul>
+								<div class="filters" id="filters" hidden>
+									<div class="filter-row">
+										<label for="sort">並び替え</label>
+										<select id="sort">
+											<option value="fav">お気に入り数順</option><option value="new">追加が新しい順</option><option value="visits">訪問数順</option>
+											<option value="name">名前順</option><option value="cap">定員が多い順</option><option value="capmin">定員が少ない順</option>
+										</select>
+										<span class="label" id="viewLabel">表示</span>
+										<div class="views" id="views" role="group" aria-labelledby="viewLabel"><button type="button" data-v="grid">写真</button><button type="button" data-v="list">一覧</button></div>
+									</div>
+									<p class="label">タグ</p>
+									<ul class="tags" id="chips" aria-label="タグで絞り込む"></ul>
+								</div>
+								<div class="active" id="active" hidden></div>
 								<div class="result-bar">
 									<p class="count" id="count" role="status"></p>
-									<button type="button" id="random">ランダムに開く</button>
+									<button type="button" id="random">おまかせで1件開く</button>
 								</div>
 								<div id="stage"></div>
 							</section>
@@ -72,55 +90,110 @@
 
 		<!-- Scripts -->
 			<script>document.write('<script src="data.js?v=' + Date.now() + '"><\/script>');</script>
-			<script src="assets/js/core.js"></script>
+			<script src="assets/js/core.js?v=20261123c"></script>
 			<script>
 			(function () {
 				const { esc, num, img, url, catName } = WS;
 				const $ = s => document.querySelector(s);
-				$('#random').onclick = () => {
-					const results = WS.list();
-					WS.modal.open(WS.random(results), results);
-				};
+				const has = (w, t) => (w.tags || []).includes(t);
 
-				/* 日替わりのワールド */
-				let off = 0;
-				function renderToday(w) {
+				/* 「まずはこの5件」: ここのIDを書き換えると差し替えられます */
+				const STARTER = [
+					'wrld_c82a5c14-97a5-4782-a034-d897d2d943a2', // 新宿ライブストリート
+					'wrld_b5ed19cb-cf04-481c-833a-9833138ff668', // VR宇宙博物館コスモリア
+					'wrld_ff414a30-31e3-44bb-9c8e-3d721e895b0b', // Complex 7
+					'wrld_51ecc9d8-3944-4f9a-9723-7da0acd0fd25', // LUMINARIUM
+					'wrld_f52da313-d9fc-42e2-82fd-4f17d9236ce5'  // Nel Blu
+				];
+
+				/* 詳細の「こんな人に」「行く前に」に出す言い換え（タグ → 文） */
+				const FOR_WHOM = {
+					'初心者向き': 'VRChatを始めたばかりの人', '一人でゆっくり': '一人でゆっくり過ごしたい人', '一人でも': '一人でも楽しみたい人',
+					'フレンドと': 'フレンドと行きたい人', '睡眠・V睡': 'V睡したい人', '写真・撮影': '写真を撮りたい人', '集会・交流': '集まって話したい人',
+					'パーティー': '大人数で盛り上がりたい人', '対戦': '対戦で遊びたい人', '協力': '協力して遊びたい人', '探索': '歩き回って探索したい人',
+					'解説あり': '解説を読みながら見たい人', 'ストーリー': '物語に浸りたい人', '物語体験': '物語に浸りたい人', '作業用': '作業しながら過ごしたい人',
+					'長居できる': '長く居られる場所を探している人', '少人数': '少人数で行きたい人'
+				};
+				const CAUTION = {
+					'PC専用': 'PC版のみ（Questでは入れません）', '点滅注意': '点滅する演出があります', '光の演出注意': '強い光の演出があります',
+					'VR酔い注意': 'VR酔いしやすい動きがあります', '大容量注意': '容量が大きいので事前ダウンロード推奨', '高負荷': '動作が重めです',
+					'視界ジャック強め': '視界が演出で大きく覆われます', '海洋恐怖症注意': '深い海の表現があります', 'ホラー・不気味': '怖い表現があります',
+					'ホラー': '怖い表現があります', 'サイコホラー': '怖い表現があります', 'ホラー要素あり': '怖い表現があります', '期間限定': '期間限定の公開です',
+					'制作途中': '制作途中のワールドです', '入場時間制限': '入場できる時間に制限があります', '一人専用': '一人専用です', '2人専用': '2人専用です',
+					'ネタバレ注意': '内容を知らずに行くのがおすすめです', '英語のみ': '案内は英語のみです', '体験版': '体験版です'
+				};
+				const BADGE_TAGS = ['Quest対応', 'PC専用'];
+				const phrases = (w, map) => [...new Set((w.tags || []).filter(t => map[t]).map(t => map[t]))];
+
+				/* 写真（読み込めないときは売り場の色と名前を表示） */
+				const photo = (w, size, extra, cls) => `<span class="world-photo tint-${esc(w.category)}${cls ? ' ' + cls : ''}"><span class="ph" aria-hidden="true">${esc(w.name)}</span><img loading="lazy" decoding="async" src="${esc(img(w, size))}" alt="" onerror="this.remove()" />${extra || ''}</span>`;
+				const badges = w => {
+					const top = [];
+					if (WS.isPopular(w)) top.push('人気');
+					if (has(w, 'Quest対応')) top.push('Quest対応'); else if (has(w, 'PC専用')) top.push('PC専用');
+					return (top.length ? `<span class="badges top">${top.map(b => `<span class="badge">${b}</span>`).join('')}</span>` : '')
+						+ (w.subtype ? `<span class="badges bottom"><span class="badge plain">${esc(w.subtype)}</span></span>` : '');
+				};
+				const cardTags = w => (w.tags || []).filter(t => !BADGE_TAGS.includes(t) && !CAUTION[t] && t !== w.subtype).slice(0, 3);
+
+				$('#siteLead').textContent = `${num(WS.W.length)}件のお気に入りから、目的や売り場で探せます。`;
+
+				/* 今日のワールド（日替わり） */
+				(function renderToday() {
+					const w = WS.daily(0);
 					if (!w) { $('#today').hidden = true; return; }
-					$('#todayRow').innerHTML = `
+					$('#today').innerHTML = `
+						<h2 class="band-label">今日のワールド<span>${WS.todayLabel()}</span></h2>
 						<button type="button" class="today-link" data-open="${w.id}">
-							<img src="${esc(img(w, 256))}" alt="" onerror="this.style.visibility='hidden'" />
-							<span><small>今日のワールド</small><strong>${esc(w.name)}</strong></span>
-						</button>
-						<button type="button" id="reroll">別のワールド</button>`;
-					$('#reroll').onclick = () => {
-						renderToday(WS.daily(++off));
-						$('#reroll').focus();
-					};
-				}
-				renderToday(WS.daily(0));
+							${photo(w, 1024, '')}
+							<span class="today-text"><strong>${esc(w.name)}</strong><span>${esc(WS.splitNote(w).hook)}</span><small>${esc(catName(w.category))}${w.subtype ? '・' + esc(w.subtype) : ''}</small></span>
+						</button>`;
+				})();
+
+				/* まずはこの5件 */
+				const starter = STARTER.map(id => WS.W.find(w => w.id === id)).filter(Boolean);
+				$('#starter').innerHTML = starter.map(w => `<li><button type="button" class="starter-link" data-open="${w.id}" data-group="starter">${photo(w, 512, '')}<span class="name">${esc(w.name)}</span></button></li>`).join('');
+				if (!starter.length) $('.starter').hidden = true;
 
 				const qEl = $('#q'), sortEl = $('#sort');
-				const thumbnail = (w, size) => `<span class="world-photo"><img loading="lazy" decoding="async" src="${esc(img(w, size))}" alt="" onerror="this.style.visibility='hidden'" /></span>`;
-				const tile = w => `
+				const tile = w => {
+					const tags = cardTags(w), hook = WS.splitNote(w).hook;
+					return `
 					<article class="world">
 						<button type="button" class="world-link" data-id="${w.id}">
-							${thumbnail(w, 512)}
+							${photo(w, 512, badges(w))}
 							<span class="world-name">${esc(w.name)}</span>
-							<span class="world-meta">定員 ${w.capacity || '–'}人 <span>お気に入り ${num(w.favorites)}</span></span>
-							${w.note ? `<span class="world-note">${esc(w.note)}</span>` : ''}
+							${hook ? `<span class="world-hook">${esc(hook)}</span>` : ''}
+							<span class="world-meta">${WS.S.purpose ? `<span>${esc(catName(w.category))}</span>` : ''}<span>定員 ${w.capacity || '–'}人</span>${tags.length ? `<span>${esc(tags.join(' / '))}</span>` : ''}</span>
 						</button>
 					</article>`;
+				};
+
+				$('#purposes').innerHTML = WS.PURPOSES.map(p => `<li><button type="button" data-purpose="${p.id}">${esc(p.name)}</button></li>`).join('');
 				$('#cattabs').innerHTML = WS.C.map(c => `<li><button type="button" data-cat="${c.id}">${esc(c.name)}</button></li>`).join('');
-				/* タグ: 売り場内で3件以上あるものを常に表示し、残りは「ほかのタグ」で開く */
-				const MAIN_TAG_MIN = 3;
+				let lastCat = WS.S.cat || 'recommend';
+
+				/* 絞り込みパネル（開閉を覚えておく） */
+				let panelOpen = false;
+				try { panelOpen = localStorage.getItem('ws-filters') === 'open'; } catch (e) {}
+				function applyPanel() {
+					$('#filters').hidden = !panelOpen;
+					$('#filterToggle').setAttribute('aria-expanded', panelOpen);
+				}
+				applyPanel();
+
+				/* タグ: 件数の多い8件を表示し、残りは「もっと見る」 */
+				const MAIN_TAGS = 8;
 				let tagsFor, allTags = false, minorTags = 0;
 				function renderChips(S) {
-					if (tagsFor !== S.cat) {
-						const counts = WS.tagCounts();
-						minorTags = counts.filter(([, n]) => n < MAIN_TAG_MIN).length;
-						$('#chips').innerHTML = counts.map(([t, n]) => `<li${n < MAIN_TAG_MIN ? ' class="minor"' : ''}><button type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button></li>`).join('')
+					const key = S.purpose ? 'p:' + S.purpose : 'c:' + S.cat;
+					if (tagsFor !== key) {
+						const total = WS.scope().length;
+						const counts = WS.tagCounts().filter(([, n]) => n < total); // 全件に付くタグは絞り込みにならない
+						minorTags = Math.max(0, counts.length - MAIN_TAGS);
+						$('#chips').innerHTML = counts.map(([t, n], i) => `<li${i >= MAIN_TAGS ? ' class="minor"' : ''}><button type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button></li>`).join('')
 							+ (minorTags ? `<li class="more"><button type="button" id="moreTags" aria-expanded="false"></button></li>` : '');
-						tagsFor = S.cat; allTags = false;
+						tagsFor = key; allTags = false;
 					}
 					document.querySelectorAll('#chips [data-tag]').forEach(b => {
 						const on = S.tags.has(b.dataset.tag);
@@ -130,24 +203,39 @@
 					const more = $('#moreTags');
 					if (more) {
 						more.setAttribute('aria-expanded', allTags);
-						more.textContent = allTags ? '主なタグだけ表示' : `ほかのタグ（${minorTags}）`;
+						more.textContent = allTags ? '少なく表示' : `もっと見る（${minorTags}）`;
 					}
 				}
+
+				/* 絞り込み中の条件（個別に外せる） */
+				function renderActive(S) {
+					const items = [...S.tags].map(t => `<li><button type="button" data-untag="${esc(t)}" aria-label="タグ「${esc(t)}」を外す">${esc(t)}<span aria-hidden="true">×</span></button></li>`);
+					if (S.q) items.push(`<li><button type="button" data-unq aria-label="検索語「${esc(S.q)}」を外す">「${esc(S.q)}」<span aria-hidden="true">×</span></button></li>`);
+					$('#active').hidden = !items.length;
+					$('#active').innerHTML = items.length ? `<span class="label">絞り込み中</span><ul>${items.join('')}</ul><button type="button" id="clearAll">条件をすべてクリア</button>` : '';
+					$('#filterN').textContent = S.tags.size ? `（${S.tags.size}）` : '';
+				}
+
 				function render(S) {
-					const c = WS.C.find(x => x.id === S.cat) || {};
-					document.querySelectorAll('#cattabs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === S.cat));
+					const p = WS.purposeOf(S.purpose), c = WS.C.find(x => x.id === S.cat) || {};
+					document.querySelectorAll('#purposes button').forEach(b => b.setAttribute('aria-pressed', b.dataset.purpose === S.purpose));
+					document.querySelectorAll('#cattabs button').forEach(b => b.setAttribute('aria-pressed', !p && b.dataset.cat === S.cat));
+					$('#scopeDesc').textContent = p
+						? `${p.tags.length > 1 ? p.tags.map(x => `「${x}」`).join('') + 'のどれか' : `「${p.tags[0]}」`}のタグが付いたワールドを、全売り場から集めています（「まだ行ってない」は除く）。`
+						: (c.desc || '');
 					if (document.activeElement !== qEl) qEl.value = S.q;
 					sortEl.value = S.sort;
 					document.querySelectorAll('#views button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === S.view));
 					renderChips(S);
+					renderActive(S);
 					const L = WS.list();
-					$('#count').textContent = c.name + '　' + num(L.length) + '件';
+					$('#count').textContent = (p ? `目的「${p.name}」` : c.name) + '　' + num(L.length) + '件';
 					$('#random').disabled = !L.length;
 					if (!L.length) { $('#stage').innerHTML = '<p class="empty">該当するワールドがありません。検索語やタグを変えてみてください。</p>'; return; }
 					$('#stage').innerHTML = S.view === 'list'
 						? `<div class="table-wrapper"><table class="alt"><thead><tr><th></th><th>ワールド</th><th>定員</th><th class="hide-s">お気に入り</th><th class="hide-s">訪問</th></tr></thead><tbody>`
-							+ L.map(w => `<tr data-id="${w.id}"><td class="thumb"><img loading="lazy" decoding="async" src="${esc(img(w, 256))}" alt="" onerror="this.style.visibility='hidden'" /></td>
-								<td><button type="button" class="table-world" data-id="${w.id}">${esc(w.name)}</button><br /><small>${esc(w.subtype || '')}${(w.tags || []).length ? '　' + esc(w.tags.slice(0, 3).join(' / ')) : ''}</small></td>
+							+ L.map(w => `<tr data-id="${w.id}"><td class="thumb">${photo(w, 256, '', 'mini')}</td>
+								<td><button type="button" class="table-world" data-id="${w.id}">${esc(w.name)}</button><br /><small>${p ? esc(catName(w.category)) + '　' : ''}${esc(w.subtype || '')}${(w.tags || []).length ? '　' + esc(w.tags.slice(0, 3).join(' / ')) : ''}</small></td>
 								<td>${w.capacity || '?'}</td><td class="hide-s">${num(w.favorites)}</td><td class="hide-s">${num(w.visits)}</td></tr>`).join('') + `</tbody></table></div>`
 						: `<section class="world-grid" aria-label="ワールドの写真">${L.map(tile).join('')}</section>`;
 				}
@@ -156,36 +244,75 @@
 				let t; qEl.addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => WS.set({ q: e.target.value.trim() }), 120); });
 				sortEl.addEventListener('change', e => WS.set({ sort: e.target.value }));
 				$('#views').addEventListener('click', e => { const b = e.target.closest('button'); if (b) WS.set({ view: b.dataset.v }); });
+				$('#filterToggle').addEventListener('click', () => {
+					panelOpen = !panelOpen; applyPanel();
+					try { localStorage.setItem('ws-filters', panelOpen ? 'open' : 'closed'); } catch (e) {}
+				});
+				$('#random').onclick = () => {
+					const results = WS.list();
+					WS.modal.open(WS.random(results), results);
+				};
 				document.addEventListener('click', e => {
-					const f = e.target.closest('[data-cat]'); if (f) { clearTimeout(t); WS.set({ cat: f.dataset.cat }); return; }
+					const pp = e.target.closest('[data-purpose]');
+					if (pp) {
+						clearTimeout(t);
+						if (WS.S.purpose === pp.dataset.purpose) WS.set({ cat: lastCat });
+						else { if (WS.S.cat) lastCat = WS.S.cat; WS.set({ purpose: pp.dataset.purpose }); }
+						return;
+					}
+					const f = e.target.closest('[data-cat]'); if (f) { clearTimeout(t); lastCat = f.dataset.cat; WS.set({ cat: f.dataset.cat }); return; }
 					if (e.target.closest('#moreTags')) { allTags = !allTags; renderChips(WS.S); return; }
 					const ch = e.target.closest('#chips [data-tag]'); if (ch) { WS.toggleTag(ch.dataset.tag); return; }
-					const o = e.target.closest('[data-open]'); if (o) { const w = WS.W.find(x => x.id === o.dataset.open); WS.modal.open(w, [w]); return; }
+					const ut = e.target.closest('[data-untag]'), uq = e.target.closest('[data-unq]'), ca = e.target.closest('#clearAll');
+					if (ut || uq || ca) {
+						clearTimeout(t);
+						if (ca) WS.clearFilters();
+						else if (ut) WS.toggleTag(ut.dataset.untag);
+						else { qEl.value = ''; WS.set({ q: '' }); }
+						const next = $('#active:not([hidden]) button');
+						(next || qEl).focus({ preventScroll: true });
+						return;
+					}
+					const o = e.target.closest('[data-open]');
+					if (o) {
+						const w = WS.W.find(x => x.id === o.dataset.open);
+						WS.modal.open(w, o.dataset.group === 'starter' ? starter : [w]);
+						return;
+					}
 					const c = e.target.closest('#stage [data-id]'); if (c) { e.preventDefault(); WS.modal.open(WS.W.find(x => x.id === c.dataset.id), WS.list()); }
 				});
 
-				/* ワールド詳細 */
-				WS.modal.mount($('#detail'), $('#detailBody'), (w, m) => `
+				/* ワールド詳細: 紹介 → こんな人に → 行く前に → くわしく → データ → 公式の説明 */
+				WS.modal.mount($('#detail'), $('#detailBody'), (w, m) => {
+					const { hook, rest } = WS.splitNote(w);
+					const fors = phrases(w, FOR_WHOM).slice(0, 4), cautions = phrases(w, CAUTION);
+					const showOfficial = w.official && w.official.trim() !== String(w.note || '').trim();
+					const marks = [WS.isPopular(w) ? '人気' : '', has(w, 'Quest対応') ? 'Quest対応' : ''].filter(Boolean);
+					return `
 					<button type="button" class="ws-close" data-ws-close aria-label="閉じる">閉じる</button>
 					<div class="row gtr-uniform">
-						<div class="col-7 col-12-medium"><span class="image fit"><img src="${esc(img(w, 1024))}" alt="" onerror="this.style.visibility='hidden'" /></span>
-							${m.hasNav ? `<ul class="actions small nav-row"><li><button type="button" class="button small" data-ws-prev>&larr; 前へ</button></li><li class="pos">${m.pos} / ${m.total}</li><li><button type="button" class="button small" data-ws-next>次へ &rarr;</button></li></ul>` : ''}
+						<div class="col-7 col-12-medium">${photo(w, 1024, '', 'detail-photo')}
+							${m.hasNav ? `<ul class="actions small fixed nav-row"><li><button type="button" class="button small" data-ws-prev>&larr; 前へ</button></li><li class="pos">${m.pos} / ${m.total}</li><li><button type="button" class="button small" data-ws-next>次へ &rarr;</button></li></ul>` : ''}
 						</div>
 						<div class="col-5 col-12-medium">
 							<p class="eyebrow">${esc(catName(w.category))}${w.subtype ? '　/　' + esc(w.subtype) : ''}</p>
 							<h2 id="worldTitle">${esc(w.name)}</h2>
-							<div class="table-wrapper"><table class="alt spec"><tbody>
-								<tr><td>最大人数</td><td>${w.capacity || '?'}名</td></tr><tr><td>推奨人数</td><td>${w.recommendedCapacity || '?'}名</td></tr>
-								<tr><td>お気に入り</td><td>${num(w.favorites)}</td></tr><tr><td>訪問数</td><td>${num(w.visits)}</td></tr>
-							</tbody></table></div>
-							<ul class="actions"><li><a class="button primary" href="${url(w.id)}" target="_blank" rel="noopener">VRChatで開く</a></li></ul>
+							${marks.length ? `<p class="marks">${marks.map(b => `<span class="badge">${b}</span>`).join('')}</p>` : ''}
+							<p class="lead">${esc(hook || '説明はありません。')}</p>
+							${fors.length ? `<h3>こんな人に</h3><ul class="points">${fors.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+							${cautions.length ? `<h3>行く前に</h3><ul class="points caution">${cautions.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
 						</div>
 					</div>
-					<h3>ワールドの説明</h3>
-					<p class="description">${esc(w.note || '説明はありません。')}</p>
-					${w.official ? `<details class="orig"><summary>VRChatに掲載されている説明</summary><p>${esc(w.official)}</p></details>` : ''}
+					${rest ? `<h3>くわしく</h3><p class="description">${esc(rest)}</p>` : ''}
+					<dl class="spec">
+						<div><dt>最大人数</dt><dd>${w.capacity || '?'}名</dd></div><div><dt>推奨人数</dt><dd>${w.recommendedCapacity || '?'}名</dd></div>
+						<div><dt>お気に入り</dt><dd>${num(w.favorites)}</dd></div><div><dt>訪問数</dt><dd>${num(w.visits)}</dd></div>
+					</dl>
 					${(w.tags || []).length ? `<ul class="tags" aria-label="タグで絞り込む">${w.tags.map(t => `<li><button type="button" data-ws-tag="${esc(t)}">${esc(t)}</button></li>`).join('')}</ul>` : ''}
-					${m.rel.length ? `<h3>関連ワールド</h3><section class="world-grid related">${m.rel.map(r => `<button type="button" class="world-link" data-ws-rel="${r.id}">${thumbnail(r, 256)}<span class="world-name">${esc(r.name)}</span></button>`).join('')}</section>` : ''}`);
+					${showOfficial ? `<details class="orig"><summary>VRChatに掲載されている説明</summary><p>${esc(w.official)}</p></details>` : ''}
+					${m.rel.length ? `<h3>関連ワールド</h3><section class="world-grid related">${m.rel.map(r => `<button type="button" class="world-link" data-ws-rel="${r.id}">${photo(r, 256, '')}<span class="world-name">${esc(r.name)}</span></button>`).join('')}</section>` : ''}
+					<div class="ws-cta"><a class="button primary" href="${url(w.id)}" target="_blank" rel="noopener">VRChatで開く</a></div>`;
+				});
 			})();
 			</script>
 	</body>
