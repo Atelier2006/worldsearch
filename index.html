@@ -11,7 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css?v=20261123" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=20261123b" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
@@ -111,18 +111,35 @@
 						</button>
 					</article>`;
 				$('#cattabs').innerHTML = WS.C.map(c => `<li><button type="button" data-cat="${c.id}">${esc(c.name)}</button></li>`).join('');
-				let tagsFor;
+				/* タグ: 売り場内で3件以上あるものを常に表示し、残りは「ほかのタグ」で開く */
+				const MAIN_TAG_MIN = 3;
+				let tagsFor, allTags = false, minorTags = 0;
+				function renderChips(S) {
+					if (tagsFor !== S.cat) {
+						const counts = WS.tagCounts();
+						minorTags = counts.filter(([, n]) => n < MAIN_TAG_MIN).length;
+						$('#chips').innerHTML = counts.map(([t, n]) => `<li${n < MAIN_TAG_MIN ? ' class="minor"' : ''}><button type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button></li>`).join('')
+							+ (minorTags ? `<li class="more"><button type="button" id="moreTags" aria-expanded="false"></button></li>` : '');
+						tagsFor = S.cat; allTags = false;
+					}
+					document.querySelectorAll('#chips [data-tag]').forEach(b => {
+						const on = S.tags.has(b.dataset.tag);
+						b.setAttribute('aria-pressed', on);
+						if (b.parentNode.classList.contains('minor')) b.parentNode.hidden = !allTags && !on;
+					});
+					const more = $('#moreTags');
+					if (more) {
+						more.setAttribute('aria-expanded', allTags);
+						more.textContent = allTags ? '主なタグだけ表示' : `ほかのタグ（${minorTags}）`;
+					}
+				}
 				function render(S) {
 					const c = WS.C.find(x => x.id === S.cat) || {};
 					document.querySelectorAll('#cattabs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === S.cat));
 					if (document.activeElement !== qEl) qEl.value = S.q;
 					sortEl.value = S.sort;
 					document.querySelectorAll('#views button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === S.view));
-					if (tagsFor !== S.cat) {
-						$('#chips').innerHTML = WS.tagCounts().map(([t, n]) => `<li><button type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button></li>`).join('');
-						tagsFor = S.cat;
-					}
-					document.querySelectorAll('#chips button').forEach(b => b.setAttribute('aria-pressed', S.tags.has(b.dataset.tag)));
+					renderChips(S);
 					const L = WS.list();
 					$('#count').textContent = c.name + '　' + num(L.length) + '件';
 					$('#random').disabled = !L.length;
@@ -141,6 +158,7 @@
 				$('#views').addEventListener('click', e => { const b = e.target.closest('button'); if (b) WS.set({ view: b.dataset.v }); });
 				document.addEventListener('click', e => {
 					const f = e.target.closest('[data-cat]'); if (f) { clearTimeout(t); WS.set({ cat: f.dataset.cat }); return; }
+					if (e.target.closest('#moreTags')) { allTags = !allTags; renderChips(WS.S); return; }
 					const ch = e.target.closest('#chips [data-tag]'); if (ch) { WS.toggleTag(ch.dataset.tag); return; }
 					const o = e.target.closest('[data-open]'); if (o) { const w = WS.W.find(x => x.id === o.dataset.open); WS.modal.open(w, [w]); return; }
 					const c = e.target.closest('#stage [data-id]'); if (c) { e.preventDefault(); WS.modal.open(WS.W.find(x => x.id === c.dataset.id), WS.list()); }
