@@ -3235,7 +3235,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_6eb13a35-9efe-482d-9221-eb4111b9466c",
-    "category": "misc",
+    "category": "game",
     "name": "SIAF TestWorld \"WIP\"",
     "subtype": "ゲーム",
     "capacity": 32,
@@ -4979,7 +4979,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_78058ff3-2b50-4245-8da3-bb35bbadcad9",
-    "category": "recommend",
+    "category": "chill",
     "name": "激狭",
     "subtype": "チル",
     "capacity": 80,
@@ -5377,7 +5377,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_3c3ccab6-8a26-44ef-979f-af8037ebd7a2",
-    "category": "todo",
+    "category": "game",
     "name": "VERTEX: VRCBattleRoyale",
     "subtype": "ゲーム",
     "capacity": 72,
@@ -5503,23 +5503,6 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0c72bff0-82e0-4273-b026-ae7c777d422d/3/256",
     "note": "ドボンを引かないように本物のひみつ道具を選ぼう！作問機能もあります！是非オリジナルのひみつ道具を考えてフレンドと遊んでみてください！",
     "official": "ドボンを引かないように本物のひみつ道具を選ぼう！作問機能もあります！是非オリジナルのひみつ道具を考えてフレンドと遊んでみてください！"
-  },
-  {
-    "id": "wrld_b4ea9be8-1f50-47c8-b0b7-fd09f6d2aea3",
-    "category": "todo",
-    "name": "虚々実々",
-    "subtype": "写真・撮影",
-    "capacity": 80,
-    "recommendedCapacity": 80,
-    "favorites": 1160,
-    "visits": 12566,
-    "tags": [
-      "写真・撮影",
-      "ゲーム"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_6b9df891-2133-4650-aaaf-7d81dc7e8c19/2/256",
-    "note": "半数は実在、半数は虚構のワールドのポータル集です。説明書きを読んで虚構と実在を見極めてください。",
-    "official": "半数は実在、半数は虚構のワールドのポータル集です。説明書きを読んで虚構と実在を見極めてください。虚構のワールドが実在したとき、虚構のワールドを実在させたときはご一報ください。ネタバレ、撮影、動画撮影OK。"
   },
   {
     "id": "wrld_fa594071-2cbd-4128-950f-08085f1284c8",
@@ -5700,24 +5683,6 @@ window.WORLDS = [
     "official": "Ver 3.6.2. 汎用VRTRPGツール「CatsUdon」はTRPGを遊ぶためのダイスロール、キャラシー作成、駒作成などの色んな機能があります。「CatsUdon」のワールドクリエイト機能を作って好きなシーンを作成しましょ。 CatsUdon, a general-purpose VRTRPG"
   },
   {
-    "id": "wrld_c00d3ef8-cdb6-40ad-88e2-cce67d0ef14f",
-    "category": "todo",
-    "name": "Steps of the Campanula - カンパニュラの足音",
-    "subtype": "チル",
-    "capacity": 40,
-    "recommendedCapacity": 20,
-    "favorites": 26997,
-    "visits": 959256,
-    "tags": [
-      "チル",
-      "自然・風景",
-      "宇宙・空"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_9f8de49b-bb96-4364-b48c-0ec1d6ad42a1/2/256",
-    "note": "Where will the traveler go？ その旅人はどこへ向かうのでしょうか。",
-    "official": "Where will the traveler go？ その旅人はどこへ向かうのでしょうか。"
-  },
-  {
     "id": "wrld_21bb75ba-60b6-4640-b4ca-0473f093c4db",
     "category": "todo",
     "name": "New Udon Bomb",
@@ -5734,22 +5699,6 @@ window.WORLDS = [
     "official": ""
   },
   {
-    "id": "wrld_a79ff6f7-057d-4de4-8025-90676836346f",
-    "category": "todo",
-    "name": "Luminary",
-    "subtype": "宇宙・空",
-    "capacity": 80,
-    "recommendedCapacity": 80,
-    "favorites": 5490,
-    "visits": 51631,
-    "tags": [
-      "宇宙・空"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_dbebc0f3-8443-48ba-8453-d424b3179543/6/256",
-    "note": "午前4時、みんなが寝静まった頃。早朝の船内を散歩することにした。",
-    "official": "It's 0400 hours, everyone has gone to sleep, and you decide to take a early morning stroll aboard the Space Planetary Orbiter Luminary. The planetary"
-  },
-  {
     "id": "wrld_745dc432-6fd2-4200-8dc2-51885abfaa44",
     "category": "todo",
     "name": "現実",
@@ -5762,57 +5711,6 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_23f40b3a-2af4-445e-8e0a-40f4c832bd20/4/256",
     "note": "おかえり現実。それじゃあ落ちるわ、とポータルを出して消えるためだけに作ったワールドです。",
     "official": "おかえり現実。それじゃあ落ちるわ、とポータルを出して消えるためだけに作ったワールドです。ある意味ホラワ。プレイリストに現実実況チャンネルが入ってます。現実はぶん投げられます。みんなで現実の投げ方を競おう。最初にインスタンスへ入った際に大きな現実がどこかに飛んで行ってしまいますが、リセットボタンを押す"
-  },
-  {
-    "id": "wrld_55c1348b-6712-43fe-8384-6e097d9b6e47",
-    "category": "todo",
-    "name": "Echo",
-    "subtype": "音楽・ライブ",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 64,
-    "visits": 638,
-    "tags": [
-      "音楽・ライブ",
-      "アート・展示",
-      "演出・パーティクル"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_2b185aca-8e20-48c2-abc3-c85d5e08ebe6/1/256",
-    "note": "ボカロの『Echo』に影響を受けて制作したワールドです。（非公式）全てフルスクラッチです。",
-    "official": "ボカロの『Echo』に影響を受けて制作したワールドです。（非公式）全てフルスクラッチです。"
-  },
-  {
-    "id": "wrld_42c546ea-5674-4871-bcc1-41cf57ea3ab7",
-    "category": "todo",
-    "name": "Chalkboard Room／黒板ルーム",
-    "subtype": "アート・展示",
-    "capacity": 80,
-    "recommendedCapacity": 80,
-    "favorites": 582,
-    "visits": 10920,
-    "tags": [
-      "アート・展示"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_b9d1e45b-a3b8-4053-a63c-d75d9ac4de28/48/256",
-    "note": "講義室にあるような上下スライド式の黒板とホワイトボード（QVペン付き）。",
-    "official": "Vertical sliding chalkboard （blackboard） ＆ whiteboard, just like those in lecture rooms （with QV pen ＆ mirror）. QV-pen lines drawn on the board surfac"
-  },
-  {
-    "id": "wrld_a6d29024-3847-40b8-9ada-103d54f50749",
-    "category": "todo",
-    "name": "［ ツクヨミ - TSUKUYOMI - ］超かぐや姫! -Cosmic Princess Kaguya-",
-    "subtype": "チル",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 6443,
-    "visits": 42171,
-    "tags": [
-      "チル",
-      "写真・撮影"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_6648cb23-0504-497b-bc6a-6c474f6b42f8/4/256",
-    "note": "［ ツクヨミ - TSUKUYOMI - ］超かぐや姫! -Cosmic Princess Kaguya- 非公式のファンワールドです。",
-    "official": "［ ツクヨミ - TSUKUYOMI - ］超かぐや姫! -Cosmic Princess Kaguya- 非公式のファンワールドです。"
   },
   {
     "id": "wrld_6db8f9b5-c7b7-417a-88c0-5da4b26553ad",
@@ -5832,7 +5730,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_097ec90d-f04c-46f3-81f2-fc4bf68bc2bb",
-    "category": "todo",
+    "category": "game",
     "name": "Better UNO",
     "subtype": "チル",
     "capacity": 16,
@@ -5928,51 +5826,6 @@ window.WORLDS = [
     "official": "光学迷彩でドロケーを楽しむワールドです！ Enjoy DORO-K （Thieves ＆ Police Officers） with \"magic cloak\"."
   },
   {
-    "id": "wrld_9c24068c-ba40-4921-9b85-9e6149e26eb2",
-    "category": "todo",
-    "name": "大富豪-Daihugo-",
-    "subtype": "チル",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 1907,
-    "visits": 27464,
-    "tags": [
-      "チル",
-      "ゲーム"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_d79d9b2f-17e0-448b-b0e9-febb36686e84/6/256",
-    "note": "８人までできる大富豪 ＃VRC大富豪 カラオケ機能を追加しました。！ エコーは画面横です。",
-    "official": "８人までできる大富豪 ＃VRC大富豪 カラオケ機能を追加しました。！ エコーは画面横です。"
-  },
-  {
-    "id": "wrld_1c4d3f79-198a-47c1-bf73-6b4b60297229",
-    "category": "todo",
-    "name": "INABACITY （old ver）",
-    "subtype": "",
-    "capacity": 40,
-    "recommendedCapacity": 20,
-    "favorites": 1343,
-    "visits": 16777,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_896e7a24-edc9-46f2-b2fc-0084a181745f/4/256",
-    "note": "オアシスへようこそ。",
-    "official": "welcome to oasis"
-  },
-  {
-    "id": "wrld_ac4ff8f2-7c7a-421b-b713-68acca4ec4b1",
-    "category": "todo",
-    "name": "Parkour world",
-    "subtype": "",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 6465,
-    "visits": 74479,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_086bd27b-f8fb-4351-9f95-7e88fe6fa756/2/256",
-    "note": "パルクールに挑戦できるワールド。",
-    "official": "desafio no me fio"
-  },
-  {
     "id": "wrld_408009d9-b175-47a3-a4ae-b21bb1998e2f",
     "category": "todo",
     "name": "かける！こわせる！QvPenのおうち",
@@ -6041,7 +5894,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_e663070c-8ff9-454f-9ba6-3aead2dbcb36",
-    "category": "todo",
+    "category": "misc",
     "name": "VRメルヘン村",
     "subtype": "",
     "capacity": 80,
@@ -6087,38 +5940,6 @@ window.WORLDS = [
     "official": "進み方が２つある謎解きワールド。 君は謎を解くか、異変を見つけるか。"
   },
   {
-    "id": "wrld_015783db-5574-41d5-b588-57b6742f3e9d",
-    "category": "todo",
-    "name": "BA:Abydos",
-    "subtype": "ゲーム",
-    "capacity": 60,
-    "recommendedCapacity": 60,
-    "favorites": 3977,
-    "visits": 40540,
-    "tags": [
-      "ゲーム"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_e5c58c35-52f5-4cec-85e9-6cca01525354/24/256",
-    "note": "ブルーアーカイブのファンメイドワールド（アビドス）。",
-    "official": "［ Tag＝≻ ＃VRCAbydos ］ This is a fan-made world of Blue Archive. It may be different from the original game."
-  },
-  {
-    "id": "wrld_a96630d4-4b45-40ca-be33-0e90f968449b",
-    "category": "todo",
-    "name": "BA:Millennium.v2",
-    "subtype": "ゲーム",
-    "capacity": 40,
-    "recommendedCapacity": 40,
-    "favorites": 2534,
-    "visits": 25084,
-    "tags": [
-      "ゲーム"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_301d5044-48be-4a25-9956-e5827dde6c10/11/256",
-    "note": "ブルーアーカイブのファンメイドワールド（ミレニアム）。",
-    "official": "［ Tag＝≻ ＃VRCMillennium ］This is a fan-made world of Blue Archive. It may be different from the original game."
-  },
-  {
     "id": "wrld_0bf82d2d-3e65-4ce9-9a79-47e382e5c82c",
     "category": "todo",
     "name": "繫の形 / The Shape of Kizuna",
@@ -6151,34 +5972,6 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b9d118ad-bfba-476a-a258-a42dbb26c47c/6/256",
     "note": "随時更新中のBARとなります。 集会などでご使用頂いて構いません。 要望などありましたら気軽にどうぞ。",
     "official": "随時更新中のBARとなります。 集会などでご使用頂いて構いません。 要望などありましたら気軽にどうぞ。 This is a BAR that is being updated as needed. You are welcome to use it for gatherings, etc. If y"
-  },
-  {
-    "id": "wrld_f1997b01-5fd0-4da3-86dd-0ca10a4c76c6",
-    "category": "todo",
-    "name": "Lake",
-    "subtype": "",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 956,
-    "visits": 5690,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_2e53c348-8205-4415-a2d0-99a341098ca1/1/256",
-    "note": "去年作った湖 シーン吹き飛ばしてしまってもう触れない泣",
-    "official": "去年作った湖 シーン吹き飛ばしてしまってもう触れない泣"
-  },
-  {
-    "id": "wrld_b5407611-d704-4f63-91db-19394ce64e80",
-    "category": "todo",
-    "name": "clock_tower",
-    "subtype": "",
-    "capacity": 80,
-    "recommendedCapacity": 40,
-    "favorites": 6822,
-    "visits": 91095,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_8a983eaa-3c13-47f4-afaf-9a2722c04e83/5/256",
-    "note": "時計塔のワールド。",
-    "official": "clock_tower"
   },
   {
     "id": "wrld_c3a23abe-161b-4aed-b00a-2d5ae5a44fc5",
@@ -6226,36 +6019,6 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9576c8d9-4799-4c24-8b8f-8bcaf0ba8421/2/256",
     "note": "手足の当たり判定をオンにして、建物を破壊しよう。",
     "official": "Active limbHitbox to destroy buildings.Enter the world already playing may cause laggy!!!!!!!. Instance owner should make sure limbcollideris on when"
-  },
-  {
-    "id": "wrld_39327a8b-97ac-4b4e-92dc-2a30d55a7c59",
-    "category": "todo",
-    "name": "何か価値観を数字にして順番に並べれたら気持ちいいゲーム",
-    "subtype": "ゲーム",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 8524,
-    "visits": 54225,
-    "tags": [
-      "ゲーム"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_0e78d97d-e909-40ad-8f35-ec0e3697583e/3/256",
-    "note": "プレイ人数：2～10人程度。お題に沿った例えで自分の数字を表現するゲーム。",
-    "official": "プレイ人数：2～10人程度。お題に沿った例えで自分の数字を表現するゲーム。ITOを簡略化した物。カードが宙に舞ったらインスタンスを立て直してみてね。"
-  },
-  {
-    "id": "wrld_fc02f366-d8ee-456b-8953-4389319eac9b",
-    "category": "todo",
-    "name": "Maidens Grape Stomping 乙女の葡萄踏み",
-    "subtype": "",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 1563,
-    "visits": 14351,
-    "tags": [],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_55f42b91-2c8f-4b45-a552-3fed74dbc9d2/16/256",
-    "note": "ワイン作りが体験できるワールドです！米現実世界での酒類の製造には酒造免許が必要になりますのでご注意ください。",
-    "official": "ワイン作りが体験できるワールドです！米現実世界での酒類の製造には酒造免許が必要になりますのでご注意ください。"
   },
   {
     "id": "wrld_e7a7b516-2354-4bce-bbf0-6b71d657eff0",
@@ -6312,7 +6075,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_85ea9341-60be-413e-964a-ab7d0c26af8c",
-    "category": "todo",
+    "category": "misc",
     "name": "楽しい面接会場【Japanese interview room】",
     "subtype": "日本",
     "capacity": 32,
@@ -6574,7 +6337,7 @@ window.WORLDS = [
   },
   {
     "id": "wrld_44b5dde2-33c0-457a-b379-1b8dcbef0187",
-    "category": "chill",
+    "category": "recommend",
     "name": "夢見の海窓 ~Dreaming Ocean~",
     "subtype": "チル",
     "capacity": 32,
@@ -9935,5 +9698,2044 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_74a23017-77eb-47bd-8077-5aa5d46d22bd/12/256",
     "note": "背景モデルはほぼすべてフルスクラッチで作ったファンメイドの二次創作ワールドです/ BGMもゲーム内音源を使用していません/ 制作期間は２ヶ月程度 !",
     "official": "背景モデルはほぼすべてフルスクラッチで作ったファンメイドの二次創作ワールドです/ BGMもゲーム内音源を使用していません/ 制作期間は２ヶ月程度 !This world does not use ripped data! made with blender/substance painter/fre"
+  },
+  {
+    "id": "wrld_99924ad6-6bb9-479c-8835-282f0a634f60",
+    "category": "misc",
+    "name": "［JP］NDC Library",
+    "subtype": "チル",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 14835,
+    "visits": 120632,
+    "tags": [
+      "チル",
+      "自然・風景",
+      "図書館・本",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c3e9ecf4-4b82-4cf1-9765-fadc7fc69ebb/5/256",
+    "note": "",
+    "official": ""
+  },
+  {
+    "id": "wrld_3712146c-5c0b-48cf-80b8-792824b84eea",
+    "category": "misc",
+    "name": "朱鷺ヶ谷神経科前バス乗り場",
+    "subtype": "ホラー・不気味",
+    "capacity": 32,
+    "recommendedCapacity": 20,
+    "favorites": 3348,
+    "visits": 24229,
+    "tags": [
+      "ホラー・不気味"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_656a7604-94ec-4f88-b0be-4b9939fe6380/3/256",
+    "note": "1/13ギミック修正しました。7Days WorldWorks参加作品。",
+    "official": "1/13ギミック修正しました。7Days WorldWorks参加作品。 （ホラーワールドではありません。） ワールド内に物語が視聴できるポイントが6箇所あります。 使用素材：VOICEVOX冥鳴ひまり。 一部ギミックが壊れています。"
+  },
+  {
+    "id": "wrld_ce3d5b50-b247-4442-9078-758ca0127bce",
+    "category": "chill",
+    "name": "Thad Recursive Room",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 27754,
+    "visits": 254098,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_2788572f-b07d-4ec7-a4d5-6722fa2e32f3/2/256",
+    "note": "部屋の中の部屋の中の部屋。おもちゃ付き！",
+    "official": "A room in a room in a room. And it comes with toys!"
+  },
+  {
+    "id": "wrld_d7067277-4ee9-4706-9582-0b103dbacbe1",
+    "category": "chill",
+    "name": "深海のすみか - deep sea apartment",
+    "subtype": "チル",
+    "capacity": 32,
+    "recommendedCapacity": 32,
+    "favorites": 3900,
+    "visits": 67370,
+    "tags": [
+      "チル",
+      "海・水中"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c97e9c3b-93c8-4434-8287-986bb6395343/2/256",
+    "note": "海底の静かな時間",
+    "official": "海底の静かな時間"
+  },
+  {
+    "id": "wrld_cf570793-4fd0-4225-ada6-faf1094551cf",
+    "category": "game",
+    "name": "フライングサーカス/FlyingCircus",
+    "subtype": "ゲーム",
+    "capacity": 48,
+    "recommendedCapacity": 24,
+    "favorites": 4083,
+    "visits": 27322,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_0bd67353-dd8e-4c01-b91e-56ba1cf232da/3/256",
+    "note": "蒼の彼方のフォーリズムに出てくる架空のスポーツ、フライングサーカスができるワールドです。",
+    "official": "蒼の彼方のフォーリズムに出てくる架空のスポーツ、フライングサーカスができるワールドです。VR/Desktop"
+  },
+  {
+    "id": "wrld_358c8602-a6fd-430c-9d56-b9c1e90971aa",
+    "category": "game",
+    "name": "Realtime Farm / リアルタイム農業ワールド - リアルVRChat2",
+    "subtype": "",
+    "capacity": 24,
+    "recommendedCapacity": 24,
+    "favorites": 4796,
+    "visits": 115351,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_34a75db3-fd65-493d-b769-b7a2b1f32986/5/256",
+    "note": "リアル時間で農業が出来るワールドです。リアル。",
+    "official": "リアル時間で農業が出来るワールドです。リアル。"
+  },
+  {
+    "id": "wrld_bbff4698-e33b-4003-b200-942c4b1da2d4",
+    "category": "exhibition",
+    "name": "AI年表歴史館 β版 / AI Timeline History Museum / AI年表历史馆",
+    "subtype": "アート・展示",
+    "capacity": 40,
+    "recommendedCapacity": 16,
+    "favorites": 247,
+    "visits": 5757,
+    "tags": [
+      "アート・展示",
+      "アバター"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ea432253-2039-4069-a904-4ef44af573d9/3/256",
+    "note": "2015年から今までのAIの歴史をたどるワールドです（β版）。あの頃のAIを思い出せます。",
+    "official": "2015年から今までのAIの歴史をたどるワールドです（β版）。あの頃のAIを思い出せます。推奨身長は1.5m程度です。 A world that traces the history of AI from 2015 to today （beta）. Come and remember the AI "
+  },
+  {
+    "id": "wrld_0efc115f-0ab6-450e-84dd-c8f2ff7cf020",
+    "category": "exhibition",
+    "name": "VRC「飛行」展",
+    "subtype": "宇宙・空",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 83,
+    "visits": 1780,
+    "tags": [
+      "宇宙・空",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d38834b4-541b-433a-8ef7-c161ffbb590e/3/256",
+    "note": "飛行するものならなんでも集める博物館ワールドです。 制作が長くなりそうなのでChapter1:生物を公開します。",
+    "official": "飛行するものならなんでも集める博物館ワールドです。 制作が長くなりそうなのでChapter1:生物を公開します。"
+  },
+  {
+    "id": "wrld_e7532ea3-c11a-4dcd-867e-2cb7ddd41cfd",
+    "category": "exhibition",
+    "name": "【日本人向け】ギリシャ・ローマ神話博物館",
+    "subtype": "アート・展示",
+    "capacity": 50,
+    "recommendedCapacity": 40,
+    "favorites": 1815,
+    "visits": 12287,
+    "tags": [
+      "アート・展示",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1fbc18b2-0eab-44b8-9f60-8827039137c3/3/256",
+    "note": "様々な文化・価値観に影響を及ぼし、今や生活の一部にも溶け込んでいるギリシャ・ローマ神話、しかしながらその内容について詳しく知る人は少なく、多くの場合星座や惑星の名前の由来となった神話、という程度の認識にとどまっています。",
+    "official": "様々な文化・価値観に影響を及ぼし、今や生活の一部にも溶け込んでいるギリシャ・ローマ神話、しかしながらその内容について詳しく知る人は少なく、多くの場合星座や惑星の名前の由来となった神話、という程度の認識にとどまっています。そこで本ワールドでは神話全体を絵や彫刻などを通して語ることで、まとまった原典の無"
+  },
+  {
+    "id": "wrld_9e12cd38-f0ff-4580-8a65-575c1f0c3bf2",
+    "category": "exhibition",
+    "name": "ボタン展~Exhibition of Buttons",
+    "subtype": "アート・展示",
+    "capacity": 40,
+    "recommendedCapacity": 10,
+    "favorites": 2653,
+    "visits": 35309,
+    "tags": [
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c607a965-6d7a-48d4-8b97-e858a432e7c0/2/256",
+    "note": "くらしのボタンから普段は絶対に押せないボタンなど、様々なボタンをポチポチできます。",
+    "official": "くらしのボタンから普段は絶対に押せないボタンなど、様々なボタンをポチポチできます。You can press all kinds of buttons, from everyday buttons to ones you'd never get to press in real life!"
+  },
+  {
+    "id": "wrld_d85b9a76-857e-4a44-b713-433ca8a774a7",
+    "category": "exhibition",
+    "name": "選挙制度博物館－Japan Election Museum－",
+    "subtype": "アート・展示",
+    "capacity": 64,
+    "recommendedCapacity": 8,
+    "favorites": 192,
+    "visits": 2403,
+    "tags": [
+      "アート・展示",
+      "日本",
+      "アバター"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_9408a943-c7f7-4f18-9db9-316cc91ea448/6/256",
+    "note": "日本の選挙の過去・今・未来について紹介した展示ワールドです。 ワールド内の注意事項をよく読んでご使用ください。",
+    "official": "日本の選挙の過去・今・未来について紹介した展示ワールドです。 ワールド内の注意事項をよく読んでご使用ください。 アバターの利用規約等は十分注意してください。This world was created under experts supervisions, in compliance with an"
+  },
+  {
+    "id": "wrld_b94cf643-d2ef-4504-9537-56d27b0dc5a2",
+    "category": "exhibition",
+    "name": "MRVR Headset Museum ｜ VRヘッドセット美術館",
+    "subtype": "アート・展示",
+    "capacity": 40,
+    "recommendedCapacity": 16,
+    "favorites": 3951,
+    "visits": 53074,
+    "tags": [
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f044bba8-f017-48ca-8533-faa2be4660f4/8/256",
+    "note": "気になっていたVRヘッドセットを実際に見て体験できる美術館。",
+    "official": "Experience the VR headsets you've been curious about! 24 models, from the popular Meta Quest series to Apple Vision Pro and the classic Oculus Rift. Y"
+  },
+  {
+    "id": "wrld_2b995c65-2a33-48b0-be6e-47cd20f6992d",
+    "category": "exhibition",
+    "name": "Back To The Experience",
+    "subtype": "アート・展示",
+    "capacity": 40,
+    "recommendedCapacity": 10,
+    "favorites": 5152,
+    "visits": 56637,
+    "tags": [
+      "アート・展示",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_8e6307c1-ffd4-4704-b257-b17d5938b47a/2/256",
+    "note": "VRCプレイヤーたちの思い出を集めたワールド。新しく始めた人向けに、VRChatでの暮らし方を紹介している。",
+    "official": "Shared memories from VRC players. Lifestyle showcases for newcomers. 丨Available in English, Chinese and Japanese."
+  },
+  {
+    "id": "wrld_67b96381-eda4-4d4f-963f-433eb067ecca",
+    "category": "exhibition",
+    "name": "Dangotaso Art Exhibition",
+    "subtype": "アート・展示",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1267,
+    "visits": 8849,
+    "tags": [
+      "アート・展示",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_68783342-423b-44fc-9502-64d96e92e80a/1/256",
+    "note": "和風×現代コンセプトの展示ワールドです。 イラストレーターだんごたそが描く、和風×現代をコンセプトにしたイラスト＆アニメーションをお楽しみいただけます。",
+    "official": "和風×現代コンセプトの展示ワールドです。 イラストレーターだんごたそが描く、和風×現代をコンセプトにしたイラスト＆アニメーションをお楽しみいただけます。 This is an exhibition world of Japanese style x modern concept. You can e"
+  },
+  {
+    "id": "wrld_42f8e9a7-2368-4aa8-b1a9-17c1cfbc1e99",
+    "category": "exhibition",
+    "name": "Kawagoe KoEdo",
+    "subtype": "写真・撮影",
+    "capacity": 64,
+    "recommendedCapacity": 32,
+    "favorites": 2021,
+    "visits": 25015,
+    "tags": [
+      "写真・撮影",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_bf11ae6a-de60-4c71-970c-06569e24a7a7/5/256",
+    "note": "埼玉県川越市の「小江戸」の街並みを記録したデジタルアーカイブ。",
+    "official": "Digital Archive of \"Little Edo\" in Kawagoe, Japan. How about a virtual sightseeing tour? You can also enjoy eating and walking around."
+  },
+  {
+    "id": "wrld_2692d7f4-f640-41fe-83e2-dfd2c3c249eb",
+    "category": "exhibition",
+    "name": "VR南極博物館-VR Antarctic Museum",
+    "subtype": "アート・展示",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 444,
+    "visits": 5226,
+    "tags": [
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_4fa70754-7d3c-4ec8-ba4e-c98f64082888/10/256",
+    "note": "南極をテーマにしたVR博物館。英語にも対応。",
+    "official": "To all of you living in English-speaking countries, thank you for your patience! The VR Antarctic Museum is finally available in English! 南極に行ってみたいですか"
+  },
+  {
+    "id": "wrld_e9406ca2-40d1-4e46-a4d4-1e7f22c8575f",
+    "category": "exhibition",
+    "name": "Cookie Museum クッキーで見る世界の歴史",
+    "subtype": "アート・展示",
+    "capacity": 64,
+    "recommendedCapacity": 64,
+    "favorites": 1233,
+    "visits": 12045,
+    "tags": [
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6bedc640-35ee-4c8b-95aa-f052ea943242/2/256",
+    "note": "チョコチップクッキーで歴史の重みを体験しましょう。（1/29軽量化アップデート）",
+    "official": "チョコチップクッキーで歴史の重みを体験しましょう。（1/29軽量化アップデート）"
+  },
+  {
+    "id": "wrld_7d840cb4-dc41-4b35-be38-c5be96c9b15c",
+    "category": "exhibition",
+    "name": "Just 歯車＆蒸気エンジン/Just Gear ＆ SteamEngine",
+    "subtype": "チル",
+    "capacity": 64,
+    "recommendedCapacity": 64,
+    "favorites": 351,
+    "visits": 5083,
+    "tags": [
+      "チル",
+      "写真・撮影"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6f8a3e6b-35c3-4e02-92a3-b5af739e0fcd/3/256",
+    "note": "歯車や機構、蒸気エンジンを実際に動かして観察してみよう！ 地下でV睡して巨大歯車を一周させよう！",
+    "official": "歯車や機構、蒸気エンジンを実際に動かして観察してみよう！ 地下でV睡して巨大歯車を一周させよう！（自動保存） 歯車が一周したら写真に撮って ＃JustGear タグで投稿しよう！ Let's actually operate and observe gears, mechanisms, and st"
+  },
+  {
+    "id": "wrld_f0c226d2-b47e-42b8-bdf1-f24b384641cc",
+    "category": "exhibition",
+    "name": "VRC地球生命史ミュージアム ほ乳類館 ［JP/EN］",
+    "subtype": "アート・展示",
+    "capacity": 50,
+    "recommendedCapacity": 16,
+    "favorites": 5239,
+    "visits": 57311,
+    "tags": [
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6e8e3d4d-5794-49b9-b23c-68d1e1c6ef3e/7/256",
+    "note": "sketchfabを主にCCライセンス下で公開されている哺乳類の3Dモデルを収集、9つの展示室で150種以上を展示しています。",
+    "official": "sketchfabを主にCCライセンス下で公開されている哺乳類の3Dモデルを収集、9つの展示室で150種以上を展示しています。哺乳類の進化からその特徴、多様性までを幅広く学べる博物館ワールドです。 当ワールドは生成AIを使用したコンテンツが含まれます。"
+  },
+  {
+    "id": "wrld_6250673d-994f-4a34-ad5d-96b77df6f4b0",
+    "category": "exhibition",
+    "name": "Spacecraft Museum",
+    "subtype": "宇宙・空",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 815,
+    "visits": 14347,
+    "tags": [
+      "宇宙・空",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f9e23f35-4f9c-4a7d-88ea-a20bb1262227/3/256",
+    "note": "Spacecraft Museum 宇宙機美術館",
+    "official": "Spacecraft Museum 宇宙機美術館"
+  },
+  {
+    "id": "wrld_7e2e6fc6-0a0b-4665-a5f8-0ce67cbd52d8",
+    "category": "particle",
+    "name": "星降る海 - Particle Live",
+    "subtype": "神社仏閣・宗教",
+    "capacity": 4,
+    "recommendedCapacity": 2,
+    "favorites": 4825,
+    "visits": 34939,
+    "tags": [
+      "神社仏閣・宗教",
+      "音楽・ライブ",
+      "日本",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_eccfbbb8-4355-4c19-a72e-01ace0e6c2e7/1/256",
+    "note": "「星降る海」Aqu3ra / 月見ヤチヨ （cv. 早見沙織） 『超かぐや姫！",
+    "official": "「星降る海」Aqu3ra / 月見ヤチヨ （cv. 早見沙織） 『超かぐや姫！』より。ファンメイドのパーティクルライブです。約4分・ひとり用・PC専用。強い光の点滅を含みます。竹林の鳥居をくぐると始まります。曲のあとはワールドを自由に巡れます。もう一度見るときはリジョインしてください。 A fan-"
+  },
+  {
+    "id": "wrld_927a0969-6965-44df-b805-80189ba14fd5",
+    "category": "particle",
+    "name": "パリピ砲なワールド \"水没都市\"",
+    "subtype": "街・都市",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 145,
+    "visits": 1247,
+    "tags": [
+      "街・都市",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_bf7b83de-6371-4546-827b-03ccc8022677/1/256",
+    "note": "パリピ砲なワールドです。推奨はDesktopですが、VRでも一応見れます。",
+    "official": "パリピ砲なワールドです。推奨はDesktopですが、VRでも一応見れます。"
+  },
+  {
+    "id": "wrld_b7fc2cb4-4224-456c-83dc-7a535758adbc",
+    "category": "particle",
+    "name": "Pipe Dream",
+    "subtype": "",
+    "capacity": 12,
+    "recommendedCapacity": 8,
+    "favorites": 890,
+    "visits": 8758,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_68dcd21c-f1d7-4d6e-bfb9-cdd1debdaf8c/2/256",
+    "note": "Animusicの有名な技術デモ「Pipe Dream」を再現したワールド。",
+    "official": "Recreation of the Animusic's famous tech demo 'Pipe Dream'"
+  },
+  {
+    "id": "wrld_c811d2e4-187d-4478-8b14-9854055e9c66",
+    "category": "particle",
+    "name": "［VRMV］world.execute（me）",
+    "subtype": "音楽・ライブ",
+    "capacity": 16,
+    "recommendedCapacity": 16,
+    "favorites": 998,
+    "visits": 7000,
+    "tags": [
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_301a45cb-f467-4c11-8f60-0806dfc3fa05/2/256",
+    "note": "ファンメイドのVRMV。Miliの楽曲「World.Execute(me);」をシェーダーで視覚化。",
+    "official": "Fan made VRMV.Shader visualization of World.Execute（me）;by Mili"
+  },
+  {
+    "id": "wrld_fc4ce424-f461-40dc-ab0b-8341bbe0d7d5",
+    "category": "particle",
+    "name": "タソガレアフター - Particle LIVE -",
+    "subtype": "夜・夜景",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 627,
+    "visits": 4593,
+    "tags": [
+      "夜・夜景",
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_cb7af978-4e43-48cb-bf98-25502af43f3d/2/256",
+    "note": "夕暮れの和室で、音楽と光に浸るひととき。 『タソガレアフター』の世界観を、空間と演出で楽しむ音楽ワールドです。",
+    "official": "夕暮れの和室で、音楽と光に浸るひととき。 『タソガレアフター』の世界観を、空間と演出で楽しむ音楽ワールドです。 窓の向こうの景色と、部屋に差し込む夕陽。 曲とともに移りゆく表情を、あなたの好きな場所でお楽しみください。 この夕暮れが、原曲に出会うきっかけになれば幸いです。 原曲：コヤニスカッチ（みこ"
+  },
+  {
+    "id": "wrld_f5a94039-4e01-4cdf-ac66-078ebc9f86ad",
+    "category": "particle",
+    "name": "VRMV［脳漿炸裂ガール］",
+    "subtype": "音楽・ライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 2866,
+    "visits": 18275,
+    "tags": [
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_7e4f9506-0a01-40f2-9b21-66ac8becec7f/6/256",
+    "note": "【VRMV】脳漿炸裂ガール - れるりりfeat.初音ミク＆GUMI / Brain Fluid Explosion Girl - rerulili feat.",
+    "official": "【VRMV】脳漿炸裂ガール - れるりりfeat.初音ミク＆GUMI / Brain Fluid Explosion Girl - rerulili feat.miku＆gumi 10,000人visit記念にロビーに原作を再現したvrmvを公開しました"
+  },
+  {
+    "id": "wrld_4e99e929-3441-4278-b6eb-84d4f21e48ba",
+    "category": "particle",
+    "name": "［VRMV］Reply",
+    "subtype": "音楽・ライブ",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 3672,
+    "visits": 29888,
+    "tags": [
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ef91a4b3-a1e9-42d1-807e-8af3a072ad8f/3/256",
+    "note": "本ワールドは『超かぐや姫！』の楽曲「Reply」の非公式ファンメイドVRMVワールドです。",
+    "official": "本ワールドは『超かぐや姫！』の楽曲「Reply」の非公式ファンメイドVRMVワールドです。負荷の重い演出が多い為必要に応じてグラフィック設定などを見直した上でお楽しみください。 また、酔いやてんかんなどもご注意ください。 Reply - kz（livetune） / かぐや（cv.夏吉ゆうこ） fr"
+  },
+  {
+    "id": "wrld_f7e7431e-5453-4b59-80de-aa5240b0ad33",
+    "category": "particle",
+    "name": "バーチャル河川敷夏祭り 2025 Archive",
+    "subtype": "写真・撮影",
+    "capacity": 40,
+    "recommendedCapacity": 16,
+    "favorites": 2142,
+    "visits": 23408,
+    "tags": [
+      "写真・撮影",
+      "音楽・ライブ",
+      "日本",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_fccae672-90b8-40bd-9b4e-5af9b78ca062/1/256",
+    "note": "2025年8月30日~31日に開催されたバーチャル河川敷夏祭りの会場です。",
+    "official": "2025年8月30日~31日に開催されたバーチャル河川敷夏祭りの会場です。 公式テーマソングのParticleLive「Daybreak Dream」が視聴可能です。写真撮影にご利用下さい。"
+  },
+  {
+    "id": "wrld_93c13c2e-9b06-4091-95c3-36a81103a8e3",
+    "category": "particle",
+    "name": "［VRMV］彼方へ、名もなき海辺より",
+    "subtype": "音楽・ライブ",
+    "capacity": 24,
+    "recommendedCapacity": 12,
+    "favorites": 9066,
+    "visits": 74440,
+    "tags": [
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ecfbaa33-608c-4435-be51-0dc9bc0a9385/10/256",
+    "note": "そんな海がー私は、 ＃VR彼海",
+    "official": "そんな海がー私は、 ＃VR彼海"
+  },
+  {
+    "id": "wrld_b04952d1-05c0-47e2-97aa-53d298bd0c06",
+    "category": "particle",
+    "name": "ブルーアンビエンス x ParticleLive",
+    "subtype": "音楽・ライブ",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 234,
+    "visits": 2338,
+    "tags": [
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ce987c6e-4078-4ca4-8ba6-314105fc643e/2/256",
+    "note": "ふーみき二周年記念パーティクルライブ Music: ブルーアンビエンス / Mrs.",
+    "official": "ふーみき二周年記念パーティクルライブ Music: ブルーアンビエンス / Mrs. GREEN APPLE バグやご意見などがあれば、 X（旧Twitter）：＠Fukou_VRC までお気軽にDMしてください"
+  },
+  {
+    "id": "wrld_f52da313-d9fc-42e2-82fd-4f17d9236ce5",
+    "category": "misc",
+    "name": "Nel Blu",
+    "subtype": "宇宙・空",
+    "capacity": 6,
+    "recommendedCapacity": 3,
+    "favorites": 13652,
+    "visits": 251324,
+    "tags": [
+      "宇宙・空",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_81489d5d-de6b-49d9-86f4-a35fb783765a/3/256",
+    "note": "約1時間の物語体験。ヴェネツィア国際映画祭のイマーシブ部門ノミネート作を、VRChat向けに拡張した版。",
+    "official": "1-hour narrative experience ｜ Venice Immersive Nominee ｜ Expanded VRChat Version ｜ Designed for up to 6 players. 1時間のナラティブ体験｜Venice Immersive ノミネート作品｜"
+  },
+  {
+    "id": "wrld_63a3921b-4412-4858-ae96-d38a7edc95d0",
+    "category": "misc",
+    "name": "TARTARUS",
+    "subtype": "海・水中",
+    "capacity": 16,
+    "recommendedCapacity": 6,
+    "favorites": 20736,
+    "visits": 254635,
+    "tags": [
+      "海・水中",
+      "乗り物",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_82ca72eb-3664-4ac2-ba74-41d935b777fa/5/256",
+    "note": "人類は、深海の最深部を「HADAL（冥府）」と呼んだ。 そこが世界の底であり、それ以上深い場所など存在しないと信じていた。",
+    "official": "人類は、深海の最深部を「HADAL（冥府）」と呼んだ。 そこが世界の底であり、それ以上深い場所など存在しないと信じていた。 もし冥府の底に広がる深淵があるならば、その場所を目にした人類は誰もがこう呼ぶだろう。 TARTARUS - 奈落の深淵 座席6席／立ち乗りなら6人以上も可 （所要時間：約20分"
+  },
+  {
+    "id": "wrld_842cfe2c-9d82-446e-ba30-40d5a34ad282",
+    "category": "misc",
+    "name": "Binaural ASMR Room",
+    "subtype": "チル",
+    "capacity": 12,
+    "recommendedCapacity": 12,
+    "favorites": 30983,
+    "visits": 360454,
+    "tags": [
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_05aad297-9677-468f-8471-95a387a2bd82/4/256",
+    "note": "バイノーラルASMRを体験できる部屋。2人以上で遊ぶのがおすすめ。",
+    "official": "［Autonomous Sensory Meridian Response］ Try playing with two or more people. 2人以上で遊んでみてね。ASMR用音源アイテムが購入可能になりました。現在VRモードのみでASMRギミックは動作します。"
+  },
+  {
+    "id": "wrld_a48e00a2-7a2e-45fd-ab52-0f4c8225fcbb",
+    "category": "misc",
+    "name": "Sim Pool!",
+    "subtype": "演出・パーティクル",
+    "capacity": 60,
+    "recommendedCapacity": 16,
+    "favorites": 4186,
+    "visits": 62790,
+    "tags": [
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e9442b9b-db91-42fe-9cae-c08b6a36f33f/7/256",
+    "note": "水がGPUでリアルタイムに計算されるプールパーティー。最大100万粒子の水で、しぶきを上げたり撃ち合ったりできる。",
+    "official": "A pool party where the water is a real-time GPU simulation: up to 1M SPH particles to splash, shoot and swim in. Water guns, slides and floats; pick a"
+  },
+  {
+    "id": "wrld_ef8f14e9-203b-4a1a-bb3e-60552a805c4c",
+    "category": "misc",
+    "name": "MintPunk Photo Stage",
+    "subtype": "写真・撮影",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 4392,
+    "visits": 27220,
+    "tags": [
+      "写真・撮影"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_9f54a4e0-58cd-4eef-9337-f484102237a1/1/256",
+    "note": "制作者の衣装を撮影するためのフォトステージ。衣装はBOOTHで試着できる。",
+    "official": "The stage for my outfit photo XD Try the oufti from this link: https://booth.pm/zh-cn/items/8240035"
+  },
+  {
+    "id": "wrld_7ea2806a-5824-4e5e-98ab-1069109eaab3",
+    "category": "misc",
+    "name": "少女レイ A Girl Ray by ケセドCHESED",
+    "subtype": "海・水中",
+    "capacity": 60,
+    "recommendedCapacity": 30,
+    "favorites": 4257,
+    "visits": 53570,
+    "tags": [
+      "海・水中",
+      "アート・展示",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d24a6d9f-68c9-448f-84de-63f820c644e2/3/256",
+    "note": "145作目は『少女レイ』のMVを再現したワールド。使用アセットはQvPen、動画プレーヤーだけ。",
+    "official": "145作目は『少女レイ』のMVを再現したワールド。使用アセットはQvPen、動画プレーヤーだけ。すべてモデリング・Animation制作しました。動画プレイリストにはいろんな『少女レイ』が入ってますよ。容量５MB。"
+  },
+  {
+    "id": "wrld_748d5dcf-1843-429f-b09c-6051752e8526",
+    "category": "misc",
+    "name": "バーチャル広島駅 2.u",
+    "subtype": "アート・展示",
+    "capacity": 80,
+    "recommendedCapacity": 80,
+    "favorites": 6207,
+    "visits": 206937,
+    "tags": [
+      "アート・展示",
+      "集会・交流",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_25785cc3-60aa-48b1-ba5e-63f118e3fd6f/7/256",
+    "note": "JR西日本グループのメタバース空間である「バーチャル広島駅 2.u」は、「終電後の、誰も知らない広島駅」をテーマにした没入型ワールドです。",
+    "official": "JR西日本グループのメタバース空間である「バーチャル広島駅 2.u」は、「終電後の、誰も知らない広島駅」をテーマにした没入型ワールドです。リアルに再現された駅構造と、VRならではの幻想的な演出が融合し、「見たことのない広島駅」を体験できます。 さらに、本ワールドは単なるバーチャル空間ではなく、「創作"
+  },
+  {
+    "id": "wrld_48f70688-a7a8-4252-b695-e891f845a129",
+    "category": "misc",
+    "name": "時の残響－Echoes of Time",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 38334,
+    "visits": 242733,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_78faeabd-38ea-4240-a429-8e930aaab58a/2/256",
+    "note": "",
+    "official": ""
+  },
+  {
+    "id": "wrld_03b5b90d-6bc0-4dcb-aad0-b3a87cce925f",
+    "category": "misc",
+    "name": "-yuuri-空の向こうで",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 2018,
+    "visits": 33924,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_8bccae27-b916-4698-9752-1ba5ae0f39c2/2/256",
+    "note": "ワールドのどこかに大切な手紙と花が置いてあります。その花に触れて外にでると.",
+    "official": "ワールドのどこかに大切な手紙と花が置いてあります。その花に触れて外にでると...。「明日は晴れるといいな」"
+  },
+  {
+    "id": "wrld_43cb662d-56cd-4efd-b18f-f9f1225ea7ad",
+    "category": "misc",
+    "name": "Waves ＃256",
+    "subtype": "海・水中",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 3066,
+    "visits": 28744,
+    "tags": [
+      "海・水中",
+      "音楽・ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c02fa98c-539a-47a6-a38b-57aedc268877/5/256",
+    "note": "GPU-powered spatial audio system このワールドでは通常の制限を超えて、仮想的に256個の音源を同時に鳴らすことができます。",
+    "official": "GPU-powered spatial audio system このワールドでは通常の制限を超えて、仮想的に256個の音源を同時に鳴らすことができます。GPUがすべての音源の立体音響効果を並列に計算し、最終的に1つのAudioSourceから出力されます。 In this world, beyon"
+  },
+  {
+    "id": "wrld_4837b182-4e8e-47f5-8f56-9ee88f2d9da5",
+    "category": "misc",
+    "name": "Cave Aquarium",
+    "subtype": "チル",
+    "capacity": 40,
+    "recommendedCapacity": 16,
+    "favorites": 10366,
+    "visits": 193923,
+    "tags": [
+      "チル",
+      "自然・風景",
+      "海・水中",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_614ac504-8b24-46e4-a38b-cc979fb1941b/5/256",
+    "note": "BOOTHショップ『kai 9』と『NewRarity』のコラボサンプルワールドになります。",
+    "official": "BOOTHショップ『kai 9』と『NewRarity』のコラボサンプルワールドになります。 洞窟の中の水族館をイメージした巨大水槽の展示ワールドになります。 This is a collaboration sample world created by the BOOTH shops kai 9 "
+  },
+  {
+    "id": "wrld_5d46d718-2732-4c1f-81c2-38fdaf6e79a6",
+    "category": "misc",
+    "name": "Create Your World ～部屋作りの出来るワールド～",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 6,
+    "favorites": 2304,
+    "visits": 33706,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5fbf0634-4249-45d4-b045-5ddec099f8f9/6/256",
+    "note": "自分で部屋づくりができるワールド。",
+    "official": "Create Your World"
+  },
+  {
+    "id": "wrld_95cfe576-75e9-43d1-9af6-b4c785b85d26",
+    "category": "recommend",
+    "name": "ぽこピープラネタリア / PokoPeaPlanetaria",
+    "subtype": "宇宙・空",
+    "capacity": 9,
+    "recommendedCapacity": 9,
+    "favorites": 3976,
+    "visits": 40015,
+    "tags": [
+      "宇宙・空",
+      "ゲーム",
+      "日本",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_8de5547f-f8ff-40e8-a9fc-e821a1a06ed0/2/256",
+    "note": "ぽこピープラネタリアとは？ VR体験の新しいカタチとしてデザインされたイマーシブ映画館です。",
+    "official": "ぽこピープラネタリアとは？ VR体験の新しいカタチとしてデザインされたイマーシブ映画館です。 観客のあなたも物語のすぐそばへ。ぽこピーと一緒に冒険の世界へ没入する、新しい映像体験をお届けします。 ----- Subtitles：日本語 / English / 한국어 / 简体中文 / 繁體中文 / "
+  },
+  {
+    "id": "wrld_7bab7a3f-7766-4bfc-a53f-77f6660bde73",
+    "category": "recommend",
+    "name": "iMARINE VR LIVE 2026 vol.2",
+    "subtype": "音楽・ライブ",
+    "capacity": 40,
+    "recommendedCapacity": 30,
+    "favorites": 470,
+    "visits": 9485,
+    "tags": [
+      "音楽・ライブ",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5b9954e8-1d01-42e3-8df6-980955570682/2/256",
+    "note": "2026年5月に大盛況で幕を閉じたVR LIVEの第2弾となる「iMARINE VR LIVE 2026 vol.",
+    "official": "2026年5月に大盛況で幕を閉じたVR LIVEの第2弾となる「iMARINE VR LIVE 2026 vol.2」の開催が決定！ 0b4k3 × Gugenkaがタッグを組んだ映像を初披露！ 2026年11月21日（土）、22日（日）の2日間、各日3回公演でお届けします。 【DAY1】11月21"
+  },
+  {
+    "id": "wrld_87133884-b305-4d98-9604-20ffa5f89c9c",
+    "category": "recommend",
+    "name": "FZMZ Point Zero",
+    "subtype": "",
+    "capacity": 40,
+    "recommendedCapacity": 35,
+    "favorites": 7927,
+    "visits": 110521,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_7fb3acfc-af41-40c1-93ef-a148c4f92b4a/3/256",
+    "note": "FZMZ （ファゾムズ） official VR world https://fzmz.",
+    "official": "FZMZ （ファゾムズ） official VR world https://fzmz.jp/"
+  },
+  {
+    "id": "wrld_d6c5aca3-a19d-41d0-a0f7-5175bb5d38dd",
+    "category": "recommend",
+    "name": "portal world",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 563,
+    "visits": 3770,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_20a81058-6425-4ea8-a0ef-86edef3add19/8/256",
+    "note": "みんなありがとうねほんまにBIGLOVE",
+    "official": "みんなありがとうねほんまにBIGLOVE"
+  },
+  {
+    "id": "wrld_7ca23e3f-2757-40ef-afea-c8b6c9fe2e15",
+    "category": "recommend",
+    "name": "二次創作MV - あの夏が飽和する。 -",
+    "subtype": "写真・撮影",
+    "capacity": 12,
+    "recommendedCapacity": 12,
+    "favorites": 4742,
+    "visits": 40696,
+    "tags": [
+      "写真・撮影"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1bccbc98-5d60-41dc-aef8-64fde5468f54/2/256",
+    "note": "こちらは、カンザキイオリ様の「あの夏が飽和する。」をもとに、VRChatでの撮影と編集を通して映画風に描いた二次創作MVを上映するワールドです。",
+    "official": "こちらは、カンザキイオリ様の「あの夏が飽和する。」をもとに、VRChatでの撮影と編集を通して映画風に描いた二次創作MVを上映するワールドです。 注意：自己解釈が含まれます、苦手な方は注意してください。"
+  },
+  {
+    "id": "wrld_ff3daa0e-0620-44a1-b15c-ce0f9b9bb7d4",
+    "category": "recommend",
+    "name": "Project ［ latent ］ // archive_",
+    "subtype": "",
+    "capacity": 65,
+    "recommendedCapacity": 65,
+    "favorites": 15227,
+    "visits": 90066,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ae3f40b7-7426-40b8-998f-2cce31452bc4/1/256",
+    "note": "月白ルイスの歌う姿と、箱庭の空間構造を記録したアーカイブ作品。",
+    "official": "In Project ［ latent ］ // archive_, Geppaku Luis singing figure and the spatial structure of Hakoniwa are reconstructed within a VR environment and pla"
+  },
+  {
+    "id": "wrld_ea519d64-1ae6-4d52-b06f-9cc4c3d8f320",
+    "category": "recommend",
+    "name": "Nemuarium（水族館）",
+    "subtype": "海・水中",
+    "capacity": 8,
+    "recommendedCapacity": 4,
+    "favorites": 7283,
+    "visits": 56751,
+    "tags": [
+      "海・水中",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a45c271a-9213-4b42-a7fc-744606bf2b53/1/256",
+    "note": "たくさんの方に多くの生き物を知ってほしいと思い制作しました。現実に存在し実際には見ることが難しい生き物も展示しているので是非ご覧ください！",
+    "official": "たくさんの方に多くの生き物を知ってほしいと思い制作しました。現実に存在し実際には見ることが難しい生き物も展示しているので是非ご覧ください！皆様のご来館をお待ちしております！Welcome to Nemuarium Aquarium!"
+  },
+  {
+    "id": "wrld_f432252a-cd39-4e58-be2a-780cb5f3518d",
+    "category": "recommend",
+    "name": "リルレオぐみ！集会教室ワールド",
+    "subtype": "学校",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 52,
+    "visits": 3750,
+    "tags": [
+      "学校",
+      "集会・交流"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_7e4553c5-d512-4fe1-bbfe-2b5239447c06/1/256",
+    "note": "リルレオぐみ！集会教室ワールド",
+    "official": "リルレオぐみ！集会教室ワールド"
+  },
+  {
+    "id": "wrld_6f65d2fc-0598-414c-8e10-6f7b54139c55",
+    "category": "todo",
+    "name": "【PvP】Avatar Gimmick Shooting",
+    "subtype": "写真・撮影",
+    "capacity": 16,
+    "recommendedCapacity": 16,
+    "favorites": 565,
+    "visits": 3800,
+    "tags": [
+      "写真・撮影",
+      "ゲーム",
+      "アバター"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_8d37e2ac-8824-4a25-9898-3ed0b4f1c8f1/3/256",
+    "note": "武器ギミックを買ったものの、なかなか使う機会がない...」そんな悩みを解決するために制作したワールドです。",
+    "official": "武器ギミックを買ったものの、なかなか使う機会がない...」そんな悩みを解決するために制作したワールドです。お気に入りのギミックのお披露目や試し撃ち、フレンドとの対戦・撮影など、気兼ねなく武器を扱える場所としてご活用ください。 推奨人数:4人～ バグが起きた場合インスタンスを立て直してください。 イベ"
+  },
+  {
+    "id": "wrld_37aeeeee-51a3-4f91-b5b7-92fac7afc7ba",
+    "category": "todo",
+    "name": "MF文庫Jライブラリー 【VirtualSanrioPuroland】",
+    "subtype": "図書館・本",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 1329,
+    "visits": 12596,
+    "tags": [
+      "図書館・本",
+      "音楽・ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a92385ce-abd1-42d4-a662-23ca60f7e56c/2/256",
+    "note": "バーチャルサンリオピューロランドにあるMF文庫Jのライブラリー。",
+    "official": "MFbunkoJ Library【VirtualSanrioPuroland】"
+  },
+  {
+    "id": "wrld_3d6c9459-c83e-446f-885e-a728bbed339f",
+    "category": "todo",
+    "name": "［OPEN BETA］ Ashpoint: Zero",
+    "subtype": "街・都市",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 4078,
+    "visits": 77288,
+    "tags": [
+      "街・都市",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e8fd6db6-408d-4d27-8909-172c4aad278f/3/256",
+    "note": "襲撃・回収・戦闘・脱出。VRChat向けに作られたPvE脱出シューター（オープンベータ）。",
+    "official": "ASHPOINT ZERO: RAID · LOOT · FIGHT · EXTRACT A PVE extraction shooter built for VRChat. Gear up in the bunker, deploy into the city and fight your way"
+  },
+  {
+    "id": "wrld_36c86f5e-0bf3-4f12-8279-975b941e7fff",
+    "category": "todo",
+    "name": "SharkCage",
+    "subtype": "海・水中",
+    "capacity": 16,
+    "recommendedCapacity": 8,
+    "favorites": 2510,
+    "visits": 40984,
+    "tags": [
+      "海・水中",
+      "ホラー・不気味"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a9a905cc-d52e-4b88-8a15-5b8f3c194c40/2/256",
+    "note": "ケージの中に入り、海の生き物達を観察できるワールドです。 是非深海の様子を楽しんでください。",
+    "official": "ケージの中に入り、海の生き物達を観察できるワールドです。 是非深海の様子を楽しんでください。 ケージ内でのフィッシュウォッチングはルートがあり全３ルートになります。 サメや海洋恐怖症の方はお気を付けください。 苦手な方は船の上から巨大画面でケージ内を見る事も出来ます。"
+  },
+  {
+    "id": "wrld_92315630-d276-4279-ae21-8a52884de0f8",
+    "category": "todo",
+    "name": "ZOMBIE ESCAPE：ROOFTOP EXODUS",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 32,
+    "favorites": 5863,
+    "visits": 89108,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_53803ca1-9703-4a96-afe0-b301cd3d6f18/1/256",
+    "note": "最大32人で遊べる、ゾンビから逃げ切るFPS。",
+    "official": "Zombie escape FPS for up to 32 players. Pick your weapons, race across the rooftops and open the way. Board the heli before time runs out to survive, "
+  },
+  {
+    "id": "wrld_67b78fcc-e213-4c58-9ce5-3752e8fc198a",
+    "category": "todo",
+    "name": "Escape from Azkaban ［RIDE］EN / JP",
+    "subtype": "乗り物",
+    "capacity": 24,
+    "recommendedCapacity": 6,
+    "favorites": 11470,
+    "visits": 90995,
+    "tags": [
+      "乗り物"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_dfccd66f-202f-45bd-9445-fb4c016e944f/3/256",
+    "note": "闇の帝王が再び力を強める時代。声を上げた者が送られるアズカバンからの脱出を描くライドアトラクション。日英対応。",
+    "official": "It's the height of the Dark Lord's second rise to power, anyone who dares to speak out finds themselves locked away, if they're lucky... But you still"
+  },
+  {
+    "id": "wrld_7ad335f5-bcf6-4864-9d69-30eec2a544e0",
+    "category": "todo",
+    "name": "鉄オタ御殿～model train room～",
+    "subtype": "チル",
+    "capacity": 16,
+    "recommendedCapacity": 16,
+    "favorites": 124,
+    "visits": 2726,
+    "tags": [
+      "チル",
+      "電車・駅"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_2ac0ecf7-be1d-4e75-9e45-2446fbc78874/16/256",
+    "note": "近所のマンションの屋上には、オーナーが建てた趣味部屋がある。中には趣味の鉄道模型や鉄道グッズが所狭しと並んでいるらしい。",
+    "official": "近所のマンションの屋上には、オーナーが建てた趣味部屋がある。中には趣味の鉄道模型や鉄道グッズが所狭しと並んでいるらしい。 誰が呼んだか鉄オタ御殿。あのマンションって重さで屋根落ちないのかな？"
+  },
+  {
+    "id": "wrld_ed400654-9993-480d-9a58-90c08ef9cc03",
+    "category": "todo",
+    "name": "3DScan MakerFaireTokyo2026 有明GYM-EX（ジメックス）",
+    "subtype": "写真・撮影",
+    "capacity": 26,
+    "recommendedCapacity": 26,
+    "favorites": 173,
+    "visits": 991,
+    "tags": [
+      "写真・撮影",
+      "アート・展示",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6d8a4b2f-b8b1-4274-8c94-4ac3dd148fef/2/256",
+    "note": "2026/9/5-6に開催された、MakerFaireTokyo2026のフォトグラワールドです.",
+    "official": "2026/9/5-6に開催された、MakerFaireTokyo2026のフォトグラワールドです. 国際展示場駅から会場までを生成しました. 勇者技研研究所のファイバリオンの出展の記録として、 一般来場者が入る直前に撮影。DJI Osmo 360とSony α7R とiPhone17Proを用いて、"
+  },
+  {
+    "id": "wrld_093e3b71-560b-4381-9d10-4bd231a19796",
+    "category": "todo",
+    "name": "バーチャル北陸",
+    "subtype": "写真・撮影",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 2735,
+    "visits": 25794,
+    "tags": [
+      "写真・撮影",
+      "集会・交流",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_365ed958-d6b6-4882-ac7b-6b3cfca422d9/8/256",
+    "note": "北陸（新潟、富山、石川、福井）の魅力が詰まったワールドです。観光地や美味しいグルメをバーチャルで体感してみてください！",
+    "official": "北陸（新潟、富山、石川、福井）の魅力が詰まったワールドです。観光地や美味しいグルメをバーチャルで体感してみてください！ 毎月第4土曜開催 VRC北陸集会もよろしくね［個人制作のワールドであり、各自治体等との関わりはありません］"
+  },
+  {
+    "id": "wrld_4c7f72ff-49c0-4820-9bfa-c25a4f254790",
+    "category": "todo",
+    "name": "ROGUE PUTT",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 271,
+    "visits": 4007,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_b43ab9e0-e05d-4302-ba06-0517ad04bee0/2/256",
+    "note": "打って、強化して、18ホールを生き残れ！パターゴルフ×ローグライク 11/14 VIVEコントローラーでプレイできないに対応しました。",
+    "official": "打って、強化して、18ホールを生き残れ！パターゴルフ×ローグライク 11/14 VIVEコントローラーでプレイできないに対応しました。ボールが途中で打てなくなるのを対応しました。 ＃ローグパット ＃ROUGEPUTT"
+  },
+  {
+    "id": "wrld_00af63db-ae07-4959-9caf-8307d1ef7362",
+    "category": "todo",
+    "name": "チルとは労働の対価である。",
+    "subtype": "チル",
+    "capacity": 32,
+    "recommendedCapacity": 32,
+    "favorites": 1990,
+    "visits": 28346,
+    "tags": [
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_600a4709-f78f-43e0-be3d-a4505660e33b/2/256",
+    "note": "汗水垂らしてお金を稼いでチルワールドを完成させよう。働かざる者休むべからず。",
+    "official": "汗水垂らしてお金を稼いでチルワールドを完成させよう。働かざる者休むべからず。"
+  },
+  {
+    "id": "wrld_cfca3594-6771-4d25-a8a9-dab242a07530",
+    "category": "todo",
+    "name": "JOINのたびにガチャ演出がはじまるワールド",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 614,
+    "visits": 18878,
+    "tags": [
+      "ゲーム",
+      "音楽・ライブ",
+      "集会・交流"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e80eac07-0d1e-48a5-b41e-41528e39a287/4/256",
+    "note": "冒険者ギルド風のワールドです。JOINしたりJOINされたりすると通知でガチャ風の演出が始まります。",
+    "official": "冒険者ギルド風のワールドです。JOINしたりJOINされたりすると通知でガチャ風の演出が始まります。ほとんどが低レアリティですが高レアが発生すると目立ちます。運試しに是非お立ち寄りください。 お借りしたBGM BGM:Village_Fete / PeriTune（https://peritune."
+  },
+  {
+    "id": "wrld_0520e927-f4ef-4de3-ba42-45b97118cdec",
+    "category": "todo",
+    "name": "8番水族館-Aquarium No.8-",
+    "subtype": "海・水中",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1020,
+    "visits": 15583,
+    "tags": [
+      "海・水中",
+      "ゲーム",
+      "音楽・ライブ",
+      "アバター"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_8aa662a4-6648-405b-8949-883a762cc0b7/7/256",
+    "note": "ゆるくて変わった海の生き物たちが暮らす、不思議な水族館へようこそ！ よーく観察しながら、異変を見つけて出口を目指そう！",
+    "official": "ゆるくて変わった海の生き物たちが暮らす、不思議な水族館へようこそ！ よーく観察しながら、異変を見つけて出口を目指そう！ あなたは無事に水族館から出られるかな？ Welcome to a mysterious aquarium where quirky and unusual sea creature"
+  },
+  {
+    "id": "wrld_454441bc-bc3b-469a-bb76-365b57428d35",
+    "category": "todo",
+    "name": "VRC謎解きワールド『一本道』",
+    "subtype": "ゲーム",
+    "capacity": 8,
+    "recommendedCapacity": 1,
+    "favorites": 92,
+    "visits": 1810,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_bb457283-d1a1-4693-9ea8-2fdfe89dfd40/1/256",
+    "note": "どこまで行っても一本道？/難易度:簡単/推奨人数1人/全4問/想定クリア時間10分～30分/QVペン以外ローカル/何でも許せる人向け/検索なし",
+    "official": "どこまで行っても一本道？/難易度:簡単/推奨人数1人/全4問/想定クリア時間10分～30分/QVペン以外ローカル/何でも許せる人向け/検索なし"
+  },
+  {
+    "id": "wrld_d5768b43-bbe6-4c4b-a6a3-42010a6c7144",
+    "category": "todo",
+    "name": "謎解きゲーム アンサーパネル",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1440,
+    "visits": 11382,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_32bf28b9-4e27-473d-b297-8690a494467d/2/256",
+    "note": "パネルを使って解答をする謎解きゲームです。 グローバル対応なので、みんなでワイワイ遊べます。",
+    "official": "パネルを使って解答をする謎解きゲームです。 グローバル対応なので、みんなでワイワイ遊べます。 【難易度：やや簡単】【知識：ほぼ不要】【クリアタイム目安：20～60分】【ギミック：グローバル】【ヒント：全問完備】【 ＃VRC_アンサーパネル 】"
+  },
+  {
+    "id": "wrld_37f05874-1257-4aa1-a8d9-42caa443bf97",
+    "category": "todo",
+    "name": "［JP/EN］ yourself -riddle world-",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 3648,
+    "visits": 43962,
+    "tags": [
+      "ゲーム",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_033ca013-80ad-442f-8258-0cca274a4d91/1/256",
+    "note": "日本語・英語対応の謎解きワールド。想定プレイ時間約約2時間。難易度は中級者〜を想定しています。",
+    "official": "日本語・英語対応の謎解きワールド。想定プレイ時間約約2時間。難易度は中級者〜を想定しています。3人以上の多人数推奨。 Language: JP / EN - Cooperative Riddle World - Difficulty: Intermediate to Advanced - Estim"
+  },
+  {
+    "id": "wrld_6f1a2ed1-da9b-44f7-baed-bd2d11642e16",
+    "category": "todo",
+    "name": "３の倍数と３のつく数で奈落に落ちる階段",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 611,
+    "visits": 11010,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5d9a1463-1650-4248-ae6d-b75454475fb4/2/256",
+    "note": "299の段までたどり着けますか？",
+    "official": "299の段までたどり着けますか？"
+  },
+  {
+    "id": "wrld_8434c2c3-5e97-460d-91d1-1c449bc03e8e",
+    "category": "todo",
+    "name": "謎解きワールド『ミノタウロスの鏡』",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 220,
+    "visits": 2712,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c5748b14-424a-408e-a0af-10f077d2eb1d/4/256",
+    "note": "短編謎解きワールドです。鏡を動かして光線を反射させ、的に当てて迷宮を攻略しましょう。",
+    "official": "短編謎解きワールドです。鏡を動かして光線を反射させ、的に当てて迷宮を攻略しましょう。動作はローカルです。想定プレイ時間は5分～ ＃VRC_M_Mirror"
+  },
+  {
+    "id": "wrld_35d0c0a9-60f9-4e67-8b12-8039339ede82",
+    "category": "todo",
+    "name": "ムーンパレス",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 793,
+    "visits": 9293,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_30f65fcf-0194-4973-8fed-e100f0894a1c/3/256",
+    "note": "ファミレスを享受せよの二次創作ファンメイドワールドです。モデルはすべてフルスクラッチ。",
+    "official": "ファミレスを享受せよの二次創作ファンメイドワールドです。モデルはすべてフルスクラッチ。一部要素に微ネタバレあり、プレイ後に来ることをおすすめします。 Enjoy the Diner / Fanmade / Spoilers"
+  },
+  {
+    "id": "wrld_c077aa49-4820-472d-ace5-c11368f1e3f4",
+    "category": "todo",
+    "name": "Project Aincrad 1.6.4",
+    "subtype": "ゲーム",
+    "capacity": 50,
+    "recommendedCapacity": 20,
+    "favorites": 172187,
+    "visits": 2668612,
+    "tags": [
+      "ゲーム",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_c404c651-bb7a-463e-b2ae-a07ab16d13e4/37/256",
+    "note": "ArgusVRCチームが継続的に更新している、ソードアート・オンラインの再現ワールド。",
+    "official": "Actively maintained recreation of Sword Art Online in VRChat, made by the ArgusVRC team."
+  },
+  {
+    "id": "wrld_b6c0e9e9-6f64-4d79-ac61-b4a54ec736b4",
+    "category": "todo",
+    "name": "StrategoHex",
+    "subtype": "ゲーム",
+    "capacity": 16,
+    "recommendedCapacity": 4,
+    "favorites": 211,
+    "visits": 1686,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1ce2f41a-9dd7-4438-ad66-1fa161ad59c7/3/256",
+    "note": "2-8人で遊べる、ちょっと変わった盤上陣取りゲームのワールドです。",
+    "official": "2-8人で遊べる、ちょっと変わった盤上陣取りゲームのワールドです。 World featuring a slightly unconventional board game where 2 to 8 players compete to control territory."
+  },
+  {
+    "id": "wrld_25e938a8-3b23-4d6b-a9c2-10e28cb4970b",
+    "category": "todo",
+    "name": "Bullet Time Agent",
+    "subtype": "電車・駅",
+    "capacity": 10,
+    "recommendedCapacity": 6,
+    "favorites": 35006,
+    "visits": 163446,
+    "tags": [
+      "電車・駅",
+      "ゲーム",
+      "SF・近未来"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e29bae3f-466c-424e-8225-4904b3920987/1/256",
+    "note": "8時間以上遊べる、没入型のアクションアドベンチャー。",
+    "official": "An immersive action-adventure with over 8 hours of gameplay. Take on intense bullet hell combat, punch and fight robots, and tackle platforming challe"
+  },
+  {
+    "id": "wrld_d358c59c-c4a6-4d6b-91c0-92ec5c3f3631",
+    "category": "todo",
+    "name": "REMEET -会えてないフレンドに会うための家-",
+    "subtype": "チル",
+    "capacity": 2,
+    "recommendedCapacity": 2,
+    "favorites": 2305,
+    "visits": 22269,
+    "tags": [
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_72ec775a-7605-409f-ba83-b15d027ab8d7/9/256",
+    "note": "フレンドになったはいいけど会えてない人に会うために作りました。",
+    "official": "フレンドになったはいいけど会えてない人に会うために作りました。 VRC外でフレンドになった人や昔にフレンドになってそれっきりという人、フレンドのフレンドなのであんまりじっくり話せてないなって人とお話しできるきっかけのワールドになってほしいです。＃REMEET_VRC"
+  },
+  {
+    "id": "wrld_78e0d513-97bf-4f17-898b-316332b9aaa1",
+    "category": "todo",
+    "name": "【フレカ】俺のフレンドをカードにしたもので決闘するゲムワ",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 165,
+    "visits": 3244,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d9e94b89-6ea0-4935-9b2e-f5abbc65df83/4/256",
+    "note": "26/11/22 デッキ保存機能を追加しました。",
+    "official": "26/11/22 デッキ保存機能を追加しました。"
+  },
+  {
+    "id": "wrld_c14f9df3-bb86-4587-a635-094dc922c13b",
+    "category": "todo",
+    "name": "フォトグラメトリ置き場 photogrammetry",
+    "subtype": "写真・撮影",
+    "capacity": 64,
+    "recommendedCapacity": 32,
+    "favorites": 282,
+    "visits": 6013,
+    "tags": [
+      "写真・撮影",
+      "ゲーム",
+      "アート・展示",
+      "ノスタルジー"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_4010e558-d576-4cda-9f35-bde456c5264b/1/256",
+    "note": "キャプションなどはまた付けます。 「第2回 レトロゲーム博物館計画 資料展示会まで i phone アプリscanverseで撮影/Unity2022",
+    "official": "キャプションなどはまた付けます。 「第2回 レトロゲーム博物館計画 資料展示会まで i phone アプリscanverseで撮影/Unity2022"
+  },
+  {
+    "id": "wrld_d5c7df06-9b19-4e33-9f12-4169cfc9a060",
+    "category": "todo",
+    "name": "Just ガチャ",
+    "subtype": "",
+    "capacity": 12,
+    "recommendedCapacity": 8,
+    "favorites": 1429,
+    "visits": 15611,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_285cf301-bb2b-4ced-a9a5-bc3641430fad/4/256",
+    "note": "ガチャを回して「VRCのどこかで見た事のあるもの」のフィギュアをゲットしましょう。",
+    "official": "ガチャを回して「VRCのどこかで見た事のあるもの」のフィギュアをゲットしましょう。 フィギュアをゲットすると、机の上にディスプレイされて図鑑も解放されます、コンプリートを目指しましょう。（全29種＋α） 2024/12/08 景品・ギミックを追加しました。"
+  },
+  {
+    "id": "wrld_0c893838-48d6-4174-8c98-5bd84b73ae4f",
+    "category": "todo",
+    "name": "タイタンクラッシュ -TITAN CRASH- Ver.2.1",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 7320,
+    "visits": 52478,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_74456f82-3810-4d20-bf68-4e5202bdb959/1/256",
+    "note": "タイタンクラッシュは2人以上で遊べるパーティバランスゲームです！巨人の足下にブロックを沈めて、巨人を倒したら負け！",
+    "official": "タイタンクラッシュは2人以上で遊べるパーティバランスゲームです！巨人の足下にブロックを沈めて、巨人を倒したら負け！どのブロックを沈めるか考えながら生き残りを目指そう！ // Ver.2.0 ポーズコピー機能追加 // Titan Crush is a party balance game for t"
+  },
+  {
+    "id": "wrld_7b01db21-f17b-4654-8a64-e9c2c7229d52",
+    "category": "todo",
+    "name": "Blocked",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1198,
+    "visits": 10720,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_0779b533-e6f4-426b-a5ea-671d8bb3c67d/1/256",
+    "note": "貴方は【とある理由】によってクリアを阻まれてしまいます。原因を潰してクリアを目指しましょう。",
+    "official": "貴方は【とある理由】によってクリアを阻まれてしまいます。原因を潰してクリアを目指しましょう。全１問の謎解きワールド。動作はグローバル。途中参加は不可です。クレジット 【VRC向け】iwaSync3 メディアプレイヤー by Hoshino Labs. https://booth.pm/ja/item"
+  },
+  {
+    "id": "wrld_2435bf0e-62f4-4918-ad9a-806d1bc571ad",
+    "category": "todo",
+    "name": "陰謀論大喜利ボドゲ『陰謀論 in 暴論』",
+    "subtype": "ゲーム",
+    "capacity": 12,
+    "recommendedCapacity": 8,
+    "favorites": 1282,
+    "visits": 8496,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a44054e3-b8ad-4022-acd3-047f7482bd1a/8/256",
+    "note": "陰謀論を題材にした大喜利ボードゲーム。2つのお題を組み合わせて、それっぽい陰謀論をでっち上げろ！",
+    "official": "陰謀論を題材にした大喜利ボードゲーム。2つのお題を組み合わせて、それっぽい陰謀論をでっち上げろ！人数:2人~ 所要時間:30分~1時間 PC/Android/iOS「『地球温暖化』は国が維持している。実は『医学』の発展のために？」（ディープブラック編には、政治・社会問題・陰謀論などのセンシティブな題"
+  },
+  {
+    "id": "wrld_6242967c-d00a-4988-a396-c73161306b63",
+    "category": "todo",
+    "name": "VRC Strikers!!",
+    "subtype": "ゲーム",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 5490,
+    "visits": 52070,
+    "tags": [
+      "ゲーム",
+      "カフェ・飲食"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_202baa5c-bf07-4ff8-8e9b-f9112ed25655/6/256",
+    "note": "チーム対戦のスポーツゲームを楽しもう！",
+    "official": "Enjoy Team Sport Game! ＃VRC_Strikers"
+  },
+  {
+    "id": "wrld_2be3830f-90cc-4687-9696-b3f34f339b60",
+    "category": "todo",
+    "name": "次世代生命科学研究所からの脱出",
+    "subtype": "",
+    "capacity": 10,
+    "recommendedCapacity": 5,
+    "favorites": 3226,
+    "visits": 28273,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_9c455ed2-d388-45a1-b40f-24c968e3fec6/2/256",
+    "note": "閉鎖予定の研究施設「次世代生命科学研究所」に関する奇妙な噂がネット上で拡散していた。",
+    "official": "閉鎖予定の研究施設「次世代生命科学研究所」に関する奇妙な噂がネット上で拡散していた。 深夜に搬出される大型コンテナ。行方不明になった研究員。工事中のはずなのに稼働している設備。だが、施設側は一切の取材を拒否。 好奇心に背中を押されて、記者であるあなたは閉鎖当日、工事関係者に紛れて研究施設へと忍び込ん"
+  },
+  {
+    "id": "wrld_314d9a11-c2a6-477b-866c-0f820124a80e",
+    "category": "todo",
+    "name": "【CBS対応】地下労働場",
+    "subtype": "",
+    "capacity": 30,
+    "recommendedCapacity": 30,
+    "favorites": 4805,
+    "visits": 73733,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_309cc4cf-337f-4ff3-ba90-c5041fea6474/3/256",
+    "note": "【CBS対応】［カジノLU］を含む、CBS導入ワールドで利用可能なポイントを獲得できるワールドです！",
+    "official": "【CBS対応】［カジノLU］を含む、CBS導入ワールドで利用可能なポイントを獲得できるワールドです！お友達と一緒にポイントを稼いじゃおう！！滞在人数によって自動獲得金額が変わります！！＃カジノLU"
+  },
+  {
+    "id": "wrld_d048292b-42ad-4204-9372-0103d9a46f71",
+    "category": "todo",
+    "name": "Gion Street - 祇園通り日本",
+    "subtype": "街・都市",
+    "capacity": 80,
+    "recommendedCapacity": 80,
+    "favorites": 49353,
+    "visits": 629014,
+    "tags": [
+      "街・都市",
+      "神社仏閣・宗教",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_862a00d2-1f1e-4492-9c46-5f0a7be67ec0/7/256",
+    "note": "Light Volume OK - 次回の祇園通りワールド恒例・大晦日カウントダウン花火イベントは、2027年12月31日に開催されます！",
+    "official": "Light Volume OK - 次回の祇園通りワールド恒例・大晦日カウントダウン花火イベントは、2027年12月31日に開催されます！ 午前0時ちょうど、天から駆け降りる神秘の馬が、午（うま）年の幕開けを華やかに告げます！ イベントは23時50分（10分前）から始まりますので、どうぞお見逃しなく"
+  },
+  {
+    "id": "wrld_40c48562-6608-413b-a7d2-8bd3b4a07d6c",
+    "category": "todo",
+    "name": "100番出口VRC -EXIT No.100- Ver1.2",
+    "subtype": "ホラー・不気味",
+    "capacity": 10,
+    "recommendedCapacity": 10,
+    "favorites": 4687,
+    "visits": 72967,
+    "tags": [
+      "ホラー・不気味"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_ede790a0-9ff6-41ca-b269-804291a863ca/1/256",
+    "note": "＃100番出口VRC -- NO-HORROR 8/29Update",
+    "official": "＃100番出口VRC -- NO-HORROR 8/29Update"
+  },
+  {
+    "id": "wrld_3248488d-e38c-40c2-ae62-d227be1fb824",
+    "category": "todo",
+    "name": "終末メディエーター",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 228,
+    "visits": 2487,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_29c394ee-ad91-4cb3-b656-97ad6a78e9b8/1/256",
+    "note": "オリジナルソロボードゲーム『終末メディエーター』 あなたは終末計画を進める黒幕組織の指導者。",
+    "official": "オリジナルソロボードゲーム『終末メディエーター』 あなたは終末計画を進める黒幕組織の指導者。 ゾンビを利用して人類を追い詰め、世界を陥落させろ。 ただし、人類を滅ぼすだけでは終わらない。 最後は自ら育てたゾンビを殲滅し、世界を手にするまでが計画だ。 人類にも、ゾンビにも勝たせるな。 終末を、描き出せ"
+  },
+  {
+    "id": "wrld_4488462e-6370-4000-9c0e-132f5c644e90",
+    "category": "todo",
+    "name": "3D-VRC Tech Demo（Beta v0.6）",
+    "subtype": "音楽・ライブ",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 780,
+    "visits": 12574,
+    "tags": [
+      "音楽・ライブ"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1a31c9b4-5e57-4ab9-a378-467c9298c871/2/256",
+    "note": "VRChatで立体映像を見せる技術デモ（ベータ版 v0.6）。ProTV対応のQuest版も更新。",
+    "official": "3D-VRC Tech Demo（Beta v0.6）（New Quest Update with ProTV）（Quest fix coming soon!） Note: to fully experience this world a VR headset is needed."
+  },
+  {
+    "id": "wrld_014d362b-164b-4b91-b628-a68f5ea0d5b7",
+    "category": "todo",
+    "name": "pix2pix - Deep Learning in VRC",
+    "subtype": "演出・パーティクル",
+    "capacity": 80,
+    "recommendedCapacity": 40,
+    "favorites": 234,
+    "visits": 2756,
+    "tags": [
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_2959248a-a655-4873-a1b0-e011dc2fcb54/2/256",
+    "note": "画像変換AI「pix2pix」をシェーダーだけでVRChat内に実装したワールド。",
+    "official": "Pix2Pix implementation inside a shader for VRChat"
+  },
+  {
+    "id": "wrld_008259d0-8985-48e7-9d1e-e1ec2bcb433a",
+    "category": "todo",
+    "name": "いろいろフォトワールド",
+    "subtype": "写真・撮影",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 3966,
+    "visits": 36482,
+    "tags": [
+      "写真・撮影",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_889b9c57-7321-441b-95d9-652eb35b5c70/5/256",
+    "note": "前後に配置された画像に合わせて、ネットミームやゲームのワンシーンを再現した、おもしろ写真を撮ることができるワールドです。",
+    "official": "前後に配置された画像に合わせて、ネットミームやゲームのワンシーンを再現した、おもしろ写真を撮ることができるワールドです。VR・デスクトップのどちらでも撮ることができます。クエストに対応しています。"
+  },
+  {
+    "id": "wrld_7b417d22-e016-45dc-b80d-c604200eb80c",
+    "category": "todo",
+    "name": "【2人用】 マーダーミステリー「Super ＆ Market!」【Android対応】",
+    "subtype": "自然・風景",
+    "capacity": 2,
+    "recommendedCapacity": 2,
+    "favorites": 2637,
+    "visits": 20014,
+    "tags": [
+      "自然・風景",
+      "ゲーム",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f0e8e64c-0ffe-44b3-bfa0-a92662fa02a0/8/256",
+    "note": "近所のスーパーに、なんと死体が！？2人用マーダーミステリーがプレイできるワールド2作目です。",
+    "official": "近所のスーパーに、なんと死体が！？2人用マーダーミステリーがプレイできるワールド2作目です。前作未プレイでも問題ありません。所要時間1時間程度。ワールド音量60％以上推奨。途中入場不可なので注意してください。 プレイ感想は「＃スーパーマダミス」でお願いします！真相＆エンディング集をシナリオ作者のBo"
+  },
+  {
+    "id": "wrld_9dbfe869-a96d-42de-9460-0acdabb361b1",
+    "category": "todo",
+    "name": "忌避展 -The Avoidance Museum-",
+    "subtype": "アート・展示",
+    "capacity": 20,
+    "recommendedCapacity": 20,
+    "favorites": 2553,
+    "visits": 26367,
+    "tags": [
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e623756a-6dac-4d87-a4a1-0e8d6bcdc27c/1/256",
+    "note": "「忌避（きひ）」は、不快なものや避けるべき状況を避けようとすることを意味し、生物が危険から身を守る行動や、人間が不快な感情を避ける心理的な反応 An exhibition of spaces you",
+    "official": "「忌避（きひ）」は、不快なものや避けるべき状況を避けようとすることを意味し、生物が危険から身を守る行動や、人間が不快な感情を避ける心理的な反応 An exhibition of spaces you instinctively want to avoid."
+  },
+  {
+    "id": "wrld_9ce2b063-3d70-498f-b904-28ef45294fd4",
+    "category": "todo",
+    "name": "Answer Impostor 〜フレンド擬態クイズ〜",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 6009,
+    "visits": 96122,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f654049e-a083-44d6-9f7c-0c569740f6e0/7/256",
+    "note": "「質問の答え」から中の人を当てる、みんなで遊ぶ推理パーティーゲームです。",
+    "official": "「質問の答え」から中の人を当てる、みんなで遊ぶ推理パーティーゲームです。回答者はA〜Eのブースに隠れて質問に回答。予測者はその回答を手がかりに、誰がどのブースにいるかを当てます。 A multiplayer guessing party game where you figure out who's"
+  },
+  {
+    "id": "wrld_1165b4bd-cbd3-4727-b3eb-7ed44fb7bf1a",
+    "category": "chill",
+    "name": "さよならを言いたくて",
+    "subtype": "チル",
+    "capacity": 80,
+    "recommendedCapacity": 80,
+    "favorites": 1296,
+    "visits": 29233,
+    "tags": [
+      "チル",
+      "自然・風景"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e188c799-7611-4a5f-a029-af80cbb1e1d3/2/256",
+    "note": "「さようなら」を言えなかったあの人へ。夏の病室のワールドです。",
+    "official": "「さようなら」を言えなかったあの人へ。夏の病室のワールドです。"
+  },
+  {
+    "id": "wrld_83fc4aa3-b698-4748-9c63-acebcea439b9",
+    "category": "chill",
+    "name": "DreamyRoom",
+    "subtype": "チル",
+    "capacity": 80,
+    "recommendedCapacity": 80,
+    "favorites": 2103,
+    "visits": 105711,
+    "tags": [
+      "チル",
+      "写真・撮影",
+      "自然・風景",
+      "海・水中"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_1a5f66a9-ddf7-4da7-ba35-eae7f234b79c/5/256",
+    "note": "夕暮れの鏡のような海に浮かぶ杉の小屋。実在の山々に囲まれ、本物の映り込みが焼き込まれている。",
+    "official": "A cedar cabin on a mirror sea at golden hour, ringed by real mountains, with baked true reflections. Swim down to the seabed （jump at the deck edge or"
+  },
+  {
+    "id": "wrld_cc3694fd-3b86-4649-afc1-fb899bbfd24c",
+    "category": "chill",
+    "name": "Evermore - 彼方",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 15560,
+    "visits": 362806,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a2ef7d6e-3e8f-45a0-9b19-2cdf5913400d/2/256",
+    "note": "あの日々には、もう手が届かない。それでも、ここからはずっと見えている。",
+    "official": "あの日々には、もう手が届かない。それでも、ここからはずっと見えている。/Those days are out of reach now. Even so, from here they are always in sight."
+  },
+  {
+    "id": "wrld_064b489b-f89b-4cb4-8ad4-4fcc52243ac4",
+    "category": "chill",
+    "name": "Black Cove",
+    "subtype": "チル",
+    "capacity": 12,
+    "recommendedCapacity": 12,
+    "favorites": 4598,
+    "visits": 154544,
+    "tags": [
+      "チル",
+      "夜・夜景",
+      "宇宙・空",
+      "集会・交流"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_2159abee-6eba-44ba-aa80-e461a170919c/3/256",
+    "note": "4つの雰囲気を楽しめる、居心地の良いチルワールド。",
+    "official": "A cozy chill world with 4 different vibes. Hit the button, and watch the space mechanically tear down and reassemble. 4つの部屋があるチルワールドです。ボタンを押して空間を物理的に再"
+  },
+  {
+    "id": "wrld_6821c4de-cd7c-4959-a556-08012dfee29a",
+    "category": "chill",
+    "name": "RE:Factory Aquarium",
+    "subtype": "海・水中",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 215,
+    "visits": 14908,
+    "tags": [
+      "海・水中",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_fe405632-046f-4b9b-a30b-72042af0be43/4/256",
+    "note": "大きなアクアリウムが置かれたモダンインダストリアル調の落ち着いた雰囲気のチルワです。",
+    "official": "大きなアクアリウムが置かれたモダンインダストリアル調の落ち着いた雰囲気のチルワです。天候は晴と雨を切り替えられます。一応入口から外にも出られます。動画プレイヤー（yamaplayer） / QVpen / imagepad / RBSsleepkit2"
+  },
+  {
+    "id": "wrld_364d6e7f-96a2-48ae-bfdd-a756a903183b",
+    "category": "chill",
+    "name": "魚と、共に。",
+    "subtype": "チル",
+    "capacity": 12,
+    "recommendedCapacity": 12,
+    "favorites": 4910,
+    "visits": 256019,
+    "tags": [
+      "チル",
+      "海・水中"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_8caa50a8-5e27-47c9-ad02-66004b5c379b/4/256",
+    "note": "水槽に囲まれたくて作りました。かなり狭いです/VRC Light Volumes導入済",
+    "official": "水槽に囲まれたくて作りました。かなり狭いです/VRC Light Volumes導入済"
+  },
+  {
+    "id": "wrld_434bd14e-4fac-4add-b859-a4eda3143e74",
+    "category": "chill",
+    "name": "蒼霖",
+    "subtype": "チル",
+    "capacity": 10,
+    "recommendedCapacity": 10,
+    "favorites": 1601,
+    "visits": 175707,
+    "tags": [
+      "チル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_aea506d7-f381-434d-afe5-a3a44d776470/5/256",
+    "note": "静かにゆったり過ごせるくつろぎの空間",
+    "official": "静かにゆったり過ごせるくつろぎの空間"
+  },
+  {
+    "id": "wrld_47ccd61e-86cd-41b3-88df-77577fe65f96",
+    "category": "chill",
+    "name": "Gardenia Blue",
+    "subtype": "チル",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 10180,
+    "visits": 375425,
+    "tags": [
+      "チル",
+      "写真・撮影",
+      "海・水中",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5db2cdc9-c03b-4e5c-85dc-be488e8ca747/17/256",
+    "note": "青い空と海があります。 YamaPlayer / QvPen / FlipCamera / RBS SleepKit 2（デスクトップのタブレット呼び出しはTキーです）",
+    "official": "青い空と海があります。 YamaPlayer / QvPen / FlipCamera / RBS SleepKit 2（デスクトップのタブレット呼び出しはTキーです）"
+  },
+  {
+    "id": "wrld_4e162934-d9a9-4c40-9ece-2a83505c44d1",
+    "category": "chill",
+    "name": "Justピタゴラスイッチ Marble Machine",
+    "subtype": "チル",
+    "capacity": 64,
+    "recommendedCapacity": 64,
+    "favorites": 1139,
+    "visits": 17832,
+    "tags": [
+      "チル",
+      "夜・夜景",
+      "アート・展示",
+      "アバター"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_9b343fff-b5b0-4062-ac2a-957d75bab7bf/3/256",
+    "note": "科学館によくあるピタゴラスイッチ的なものを再現してみました。英語ではMarbleMachineと言うようです。",
+    "official": "科学館によくあるピタゴラスイッチ的なものを再現してみました。英語ではMarbleMachineと言うようです。わたしが作ったアバターと衣装も展示しています。ベッドは寝る判定OnOffスイッチ付きです。9/17 NightMode追加しました。"
+  },
+  {
+    "id": "wrld_59316374-7807-45e8-b7d9-d860eb63e18a",
+    "category": "chill",
+    "name": "レベル４特殊収容室［Level4 Container］",
+    "subtype": "チル",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 961,
+    "visits": 12933,
+    "tags": [
+      "チル",
+      "写真・撮影",
+      "ホラー・不気味",
+      "SF・近未来"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_28f82a5e-432d-4f33-be72-7831b24bec71/1/256",
+    "note": "「来訪者」を収容するための特殊施設。 彼らの要望により最低限のものは用意されている。",
+    "official": "「来訪者」を収容するための特殊施設。 彼らの要望により最低限のものは用意されている。"
+  },
+  {
+    "id": "wrld_26009b91-9add-46d5-bec5-d7c54c08ede1",
+    "category": "chill",
+    "name": "でけぇ水槽がある部屋",
+    "subtype": "チル",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 597,
+    "visits": 25927,
+    "tags": [
+      "チル",
+      "海・水中",
+      "アート・展示",
+      "集会・交流"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f260b4b9-f0a1-4d08-bb0d-703466e039c7/5/256",
+    "note": "デカい水槽に囲まれた部屋です フレンドとの雑談や魚が好きな人におススメ トークガンは少し内容を変えてます。",
+    "official": "デカい水槽に囲まれた部屋です フレンドとの雑談や魚が好きな人におススメ トークガンは少し内容を変えてます。 動画、ミラー、QVpen、ベッド、酒、バット、火災報知器あります。"
+  },
+  {
+    "id": "wrld_37144a50-ad40-4f0e-b0f3-ae8d4f7b938c",
+    "category": "game",
+    "name": "VRCテニスガーデン -VRC TennisGarden-",
+    "subtype": "ゲーム",
+    "capacity": 20,
+    "recommendedCapacity": 20,
+    "favorites": 4057,
+    "visits": 70221,
+    "tags": [
+      "ゲーム",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_cef2d6b7-695c-49ff-8756-9b7789e4065d/7/256",
+    "note": "必殺技テニスが楽しめるワールドです。好きな技をセットして超次元テニスをしよう！",
+    "official": "必殺技テニスが楽しめるワールドです。好きな技をセットして超次元テニスをしよう！ ダブルスや通常テニス、NPC対戦も！ \"PCVROnly\" 日本語/English/한국어/简体中文/繁體中文"
+  },
+  {
+    "id": "wrld_f97ad04b-958d-4f8e-8df1-06eacdf84417",
+    "category": "game",
+    "name": "SoulLink -ソウルリンク- VR Card Duel",
+    "subtype": "ゲーム",
+    "capacity": 30,
+    "recommendedCapacity": 30,
+    "favorites": 3216,
+    "visits": 91814,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_64f9513b-91df-4d47-8684-6a662e704d6d/7/256",
+    "note": "SoulLink VR CARD DUEL 5種族と数百種類のカードを組み合わせて戦おう！",
+    "official": "SoulLink VR CARD DUEL 5種族と数百種類のカードを組み合わせて戦おう！ チュートリアル・CPU戦・友人戦・ランクマッチを搭載。マスターランクを目指そう！ UI・ルール・カード説明は9言語対応。VR／デスクトップ、PC／Questで遊べます。 ランクマッチは同じインスタンス内で行い"
+  },
+  {
+    "id": "wrld_319e09af-64a6-4984-ae03-6e54cd028b1a",
+    "category": "game",
+    "name": "【トーク型ゲームワールド】脳内ランキング",
+    "subtype": "チル",
+    "capacity": 16,
+    "recommendedCapacity": 16,
+    "favorites": 2216,
+    "visits": 32920,
+    "tags": [
+      "チル",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_914219e8-e919-4e42-85ba-cf74ab1cdf2b/5/256",
+    "note": "「一番～～な人は？」 出題者が作ったランキングから、本当のお題を見抜け！",
+    "official": "「一番～～な人は？」 出題者が作ったランキングから、本当のお題を見抜け！ 最大16人で遊べるトーク型パーティーゲーム。 はじめましての人が多い場合でも遊べる【EX】ジャンルあり！途中参加・退出自由！＃VRC_脳内ランキング"
+  },
+  {
+    "id": "wrld_99907368-1097-4a1e-a847-947bb12854cb",
+    "category": "game",
+    "name": "slayTheUdon",
+    "subtype": "ゲーム",
+    "capacity": 12,
+    "recommendedCapacity": 6,
+    "favorites": 14451,
+    "visits": 269204,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_485e786f-81bd-4872-a78c-e549fee8cb1c/4/256",
+    "note": "カードゲーム「Slay the Spire」風の遊びをUdonで作ったワールド。",
+    "official": "slayTheUdon"
+  },
+  {
+    "id": "wrld_d1d2318c-5144-4902-a774-876f45c06804",
+    "category": "game",
+    "name": "Price Guess",
+    "subtype": "ゲーム",
+    "capacity": 24,
+    "recommendedCapacity": 12,
+    "favorites": 82263,
+    "visits": 1410866,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a609d023-b4f0-45b3-b923-7ff9ac9e0de1/6/256",
+    "note": "いろいろな物の値段を当てるゲーム！何人でも遊べる。",
+    "official": "Guess the price of that stuff! Game for any number of players!"
+  },
+  {
+    "id": "wrld_0d8e96f5-7aa1-443d-a414-9a153b87c1d6",
+    "category": "game",
+    "name": "PixelWorld",
+    "subtype": "チル",
+    "capacity": 18,
+    "recommendedCapacity": 12,
+    "favorites": 9627,
+    "visits": 1541851,
+    "tags": [
+      "チル",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_40b77e14-4217-4b8d-8e17-8a0ec64e9ced/7/256",
+    "note": "自分のペースでくつろげる、静かで落ち着いたワールド。",
+    "official": "A quiet, relaxing world where you can unwind at your own pace. It features an idle game you can enjoy while watching videos, along with a small story "
+  },
+  {
+    "id": "wrld_a83aec00-b372-46a0-8e3c-2b99d2038ed2",
+    "category": "game",
+    "name": "［WIP］Guess That Booth",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 10,
+    "favorites": 4012,
+    "visits": 34166,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_94003989-5af8-4626-83ee-7d1424a7a050/2/256",
+    "note": "This World is still Working in Progress / このワールドまだ開発中です / VRChatterのみんなさんたぶん普段からBooth使ってるよね？",
+    "official": "This World is still Working in Progress / このワールドまだ開発中です / VRChatterのみんなさんたぶん普段からBooth使ってるよね？Booth詳しいよね？じゃあ、Boothの商品価格当てられる？ このゲームは、Boothの商品価格を予想するゲーム！"
+  },
+  {
+    "id": "wrld_0f953b7d-74e9-49d4-9655-16c819f8a711",
+    "category": "game",
+    "name": "HEADON -ヘッドン-",
+    "subtype": "ゲーム",
+    "capacity": 40,
+    "recommendedCapacity": 16,
+    "favorites": 371,
+    "visits": 4961,
+    "tags": [
+      "ゲーム",
+      "演出・パーティクル"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_a35a2d9e-d68f-4e47-be5b-8afea18ba4c2/1/256",
+    "note": "PvP バトルロワイヤル 2人～ 突進で相手を吹っ飛ばし、最後の1人になるまで戦おう！",
+    "official": "PvP バトルロワイヤル 2人～ 突進で相手を吹っ飛ばし、最後の1人になるまで戦おう！ パーティクルが重いときはオーラ（黄）で統一すると幾分かマシだと思います"
+  },
+  {
+    "id": "wrld_9d010e4e-28cc-45e9-96bb-53158e6d5d5e",
+    "category": "game",
+    "name": "お嬢様ボードゲーム_ojou",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 1278,
+    "visits": 8367,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_d94877b4-d836-4298-b4c6-3dfd6528389e/7/256",
+    "note": "場面に合わせてお嬢様言葉で喋る簡単ボードゲームですわ！2022.06.",
+    "official": "場面に合わせてお嬢様言葉で喋る簡単ボードゲームですわ！2022.06.17 新規カード多数追加しましたわ。"
+  },
+  {
+    "id": "wrld_96a3dbd6-15f6-4eb4-98c3-b9c7f993ff83",
+    "category": "game",
+    "name": "Ludo",
+    "subtype": "チル",
+    "capacity": 16,
+    "recommendedCapacity": 10,
+    "favorites": 47929,
+    "visits": 1287528,
+    "tags": [
+      "チル",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_bfa54815-12c6-435e-bca5-4627de73b5fa/3/256",
+    "note": "ボードゲームのLudoをプレイできるワールドです。友達と一緒に遊んでみてください。",
+    "official": "ボードゲームのLudoをプレイできるワールドです。友達と一緒に遊んでみてください。CPUと対戦もできます。 This is a world where you can play the board game Ludo. Try playing with your friends. You can a"
+  },
+  {
+    "id": "wrld_6475f4ee-380e-4ad3-a85a-c459986548e3",
+    "category": "game",
+    "name": "CRUSH FACTORY IDLE",
+    "subtype": "チル",
+    "capacity": 24,
+    "recommendedCapacity": 24,
+    "favorites": 12733,
+    "visits": 2697491,
+    "tags": [
+      "チル",
+      "ゲーム",
+      "アート・展示",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_aac0e7f9-972e-42ae-a908-3bd85e4cb89b/1/256",
+    "note": "v1.0.11｜ 鉱石を砕き、稼ぎ、強化し、プレステージでさらなる高みへ。",
+    "official": "v1.0.11｜ 鉱石を砕き、稼ぎ、強化し、プレステージでさらなる高みへ。 Crush ore, earn, upgrade, and Prestige your way to greater heights. 日本語 / English QVpen / YamaPlayer / RBS Sleep"
+  },
+  {
+    "id": "wrld_4cc9519e-21c7-49db-a012-d5bf65f3dd49",
+    "category": "game",
+    "name": "シンプルパターゴルフ コース1",
+    "subtype": "",
+    "capacity": 32,
+    "recommendedCapacity": 32,
+    "favorites": 1645,
+    "visits": 12177,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_17e11e79-3d5f-4439-8a95-0d76b54de87e/2/256",
+    "note": "9/3 コース１ アップロード 9/10 コース２ アップロード 9/17 コース３ アップロード 9/26 コース4",
+    "official": "9/3 コース１ アップロード 9/10 コース２ アップロード 9/17 コース３ アップロード 9/26 コース4"
+  },
+  {
+    "id": "wrld_07ee4e44-940f-4405-a398-e969114a0164",
+    "category": "game",
+    "name": "TonboWerewolf - トンボ人狼",
+    "subtype": "ゲーム",
+    "capacity": 40,
+    "recommendedCapacity": 20,
+    "favorites": 8452,
+    "visits": 183827,
+    "tags": [
+      "ゲーム",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_5963965b-28d0-41db-ba7c-b28192c30449/2/256",
+    "note": "Japanese styled werewolf game!（jinro） ｜ 人狼ゲームをVRChatで遊ぼう。",
+    "official": "Japanese styled werewolf game!（jinro） ｜ 人狼ゲームをVRChatで遊ぼう。猫又や狂信者など、モダンな役職も使用可能。 ｜ 各種役職の説明はマスタールームを参照。 特殊役職の一部は、他の人狼ゲームと異なる挙動をもつため、必ずご確認ください ｜ タグ: ＃Tonb"
+  },
+  {
+    "id": "wrld_36a4f752-6e45-4c37-9eed-279525f3e8c8",
+    "category": "game",
+    "name": "taktie's Gun Dynamics【FULL RELEASE】",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 32,
+    "favorites": 36071,
+    "visits": 984736,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_6e761114-7e99-4855-b693-1d1f2f9e6742/8/256",
+    "note": "リアルな銃器操作を再現したチーム対戦型VR FPS。仲間と連携しながら、緊迫感のある戦闘を楽しめます。",
+    "official": "リアルな銃器操作を再現したチーム対戦型VR FPS。仲間と連携しながら、緊迫感のある戦闘を楽しめます。 Xで「＃TGD_VRC」を付けてフィードバックをよろしくお願い致します！！ Desktop user: F key to Reload. デスクトップの方は、「Fキー」で銃のリロードが可能です。"
+  },
+  {
+    "id": "wrld_7e2871b3-add3-4f91-8269-d4b84dd1069a",
+    "category": "game",
+    "name": "大富豪が遊べるワールド【Cyeber Daifugo Arena】",
+    "subtype": "ゲーム",
+    "capacity": 16,
+    "recommendedCapacity": 16,
+    "favorites": 3633,
+    "visits": 49029,
+    "tags": [
+      "ゲーム",
+      "日本"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_f9e81620-5bc8-4a4d-a782-066d4d84cc9a/5/256",
+    "note": "【BOOTHにて本ワールドの大富豪ギミックを販売中!!】 2~5人で大富豪が遊べるワールドです！",
+    "official": "【BOOTHにて本ワールドの大富豪ギミックを販売中!!】 2~5人で大富豪が遊べるワールドです！ 基本ルールに加え、ローカルルールも多数搭載してます。 レートシステムも実装してます！勝ちまくってレートを上げよう!! 言語は日本語と英語に対応してます。 ［We plan to sell the \"Da"
+  },
+  {
+    "id": "wrld_4f7dcdbf-bc92-4563-b307-080c136248cf",
+    "category": "game",
+    "name": "Bump n' Bash: Round 2 バンプ・バッシュ 2",
+    "subtype": "宇宙・空",
+    "capacity": 80,
+    "recommendedCapacity": 64,
+    "favorites": 5727,
+    "visits": 161287,
+    "tags": [
+      "宇宙・空",
+      "電車・駅",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_67e82dad-1919-4c34-9b68-d9122d791b51/15/256",
+    "note": "ぶつけ合って遊ぶ対戦ゲーム「Bump n' Bash」の第2弾（v2.1.9）。",
+    "official": "（Release v2.1.9.10）Send your foes flying across soaring skies, erupting volcanoes, and even deep space with a well-timed punch in this platform fighte"
+  },
+  {
+    "id": "wrld_8b9b3207-02ee-468e-b301-be6212447813",
+    "category": "game",
+    "name": "魚げっさー",
+    "subtype": "ゲーム",
+    "capacity": 32,
+    "recommendedCapacity": 16,
+    "favorites": 11898,
+    "visits": 121280,
+    "tags": [
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_42cfe478-2076-43ac-b0af-64779b083e3e/9/256",
+    "note": "魚の頭から、魚の長さを予想するお手軽ゲームワールドです！ 1ゲーム約5分、最大8人。",
+    "official": "魚の頭から、魚の長さを予想するお手軽ゲームワールドです！ 1ゲーム約5分、最大8人。 オモコロチャンネルの「魚の長さ当てゲーム」という動画が元ネタです。 ＃魚げっさー ＃UoGuessr"
+  },
+  {
+    "id": "wrld_1af128b8-27fe-4492-a862-264ea4228970",
+    "category": "game",
+    "name": "【バーチャルライフVR】何でもできる第二の人生 Ver0.3.3",
+    "subtype": "",
+    "capacity": 20,
+    "recommendedCapacity": 20,
+    "favorites": 11284,
+    "visits": 162854,
+    "tags": [],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_86b19c1c-2f68-4aed-964a-6b7fe9d14159/6/256",
+    "note": "ここでは、銃を撃ったり走り回ったり食事をしたり警察に追われたり...本物の人生のように何でもできるワールドです。",
+    "official": "ここでは、銃を撃ったり走り回ったり食事をしたり警察に追われたり...本物の人生のように何でもできるワールドです。GTAをモチーフにして作られています。バグ報告、ご意見はこちら公式XのDMまで ＠vrc_vlv"
+  },
+  {
+    "id": "wrld_457d691a-ccaf-46e5-9978-70171cd502c2",
+    "category": "game",
+    "name": "JUST 七並べ",
+    "subtype": "ゲーム",
+    "capacity": 25,
+    "recommendedCapacity": 16,
+    "favorites": 1812,
+    "visits": 24467,
+    "tags": [
+      "ゲーム",
+      "アート・展示"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_98af7cd0-f50c-4dbf-a4ec-f8627e3d76ea/4/256",
+    "note": "トランプゲームの七並べができるワールドです。手札をつかみ、ステージ中央にブン投げて提出。",
+    "official": "トランプゲームの七並べができるワールドです。手札をつかみ、ステージ中央にブン投げて提出。 VR・単機・デスクトップ対応。【対応ルール】ジョーカー（0～2枚）／ジョーカー＋手札のセット出し／AKリンク／AKトンネル／不死身のジョーカー 【プレー人数】最大8人（3人以上推奨） CPUで人数調整できます。"
+  },
+  {
+    "id": "wrld_9a40fa71-41e0-42c5-ab73-f0e23e49cfb5",
+    "category": "game",
+    "name": "箱庭鉄道2（非電化）RBUR Train Simulator",
+    "subtype": "電車・駅",
+    "capacity": 20,
+    "recommendedCapacity": 10,
+    "favorites": 869,
+    "visits": 14145,
+    "tags": [
+      "電車・駅",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_3c496469-689f-4ec7-9bbb-9a7daa57e13a/7/256",
+    "note": "RBURシステムで動く、自分で運転できる鉄道ワールド（非電化路線）。",
+    "official": "A drivable railway world powered by the RBUR system. Compared to the original \"Hakoniwa Railway,\" this version focuses more on the scenery. Please not"
+  },
+  {
+    "id": "wrld_1af53798-92a3-4c3f-99ae-a7c42ec6084d",
+    "category": "game",
+    "name": "Massive Medal Pusher / クソでっけぇプッシャーゲーム",
+    "subtype": "チル",
+    "capacity": 60,
+    "recommendedCapacity": 20,
+    "favorites": 52592,
+    "visits": 4491740,
+    "tags": [
+      "チル",
+      "ゲーム"
+    ],
+    "thumb": "https://api.vrchat.cloud/api/1/image/file_e4b3423d-4f15-46ee-94a4-46c7362f4feb/5/256",
+    "note": "とにかく巨大なメダルプッシャーゲーム。日英対応（Ver.5.6.0）。",
+    "official": "【ENG / JP】【Ver.5.6.0】 SO MASSIVE!!!! Massive local medals - global leaderboards ＆ instance-wide features await! でっけえ！！！！ メダルは負荷を考慮して非同期です。。"
   }
 ];
