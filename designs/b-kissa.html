@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>喫茶アスユイ｜お気に入りワールド</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;700&family=Yusei+Magic&display=swap" rel="stylesheet">
+<style>
+  /* 案B: 喫茶店（参考: Refero Styles "Touchy Coffee" の色帯・等幅・ピル） */
+  :root{
+    --ink:#000000; --sage:#788c8c; --cream:#ffffff; --terracotta:#9f4920; --lavender:#a697c6;
+    --moss:#5b9133; --sunshine:#fff78f; --sky:#d0eaf4; --pink:#f5b5c8;
+    --r-card:20px; --r-pill:100px;
+    --mono:"M PLUS 1 Code",ui-monospace,Menlo,Consolas,monospace;
+    --script:"Yusei Magic","M PLUS 1 Code",cursive;
+    --pad:clamp(16px,4vw,60px);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{font-family:var(--mono);color:var(--ink);background:var(--sage);font-size:14px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  button,input,select{font:inherit;color:inherit}
+  button{cursor:pointer}
+  a{color:inherit}
+  img{display:block}
+  .band{padding:72px var(--pad)}
+  .inner{max-width:2400px;margin:0 auto}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);background:transparent;border-radius:var(--r-pill);
+    padding:8px 18px;font-size:14px;text-decoration:none;white-space:nowrap;transition:background .12s,color .12s}
+  .pill:hover{background:var(--ink);color:var(--cream)}
+  .pill.inv{background:var(--ink);color:var(--cream);font-weight:700;letter-spacing:.06em}
+  .pill.inv:hover{background:#222}
+  .pill.on{background:var(--ink);color:var(--cream)}
+  .pill.cream{background:var(--cream)}
+  .pill.cream:hover{background:var(--ink)}
+  h2{font-size:24px;font-weight:700;margin:0;letter-spacing:.02em}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+
+  /* ---- hero (terracotta) ---- */
+  .hero{background:var(--terracotta);color:var(--cream);padding-top:20px;padding-bottom:64px}
+  .topnav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .hero .pill.inv{border-color:var(--ink)}
+  .shopname{font-family:var(--script);font-size:clamp(64px,11vw,168px);line-height:1;margin:40px 0 6px;letter-spacing:.02em}
+  .lead{font-size:15px;max-width:520px;margin:0 0 40px;opacity:.92}
+  .today{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;background:var(--cream);color:var(--ink);border-radius:var(--r-card);padding:20px}
+  .today .ph{border-radius:16px;overflow:hidden;background:var(--sky);aspect-ratio:16/10;max-height:640px;width:100%;cursor:pointer}
+  .today .ph img{width:100%;height:100%;object-fit:cover}
+  .today .tx{display:flex;flex-direction:column;gap:12px;padding:8px 8px 8px 4px}
+  .today h1{font-size:clamp(20px,2.2vw,28px);margin:0;line-height:1.45;font-weight:700}
+  .today .note{color:#333;line-height:1.85;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .today .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+  .facts{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+  .facts b{font-size:18px;display:block;line-height:1.2}
+
+  /* ---- marquee ---- */
+  .marquee{background:var(--ink);color:var(--cream);overflow:hidden;height:46px;display:flex;align-items:center;font-size:14px;font-weight:700;letter-spacing:.06em}
+  .mq{display:flex;gap:40px;white-space:nowrap;animation:mq 60s linear infinite;padding-left:40px}
+  .marquee:hover .mq{animation-play-state:paused}
+  @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---- stamp ---- */
+  .stamp{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:11px;font-weight:700;
+    line-height:1.3;padding:8px;letter-spacing:.02em}
+  .s-exhibition{background:var(--terracotta);color:var(--cream)}
+  .s-particle{background:var(--ink);color:var(--cream)}
+  .s-misc{background:var(--pink);color:var(--ink)}
+  .s-recommend{background:var(--moss);color:var(--cream)}
+  .s-todo{background:var(--lavender);color:var(--ink)}
+  .s-chill{background:var(--sky);color:var(--ink)}
+  .s-game{background:var(--sunshine);color:var(--ink)}
+
+  /* ---- new arrivals (sky) ---- */
+  .sky{background:var(--sky)}
+  .head{display:flex;align-items:flex-end;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+  .head .right{margin-left:auto;display:flex;gap:8px}
+  .track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,15vw,320px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
+  .track>*{scroll-snap-align:start}
+
+  /* ---- card ---- */
+  .card{position:relative;display:flex;flex-direction:column;gap:10px;text-align:left;background:var(--cream);border:0;border-radius:var(--r-card);padding:14px;transition:transform .15s ease}
+  .card:hover{transform:translateY(-3px)}
+  .card .ph{border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--sky)}
+  .card .ph img{width:100%;height:100%;object-fit:cover}
+  .card .stamp{position:absolute;top:6px;right:6px;width:64px;height:64px;font-size:10px;transform:rotate(8deg)}
+  .card .nm{font-weight:700;font-size:14px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .card .nt{font-size:12px;color:#444;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .card .mt{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+  .card .mt span{border:1px solid var(--ink);border-radius:var(--r-pill);padding:1px 10px;font-size:11.5px}
+
+  /* ---- recommend (sunshine) ---- */
+  .sun{background:var(--sunshine)}
+  .picks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pick{border:0;text-align:left;border-radius:var(--r-card);padding:22px;display:flex;flex-direction:column;gap:14px;color:var(--cream)}
+  .pick:nth-child(1){background:var(--moss)} .pick:nth-child(2){background:var(--terracotta)} .pick:nth-child(3){background:var(--ink)}
+  .pick .ph{border-radius:14px;overflow:hidden;aspect-ratio:16/9}
+  .pick .ph img{width:100%;height:100%;object-fit:cover}
+  .pick q{font-size:14px;line-height:1.85;quotes:"「" "」"}
+  .pick .who{font-weight:700;text-decoration:underline;text-underline-offset:4px}
+
+  /* ---- catalog (sage) ---- */
+  .menu{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+  .menu .pill{background:var(--cream)} .menu .pill:hover{background:var(--ink);color:var(--cream)}
+  .menu .pill.on{background:var(--ink);color:var(--cream)}
+  .menu .n{opacity:.6;font-size:12px}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+  .search{flex:1;min-width:240px;display:flex;background:var(--cream);border:1px solid var(--ink);border-radius:var(--r-pill);padding:4px 4px 4px 18px}
+  .search input{flex:1;border:0;outline:0;background:none;min-width:0;font-size:14px}
+  .search .pill{padding:6px 16px}
+  select.pill{appearance:none;-webkit-appearance:none;background:var(--cream);padding-right:32px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23000' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center}
+  select.pill:hover{background-color:var(--cream);color:var(--ink)}
+  .count{font-weight:700;color:var(--cream);background:var(--ink);border-radius:var(--r-pill);padding:6px 14px;font-size:13px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+  .chip{border:1px solid var(--ink);background:transparent;border-radius:var(--r-pill);padding:4px 12px;font-size:12.5px}
+  .chip:hover{background:rgba(255,255,255,.35)}
+  .chip.on{background:var(--lavender);border-color:var(--ink)}
+  .chip .n{opacity:.6;margin-left:5px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(220px,13vw,320px),1fr));gap:20px}
+  .list{background:var(--cream);border-radius:var(--r-card);padding:8px 14px}
+  .row{display:grid;grid-template-columns:88px minmax(0,1fr) 64px 110px 110px;gap:14px;align-items:center;width:100%;border:0;border-bottom:1px solid #d8d8d8;background:none;text-align:left;padding:10px 0}
+  .row:last-child{border-bottom:0}
+  .row:hover .nm{text-decoration:underline}
+  .row img{width:88px;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:var(--sky)}
+  .row .nm{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .sb{font-size:12px;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .v{text-align:right;font-size:13px}
+  .empty{background:var(--cream);border-radius:var(--r-card);padding:60px 20px;text-align:center}
+
+  /* ---- footer ---- */
+  footer{background:var(--ink);color:var(--cream);padding:56px var(--pad)}
+  footer .shopname{font-size:56px;margin:0 0 16px}
+  .fcols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px;font-size:13px}
+  footer h4{margin:0 0 10px;font-size:13px;letter-spacing:.14em}
+  footer p{margin:0 0 4px;opacity:.75}
+  footer button{background:none;border:0;padding:2px 0;display:block;opacity:.75;text-align:left}
+  footer button:hover{opacity:1;text-decoration:underline}
+
+  /* ---- modal ---- */
+  .ov{position:fixed;inset:0;z-index:50;background:rgba(120,140,140,.85);display:none;align-items:flex-start;justify-content:center;padding:40px 16px;overflow:auto}
+  .ov.show{display:flex}
+  .sheet{background:var(--cream);border:1px solid var(--ink);border-radius:var(--r-card);max-width:960px;width:100%;padding:20px;
+    display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;position:relative}
+  .sheet .ph{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--sky)}
+  .sheet .ph img{width:100%;height:100%;object-fit:cover}
+  .sheet .stamp{position:absolute;left:-14px;top:-14px;transform:rotate(-8deg)}
+  .mnav{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:13px}
+  .sheet h2{font-size:22px;line-height:1.45;padding-right:48px}
+  .sheet .x{position:absolute;right:16px;top:16px}
+  .lbl{font-size:12px;font-weight:700;letter-spacing:.14em;margin:16px 0 6px}
+  .desc{line-height:1.9}
+  .orig{font-size:12.5px;color:#555;line-height:1.8}
+  .rel{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .rel button{border:0;background:none;padding:0;text-align:left;font-size:11px;line-height:1.4}
+  .rel img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:var(--sky);margin-bottom:4px}
+  .rel button span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .facts.m{margin:12px 0 0}
+
+  @media (max-width:900px){
+    .today,.sheet{grid-template-columns:minmax(0,1fr)}
+    .picks{grid-template-columns:minmax(0,1fr)}
+    .fcols{grid-template-columns:1fr}
+    .row{grid-template-columns:72px minmax(0,1fr) 54px}
+    .row img{width:72px}
+    .row .h{display:none}
+    .band{padding-top:52px;padding-bottom:52px}
+  }
+  @media (max-width:560px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px} .card{padding:10px} .card .stamp{width:52px;height:52px;font-size:9px} .rel{grid-template-columns:repeat(2,1fr)} }
+  @media (prefers-reduced-motion:reduce){ .mq{animation:none} *{transition:none!important} }
+</style>
+</head>
+<body>
+<header class="band hero">
+  <div class="inner">
+    <nav class="topnav">
+      <a class="pill inv" href="#catalog">MENU</a>
+      <button class="pill inv" id="lucky" type="button">おまかせ一杯</button>
+    </nav>
+    <div class="shopname">喫茶アスユイ</div>
+    <p class="lead">VRChatのワールド、いろいろ揃えてます。ごゆっくりどうぞ。</p>
+    <article class="today" id="today"></article>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="mq" id="mq"></div></div>
+
+<section class="band sky">
+  <div class="inner">
+    <div class="head"><div><div class="kicker">New Arrival</div><h2>新入荷</h2></div>
+      <div class="right"><button class="pill cream" id="prev" type="button">←</button><button class="pill cream" id="next" type="button">→</button></div></div>
+    <div class="track" id="track"></div>
+  </div>
+</section>
+
+<section class="band sun">
+  <div class="inner">
+    <div class="head"><div><div class="kicker">Owner's Pick</div><h2>店主のおすすめ</h2></div></div>
+    <div class="picks" id="picks"></div>
+  </div>
+</section>
+
+<section class="band" id="catalog">
+  <div class="inner">
+    <div class="head"><div><div class="kicker">Menu</div><h2 id="ctitle"></h2></div><div class="right" style="color:var(--cream);font-size:13px" id="cdesc"></div></div>
+    <div class="menu" id="menu"></div>
+    <div class="toolbar">
+      <form class="search" id="sform" role="search"><input id="q" data-ws-search type="search" placeholder="ワールド名・タグ・説明・定員で探す（ / ）" autocomplete="off"><button class="pill inv" type="submit">さがす</button></form>
+      <select class="pill" id="sort" aria-label="並び替え">
+        <option value="fav">人気順</option><option value="new">新入荷順</option><option value="visits">訪問数順</option>
+        <option value="name">名前順</option><option value="cap">定員が多い順</option><option value="capmin">定員が少ない順</option>
+      </select>
+      <button class="pill cream" id="vgrid" type="button">カード</button><button class="pill cream" id="vlist" type="button">リスト</button>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div id="stage"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="inner">
+    <div class="shopname">喫茶アスユイ</div>
+    <div class="fcols">
+      <div><h4>ABOUT</h4><p>店主アスユイがVRChatで出会ったワールドを並べた、小さな喫茶店です。</p></div>
+      <div><h4>MENU</h4><div id="flinks"></div></div>
+      <div><h4>INFO</h4><p>営業　24時間（VRChat内）</p><p>店主　アスユイ</p><p>仕入れ　VRChatのお気に入りから</p></div>
+    </div>
+  </div>
+</footer>
+
+<div class="ov" id="ov"><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+
+<script>document.write('<script src="../data.js?v=' + Date.now() + '"><\/script>');</script>
+<script src="core.js"></script>
+<script>
+(function(){
+  const {esc,num,img,url,catName} = WS;
+  const $ = s => document.querySelector(s);
+  const stamp = w => `<span class="stamp s-${w.category}">${esc(w.subtype || catName(w.category))}</span>`;
+  const card = w => `<button class="card" type="button" data-id="${w.id}"><div class="ph"><img loading="lazy" decoding="async" src="${esc(img(w,512))}" alt="" onerror="this.style.visibility='hidden'"></div>${stamp(w)}
+    <span class="nm">${esc(w.name)}</span><span class="nt">${esc(w.note||'')}</span>
+    <span class="mt"><span>定員 ${w.capacity||'?'}</span><span>♡ ${num(w.favorites)}</span></span></button>`;
+
+  /* 本日のおすすめ */
+  let off = 0;
+  function renderToday(w){
+    $('#today').innerHTML = `<div class="ph" data-open="${w.id}"><img src="${esc(img(w,2048))}" alt="" onerror="this.style.visibility='hidden'"></div>
+      <div class="tx"><div class="kicker">本日のおすすめ　${WS.todayLabel()}</div><h1>${esc(w.name)}</h1>
+        <div style="font-size:13px">${esc(catName(w.category))}${w.subtype?'　/　'+esc(w.subtype):''}</div>
+        <div class="note">${esc(w.note||'')}</div>
+        <div class="facts"><span><b>${w.capacity||'?'}</b>定員</span><span><b>${num(w.favorites)}</b>お気に入り</span><span><b>${num(w.visits)}</b>訪問</span></div>
+        <div class="acts"><button class="pill inv" data-open="${w.id}" type="button">くわしく →</button><button class="pill" id="reroll" type="button">ほかのを</button></div></div>`;
+    $('#reroll').onclick = () => renderToday(WS.daily(++off));
+  }
+  renderToday(WS.daily(0));
+
+  /* marquee + 新入荷 */
+  const arrivals = WS.newest(16);
+  const mqText = arrivals.map(w => 'NEW ― ' + esc(w.name)).join('<span>／</span>');
+  $('#mq').innerHTML = `<span>${mqText}</span><span>／</span><span>${mqText}</span><span>／</span>`;
+  $('#track').innerHTML = arrivals.map(card).join('');
+  const tr = $('#track');
+  $('#prev').onclick = () => tr.scrollBy({left:-tr.clientWidth*.8,behavior:'smooth'});
+  $('#next').onclick = () => tr.scrollBy({left:tr.clientWidth*.8,behavior:'smooth'});
+
+  /* 店主のおすすめ: 本当におすすめ から日替わり3つ */
+  const rec = WS.inCat('recommend');
+  const picks = [];
+  for(let i=0; picks.length<3 && i<50 && rec.length; i++){ const r = rec[(new Date().getDate()*7 + i*13) % rec.length]; if(!picks.includes(r)) picks.push(r); }
+  $('#picks').innerHTML = picks.map(w => `<button class="pick" type="button" data-pick="${w.id}"><div class="ph"><img loading="lazy" src="${esc(img(w,512))}" alt="" onerror="this.style.visibility='hidden'"></div>
+    <q>${esc(w.note||w.name)}</q><span class="who">${esc(w.name)}</span></button>`).join('');
+
+  $('#flinks').innerHTML = WS.C.map(c => `<button type="button" data-cat="${c.id}">${esc(c.name)}</button>`).join('');
+
+  const qEl = $('#q'), sortEl = $('#sort');
+  function render(S){
+    const c = WS.C.find(x=>x.id===S.cat)||{};
+    $('#ctitle').textContent = c.name || ''; $('#cdesc').textContent = c.desc || '';
+    $('#menu').innerHTML = WS.C.map(x => `<button class="pill${x.id===S.cat?' on':''}" type="button" data-cat="${x.id}">${esc(x.name)} <span class="n">${WS.inCat(x.id).length}</span></button>`).join('');
+    if(document.activeElement !== qEl) qEl.value = S.q;
+    sortEl.value = S.sort;
+    $('#vgrid').classList.toggle('on', S.view==='grid'); $('#vlist').classList.toggle('on', S.view==='list');
+    $('#chips').innerHTML = WS.tagCounts().map(([t,n]) => `<button class="chip${S.tags.has(t)?' on':''}" type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join('');
+    const L = WS.list();
+    $('#count').textContent = L.length + ' 品';
+    if(!L.length){ $('#stage').innerHTML = `<div class="empty">あいにく、条件に合うワールドは品切れです。</div>`; return; }
+    $('#stage').innerHTML = S.view==='list'
+      ? `<div class="list">` + L.map(w => `<button class="row" type="button" data-id="${w.id}"><img loading="lazy" decoding="async" src="${esc(img(w,256))}" alt="" onerror="this.style.visibility='hidden'">
+          <div style="min-width:0"><div class="nm">${esc(w.name)}</div><div class="sb">${esc(w.subtype||'')}${(w.tags||[]).length?'　'+esc(w.tags.slice(0,3).join(' / ')):''}</div></div>
+          <span class="v">${w.capacity||'?'}名</span><span class="v h">♡ ${num(w.favorites)}</span><span class="v h">${num(w.visits)}回</span></button>`).join('') + `</div>`
+      : `<div class="grid">${L.map(card).join('')}</div>`;
+  }
+  WS.on(render);
+
+  let t; qEl.addEventListener('input', e => { clearTimeout(t); t = setTimeout(()=>WS.set({q:e.target.value.trim()}),120); });
+  $('#sform').addEventListener('submit', e => { e.preventDefault(); WS.set({q:qEl.value.trim()}); });
+  sortEl.addEventListener('change', e => WS.set({sort:e.target.value}));
+  $('#vgrid').onclick = () => WS.set({view:'grid'}); $('#vlist').onclick = () => WS.set({view:'list'});
+  document.addEventListener('click', e => {
+    const f = e.target.closest('[data-cat]'); if(f){ WS.set({cat:f.dataset.cat}); if(f.closest('footer')) $('#catalog').scrollIntoView({behavior:'smooth'}); return; }
+    const ch = e.target.closest('#chips [data-tag]'); if(ch){ WS.toggleTag(ch.dataset.tag); return; }
+    const o = e.target.closest('[data-open]'); if(o){ const w = WS.W.find(x=>x.id===o.dataset.open); WS.modal.open(w,[w]); return; }
+    const p = e.target.closest('[data-pick]'); if(p){ WS.modal.open(WS.W.find(x=>x.id===p.dataset.pick), picks); return; }
+    const c = e.target.closest('#stage [data-id], #track [data-id]');
+    if(c){ const L = c.closest('#track') ? arrivals : WS.list(); WS.modal.open(WS.W.find(x=>x.id===c.dataset.id), L); }
+  });
+  $('#lucky').onclick = () => { const L = WS.list(); const w = WS.random(L.length?L:WS.W); WS.modal.open(w, L.length?L:[w]); };
+
+  WS.modal.mount($('#ov'), $('#sheet'), (w,m) => `
+    ${stamp(w)}
+    <div><div class="ph"><img src="${esc(img(w,1024))}" alt="" onerror="this.style.visibility='hidden'"></div>
+      ${m.hasNav?`<div class="mnav"><button class="pill" data-ws-prev type="button">← まえ</button><span>${m.pos} / ${m.total}</span><button class="pill" data-ws-next type="button">つぎ →</button></div>`:''}
+      ${m.rel.length?`<div class="lbl">こちらもどうぞ</div><div class="rel">${m.rel.map(r=>`<button data-ws-rel="${r.id}" type="button"><img loading="lazy" src="${esc(img(r,256))}" alt="" onerror="this.style.visibility='hidden'"><span>${esc(r.name)}</span></button>`).join('')}</div>`:''}
+    </div>
+    <div>
+      <button class="pill x" data-ws-close type="button" aria-label="閉じる">✕</button>
+      <div class="kicker" style="font-size:11.5px">${esc(catName(w.category))}${w.subtype?'　/　'+esc(w.subtype):''}</div>
+      <h2>${esc(w.name)}</h2>
+      <div class="facts m"><span><b>${w.capacity||'?'}</b>最大人数</span><span><b>${w.recommendedCapacity||'?'}</b>推奨人数</span><span><b>${num(w.favorites)}</b>お気に入り</span><span><b>${num(w.visits)}</b>訪問</span></div>
+      <div class="lbl">店主メモ</div><div class="desc">${esc(w.note||'（未記入）')}</div>
+      ${w.official?`<div class="lbl">VRChat原文</div><div class="orig">${esc(w.official)}</div>`:''}
+      ${(w.tags||[]).length?`<div class="lbl">タグ</div><div class="chips" style="margin:0">${w.tags.map(t=>`<button class="chip" data-ws-tag="${esc(t)}" type="button">${esc(t)}</button>`).join('')}</div>`:''}
+      <div style="margin-top:22px"><a class="pill inv" href="${url(w.id)}" target="_blank" rel="noopener">VRChatで開く →</a></div>
+    </div>`);
+})();
+</script>
+</body>
+</html>

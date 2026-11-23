@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アスユイ書房｜お気に入りワールド</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* 案C: 書房・インテリアショップ（参考: Refero Styles "Incommonwith" の紙色・単色インク・明朝） */
+  :root{
+    --ink:#4a0a05; --paper:#fafaf9; --linen:#f8f7f1; --stone:#bcb6a6; --clay:#a2827f;
+    --serif:"Cormorant Garamond","Shippori Mincho",serif;
+    --sans:"Zen Kaku Gothic New",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --pad:clamp(16px,3.5vw,56px); --side:150px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.75;-webkit-font-smoothing:antialiased}
+  button,input,select{font:inherit;color:inherit}
+  button{cursor:pointer;background:none;border:0;padding:0}
+  a{color:inherit}
+  img{display:block}
+  .wrap{max-width:2400px;margin:0 auto;padding:0 var(--pad)}
+  .link{border-bottom:1px solid var(--ink);padding-bottom:1px;text-decoration:none;transition:border-width .1s}
+  .link:hover{border-bottom-width:2px}
+  .serif{font-family:var(--serif);font-weight:500}
+  .cap{font-size:12.5px;color:var(--clay)}
+  sup{font-family:var(--sans);font-size:11px;margin-left:3px;vertical-align:super;color:var(--clay)}
+
+  /* ---- nav ---- */
+  .nav{display:flex;align-items:center;gap:28px;padding:20px 0}
+  .mark{font-family:var(--serif);font-size:24px;letter-spacing:.06em;white-space:nowrap}
+  .navcats{display:flex;gap:22px;flex-wrap:wrap;margin:0 auto}
+  .navcats button{font-size:14px;padding-bottom:1px;border-bottom:1px solid transparent}
+  .navcats button:hover,.navcats button.on{border-bottom-color:var(--ink)}
+  .navr{display:flex;gap:20px;white-space:nowrap}
+
+  /* ---- hero ---- */
+  .hero{position:relative;height:min(74vh,760px);min-height:420px;overflow:hidden;background:var(--stone);cursor:pointer}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero::after{content:"";position:absolute;inset:0;background:rgba(30,8,4,.28)}
+  .hero .ov-t{position:absolute;left:var(--pad);bottom:clamp(28px,7vh,72px);z-index:1;color:#fff;max-width:620px;cursor:default}
+  .hero .ov-t .k{font-size:13px;letter-spacing:.08em}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:30px;line-height:1.5;margin:8px 0 6px}
+  .hero p{font-size:13px;margin:0 0 14px;opacity:.92;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .hero .acts{display:flex;gap:22px;font-size:14px}
+  .hero .link{border-color:#fff}
+
+  /* ---- sections with sidebar label ---- */
+  .sec{display:grid;grid-template-columns:var(--side) minmax(0,1fr);gap:24px;border-top:1px solid var(--ink);padding-top:14px;margin-top:64px}
+  .side{font-size:14px;position:relative}
+  .side .s2{font-size:12.5px;color:var(--clay);margin-top:6px;line-height:1.6}
+  .sticky{position:sticky;top:20px}
+  .shead{display:flex;align-items:baseline;gap:16px;margin-bottom:20px}
+  .shead .arrows{margin-left:auto;display:flex;gap:16px;font-size:15px}
+  .shead .arrows button:disabled{opacity:.3;cursor:default}
+
+  /* ---- carousel ---- */
+  .track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,16vw,380px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+  .track::-webkit-scrollbar{display:none}
+  .track>*{scroll-snap-align:start}
+
+  /* ---- item ---- */
+  .item{display:flex;flex-direction:column;text-align:left;gap:8px}
+  .item .im{aspect-ratio:4/3;overflow:hidden;background:var(--linen)}
+  .item .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .item:hover .im img{transform:scale(1.03)}
+  .item .nm{font-family:var(--serif);font-weight:500;font-size:17px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .item .meta{font-size:12px;color:var(--clay);display:flex;gap:12px}
+  .item .go{font-size:13px;align-self:flex-start}
+
+  /* ---- floors (category cards) ---- */
+  .floor{display:flex;flex-direction:column;gap:10px;text-align:left}
+  .floor .im{aspect-ratio:3/4;overflow:hidden;background:var(--linen)}
+  .floor .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .floor:hover .im img{transform:scale(1.03)}
+  .floor .nm{font-family:var(--serif);font-size:24px;line-height:1.2}
+
+  /* ---- catalog ---- */
+  .tools{display:flex;gap:26px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+  .search{flex:1;min-width:240px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--ink);padding:4px 0}
+  .search input{flex:1;border:0;outline:0;background:none;font-size:15px;min-width:0}
+  .search input::placeholder{color:var(--clay)}
+  .tools select{border:0;background:none;outline:0;border-bottom:1px solid var(--ink);padding:4px 18px 4px 0;appearance:none;-webkit-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath d='M1 1l3.5 3.5L8 1' fill='none' stroke='%234a0a05' stroke-width='1.2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 2px center}
+  .views{display:flex;gap:16px}
+  .views button{border-bottom:1px solid transparent}
+  .views button.on{border-bottom-color:var(--ink)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+  .chip{background:var(--linen);border-radius:9999px;padding:4px 12px;font-size:12.5px;transition:background .12s}
+  .chip:hover{background:#efece2}
+  .chip.on{background:var(--ink);color:var(--paper)}
+  .chip .n{color:var(--clay);margin-left:5px;font-size:11px}
+  .chip.on .n{color:var(--stone)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(clamp(210px,13vw,330px),1fr));gap:40px 18px}
+  .rows .row{display:grid;grid-template-columns:110px minmax(0,1fr) 70px 110px 110px;gap:18px;align-items:center;width:100%;text-align:left;padding:12px 0;border-bottom:1px solid var(--stone)}
+  .rows .row:first-child{border-top:1px solid var(--stone)}
+  .rows img{width:110px;aspect-ratio:4/3;object-fit:cover;background:var(--linen)}
+  .rows .nm{font-family:var(--serif);font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rows .sb{font-size:12px;color:var(--clay);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rows .v{text-align:right;font-size:13px;font-variant-numeric:tabular-nums}
+  .rows .row:hover .nm{text-decoration:underline;text-underline-offset:3px}
+  .empty{padding:60px 0;color:var(--clay)}
+
+  /* ---- footer ---- */
+  footer{margin-top:96px;border-top:1px solid var(--ink);padding:44px 0 56px}
+  .fcols{display:grid;grid-template-columns:var(--side) 1.5fr 1fr 1fr;gap:24px;font-size:13px}
+  footer h4{margin:0 0 10px;font-weight:400;font-size:13px;color:var(--clay)}
+  footer p{margin:0 0 4px}
+  footer button{display:block;padding:2px 0}
+  footer button:hover{text-decoration:underline;text-underline-offset:3px}
+
+  /* ---- modal ---- */
+  .ov{position:fixed;inset:0;z-index:50;background:rgba(250,250,249,.94);display:none;align-items:flex-start;justify-content:center;padding:36px 16px;overflow:auto}
+  .ov.show{display:flex}
+  .sheet{background:var(--paper);border:1px solid var(--ink);max-width:1080px;width:100%;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);animation:fade .25s ease}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .sheet .left{border-right:1px solid var(--ink)}
+  .sheet .left img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--linen)}
+  .sheet .mnav{display:flex;justify-content:space-between;padding:14px 20px;font-size:14px;border-top:1px solid var(--ink)}
+  .sheet .right{padding:24px 28px 30px;display:flex;flex-direction:column;gap:14px}
+  .sheet .top{display:flex;justify-content:space-between;gap:12px;font-size:13px}
+  .sheet h2{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.45;margin:0}
+  .spec{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--stone);border-bottom:1px solid var(--stone)}
+  .spec div{padding:10px 0}
+  .spec .v{font-family:var(--serif);font-size:20px}
+  .spec .k{font-size:11.5px;color:var(--clay)}
+  .lbl{font-size:12px;color:var(--clay);margin-bottom:-8px}
+  .desc{font-size:14px;line-height:1.95}
+  .orig{font-size:12.5px;color:var(--clay);line-height:1.8}
+  .rel{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .rel button{text-align:left}
+  .rel img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--linen)}
+  .rel span{display:block;font-family:var(--serif);font-size:13px;line-height:1.4;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+  @media (max-width:980px){
+    :root{--side:0px}
+    .sec{grid-template-columns:minmax(0,1fr);gap:10px}
+    .side .s2{display:none}
+    .sticky{position:static}
+    .fcols{grid-template-columns:1fr 1fr}
+    .navcats{order:3;flex-basis:100%;margin:0;gap:16px;overflow-x:auto;flex-wrap:nowrap}
+    .nav{flex-wrap:wrap;gap:14px}.navr{margin-left:auto}
+    .sheet{grid-template-columns:minmax(0,1fr)}.sheet .left{border-right:0;border-bottom:1px solid var(--ink)}
+    .rows .row{grid-template-columns:80px minmax(0,1fr) 54px}.rows img{width:80px}.rows .h{display:none}
+  }
+  @media (max-width:560px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 12px} .item .nm{font-size:15px} .rel{grid-template-columns:repeat(2,1fr)} .spec{grid-template-columns:repeat(2,1fr)} }
+  @media (prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav">
+    <a class="mark" href="#">アスユイ書房</a>
+    <div class="navcats" id="navcats"></div>
+    <div class="navr"><button class="link" id="tosearch" type="button">検索</button><button class="link" id="lucky" type="button">おまかせ</button></div>
+  </nav>
+</div>
+
+<header class="hero" id="hero"></header>
+
+<main class="wrap">
+  <section class="sec">
+    <div class="side">新着入荷<div class="s2">最近お気に入りに入ったもの</div></div>
+    <div>
+      <div class="shead"><span class="cap" id="acount"></span><div class="arrows"><button id="prev" type="button" aria-label="前へ">←</button><button id="next" type="button" aria-label="次へ">→</button></div></div>
+      <div class="track" id="track"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="side">売り場<div class="s2">七つの棚からどうぞ</div></div>
+    <div class="track" id="floors"></div>
+  </section>
+
+  <section class="sec" id="catalog">
+    <div class="side"><div class="sticky"><span class="serif" style="font-size:24px;line-height:1.3;display:block" id="ctitle"></span><div class="s2" id="cdesc"></div><div class="s2" id="count"></div></div></div>
+    <div>
+      <div class="tools">
+        <form class="search" id="sform" role="search"><input id="q" data-ws-search type="search" placeholder="ワールド名・タグ・説明・定員で探す（ / ）" autocomplete="off"></form>
+        <select id="sort" aria-label="並び替え"><option value="fav">人気順</option><option value="new">新着順</option><option value="visits">訪問数順</option><option value="name">名前順</option><option value="cap">定員が多い順</option><option value="capmin">定員が少ない順</option></select>
+        <div class="views"><button data-v="grid" type="button">一覧</button><button data-v="list" type="button">目録</button></div>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div id="stage"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fcols">
+    <div></div>
+    <div><div class="mark">アスユイ書房</div><p style="margin-top:12px;color:var(--clay)">VRChatで出会ったワールドを、一冊ずつ棚に並べるように集めています。</p></div>
+    <div><h4>売り場</h4><div id="flinks"></div></div>
+    <div><h4>ご案内</h4><p>営業　24時間（VRChat内）</p><p>店主　アスユイ</p><p>入荷　VRChatのお気に入りより</p></div>
+  </div>
+</footer>
+
+<div class="ov" id="ov"><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+
+<script>document.write('<script src="../data.js?v=' + Date.now() + '"><\/script>');</script>
+<script src="core.js"></script>
+<script>
+(function(){
+  const {esc,num,img,url,catName} = WS;
+  const $ = s => document.querySelector(s);
+  const item = w => `<button class="item" type="button" data-id="${w.id}"><div class="im"><img loading="lazy" decoding="async" src="${esc(img(w,512))}" alt="" onerror="this.style.visibility='hidden'"></div>
+    <span class="nm">${esc(w.name)}</span><span class="meta"><span>${esc(w.subtype||catName(w.category))}</span><span>定員 ${w.capacity||'?'}</span></span></button>`;
+
+  /* hero */
+  let off = 0;
+  function renderHero(w){
+    $('#hero').innerHTML = `<img src="${esc(img(w,2048))}" alt="" onerror="this.style.visibility='hidden'" data-open="${w.id}">
+      <div class="ov-t"><div class="k">本日の一冊　${WS.todayLabel()}</div><h1>${esc(w.name)}</h1><p>${esc(w.note||'')}</p>
+      <div class="acts"><button class="link" data-open="${w.id}" type="button">詳しく見る</button><button class="link" id="reroll" type="button">別の一冊</button></div></div>`;
+    $('#hero').dataset.open = w.id;
+    $('#reroll').onclick = e => { e.stopPropagation(); renderHero(WS.daily(++off)); };
+  }
+  renderHero(WS.daily(0));
+
+  /* 新着入荷 */
+  const arrivals = WS.newest(16);
+  $('#acount').textContent = arrivals.length + ' 点';
+  $('#track').innerHTML = arrivals.map(item).join('');
+  const tr = $('#track');
+  const st = () => { $('#prev').disabled = tr.scrollLeft < 4; $('#next').disabled = tr.scrollLeft + tr.clientWidth >= tr.scrollWidth - 4; };
+  $('#prev').onclick = () => tr.scrollBy({left:-tr.clientWidth*.8,behavior:'smooth'});
+  $('#next').onclick = () => tr.scrollBy({left:tr.clientWidth*.8,behavior:'smooth'});
+  tr.addEventListener('scroll', st, {passive:true}); st();
+
+  /* 売り場カード: 各カテゴリで最もお気に入りが多いワールドを表紙に */
+  $('#floors').innerHTML = WS.C.map(c => {
+    const top = WS.inCat(c.id).slice().sort((a,b)=>(b.favorites||0)-(a.favorites||0))[0];
+    return `<button class="floor" type="button" data-cat="${c.id}" data-jump="1"><div class="im">${top?`<img loading="lazy" src="${esc(img(top,512))}" alt="" onerror="this.style.visibility='hidden'">`:''}</div>
+      <span class="nm">${esc(c.name)}<sup>${WS.inCat(c.id).length}</sup></span><span class="link" style="align-self:flex-start;font-size:13px">見る</span></button>`;
+  }).join('');
+  $('#flinks').innerHTML = WS.C.map(c => `<button type="button" data-cat="${c.id}" data-jump="1">${esc(c.name)}</button>`).join('');
+
+  const qEl = $('#q'), sortEl = $('#sort');
+  function render(S){
+    $('#navcats').innerHTML = WS.C.map(c => `<button type="button" class="${c.id===S.cat?'on':''}" data-cat="${c.id}" data-jump="1">${esc(c.name)}</button>`).join('');
+    const c = WS.C.find(x=>x.id===S.cat)||{};
+    $('#ctitle').textContent = c.name||''; $('#cdesc').textContent = c.desc||'';
+    if(document.activeElement !== qEl) qEl.value = S.q;
+    sortEl.value = S.sort;
+    document.querySelectorAll('.views button').forEach(b => b.classList.toggle('on', b.dataset.v===S.view));
+    $('#chips').innerHTML = WS.tagCounts().map(([t,n]) => `<button class="chip${S.tags.has(t)?' on':''}" type="button" data-tag="${esc(t)}">${esc(t)}<span class="n">${n}</span></button>`).join('');
+    const L = WS.list();
+    $('#count').textContent = L.length + ' 点';
+    if(!L.length){ $('#stage').innerHTML = `<div class="empty">条件に合うワールドは見つかりませんでした。</div>`; return; }
+    $('#stage').innerHTML = S.view==='list'
+      ? `<div class="rows">` + L.map(w => `<button class="row" type="button" data-id="${w.id}"><img loading="lazy" decoding="async" src="${esc(img(w,256))}" alt="" onerror="this.style.visibility='hidden'">
+          <div style="min-width:0"><div class="nm">${esc(w.name)}</div><div class="sb">${esc(w.subtype||'')}${(w.tags||[]).length?'　'+esc(w.tags.slice(0,3).join(' / ')):''}</div></div>
+          <span class="v">${w.capacity||'?'}名</span><span class="v h">${num(w.favorites)}</span><span class="v h">${num(w.visits)}</span></button>`).join('') + `</div>`
+      : `<div class="grid">${L.map(item).join('')}</div>`;
+  }
+  WS.on(render);
+
+  let t; qEl.addEventListener('input', e => { clearTimeout(t); t = setTimeout(()=>WS.set({q:e.target.value.trim()}),120); });
+  $('#sform').addEventListener('submit', e => { e.preventDefault(); WS.set({q:qEl.value.trim()}); });
+  sortEl.addEventListener('change', e => WS.set({sort:e.target.value}));
+  document.querySelector('.views').addEventListener('click', e => { const b = e.target.closest('button'); if(b) WS.set({view:b.dataset.v}); });
+  $('#tosearch').onclick = () => { $('#catalog').scrollIntoView({behavior:'smooth'}); setTimeout(()=>qEl.focus({preventScroll:true}), 350); };
+  document.addEventListener('click', e => {
+    const f = e.target.closest('[data-cat]'); if(f){ WS.set({cat:f.dataset.cat}); if(f.dataset.jump) $('#catalog').scrollIntoView({behavior:'smooth'}); return; }
+    const ch = e.target.closest('#chips [data-tag]'); if(ch){ WS.toggleTag(ch.dataset.tag); return; }
+    const o = e.target.closest('[data-open]'); if(o){ const w = WS.W.find(x=>x.id===o.dataset.open); WS.modal.open(w,[w]); return; }
+    const c = e.target.closest('#stage [data-id], #track [data-id]');
+    if(c){ const L = c.closest('#track') ? arrivals : WS.list(); WS.modal.open(WS.W.find(x=>x.id===c.dataset.id), L); }
+  });
+  $('#lucky').onclick = () => { const L = WS.list(); const w = WS.random(L.length?L:WS.W); WS.modal.open(w, L.length?L:[w]); };
+
+  WS.modal.mount($('#ov'), $('#sheet'), (w,m) => `
+    <div class="left"><img src="${esc(img(w,1024))}" alt="" onerror="this.style.visibility='hidden'">
+      ${m.hasNav?`<div class="mnav"><button class="link" data-ws-prev type="button">← 前へ</button><span class="cap">${m.pos} / ${m.total}</span><button class="link" data-ws-next type="button">次へ →</button></div>`:''}</div>
+    <div class="right">
+      <div class="top"><span class="cap">${esc(catName(w.category))}${w.subtype?'　/　'+esc(w.subtype):''}</span><button class="link" data-ws-close type="button">閉じる</button></div>
+      <h2>${esc(w.name)}</h2>
+      <div class="spec"><div><div class="v">${w.capacity||'?'}</div><div class="k">最大人数</div></div><div><div class="v">${w.recommendedCapacity||'?'}</div><div class="k">推奨人数</div></div><div><div class="v">${num(w.favorites)}</div><div class="k">お気に入り</div></div><div><div class="v">${num(w.visits)}</div><div class="k">訪問</div></div></div>
+      <div class="lbl">ワールド説明</div><div class="desc">${esc(w.note||'（未記入）')}</div>
+      ${w.official?`<div class="lbl">VRChat 原文</div><div class="orig">${esc(w.official)}</div>`:''}
+      ${(w.tags||[]).length?`<div class="chips" style="margin:0">${w.tags.map(t=>`<button class="chip" data-ws-tag="${esc(t)}" type="button">${esc(t)}</button>`).join('')}</div>`:''}
+      ${m.rel.length?`<div class="lbl">近い本棚から</div><div class="rel">${m.rel.map(r=>`<button data-ws-rel="${r.id}" type="button"><img loading="lazy" src="${esc(img(r,256))}" alt="" onerror="this.style.visibility='hidden'"><span>${esc(r.name)}</span></button>`).join('')}</div>`:''}
+      <div><a class="link" href="${url(w.id)}" target="_blank" rel="noopener" style="font-size:15px">VRChatで開く →</a></div>
+    </div>`);
+})();
+</script>
+</body>
+</html>
