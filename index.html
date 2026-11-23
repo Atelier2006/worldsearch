@@ -11,7 +11,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css?v=20261123c" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=20261123d" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
@@ -127,13 +130,12 @@
 
 				/* 写真（読み込めないときは売り場の色と名前を表示） */
 				const photo = (w, size, extra, cls) => `<span class="world-photo tint-${esc(w.category)}${cls ? ' ' + cls : ''}"><span class="ph" aria-hidden="true">${esc(w.name)}</span><img loading="lazy" decoding="async" src="${esc(img(w, size))}" alt="" onerror="this.remove()" />${extra || ''}</span>`;
+				/* 写真の上には「行けるかどうか」だけを載せ、種類と人気は名前の上の小さな文字にする */
 				const badges = w => {
-					const top = [];
-					if (WS.isPopular(w)) top.push('人気');
-					if (has(w, 'Quest対応')) top.push('Quest対応'); else if (has(w, 'PC専用')) top.push('PC専用');
-					return (top.length ? `<span class="badges top">${top.map(b => `<span class="badge">${b}</span>`).join('')}</span>` : '')
-						+ (w.subtype ? `<span class="badges bottom"><span class="badge plain">${esc(w.subtype)}</span></span>` : '');
+					const b = has(w, 'Quest対応') ? 'Quest対応' : has(w, 'PC専用') ? 'PC専用' : '';
+					return b ? `<span class="badges top"><span class="badge">${b}</span></span>` : '';
 				};
+				const kicker = w => [w.subtype, WS.isPopular(w) ? '人気' : ''].filter(Boolean).map(esc).join('<span aria-hidden="true">・</span>');
 				const cardTags = w => (w.tags || []).filter(t => !BADGE_TAGS.includes(t) && !CAUTION[t] && t !== w.subtype).slice(0, 3);
 
 				$('#siteLead').textContent = `${num(WS.W.length)}件のお気に入りから、目的や売り場で探せます。`;
@@ -157,11 +159,12 @@
 
 				const qEl = $('#q'), sortEl = $('#sort');
 				const tile = w => {
-					const tags = cardTags(w), hook = WS.splitNote(w).hook;
+					const tags = cardTags(w), hook = WS.splitNote(w).hook, k = kicker(w);
 					return `
 					<article class="world">
 						<button type="button" class="world-link" data-id="${w.id}">
 							${photo(w, 512, badges(w))}
+							${k ? `<span class="world-kicker">${k}</span>` : ''}
 							<span class="world-name">${esc(w.name)}</span>
 							${hook ? `<span class="world-hook">${esc(hook)}</span>` : ''}
 							<span class="world-meta">${WS.S.purpose ? `<span>${esc(catName(w.category))}</span>` : ''}<span>定員 ${w.capacity || '–'}人</span>${tags.length ? `<span>${esc(tags.join(' / '))}</span>` : ''}</span>

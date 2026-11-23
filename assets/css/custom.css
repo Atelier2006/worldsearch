@@ -17,17 +17,23 @@
   --tint-todo: #e7dfd8;
   --tint-chill: #d6e2e3;
   --tint-game: #eadccb;
+  /* 見出し用の明朝（Webフォント。読めないときは端末の明朝） */
+  --serif: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --photo-edge: oklch(0 0 0 / .1);
 }
 
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 body, input, select, button {
   font-family: system-ui, "Yu Gothic UI", Meiryo, sans-serif;
   color: var(--ink);
 }
 body { background: var(--paper); font-size: 15px; }
 h1, h2, h3, .button, button { letter-spacing: .01em; text-transform: none; }
+h1, h2, h3 { text-wrap: balance; }
 h1 {
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: clamp(1.55rem, 3vw, 3rem);
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.45rem, 2.2vw, 2.3rem);
   line-height: 1.25;
   margin: 0;
 }
@@ -60,14 +66,24 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
   outline-offset: 2px;
 }
 button:disabled { cursor: default; opacity: .55; }
+/* 小さな操作ボタンだけ、押したときに少し縮める（カード全体には付けない） */
+.purposes button, .tags button, .views button, #filterToggle, .active ul button, #random, #clearAll {
+  transition-property: background-color, color, box-shadow, border-color, transform;
+  transition-duration: .15s;
+  transition-timing-function: ease-out;
+}
+.purposes button:active, .tags button:active, .views button:active, #filterToggle:active, .active ul button:active { transform: scale(.96); }
 
 #wrapper > * > .inner { max-width: none; padding-inline: clamp(1rem, 3vw, 3rem); }
 
 /* Header */
 #header { border-top: 5px solid var(--accent); padding: 0; }
-#header .inner { padding-block: clamp(1rem, 2.2vw, 2.25rem) clamp(.8rem, 1.6vw, 1.4rem); }
-.site-type { color: var(--accent); font-size: .85rem; font-weight: 700; margin: 0 0 .35rem; }
-.site-lead { margin: .5rem 0 0; color: var(--muted); }
+#header .inner {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem 1.25rem;
+  padding-block: clamp(.9rem, 1.4vw, 1.4rem) clamp(.8rem, 1.2vw, 1.2rem);
+}
+.site-type { flex-basis: 100%; color: var(--accent); font-size: .82rem; font-weight: 700; margin: 0; }
+.site-lead { margin: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* 今日のワールド / まずはこの5件 */
 #picks { background: var(--soft); border-block: 1px solid var(--line); }
@@ -78,7 +94,7 @@ button:disabled { cursor: default; opacity: .55; }
   padding-block: 1.1rem 1.3rem;
 }
 .band-label { margin: 0 0 .55rem; font-family: inherit; font-size: .82rem; font-weight: 700; color: var(--accent); letter-spacing: .02em; }
-.band-label span { color: var(--muted); font-weight: 500; margin-inline-start: .6em; }
+.band-label span { color: var(--muted); font-weight: 500; margin-inline-start: .6em; font-variant-numeric: tabular-nums; }
 .today-link {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -87,8 +103,8 @@ button:disabled { cursor: default; opacity: .55; }
   width: 100%;
   text-align: left !important;
 }
-.today-text strong { display: block; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.2rem; line-height: 1.35; overflow-wrap: anywhere; }
-.today-text span { display: block; margin-top: .4rem; font-size: .88rem; }
+.today-text strong { display: block; font-family: var(--serif); font-weight: 600; font-size: 1.25rem; line-height: 1.4; overflow-wrap: anywhere; text-wrap: balance; }
+.today-text span { display: block; margin-top: .4rem; font-size: .88rem; text-wrap: pretty; }
 .today-text small { display: block; margin-top: .45rem; color: var(--muted); font-size: .78rem; }
 .starter ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .8rem; list-style: none; margin: 0; padding: 0; }
 .starter li { padding: 0; }
@@ -106,15 +122,18 @@ button:disabled { cursor: default; opacity: .55; }
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--soft);
-  border: 1px solid var(--line);
 }
-.world-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+/* 枠線の代わりに、写真の縁だけごく薄く締める（白い写真が地に溶けないように） */
+.world-photo img {
+  position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover;
+  outline: 1px solid var(--photo-edge); outline-offset: -1px;
+}
 .world-photo .ph {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   padding: .75rem; text-align: center;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: .95rem; line-height: 1.35;
-  color: #3b4238; overflow-wrap: anywhere;
+  font-family: var(--serif); font-weight: 600; font-size: .95rem; line-height: 1.4;
+  color: #3b4238; overflow-wrap: anywhere; text-wrap: balance;
 }
 .world-photo.mini .ph { display: none; }
 .tint-exhibition { background: var(--tint-exhibition); }
@@ -124,15 +143,12 @@ button:disabled { cursor: default; opacity: .55; }
 .tint-todo { background: var(--tint-todo); }
 .tint-chill { background: var(--tint-chill); }
 .tint-game { background: var(--tint-game); }
-.badges { position: absolute; left: .45rem; display: flex; flex-wrap: wrap; gap: .3rem; }
-.badges.top { top: .45rem; }
-.badges.bottom { bottom: .45rem; }
+.badges { position: absolute; left: .45rem; top: .45rem; display: flex; flex-wrap: wrap; gap: .3rem; }
 .badge {
   display: inline-block; padding: .14rem .42rem;
   background: rgba(29, 34, 28, .82); color: #fff;
   font-size: .72rem; font-weight: 650; line-height: 1.35;
 }
-.badge.plain { background: rgba(246, 244, 237, .92); color: var(--ink); }
 
 /* 探す（目的・売り場） */
 #main { padding: 0 0 3rem; }
@@ -143,15 +159,15 @@ button:disabled { cursor: default; opacity: .55; }
 .purposes, .cats, .tags, .active ul { display: flex; flex-wrap: wrap; list-style: none; padding: 0; }
 .purposes li, .cats li, .tags li, .active li { padding: 0; }
 .purposes { gap: .45rem; margin: 0 0 1rem; }
+/* 目的ボタンは入口なので枠は控えめに。選んだものだけ深緑で塗る */
 .purposes button {
   padding: .5rem .85rem;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--line);
   background: var(--field);
-  color: var(--accent) !important;
-  font-size: .88rem; font-weight: 650;
+  font-size: .88rem; font-weight: 600;
 }
-.purposes button:hover { background: #eef2ea; }
-.purposes button[aria-pressed="true"] { background: var(--accent); color: #fff !important; }
+.purposes button:hover { border-color: var(--accent); color: var(--accent) !important; }
+.purposes button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff !important; }
 .cats { margin: 0; border-block: 1px solid var(--line); gap: 0 .4rem; }
 .cats button { padding: .75rem .8rem .6rem; border-bottom: 3px solid transparent; font-size: .9rem; color: var(--muted) !important; }
 .cats button:hover { color: var(--ink) !important; }
@@ -170,8 +186,10 @@ button:disabled { cursor: default; opacity: .55; }
   font: inherit;
 }
 .controls input:focus, .filters select:focus { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
-#filterToggle { padding: 0 1rem; border: 1px solid var(--ink); font-size: .88rem; font-weight: 650; white-space: nowrap; }
-#filterToggle[aria-expanded="true"] { background: var(--ink); color: #fff !important; }
+#filterToggle { padding: 0 1rem; border: 1px solid var(--line); background: var(--field); font-size: .88rem; font-weight: 600; white-space: nowrap; }
+#filterToggle:hover { border-color: var(--accent); color: var(--accent) !important; }
+#filterToggle[aria-expanded="true"] { border-color: var(--accent); color: var(--accent) !important; box-shadow: inset 0 -2px 0 var(--accent); }
+#filterN { font-variant-numeric: tabular-nums; }
 .filters { margin-top: .6rem; padding: .85rem 1rem .4rem; background: var(--field); border: 1px solid var(--line); }
 .filters[hidden] { display: none; }
 .filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin-bottom: .75rem; }
@@ -183,7 +201,7 @@ button:disabled { cursor: default; opacity: .55; }
 .tags { gap: .35rem .45rem; margin: .3rem 0 .6rem; }
 .tags button { padding: .26rem .5rem; background: var(--soft); font-size: .78rem; font-weight: 600; min-height: 28px; }
 .tags button:hover { color: var(--accent) !important; }
-.tags .n { margin-inline-start: .35em; font-size: .9em; opacity: .8; }
+.tags .n { margin-inline-start: .35em; font-size: .9em; opacity: .8; font-variant-numeric: tabular-nums; }
 .tags li[hidden] { display: none; }
 .tags .more button { background: none; color: var(--accent) !important; text-decoration: underline; text-underline-offset: .2em; }
 
@@ -196,21 +214,28 @@ button:disabled { cursor: default; opacity: .55; }
 #clearAll, #random, .tags .more button { font-size: .83rem; color: var(--accent) !important; padding: .4rem .25rem; text-decoration: underline; text-underline-offset: .2em; }
 
 .result-bar { display: flex; justify-content: space-between; align-items: center; gap: .75rem; border-bottom: 1px solid var(--line); padding: .5rem 0 .35rem; margin-top: .4rem; }
-.count { margin: 0; font-weight: 650; }
+.count { margin: 0; font-weight: 650; font-variant-numeric: tabular-nums; }
 #stage { margin-top: 1rem; }
 .empty { color: var(--muted); padding: 1rem 0; }
 
 /* カード */
-.world-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 1.4rem 1.15rem; }
-.world { min-width: 0; border-bottom: 1px solid var(--line); }
-.world-link { display: block !important; width: 100%; text-align: left !important; padding-bottom: .85rem !important; }
+/* 2560px幅で8列・1600px幅で5列。写真の中の文字が読める大きさを保つ */
+.world-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 1.75rem 1.25rem; }
+.world { min-width: 0; }
+.world-link { display: block !important; width: 100%; text-align: left !important; padding-bottom: .25rem !important; }
+.world-kicker {
+  display: block; margin-top: .6rem;
+  font-size: .74rem; font-weight: 650; color: var(--accent); letter-spacing: .02em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 .world-name {
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
   min-height: 2.8em; margin-top: .55rem; font-size: 1rem; font-weight: 700; line-height: 1.4; overflow-wrap: anywhere;
 }
+.world-kicker + .world-name { margin-top: .15rem; }
 .world-hook {
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
-  margin-top: .3rem; font-size: .9rem; line-height: 1.55; overflow-wrap: anywhere;
+  margin-top: .3rem; font-size: .9rem; line-height: 1.55; overflow-wrap: anywhere; text-wrap: pretty;
 }
 .world-meta { display: flex; flex-wrap: wrap; gap: .1rem .7rem; margin-top: .45rem; font-size: .75rem; color: var(--muted); font-weight: 500; }
 .world-link:hover .world-name, .table-world:hover { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
@@ -228,6 +253,9 @@ table tr[data-id] { cursor: pointer; }
 .ws-overlay.show { display: flex; }
 .ws-sheet { position: relative; background: var(--paper); max-width: 1100px; width: 100%; padding: 3.25rem clamp(1rem, 4vw, 3rem) 0; }
 .ws-sheet h2 { margin-bottom: .4em; overflow-wrap: anywhere; }
+.ws-sheet #worldTitle { font-family: var(--serif); font-weight: 600; font-size: 1.6rem; line-height: 1.35; letter-spacing: .02em; }
+.ws-sheet .description, .ws-sheet .lead { text-wrap: pretty; }
+.ws-sheet .pos, table td { font-variant-numeric: tabular-nums; }
 .ws-sheet h3 { margin: 1.1rem 0 .4rem; font-size: .95rem; }
 .ws-sheet .detail-photo { margin-bottom: .75rem; }
 .ws-sheet .eyebrow, .ws-sheet .pos { color: var(--muted); }
@@ -242,7 +270,7 @@ table tr[data-id] { cursor: pointer; }
 .ws-sheet .spec { display: flex; flex-wrap: wrap; gap: .2rem 1.4rem; margin: 1rem 0 .5rem; padding: .55rem 0; border-block: 1px solid var(--line); font-size: .82rem; }
 .ws-sheet .spec div { display: flex; gap: .45rem; }
 .ws-sheet .spec dt { color: var(--muted); font-weight: 500; }
-.ws-sheet .spec dd { margin: 0; font-weight: 650; }
+.ws-sheet .spec dd { margin: 0; font-weight: 650; font-variant-numeric: tabular-nums; }
 .ws-sheet .orig { font-size: .9rem; color: var(--muted); margin-bottom: .75rem; }
 .ws-sheet .orig summary { cursor: pointer; }
 .ws-sheet .orig p { margin: .5rem 0; }
@@ -259,7 +287,11 @@ table tr[data-id] { cursor: pointer; }
 .ws-sheet .button.primary { background-color: var(--accent); }
 .ws-sheet .button.primary:hover { background-color: var(--accent-dark); color: #fff !important; }
 .ws-sheet .button:not(.primary):hover { color: var(--accent) !important; box-shadow: inset 0 0 0 2px var(--accent); }
-.ws-close { position: absolute; top: .9rem; right: 1rem; font-size: .88rem; text-decoration: underline; text-underline-offset: .2em; }
+.ws-sheet .ws-close {
+  position: absolute; top: .4rem; right: .5rem;
+  min-width: 44px; min-height: 44px; padding: 0 .5rem !important;
+  font-size: .88rem; text-decoration: underline; text-underline-offset: .2em;
+}
 
 @media (max-width: 980px) {
   #picks .inner { grid-template-columns: minmax(0, 1fr); }
@@ -281,4 +313,11 @@ table tr[data-id] { cursor: pointer; }
   .ws-overlay { padding: 0; }
   .ws-sheet .detail-photo { aspect-ratio: 16 / 9; }
   .filters select { min-width: 0; flex: 1; }
+  /* 指で押せる大きさ（見た目は変えず、押せる範囲を44px前後に） */
+  .tags { row-gap: .5rem; }
+  .tags button { position: relative; min-height: 36px; }
+  .tags button::after { content: ""; position: absolute; inset: -4px 0; }
+  .purposes button { min-height: 44px; }
+  #random, #clearAll { min-height: 44px; }
+  .views button { min-height: 44px; }
 }
