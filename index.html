@@ -93,7 +93,7 @@
 
 		<!-- Scripts -->
 			<script>document.write('<script src="data.js?v=' + Date.now() + '"><\/script>');</script>
-			<script src="assets/js/core.js?v=20261123c"></script>
+			<script src="assets/js/core.js?v=20261126a"></script>
 			<script>
 			(function () {
 				const { esc, num, img, url, catName } = WS;
@@ -114,14 +114,14 @@
 					'初心者向き': 'VRChatを始めたばかりの人', '一人でゆっくり': '一人でゆっくり過ごしたい人', '一人でも': '一人でも楽しみたい人',
 					'フレンドと': 'フレンドと行きたい人', '睡眠・V睡': 'V睡したい人', '写真・撮影': '写真を撮りたい人', '集会・交流': '集まって話したい人',
 					'パーティー': '大人数で盛り上がりたい人', '対戦': '対戦で遊びたい人', '協力': '協力して遊びたい人', '探索': '歩き回って探索したい人',
-					'解説あり': '解説を読みながら見たい人', 'ストーリー': '物語に浸りたい人', '物語体験': '物語に浸りたい人', '作業用': '作業しながら過ごしたい人',
+					'解説あり': '解説を読みながら見たい人', 'ストーリー': '物語に浸りたい人', '作業用': '作業しながら過ごしたい人',
 					'長居できる': '長く居られる場所を探している人', '少人数': '少人数で行きたい人'
 				};
 				const CAUTION = {
 					'PC専用': 'PC版のみ（Questでは入れません）', '点滅注意': '点滅する演出があります', '光の演出注意': '強い光の演出があります',
 					'VR酔い注意': 'VR酔いしやすい動きがあります', '大容量注意': '容量が大きいので事前ダウンロード推奨', '高負荷': '動作が重めです',
 					'視界ジャック強め': '視界が演出で大きく覆われます', '海洋恐怖症注意': '深い海の表現があります', 'ホラー・不気味': '怖い表現があります',
-					'ホラー': '怖い表現があります', 'サイコホラー': '怖い表現があります', 'ホラー要素あり': '怖い表現があります', '期間限定': '期間限定の公開です',
+					'期間限定': '期間限定の公開です', 'VR推奨': 'VRで遊ぶ前提の作りです（デスクトップでは一部遊べません）', 'フルトラ': 'フルトラッキングがあるとより楽しめます',
 					'制作途中': '制作途中のワールドです', '入場時間制限': '入場できる時間に制限があります', '一人専用': '一人専用です', '2人専用': '2人専用です',
 					'ネタバレ注意': '内容を知らずに行くのがおすすめです', '英語のみ': '案内は英語のみです', '体験版': '体験版です'
 				};
@@ -285,11 +285,11 @@
 					const c = e.target.closest('#stage [data-id]'); if (c) { e.preventDefault(); WS.modal.open(WS.W.find(x => x.id === c.dataset.id), WS.list()); }
 				});
 
-				/* ワールド詳細: 紹介 → こんな人に → 行く前に → くわしく → データ → 公式の説明 */
+				/* ワールド詳細: 紹介 → こんな人に → 行く前に → くわしく → データ → タグ
+				   説明文は VRChat の公式説明と X などの情報をまとめた1つの文章なので、公式説明は別に出さない */
 				WS.modal.mount($('#detail'), $('#detailBody'), (w, m) => {
 					const { hook, rest } = WS.splitNote(w);
 					const fors = phrases(w, FOR_WHOM).slice(0, 4), cautions = phrases(w, CAUTION);
-					const showOfficial = w.official && w.official.trim() !== String(w.note || '').trim();
 					const marks = [WS.isPopular(w) ? '人気' : '', has(w, 'Quest対応') ? 'Quest対応' : ''].filter(Boolean);
 					return `
 					<button type="button" class="ws-close" data-ws-close aria-label="閉じる">閉じる</button>
@@ -312,7 +312,6 @@
 						<div><dt>お気に入り</dt><dd>${num(w.favorites)}</dd></div><div><dt>訪問数</dt><dd>${num(w.visits)}</dd></div>
 					</dl>
 					${(w.tags || []).length ? `<ul class="tags" aria-label="タグで絞り込む">${w.tags.map(t => `<li><button type="button" data-ws-tag="${esc(t)}">${esc(t)}</button></li>`).join('')}</ul>` : ''}
-					${showOfficial ? `<details class="orig"><summary>VRChatに掲載されている説明</summary><p>${esc(w.official)}</p></details>` : ''}
 					${m.rel.length ? `<h3>関連ワールド</h3><section class="world-grid related">${m.rel.map(r => `<button type="button" class="world-link" data-ws-rel="${r.id}">${photo(r, 256, '')}<span class="world-name">${esc(r.name)}</span></button>`).join('')}</section>` : ''}
 					<div class="ws-cta"><a class="button primary" href="${url(w.id)}" target="_blank" rel="noopener">VRChatで開く</a></div>`;
 				});
