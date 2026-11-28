@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>説明文リスト</title>
+<!--
+  サムネイルと説明文を並べて見る・直すためのページ(自分用。ブラウザでこのファイルを開く)。
+  データは ../data.js をそのまま読む。直した説明文はこのブラウザに自動で保存され、
+  「直した説明文を書き出す」で JSON にできる。data.js への反映: node tools/apply-note-edits.js <書き出したファイル> --write
+  サムネイルはサイトと同じく VRChat の画像をその場で表示するだけ(保存しない)。印刷して作る PDF は自分用に。
+-->
+<style>
+  :root {
+    --paper: #f6f4ed; --ink: #252a23; --muted: #5d6459; --line: #cfcec2; --soft: #e9e9df;
+    --field: #fffef9; --accent: #285743; --accent-dark: #1d4232; --caution: #8a4b16; --changed: #fff6d9;
+    --serif: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.7 system-ui, "Yu Gothic UI", Meiryo, sans-serif; }
+  .bar { position: sticky; top: 0; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--line); padding: 12px 16px; }
+  .bar h1 { margin: 0 0 8px; font: 600 1.25rem/1.3 var(--serif); }
+  .bar h1 small { font: 400 .85rem system-ui, sans-serif; color: var(--muted); margin-left: .5em; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+  .controls input[type=search], .controls select { font: inherit; padding: 5px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--field); color: var(--ink); }
+  .controls input[type=search] { width: min(320px, 100%); }
+  .controls label { display: inline-flex; gap: 6px; align-items: center; color: var(--muted); font-size: .9rem; }
+  .controls .count { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
+  .controls .edits { font-weight: 700; color: var(--caution); }
+  button { font: inherit; font-size: .9rem; padding: 5px 12px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: #fff; cursor: pointer; }
+  button:hover { background: var(--accent-dark); }
+  button.quiet { background: transparent; color: var(--accent); }
+  button.quiet:hover { background: var(--soft); }
+  main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 64px; }
+  .cat { margin: 28px 0 8px; font: 600 1.15rem/1.4 var(--serif); border-bottom: 2px solid var(--ink); padding-bottom: 4px; }
+  .cat small { font: 400 .85rem system-ui, sans-serif; color: var(--muted); margin-left: .5em; }
+  .world { display: grid; grid-template-columns: 200px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line);
+           content-visibility: auto; contain-intrinsic-size: auto 260px; }
+  .world.changed { background: var(--changed); box-shadow: -8px 0 0 var(--changed), 8px 0 0 var(--changed); }
+  .thumb { width: 200px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--soft); outline: 1px solid rgb(0 0 0 / .1); outline-offset: -1px; }
+  .name { margin: 0; font: 600 1.05rem/1.45 var(--serif); overflow-wrap: anywhere; }
+  .meta, .tags { margin: 2px 0 0; font-size: .82rem; color: var(--muted); }
+  .meta a { color: var(--accent); }
+  .tags { color: var(--accent); }
+  textarea.note { display: block; width: 100%; margin-top: 8px; padding: 8px 10px; font: inherit; line-height: 1.75; color: var(--ink);
+                  background: var(--field); border: 1px solid var(--line); border-radius: 6px; resize: vertical; field-sizing: content; min-height: 4.5em; }
+  textarea.note:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .note-print { display: none; white-space: pre-wrap; margin: 8px 0 0; }
+  .hook { margin: 6px 0 0; font-size: .82rem; color: var(--muted); }
+  .hook b { font-variant-numeric: tabular-nums; }
+  .hook.long b { color: var(--caution); }
+  .row-actions { display: flex; gap: 8px; margin-top: 6px; }
+  details.official { margin-top: 6px; font-size: .85rem; color: var(--muted); }
+  details.official summary { cursor: pointer; width: fit-content; }
+  details.official p { margin: 4px 0 0; white-space: pre-wrap; }
+  .before { margin: 6px 0 0; font-size: .82rem; color: var(--muted); }
+  .before del { text-decoration-color: var(--caution); }
+  .empty { padding: 40px 0; color: var(--muted); text-align: center; }
+  @media (max-width: 640px) {
+    .world { grid-template-columns: 1fr; }
+    .thumb { width: 100%; max-width: 320px; }
+  }
+  @media print {
+    @page { margin: 12mm; }
+    body { background: #fff; font-size: 10.5pt; }
+    .bar .controls, .row-actions, details.official:not([open]) { display: none; }
+    .bar { position: static; border: 0; padding: 0 0 6px; }
+    .bar::after { content: "サムネイルは各ワールドの作者のものです(自分用の資料)"; font-size: 8pt; color: var(--muted); }
+    main { max-width: none; padding: 0; }
+    .world { break-inside: avoid; content-visibility: visible; grid-template-columns: 120px 1fr; gap: 12px; padding: 8px 0; }
+    .world.changed { background: none; box-shadow: none; }
+    .thumb { width: 120px; }
+    textarea.note { display: none; }
+    .note-print { display: block; }
+    .cat { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<header class="bar">
+  <h1>説明文リスト<small id="total"></small></h1>
+  <div class="controls">
+    <input type="search" id="q" placeholder="名前・説明文・タグで探す" aria-label="名前・説明文・タグで探す" />
+    <select id="cat" aria-label="売り場"><option value="">すべての売り場</option></select>
+    <label><input type="checkbox" id="onlyChanged" /> 直したものだけ</label>
+    <label><input type="checkbox" id="onlyLong" /> 1文目が64字を超えるもの</label>
+    <span class="count" id="count"></span>
+    <span class="edits" id="edits"></span>
+    <button type="button" id="export">直した説明文を書き出す</button>
+    <button type="button" class="quiet" id="print">印刷・PDF</button>
+  </div>
+</header>
+<main id="list"></main>
+
+<script src="../data.js"></script>
+<script>
+(function () {
+  'use strict';
+  const STORE = 'ws-note-edits';
+  const HOOK_MAX = 64;   // 1文目(サイトのカード・ポータルの掲示に出る)の目安
+  const W = window.WORLDS || [];
+  const C = window.CATEGORIES || [];
+  const catName = id => (C.find(c => c.id === id) || {}).name || id;
+  const order = id => { const i = C.findIndex(c => c.id === id); return id === 'todo' ? 999 : (i < 0 ? 998 : i); };
+
+  let edits = {};
+  try { edits = JSON.parse(localStorage.getItem(STORE) || '{}') || {}; } catch (e) { edits = {}; }
+  const save = () => { try { localStorage.setItem(STORE, JSON.stringify(edits)); } catch (e) {} };
+
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const clean = s => String(s || '').replace(/\s+/g, ' ').trim();
+
+  /* 説明文の1文目(サイトの assets/js/core.js の splitNote、ポータルの tools/export-portals.js の caption と同じ切り方) */
+  function hookOf(note) {
+    const n = clean(note);
+    const re = /[。！？!?]/g;
+    let m;
+    while ((m = re.exec(n))) {
+      const i = m.index + 1, next = n[i] || '';
+      if (i < 15) continue;
+      if (/[」』）)]/.test(next)) continue;
+      if (/[!?]/.test(m[0]) && next && !/\s/.test(next)) continue;
+      return n.slice(0, i);
+    }
+    return n;
+  }
+
+  const worlds = W.slice().sort((a, b) => order(a.category) - order(b.category) || (b.favorites || 0) - (a.favorites || 0));
+  const current = w => (Object.prototype.hasOwnProperty.call(edits, w.id) ? edits[w.id] : w.note || '');
+
+  // 売り場の選択肢
+  const catSelect = document.getElementById('cat');
+  [...new Set(worlds.map(w => w.category))].forEach(id => {
+    const o = document.createElement('option');
+    o.value = id;
+    o.textContent = `${catName(id)}(${worlds.filter(w => w.category === id).length})`;
+    catSelect.appendChild(o);
+  });
+  document.getElementById('total').textContent = `${W.length}件`;
+
+  // 一覧(全件をはじめに作り、絞り込みは表示・非表示だけ)
+  const list = document.getElementById('list');
+  const rows = new Map();
+  let lastCat = null;
+  for (const w of worlds) {
+    if (w.category !== lastCat) {
+      lastCat = w.category;
+      const h = document.createElement('h2');
+      h.className = 'cat';
+      h.dataset.cat = w.category;
+      h.innerHTML = `${esc(catName(w.category))}<small>${worlds.filter(x => x.category === w.category).length}件</small>`;
+      list.appendChild(h);
+    }
+    const el = document.createElement('article');
+    el.className = 'world';
+    el.dataset.id = w.id;
+    const people = [w.capacity ? `最大 ${w.capacity}名` : '', w.recommendedCapacity ? `推奨 ${w.recommendedCapacity}名` : ''].filter(Boolean).join('・');
+    el.innerHTML = `
+      <img class="thumb" loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${esc(w.thumb)}" alt="" />
+      <div class="body">
+        <h3 class="name">${esc(w.name)}</h3>
+        <p class="meta">${esc(catName(w.category))}${w.subtype ? '・' + esc(w.subtype) : ''}　${esc(people)}　お気に入り ${(w.favorites || 0).toLocaleString('ja-JP')}　<a href="https://vrchat.com/home/world/${esc(w.id)}" target="_blank" rel="noopener">VRChat で開く</a></p>
+        <p class="tags">${esc((w.tags || []).join(' / '))}</p>
+        <textarea class="note" spellcheck="false" aria-label="${esc(w.name)} の説明文"></textarea>
+        <p class="note-print"></p>
+        <p class="hook"></p>
+        <p class="before" hidden></p>
+        <div class="row-actions"><button type="button" class="quiet revert" hidden>元の説明文に戻す</button></div>
+        ${w.official ? `<details class="official"><summary>公式の説明(VRChat)</summary><p>${esc(w.official)}</p></details>` : ''}
+      </div>`;
+    const ta = el.querySelector('textarea');
+    ta.value = current(w);
+    ta.addEventListener('input', () => { setEdit(w, ta.value); refreshRow(w); updateCounts(); });
+    el.querySelector('.revert').addEventListener('click', () => { ta.value = w.note || ''; setEdit(w, ta.value); refreshRow(w); updateCounts(); applyFilter(); });
+    list.appendChild(el);
+    rows.set(w.id, { w, el, ta });
+    refreshRow(w);
+  }
+
+  function setEdit(w, value) {
+    if (value === (w.note || '')) delete edits[w.id];
+    else edits[w.id] = value;
+    save();
+  }
+
+  function refreshRow(w) {
+    const { el, ta } = rows.get(w.id);
+    const changed = Object.prototype.hasOwnProperty.call(edits, w.id);
+    el.classList.toggle('changed', changed);
+    el.querySelector('.revert').hidden = !changed;
+    el.querySelector('.note-print').textContent = ta.value;
+    const hook = hookOf(ta.value);
+    const len = [...hook].length;
+    const hookEl = el.querySelector('.hook');
+    hookEl.classList.toggle('long', len > HOOK_MAX);
+    hookEl.innerHTML = `1文目(カード・ポータルの掲示): <b>${len}字</b>${len > HOOK_MAX ? `(${HOOK_MAX}字を超えると掲示では「…」で切れます)` : ''}`;
+    const before = el.querySelector('.before');
+    before.hidden = !changed;
+    before.innerHTML = changed ? `元の説明文: <del>${esc(w.note || '')}</del>` : '';
+  }
+
+  // 絞り込み
+  const q = document.getElementById('q'), onlyChanged = document.getElementById('onlyChanged'), onlyLong = document.getElementById('onlyLong');
+  function applyFilter() {
+    const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const cat = catSelect.value;
+    let shown = 0;
+    const visibleCats = new Set();
+    for (const { w, el, ta } of rows.values()) {
+      const hay = [w.name, ta.value, w.official, w.subtype, (w.tags || []).join(' ')].join(' ').toLowerCase();
+      const ok = (!cat || w.category === cat)
+        && words.every(k => hay.includes(k))
+        && (!onlyChanged.checked || Object.prototype.hasOwnProperty.call(edits, w.id))
+        && (!onlyLong.checked || [...hookOf(ta.value)].length > HOOK_MAX);
+      el.hidden = !ok;
+      if (ok) { shown++; visibleCats.add(w.category); }
+    }
+    list.querySelectorAll('h2.cat').forEach(h => { h.hidden = !visibleCats.has(h.dataset.cat); });
+    let empty = list.querySelector('.empty');
+    if (!shown && !empty) { empty = document.createElement('p'); empty.className = 'empty'; empty.textContent = '当てはまるワールドがありません'; list.appendChild(empty); }
+    if (shown && empty) empty.remove();
+    document.getElementById('count').textContent = `${shown}件を表示`;
+  }
+  [q, catSelect, onlyChanged, onlyLong].forEach(x => x.addEventListener('input', applyFilter));
+
+  function updateCounts() {
+    const n = Object.keys(edits).length;
+    document.getElementById('edits').textContent = n ? `直した説明文 ${n}件` : '';
+  }
+
+  // 書き出し(data.js への反映は node tools/apply-note-edits.js <ファイル> --write)
+  document.getElementById('export').addEventListener('click', () => {
+    const ids = Object.keys(edits);
+    if (!ids.length) { alert('まだ直した説明文がありません'); return; }
+    const out = { version: 1, exported: new Date().toISOString(), edits: {} };
+    for (const id of ids) {
+      const w = W.find(x => x.id === id);
+      if (w) out.edits[id] = { name: w.name, before: w.note || '', note: edits[id] };
+    }
+    const blob = new Blob([JSON.stringify(out, null, 1)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `note-edits-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  });
+
+  // 印刷: 表示中のサムネイルを全部読み込んでから(後から読む設定のままだと、まだ見ていない画像が空になる)
+  document.getElementById('print').addEventListener('click', async () => {
+    const btn = document.getElementById('print');
+    const imgs = [...list.querySelectorAll('.world:not([hidden]) img.thumb')];
+    imgs.forEach(img => { img.loading = 'eager'; });
+    let done = 0;
+    btn.disabled = true;
+    await Promise.all(imgs.map(img => (img.complete ? Promise.resolve() : new Promise(r => { img.addEventListener('load', r, { once: true }); img.addEventListener('error', r, { once: true }); }))
+      .then(() => { done++; btn.textContent = `画像を読み込み中 ${done}/${imgs.length}`; })));
+    btn.textContent = '印刷・PDF';
+    btn.disabled = false;
+    window.print();
+  });
+
+  applyFilter();
+  updateCounts();
+})();
+</script>
+</body>
+</html>

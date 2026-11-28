@@ -18,6 +18,7 @@
  * 2026-11-26: 情報の少ないワールド218件を人気順に X・紹介記事で調べ、VRChatの公式データ（作者・公開年・対応機種）と合わせて
  *   全218件の note に追記（X・記事の情報あり114件、公式データのみ104件。内訳は review-2026-11-26.md）。
  *   217件の対応機種を公式データで確かめ、Quest対応/PC専用 タグを付け直した。
+ * 2026-11-27: 説明文142件を書き直し（tools/notes.html で編集）。3件を削除（CUE[Archive] / 【VRMV】サクラんBEATS / Prologue of NEONOSTALGIA）。
  * ===================================================================== */
 
 window.CATEGORIES = [
@@ -89,7 +90,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bf566f70-75af-4387-9056-badeb34a9ab3/1/256",
-    "note": "『風神雷神図屏風』で知られる琳派の作品112点（国宝10点・重文21点）を集めた本格美術展。宗達から光琳、抱一へ受け継がれる流れを、風神雷神図の比較から辿れる構成で、解説は日英対応。日本の美術展ワールドの決定版です。",
+    "note": "『風神雷神図屏風』で知られる琳派の作品112点（国宝10点・重文21点）を集めた美術展ワールド。宗達から光琳、抱一へ受け継がれる流れを、風神雷神図の比較から辿れる構成で、解説は日英対応です。",
     "official": "『風神雷神図屏風』で知られる江戸時代の芸術流派「琳派（りんぱ）」の作品、計112点（うち国宝10点、重要文化財21点、有形文化財1点）を展示しているギャラリーワールドです。解説は日本語と英語に対応しています。This exhibition features a total of 112 artworks from the Rimpa school, an Edo period art movement famous for the Wind God and Thunder God. The collection includes 10 National Treasures, 21 Important Cultural Properties, and 1 Tangible Cultural Property. Text available in Japanese and English."
   },
   {
@@ -128,7 +129,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8fbaeea9-59cc-46d7-822e-79f2fca66e50/1/256",
-    "note": "Amelia Watsonがプロデュースした、ホロライブ・ホロスターズのメンバーをモチーフにした海の生き物が暮らす水族館。海と海洋保全への思いから生まれた作品で、日英の解説や海中トンネル、本人とのフォトスポットまで揃っています。ファンでなくても楽しめる完成度です。PC専用。",
+    "note": "Amelia Watsonがプロデュースした、ホロライブ・ホロスターズのメンバーをモチーフにした海の生き物が暮らす水族館。日英の解説や海中トンネル、本人とのフォトスポットまで揃っていて、ファンでなくても水族館として楽しめます。PC専用。",
     "official": "Inspired by Amelia's love for marine life and ocean conservation, explore the wonders of the ocean in a relaxing aquarium, populated by strange, fascinating and familiar marine life featuring all members of hololive and holostars, an unforgettable experience awaits you! Thank you for all the love and support over the years! Credits: Producer: Amelia Watson holoAquarium World Map: Seafoam Creature Modelers: Twi, stupah, joules, pyroxene, Gon, Slvan, ROOJINALD, Rei21, Priichu, Hask Scripting: nullrefrepro Translations: Gomadare, Yuri, arc_, tototo Project Manager: Henma"
   },
   {
@@ -171,7 +172,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bd704220-9e3f-4adb-9633-d3a4d8b60446/4/256",
-    "note": "魚の代わりに日用品が泳ぐ、小さな変わり種水族館。30種超のコモノに、それっぽい図鑑風の説明まで付いた作り込みが楽しい。Quest・モバイル対応で、ゆったり癒されたいときに。",
+    "note": "魚の代わりに日用品が泳ぐ、小さな変わり種水族館。30種超のコモノに、それっぽい図鑑風の説明まで付いた作り込みが楽しい。Quest・モバイル対応で、のんびり眺めて癒されたいときにどうぞ。",
     "official": "可愛い日用品が泳ぎ回る小さな水族館です。 おひとり様でも、ご友人連れでも、是非ゆったりとお過ごしください。 30種類を超える個性豊かなコモノたちがお待ちしております。 ＃幻想コモノ水族館"
   },
   {
@@ -191,7 +192,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f106cd01-6291-4525-b0ce-d54f19da810f/3/256",
-    "note": "ボードゲーム『アイドルアライブ』の世界を紹介する記念館ワールド。アイドルの紹介、イベント記録、イラストや4コマ漫画、グッズを展示し、外伝ゲームのライブホールも再現。原作を知らない人の入口にも。PC専用。",
+    "note": "ボードゲーム『アイドルアライブ』の世界を紹介する記念館ワールド。アイドルの紹介、イベント記録、イラストや4コマ漫画、グッズを展示し、外伝ゲームのライブホールも再現。原作を知らない人の入口にもなります。PC専用。",
     "official": "ボードゲームからアイドルを生み出す「Projec-IDOL-A-LIVE」の今とこれからがすべてわかる！ アイドル紹介、イベント情報、各種グッズなど"
   },
   {
@@ -210,7 +211,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_efae5bf0-231f-4195-a456-afa9bc7a12d4/4/256",
-    "note": "作者が外食のたびに撮りためた料理写真だけを飾る、ゆるい飯テロ写真館。作者自身『インスタ映えを想定していないので散らかっている』と明記する脱力感が持ち味。Quest対応で、同作者の写真博物館シリーズの一角。",
+    "note": "作者が外食のたびに撮りためた料理写真だけを飾る、ゆるい飯テロ写真館。Quest対応で、同作者の写真博物館シリーズの一角。夜中にフレンドと一緒に行くと、確実にお腹が空きます。",
     "official": "外食の時に撮った写真を飾っています。構造が微妙なので作り直すかもしれません。インスタ映えを想定していないので散らかっています。ご了承ください。"
   },
   {
@@ -232,7 +233,7 @@ window.WORLDS = [
       "歴史"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d422b28f-a97f-4eef-b840-64c9fb678b90/6/256",
-    "note": "日本の近代貨幣の一部を、写真と解説文で展示する小さな博物館。明治以降のコインを順に眺めながら、貨幣のデザインと歴史を辿れます。古銭好きはもちろん、歴史の勉強にも。",
+    "note": "日本の近代貨幣の一部を、写真と解説文で展示する小さな博物館。明治以降のコインを順に眺めながら、貨幣のデザインと歴史を辿れます。古銭好きはもちろん、歴史の勉強にもなります。",
     "official": "日本の近代に造られた貨幣の一部を展示した博物館です。今後別の言語も追加予定です。リアルギフト恵んでください（） This is a museum exhibiting some of the modern coins minted in Japan. Additional languages will be added in the future."
   },
   {
@@ -429,7 +430,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f5056793-e4cb-4cc8-b211-afd32fac9106/2/256",
-    "note": "印象派の巨匠モネの世界に浸る美術館ワールド。Design Team Ectiqueによる作品で、2024年のベネチア国際映画祭 Venice Immersive に選ばれました。作品展示だけでなく、絵画の風景やモネの庭園を再現した空間に入り込め、セーヌ川の絵は水に満たされた部屋に、草原の絵は仮想の太陽の下に飾られています。白内障を患ったモネの視界をなぞり、終盤に進むほど景色がぼやけていく演出も。有料エリアあり。PC専用。",
+    "note": "印象派の巨匠モネの世界に浸る美術館ワールド。Design Team Ectiqueによる作品で、2024年のベネチア国際映画祭 Venice Immersive に選ばれました。作品展示だけでなく、絵画の風景やモネの庭園を再現した空間に入り込め、セーヌ川の絵は水に満たされた部屋に、草原の絵は仮想の太陽の下に飾られています。白内障を患ったモネの視界をなぞり、終盤に進むほど景色が変わっていく演出も。有料エリアあり。PC専用。",
     "official": "VRC Museum Monet Exibition. This special exhibition allows you to fully enjoy the beautiful works of the Impressionist master Claude Monet, as well as recreated spaces of his paintings and the garden he spent time in, all in the virtual reality world."
   },
   {
@@ -449,7 +450,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0d6c16ed-bdd3-4413-b3b0-df1a6668a3d8/2/256",
-    "note": "複数のアーティストが運営するバーチャル展示ワールド。『PROJECT: SUMMER FLARE』のヨツミフレームのアカウントから2019年に公開された、いろいろな作家の作品を一度に巡れるグループ展タイプのギャラリーで、おすすめの展示ワールドとしてXで挙げられることも。軽量で入りやすく、VRアートの入口として気軽にどうぞ。PC専用。",
+    "note": "複数のアーティストが運営するバーチャル展示ワールド。『PROJECT: SUMMER FLARE』のヨツミフレームのアカウントから2019年に公開された、いろいろな作家の作品を一度に巡れるグループ展タイプのギャラリー。軽量で入りやすく、VRアートの入口として気軽にどうぞ。PC専用。",
     "official": "Beyond Reality is a virtual exhibition world maintained by various artists."
   },
   {
@@ -489,7 +490,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0fb1a2a6-42d0-4d23-9b24-c3da3051e6d2/15/256",
-    "note": "アニメ・マンガ・ゲームの期間限定展を入れ替え開催するデジタル美術館。lainの通学路再現やMEIKO展のフォトブースなど、作品世界に入り解説と写真を楽しめる。",
+    "note": "アニメ・マンガ・ゲームの期間限定展を入れ替え開催するデジタル美術館。lainの通学路再現やMEIKO展のフォトブースなど、作品世界に入り解説と写真を楽しめる。ただし常設展はなく、期間限定展のみなので注意してください。",
     "official": "Anique Museumは、デジタルとリアルを融合し、日本のアニメ、マンガ、ゲームコンテンツを幅広く展示するとともに、クリエイターとの積極的なコラボレーションを通じて新たな文化創造を育み、没入感とアクセス性に優れた体験を提供することを目指しています。 The Anique Museum aims to provide an more immersive experience by combining digital and physical. We will collaborate with a wide range of Japanese anime, manga, and game contents, and fostering new cultural creations through active collaboration with creators."
   },
   {
@@ -509,7 +510,7 @@ window.WORLDS = [
       "探索"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_24de82ec-91cb-42ee-9c20-3e3f3188fb05/2/256",
-    "note": "ホロライブEN・一伊那尓栖がtakodachiへの感謝を込めた誕生日公開のギャラリー。本人の音声ガイドで愛着ある作品を巡り、立体絵や隠し要素も楽しめる。",
+    "note": "ホロライブEN・一伊那尓栖がtakodachiへの感謝を込めた誕生日公開のギャラリー。本人の音声ガイド(英語)で愛着ある作品を巡り、立体絵や隠し要素も楽しめる。",
     "official": "I want to dedicate this to all the takodachis out there for your continuous support! Happy birthday to us! You will find a collection of some of my beloved pieces and a little story behind them! Hope you like it!"
   },
   {
@@ -745,7 +746,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f7073232-44f0-411d-9a86-ba1bd5498897/57/256",
-    "note": "ニコニコ動画の歴史・解説・面白ネタをパネル展示で辿る、非公式ファンミュージアム。会場はVRCニコニコ集会の舞台そのもので、動画視聴や集会にも使えます。古参には懐かしく、知らない人には入門になる一作。Quest対応。",
+    "note": "ニコニコ動画の歴史・解説・面白ネタをパネル展示で辿る、非公式ファンミュージアム。VRCニコニコ集会の舞台として使われており、動画視聴や集会にも使えます。古参には懐かしく、知らない人には入門になる一作。Quest対応。",
     "official": "ニコニコ動画についての解説や面白いネタをパネル形式で紹介するワールドです。外観は「VRCニコニコ集会（vR）」の会場を使用しており、動画視聴やイベント会場に最適化されています。 個人製作の非公式ファンワールドです。"
   },
   {
@@ -804,7 +805,7 @@ window.WORLDS = [
       "アバター試着"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9a4c8742-e236-48f7-bb1e-f44ccb34c65d/7/256",
-    "note": "まめふれんず向けの衣装を、実際に確かめたり試着したりできるショールームワールド。BOOTHショップ『nSignature（エヌシグ）』の都会的でクールなコーデを、ブランドの世界観ごと楽しめます。お気に入り探しと撮影に。",
+    "note": "まめふれんず向けの衣装を、実際に確かめたり試着したりできるショールームワールド。BOOTHショップ『nSignature（エヌシグ）』の都会的でクールなコーデを、ブランドの世界観ごと楽しめます。お気に入り探しや撮影にも向いています。",
     "official": "まめふれんず向けBOOTHショップ \"nSignature（エヌシグ）\"で販売中の衣装を、実際に確かめたり、試着して楽しめる。ブランドの世界観を体験できるショールームワールドです。"
   },
   {
@@ -922,7 +923,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_659d14c7-000a-4ba1-b956-d073bdfc05c0/1/256",
-    "note": "個人作家Elychiffonによる写真展の2026年4月版。ほぼ毎月新しい会期のワールドが公開される継続型の個展シリーズで、月ごとに展示が入れ替わります。定員64人。過去会期も別ワールドで公開中。Quest対応。",
+    "note": "個人作家Elychiffonによる写真展の2026年4月版。ほぼ毎月新しい会期のワールドが公開される継続型の個展シリーズで、月ごとに新しいワールドが作られます。定員64人。過去会期も別ワールドで公開中。Quest対応。",
     "official": "『Elychiffon写真展』2026/4 展示ワールドです！"
   },
   {
@@ -942,7 +943,7 @@ window.WORLDS = [
       "歴史"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6068dadb-90a4-476b-9b1d-1d4d564cc9cc/7/256",
-    "note": "そろばんからVRヘッドセットまで、古今東西のデジタル機器を時代ごとの展示室で辿る中国の仮想博物館。豊富なモデルと説明が好評で、懐かしの家電を眺めて思い出話に花が咲きます。現在はベータ版のため、不具合が残っている場合もあります。",
+    "note": "そろばんからVRヘッドセットまで、古今東西のデジタル機器を時代ごとの展示室で辿る中国の仮想博物館。豊富なモデルと説明が好評で、懐かしの家電を眺めて思い出話に花が咲きます。現在はベータ版のため、不具合が残っている場合もあります。なお、全編通して中国語のみなので注意！！",
     "official": "《虚拟数码博物馆》是一个以消费类电子产品为主题的虚拟博物馆，目前已经开放游览中，正在 Beta 测试中，可能会有部分错误和问题，可以进群交流和反馈建议。 \"Virtual Digital Product Museum\" is a virtual museum with the theme of consumer electronics. It is currently open for tours and is in beta testing. There may be some errors and problems. You can join the QQ group to communicate and give feedback."
   },
   {
@@ -1058,7 +1059,7 @@ window.WORLDS = [
       "アート・展示"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ccd7436e-3761-425d-aead-0c014a0f5064/3/256",
-    "note": "正月休みのラスト3日間で作り上げたという、ノリと勢い100％の個人写真ギャラリー兼ホームワールド。写真は1・2階に展示され、3階には撮影スペースとチルスペースもあります。『突貫工事』の名の通り勢い重視の作りで、展示と自宅が同居する手作り感が魅力。容量約234MB。",
+    "note": "正月休みのラスト3日間で作り上げたという、ノリと勢い100％の個人写真ギャラリー兼ホームワールド。写真は1・2階に展示され、3階には撮影スペースとチルスペースもあります。『突貫工事』の名の通り勢い重視の作りで、展示と自宅が同居する手作り感があります。容量約234MB。",
     "official": "思い立ったが吉日。ノリと勢い100％、ワールド制作知識0％で、正月休みのラスト三日間をフルに使って\"突貫工事\"でフォトギャラリー兼ホームワールド兼撮影ワールドを作ってみました！ 写真は1階と2階で展示、3階には撮影スペースとチルスペースがあります。2026/4/14 【更新】メインギャラリーの向かいにサブギャラリーを増築"
   },
   {
@@ -1116,7 +1117,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_29128513-9eb3-4bc1-add5-e7c1af10b3c7/9/256",
-    "note": "渋谷など実写の写真の中に入り、アバター姿で記念撮影できるミュージアム。VRMVワールドも手がけるK1UCH1が2025年に公開した作品で、写真の中でもちゃんと影や奥行きが出るので、Xでは「VRでAR」のようだと話題になりました。設定不要でカメラを置くだけで映える一枚が撮れ、遠近法遊びやフレンドとの集合写真にも向きます。写真は随時追加予定。PC専用。",
+    "note": "渋谷など実写の写真の中に入り、アバター姿で記念撮影できるミュージアム。VRMVワールドも手がけるK1UCH1が2025年に公開した作品で、写真の中でもちゃんと影や奥行きが出るので、Xでは「VRでAR」のようだと話題に。設定不要でカメラを置くだけで映える一枚が撮れ、遠近法遊びやフレンドとの集合写真にも向きます。PC専用。",
     "official": "現実の写真の中に入れるワールドです。写真は随時追加予定。It's a world that puts you in the picture of reality."
   },
   {
@@ -1153,7 +1154,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a67040a0-e786-4436-b45f-2dba528dc222/6/256",
-    "note": "工芸作家・磁佑の第2回個展のVRChat会場。変形メカ『カニタマ』で知られる作家の工芸作品を、現実の根津の個展に先駆けてバーチャルで鑑賞できます。鑑賞後はラウンジで雑談も。伝統工芸とインターネット文化の融合です。",
+    "note": "工芸作家・磁佑の第2回個展のVRChat会場。変形メカ『カニタマ』で知られる作家の工芸作品を、現実の根津の個展のようにバーチャルで鑑賞できます。鑑賞後はラウンジで雑談も。伝統工芸とインターネット文化の融合です。",
     "official": "工芸作家磁佑第2回個展「自由工芸展」のVRChat会場です。展示を見た後に雑談もできるラウンジ完備。 現実会場での展示期間は4/11~4/19となります。詳細は作者Xをご覧ください Jiyu-2nd solo Exhibition:Jiyu kogei ten"
   },
   {
@@ -1173,7 +1174,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4834e4ed-6b44-4e32-9eff-2946e67d078a/2/256",
-    "note": "世界中のカエル約100種を、作者手作りのモデルとユーモラスな解説で紹介するカエル専門博物館。mozukuiが2024年に公開した作品で、手に取ると説明が出て、クリックで大きくなるギミックも。カエル好きにはたまらない一館です。Quest対応。",
+    "note": "世界中のカエル約100種を、作者手作りのモデルとユーモラスな解説で紹介するカエル専門博物館。mozukuiが2024年に公開した作品で、手に取ると説明が出て、クリックで大きくなるギミックも。カエル好きにはたまらない一館です。逆にカエル嫌いには...無理やり連れて行っちゃだめですよ？Quest対応。",
     "official": "VirtualFrogMuseum Keronmo introduces approximately 100 types of frogs from around the world! I hope you'll have a great time."
   },
   {
@@ -1212,7 +1213,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3e3b7287-b34f-432f-9b23-1556adf49730/11/256",
-    "note": "古典から19世紀までの名画約150点を、原寸大・高精細で展示する西洋絵画美術館。全作品に解説と関連動画があり、ゴッホの『ひまわり』7作揃いなど現実では見られない並びも。並ばずに名画を独り占めできます。解説は日英中韓の4言語に対応しています。",
+    "note": "古典から19世紀までの名画約150点を、原寸大・高精細で展示する西洋絵画美術館。全作品に解説と関連動画があり、ゴッホの『ひまわり』7作揃いなど現実では見られない並びも。並ばずに名画を独り占めできます。すべてを詳しく見るとなると途方もない時間がかかるので注意！解説は日英中韓の4言語に対応しています。",
     "official": "【JP/EN/ZH/KO】古典絵画から19世紀頃までのパブリックドメインの絵画を原寸大で展示しています。 v1.0 2022/6/4 公開 v1.1 2022/7/4 絵画の増設、縮尺の修正、解説の修正、秘密の部屋の追加 v2.0 永久欠番 v3.0 2026/05/04 解説の大幅強化、一部高解像度化、デスクトップユーザー向け最適化、多言語対応（英語、中国語、韓国語） v3.1 2026/06/12 リニューアルおよび名称変更 v3.2 2026/06/21 ビデオプレイヤーをデフォルトローカル、グーバル切り替え機能を追加 v3.3 2026/07/03 軽微なバグの修正"
   },
   {
@@ -1232,7 +1233,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e7bdedff-4d20-4aef-b5a7-a4b3336ae908/1/256",
-    "note": "和風イラスト7点を巨大に展示。イラストレーターのキツネイロ本人が2023年に作った展示ワールドで、せっかくのVRだからと、奥行きが感じられるように作品を加工しています。平面なのに人物も建物も奥行きを持ち、角度で見え方が変わる、緻密な世界をVRで間近に味わう小さな展示会。PC専用。",
+    "note": "和風イラスト7点を巨大に展示。イラストレーターのキツネイロ本人が2023年に作った展示ワールドで、奥行きが感じられるように作品を加工しています。平面なのに人物も建物も奥行きを持ち、角度で見え方が変わる、緻密な世界をVRで間近に味わう小さな展示会。PC専用。",
     "official": "キツネイロが制作したイラストの展示ワールドです / Kitsuneiro's Artwork Exhibition World"
   },
   {
@@ -1253,7 +1254,7 @@ window.WORLDS = [
       "大容量注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11175ac6-95b1-49da-8f0f-88104ea361f3/16/256",
-    "note": "等身大の恐竜化石が並ぶ、暗い博物館を探索するワールド。すべて手作りの骨格は一部が生きているように動き、3階分の高さで現れる首長竜は圧巻です。2022年のヴェネツィア国際映画祭の選出作で、後から入った人がフレンドに合流できる仕掛けもあります。容量約533MBと大きめ。",
+    "note": "等身大の恐竜化石が並ぶ、暗い博物館を探索するワールド。すべて手作りの骨格は一部が生きているように動き、3階分の高さで現れる首長竜は圧巻です。2022年のヴェネツィア国際映画祭の選出作で、後から入った人がフレンドに合流できる仕掛けもあります。館内はかなり暗いのでナイトミュージアムが怖いならフレンドと回るのがオススメです。容量約533MBと大きめ。",
     "official": "A prehistoric Dinosaur Museum with everything handmade from scratch in SculptrVR, Masterpiece Studio Pro, Tiltbrush, Shapelabs and Blender for tidy up. Added Find my friends prefab, for help for late joiners to tours. I'm currently working on a new improved version of this for a standalone museum experience. Updated portals and entrance for the 79th Annual 2022 Venice Film Festival."
   },
   {
@@ -1271,7 +1272,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_45facc62-59b1-490c-85bf-7f90b4b8452e/2/256",
-    "note": "ヨツミフレームのメディアアート19点＋αを触って体験する展示。『PROJECT: SUMMER FLARE』などで知られる作者が2018年に公開した、仮想現実をテーマにした個展です。積む、立つ、見る位置で景色が変わり、近くのVRChat民まで可視化される常設展。PC専用。",
+    "note": "ヨツミフレームのメディアアート19点＋αを触って体験する展示。『PROJECT: SUMMER FLARE』などで知られる作者が2018年に公開した、仮想現実をテーマにした個展です。積む、立つ、見る位置で景色が変わり、他では見られない展示も多数。PC専用。",
     "official": "1％ of Virtuality （\"1％の仮想\"） is a virtual private exhibition world with the theme of Virtual Reality."
   },
   {
@@ -1290,7 +1291,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_77e2a3cf-28e0-4ade-baed-dda68f9406d2/1/256",
-    "note": "韓国のVRアーティストJaehyuk LeeがTilt Brushで描いた3Dアートのギャラリー。VRChat配信者GreatMoonAromaの演出で、乗り物などを描いた立体的な筆致の中に入り込んで鑑賞できます。実在の個展から生まれた展示です。PC専用、容量大きめ。",
+    "note": "韓国のVRアーティストJaehyuk LeeがTilt Brushで描いた3Dアートのギャラリー。VRChat配信者GreatMoonAromaの演出で、乗り物などを描いた立体的な筆致の中に入り込んで鑑賞でき、実在の個展から生まれた作品を眺めることができます。PC専用、容量大きめ。",
     "official": "This is gallery of tilt brush art by artist 'Jaehyuk Lee', directed by VRC streamer GreatMoonAroma. if you like 3d art. enjoy!"
   },
   {
@@ -1331,7 +1332,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6006335d-3df9-4612-a5fc-7bfd8680e263/2/256",
-    "note": "厚さ0の平面に無限の奥行きを作る『切り絵シェーダー』の作品39点を集めた常設アート展。角度で姿を変える表現の数々はVRでこそ。バーチャルライフマガジンでも紹介された、新しい表現の誕生を目撃できる展示です。PC専用。",
+    "note": "厚さ0の平面に無限の奥行きを作る『切り絵シェーダー』の作品39点を集めた常設アート展。角度で姿を変える表現は、VRで見てこそ面白さが分かります。バーチャルライフマガジンでも紹介された、新しい表現を目撃できる展示です。PC専用。",
     "official": "切り絵シェーダーアート展のワールドです。不思議な作品をお楽しみください。 （ It's the World of Kirie Shader Art Exhibition. Enjoy the mysterious works of arts! ） ｜ 公式サイト https://onisawa-v.github.io/kirie/｜ バーチャルライフマガジン様に紹介頂きました！記事ページはこちら https://vr-lifemagazine.com/kirieshaderart/"
   },
   {
@@ -1353,7 +1354,7 @@ window.WORLDS = [
       "イラスト"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_def452c9-2143-4bc9-b8b0-4ec7a5215a1f/2/256",
-    "note": "宇宙機と宇宙施設を描いたイラスト34枚のギャラリー。全作品にモチーフの解説付きで、はやぶさやブラックホールなど宇宙の出来事を絵と一緒に学べます。VR宇宙博物館コスモリアに寄託している扉絵も展示。宇宙好きへの入口に最適です。",
+    "note": "宇宙機と宇宙施設を描いたイラスト34枚のギャラリー。全作品にモチーフの解説付きで、はやぶさやブラックホールなど宇宙の出来事を絵と一緒に学べます。VR宇宙博物館コスモリアに寄託している扉絵も展示。宇宙好きはもちろん、入門にも向いています。",
     "official": "宇宙機や宇宙関連施設がテーマのイラストギャラリーです。現在34枚展示中、全てのイラストに解説がいれてあります。コスモリアに寄託している扉絵も追加しました。 This is a gallery of illustrations on the theme of spacecraft and space-related facilities."
   },
   {
@@ -1392,7 +1393,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d84fa634-ca78-4464-93b4-632bf71b32bb/4/256",
-    "note": "添えられた説明は『into（内側へ）』の一言だけという、定員16人の小さな展示ワールド。『Like a canvas』のharuki_haruが2024年に公開した作品で、何が起きるのかは、行って確かめるタイプです。PC専用。",
+    "note": "定員16人の小さな展示ワールド。『Like a canvas』のharuki_haruが2024年に公開した作品で、何もかもが包まれているワールド。椅子もドーナツも、あと...あなた自身も？『town of connection』などが好きな人におすすめ。PC専用。",
     "official": "into"
   },
   {
@@ -1511,7 +1512,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_00f26c18-4e03-4461-a2a7-f540ce83c84f/2/256",
-    "note": "2025年3月の写真展を収めたギャラリーワールド。スナップ的な視点の写真を静かに眺める展示です。作者によると、現在は更新されていません。容量約212MB。",
+    "note": "2025年3月の写真展を収めたギャラリーワールド。スナップ的な視点の写真を静かに眺める展示です。現在は更新されていません。容量約212MB。",
     "official": "2025年6月現在こちらのワールドは更新されていません。 March exhibition-感想や好きな写真については「＃Record_BtL」を付けてXやBlueskyなどでポストして頂けると嬉しいです。"
   },
   {
@@ -1551,7 +1552,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2d8283a7-0352-49d2-a394-0d30aaab9406/1/256",
-    "note": "草原に点在する、屋外型アートギャラリー。Beigieが2025年に公開した作品で、足元のヒナギクをたどって3つの展示エリアを巡る開放的な構成に、実展示の再現やテーマ別ブース、撮影スポットも。白い壁の美術館とは違う、自然体でアートに触れる体験を。容量約320MBと重め、PC専用。",
+    "note": "草原に点在する、屋外型アートギャラリー。Beigieが2025年に公開した作品で、足元のヒナギクをたどって3つの展示エリアを巡る開放的な構成に、実展示の再現やテーマ別ブース、撮影スポットも。白い壁の美術館とは違い、屋外を歩きながら自然体でアートに触れられます。容量約320MBと重め、PC専用。",
     "official": "A daisy, a person, a grassfield, a collection of arts."
   },
   {
@@ -1569,7 +1570,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1ae21ca9-7e5a-418e-8473-0028f3f6a50f/3/256",
-    "note": "ねおぽんずのフォトギャラリーに4つの企画展を組み合わせた複合展示ワールド。一人の作家の世界観をまとめて巡れるボリューム感が魅力です。容量約267MBと重めなので、読み込みに余裕を持ってどうぞ。",
+    "note": "ねおぽんずのフォトギャラリーに4つの企画展を組み合わせた複合展示ワールド。一人の作家の世界観をまとめて巡れるのが見どころです。容量約267MBと重めなので、読み込みに余裕を持ってどうぞ。",
     "official": "私、ねおぽんずのフォトギャラリーと４つの企画展からなる複合展示ワールドです。 感想は「＃NPGallery」か「＃VRC_AnotherDay」でXに投稿していただけると嬉しいです。"
   },
   {
@@ -1708,7 +1709,7 @@ window.WORLDS = [
       "写真・撮影"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_17ca8fc3-65da-433b-b852-4a6fba1553f0/3/256",
-    "note": "未来のHondaの秘密研究所を舞台にした、Honda公式の体験ワールド。特別調査員としてカードキーで入り、名車バイクに跨ってエンジン音を聞いたり、CB1000 HORNETを自分好みにカスタムしたりして、多彩なフォトスポットで撮影できます。発売前のアバターギミックを先行して試着できるのもポイントです。",
+    "note": "未来のHondaの秘密研究所を舞台にした、Honda公式の体験ワールド。特別調査員としてカードキーで入り、名車バイクに跨ってエンジン音を聞いたり、CB1000 HORNETを自分好みにカスタムしたりして、多彩なフォトスポットで撮影できます。発売前のアバターギミックを先行して試着できます。",
     "official": "ここは未来のHondaの秘密研究所。 皆様はHondaの特別調査員として、ワールド内のバイクに触れながら「乗る」「カスタム」「写真撮影」といった体験をお楽しみいただけます。 エンジンをかけられるのはもちろん、様々な部位が実車さながらに駆動し、まるで本物のバイクが目の前にあるかのような感覚を体験できます。 また今後発売予定のアバターギミックを先行してご試着いただけます。 Welcome to Hondas secret mobility lab of the future. Youll be invited to join as a Honda field researcher. Interact with the motorcycles and enjoy experiences such as revving the powerful engines, customizing your motorcycle, and capturing photos. Start the engine, explore moving components, and experience the presence of a motorcycle that feels strikingly real. You can also preview upcoming avatar-based mobility features before their official release."
   },
   {
@@ -1729,7 +1730,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_366eac4a-100a-46a2-a1a5-9f31f2795373/2/256",
-    "note": "3つのメタバースのチュートリアルを体験して『メタバースの常識』を探す、IVRC2024の受賞作品。設計思想の異なるVRChat・ツインバース・Idealterを巡る、常識を揺さぶる仕掛けだらけのコンセプト作で、初心者歓迎です（メタバース部門優秀賞・0b4k3賞）。VRモード専用で、動きは基本ローカルなので、全員そろってから一緒に進むのがおすすめ。PC専用。",
+    "note": "3つのメタバースのチュートリアルを体験して『メタバースの常識』を探す、IVRC2024の受賞作品。設計思想の異なるVRChat・ツインバース・Idealterを巡る、常識を揺さぶる仕掛けだらけのコンセプト作。VRモード専用で、動きは基本ローカルなので、全員そろってから一緒に進むのがおすすめ。PC専用。",
     "official": "「ようこそ、チュートリアリティへ。メタバース初心者のあなたを歓迎します。」 あなたは自分にとって最適なメタバースを探すため、異なる世界線・異なる設計思想の3つのメタバース、「VRChat」「ツインバース」「Idealter」それぞれのチュートリアルを体験する。 「メタバースの常識」を探そう。 //////////// VRモード限定（デスクトップモードでは動作しません）・基本ローカルなので全員で行動してください・全員そろってからの開始を強くおすすめします。IVRC2024メタバース部門 優秀賞（メタ・メタバース部門）/0b4k3賞"
   },
   {
@@ -1748,7 +1749,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8cf0c294-c6c2-4d9d-8478-a2ca5fb13e44/7/256",
-    "note": "VRChatユーザーが描いたイラストを集めた展示ワールド。毎月第1水曜日に集会が開かれ、描き手同士の交流の場にもなっている。専用のポータルワールドもあり、イラスト好きの定期巡回先に。",
+    "note": "VRChatユーザーが描いたイラストを集めた展示ワールド。様々な作者が描いた1枚を見ることができます。ミュージアムに参加した作家のギャラリーワールドを集めた専用のポータルワールドもあり、イラスト好きにおすすめです。",
     "official": "VRchatユーザーのイラスト作品などを展示するワールドです。毎月第１水曜日に集会を行っています。展示をご希望の方は公式ディスコードサーバーへ参加をお願いします。This is a world where VRchat users exhibit their illustrations and other works. Meetings are held on the first Wednesday of every month. If you wish to exhibit your work, please join the official discord server."
   },
   {
@@ -1806,7 +1807,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a6438f27-4d80-4201-ab41-3a476758d8bd/4/256",
-    "note": "ただの写真展ではない。近づくと影が落ち、姿が映り込み、触れると質感まで返る仕掛け写真の常設展。『Eccentric Rooms』のsuzuki_iが2024年に開いたギャラリーで、常設展「額縁の庇護を逃れて」に加え、2階では入れ替わる企画展も楽しめます。おすすめの美術館・ギャラリーワールドとしてXで挙げられることも。PC専用。",
+    "note": "ただの写真展ではない。近づくと影が落ち、姿が映り込み、触れると質感まで返る仕掛け写真の常設展。『Eccentric Rooms』のsuzuki_iが2024年に開いたギャラリーで、常設展に加え、2階では入れ替わる企画展も楽しめます。Xでおすすめの美術館・ギャラリーワールドとして挙げられることもあります。PC専用。",
     "official": "常設展「額縁の庇護を逃れて」"
   },
   {
@@ -1825,7 +1826,7 @@ window.WORLDS = [
       "ファンメイド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_27a0f9f5-c690-4833-92b2-c7028b5fa941/6/256",
-    "note": "イラストレーター、クロイヌヨウヘイのVRChat二次創作イラスト『Realize』シリーズの個展。『もしアバターたちが意思を持って生きていたら』という空想から生まれた作品群で、各作品にはアバター名と背景のワールド名も記されています。VRChatの魅力を絵で味わえる展示です。",
+    "note": "イラストレーター、クロイヌヨウヘイのVRChat二次創作イラスト『Realize』シリーズの個展。『もしアバターたちが意思を持って生きていたら』という空想から生まれた作品群で、各作品にはアバター名と背景のワールド名も記されています。アバターたちの暮らしを絵で切り取った展示です。",
     "official": "「Realize」はイラストレーターであるクロイヌヨウヘイのVRChatの二次創作イラストのシリーズです。もしアバター達が意思を持って生きていたら、そんな空想から作品は生まれました。アバターの名前と背景になっているワールドの名前も記載してあります。ぜひVRChatの魅力を楽しんでください。Realize\" is a series of VRChat illustrations by illustrator Youhei Kuroinu.The work was born from the vision of what it would be like if avatars lived with their own wills.The names of the avatars and the worlds in the background are also included.Please enjoy the magic of VRChat."
   },
   {
@@ -1846,7 +1847,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f69bfcf1-1848-4434-b1cf-0ef02c1665f9/12/256",
-    "note": "実物の携帯ゲーム機をフォトグラメトリで取り込み、そのまま展示した博物館。バーチャルボーイやワンダースワンなど懐かしのハードを間近で眺められます。展示は随時追加中。Quest対応。",
+    "note": "実物の携帯ゲーム機をフォトグラメトリで取り込み、そのまま展示した博物館。バーチャルボーイやワンダースワンなど懐かしのハードを間近で眺められるワールド。複数人のフレンドと回ると何人かがジェネギャで倒れます。展示は随時追加中。Quest対応。",
     "official": "フォトグラメトリによってVRCに持ち込んだ、携帯ゲーム機たちを展示する博物館です。 2025/10/14 デジモンの写真、バーチャルボーイ本体、ワンダースワンカラーなどの箱を数点追加しました。"
   },
   {
@@ -1908,7 +1909,7 @@ window.WORLDS = [
       "大容量注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f6fe801b-5b08-475d-9ec3-896cacb534bb/6/256",
-    "note": "『繋がり（因果関係）』がテーマの美術館。額縁に触れると絵の中のオブジェに何かが起き、やがて絵を飛び出して空間同士が繋がっていく。ヴェネツィア国際映画祭Best of Worlds選出の、ギミック満載の体験型アート。容量約578MBと重め。",
+    "note": "『繋がり（因果関係）』がテーマの美術館。額縁に触れると絵の中のオブジェに何かが起き、やがて絵を飛び出して空間同士が繋がっていく。ヴェネツィア国際映画祭Best of Worlds選出の、仕掛けの多い体験型アート。容量約578MBと重め。",
     "official": "causal relationship"
   },
   {
@@ -1928,7 +1929,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_566a3e2f-2e79-4900-9309-933fc34dab80/3/256",
-    "note": "壁を歩き、小さな惑星を一周し、入れ子になった部屋で大きな自分と出会う。suzuki_iによる、重力と視点が崩れる風変わりな部屋を、フレンドと驚き合いながら巡る体験展示です。同期の不具合でしばらく非公開になっていましたが、作者が直し、部屋を1つ増やして再公開しました。PC専用。",
+    "note": "壁を歩き、小さな惑星を一周し、入れ子になった部屋で大きな自分と出会う。suzuki_iによる、重力と視点が崩れる風変わりな部屋を巡る体験展示です。一人より、複数人のフレンドと行くほうが面白いワールド。PC専用。",
     "official": "Eccentric Rooms"
   },
   {
@@ -1968,7 +1969,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c70852b2-28db-45a6-af01-8f8c1d16c006/3/256",
-    "note": "触れたり触れられたりする感覚（V感）を体験できる展示ワールド。もふもふのブラッシングや猫じゃらし、壁から出てくる腕のなでなでなど、『触れる仮想現実』をテーマにした展示が並びます。V感を育てる入門にも。",
+    "note": "触れたり触れられたりする感覚（V感）を体験できる展示ワールド。もふもふのブラッシングや猫じゃらし、壁から出てくる腕のなでなでなど、『触れる仮想現実』をテーマにした展示が並びます。V感を育てる入門にも。ただし、無理やりV感をいじるのはダメ絶対！",
     "official": "沢山のご来場ありがとうございます。 これからも展示物の追加やギミックの追加・調整を行う予定です。 何か不具合や疑問点を見つけた際はなんなりとお教えください。"
   },
   {
@@ -1988,7 +1989,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a30e1077-85e5-4581-8e32-3c5db3abd38b/5/256",
-    "note": "聞く位置や環境で音が変わるWavePathSystemを体験できる音響実験室。反響や定位を試す展示に加え、曲がゆったり流れる個室もあり、技術検証とチルが両立する。",
+    "note": "聞く位置や環境で音が変わるWavePathSystemを体験できる音響特化ワールド。反響や定位を試す展示に加え、曲がゆったり流れるチル空間も。音のリアルさをVRで確かめられるワールドです。",
     "official": "音響システムWavePathSystemとその他技術検証ワールドです。音の位置や反響をよりリアルに再現し、聞く位置や環境によって音が変化します。"
   },
   {
@@ -2027,7 +2028,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e2077bb2-8bfc-4e84-ae44-35b1ea0f6c9a/5/256",
-    "note": "『少し変わったオブジェクト』を集めた個展型ワールド。『Eccentric Rooms』と同じsuzuki_iが2023年に公開した作品で、その実態は、触って驚く謎ギミックのオンパレード。VRならではの仕掛けや、二人以上でないと分からない展示、視覚効果の強い展示もあるので、フレンドと一緒に、ネタバレなしでどうぞ。おすすめの美術館ワールドとしてXで挙げられることも。PC専用。",
+    "note": "『少し変わったオブジェクト』を集めた個展型ワールド。『Eccentric Rooms』と同じsuzuki_iが2023年に公開した作品で、その実態は、触って驚く謎ギミックのオンパレード。VRならではの仕掛けや、二人以上でないと分からない展示、視覚効果の強い展示もあるので、フレンドと一緒に、ネタバレなしでどうぞ。Xでおすすめの美術館ワールドとして挙げられることも多いです。PC専用。",
     "official": ""
   },
   {
@@ -2070,7 +2071,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_00d4d252-6da0-4640-8162-45b9c7ac7f33/1/256",
-    "note": "入道雲と田んぼの一本道が広がる、夏の田舎の景観ワールド。セミの声と青空に包まれ、隠しスイッチの音楽ギミックも。PC専用・定員8人の少人数制で、フレンドとエモい写真を撮りたい日に。",
+    "note": "入道雲と田んぼの一本道が広がる、夏の田舎の景観ワールド。セミの声と青空に包まれ、隠しスイッチの音楽ギミックも。PC専用・定員8人の少人数制で、フレンドとエモい写真を撮るのに向いています。",
     "official": "Under the roof where we dream."
   },
   {
@@ -2092,7 +2093,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d40c3cb9-5e19-4e85-98e9-bb7df1f527ac/1/256",
-    "note": "夕日に染まる向日葵畑と海を眺める、Pache1belの景観ワールド。2026年に公開された作品で、『目を覚まして、夕日以外のすべてを忘れてしまった』という一文の通り、静かに景色と音楽に浸るチルな時間が流れます。撮影地としても使われる美しさです。PC専用。",
+    "note": "夕日に染まる向日葵畑と海を眺める、Pache1belの景観ワールド。2026年に公開された作品で、景色と音楽の中で静かに過ごせます。撮影スポットとしても使われています。PC専用。",
     "official": "I opened my eyes and forgot everything except for the sunset.私は目を覚ましてすべてのことを忘れて、ただ夕日だけを見ました"
   },
   {
@@ -2134,7 +2135,7 @@ window.WORLDS = [
       "初心者向き"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_86c2efc2-a022-4289-8edd-2e178ce7e4d0/14/256",
-    "note": "パーティクルライブやVRMVを巡るためのポータルハブ。日本語ガイドや初心者向け・おすすめ20選の導線があり、膨大なポータルから好みの1曲体験を探せます。何を見ればいいか分からない人の出発点に。",
+    "note": "パーティクルライブやVRMVを巡るためのポータルハブ。日本語ガイドや初心者向け・おすすめ20選の導線があり、膨大なポータルから好みの1曲体験を探せます。何を見ればいいか分からない人の出発点になります。",
     "official": "The hub features VRMVs, Animations and Music Experiences. このワールドはパーティクルライブワールドを巡るグループがまとめたデータを基に作成されました。"
   },
   {
@@ -2158,7 +2159,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_dafeb754-646f-4d9d-a4bb-bf9ec28e04b8/2/256",
-    "note": "不時着した惑星で、光る石を湖へ運ぶところから始まる約20〜30分の体験型シネマ。Karl Kroenenが2021年に公開し、同年のベネチア国際映画祭 Venice VR Expanded にも選ばれた作品です。ドローンに導かれ、荒地が緑と生命に満ちる星へ変わる様子は圧巻。台詞なしで誰でも楽しめ、フレンドと感動を共有したい一作。PC専用。",
+    "note": "不時着した惑星で、光る石を湖へ運ぶところから始まる約20〜30分の体験型シネマ。Karl Kroenenが2021年に公開し、同年のベネチア国際映画祭 Venice VR Expanded にも選ばれた作品です。ドローンに導かれ、荒地が緑と生命に満ちた星へ変わっていく様子が見どころ。台詞なしで誰でも楽しめ、フレンドと一緒に観たい一作。PC専用。",
     "official": "a cycle begins ... take the rock to the lake to link the cycle of life and fulfill your duty, the drone will guide you"
   },
   {
@@ -2177,7 +2178,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_49e22ec1-6ac7-48b1-8769-06761c914b9a/1/256",
-    "note": "故人を想う悼辞の言葉が添えられた、雨と植物に包まれた静かなワールド。喪失と祈りをテーマにした一作で、一人で静かに過ごしたいときに。",
+    "note": "故人を想う悼辞の言葉が添えられた、雨と植物に包まれた静かなワールド。喪失と祈りをテーマにした一作。",
     "official": "この期に及んで私は、本当はあの人が生きていて、明日にでも私のもとへひょっこり顔を出すんじゃないかと、そう思っているのです。"
   },
   {
@@ -2217,7 +2218,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_425fb3b0-a367-4b8d-a7fa-80246423abed/1/256",
-    "note": "2020年に公開された初期のVRライブワールド。Trance_Mode［JP］の作品で、定員80人と大人数で入れるので、みんなで集まって観るのに向いています。説明は『VRライブ』の一言だけで、曲は行ってからのお楽しみです。PC専用。",
+    "note": "2020年に公開された初期のVRライブワールド。Trance_Mode［JP］の作品で、定員80人と大人数で入れるので、みんなで集まって観るのに向いています。PC専用。",
     "official": "VRライブ"
   },
   {
@@ -2260,7 +2261,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_80f06c69-0de7-48c2-9eae-8a6db934fb3b/1/256",
-    "note": "空と海に包まれた惑星を、透明な足場でゆっくり降りて潜っていく探索ワールド。ぴくせるpixelが2022年に公開した作品で、クジラや沈没船の浮かぶ透明な海から、光の届かない深海まで。水と宇宙がつながるような静かな没入体験を一人で。PC専用。",
+    "note": "空と海に包まれた惑星を、透明な足場でゆっくり降りて潜っていく探索ワールド。ぴくせるpixelが2022年に公開した作品で、クジラや沈没船の浮かぶ透明な海から、光の届かない深海まで。水と宇宙がつながるような、静かな探索ワールドです。PC専用。",
     "official": "Sky Ocean Planet"
   },
   {
@@ -2341,7 +2342,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_49f13266-96c8-4a64-ba63-ad6b76258a16/1/256",
-    "note": "ディズニーランド・パリの花火ショー『Disney Illuminations』をVRで再現。GuusDeKroonが2024年に公開した作品で、城へのプロジェクションと花火、光る耳のギミックまで。本家のショーは2025年に幕を下ろしたので、今ではVRで見られる貴重な再現です。定員80人で、フレンド大勢と見上げる夜のショータイムに。Quest対応。",
+    "note": "ディズニーランド・パリの花火ショー『Disney Illuminations』をVRで再現。GuusDeKroonが2024年に公開した作品で、城へのプロジェクションと花火、光る耳のギミックまで。本家のショーは2025年に幕を下ろしたので、今ではVRで見られる貴重な再現です。定員80人で、フレンド大勢と花火を見上げるのに向いています。Quest対応。",
     "official": "Immerse yourself in a virtual recreation of the Disney Illuminations fireworks show from Disneyland Paris! This world features the iconic castle as the centerpiece."
   },
   {
@@ -2429,7 +2430,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4034c553-e1f9-4757-b74c-36350730dd3a/2/256",
-    "note": "夕暮れの教室で、みんなが思い思いに過ごすノスタルジックなチルワールド。Apathyが2025年に公開した、湾岸の街を見下ろす学校が舞台で、教室や廊下、屋上を歩けます。窓からちらりと見える街並みや屋上からの眺めが美しく、教卓の人形を使うとBGMの演出も。放課後の青い光の中で、少人数でゆっくり話したい夜に。容量約487MBと重いので読み込みには余裕を。PC専用。",
+    "note": "夕暮れの教室で、みんなが思い思いに過ごすノスタルジックなチルワールド。Apathyが2025年に公開した、湾岸の街を見下ろす学校が舞台で、教室や廊下、屋上を歩けます。窓からちらりと見える街並みや屋上からの眺めが美しく、教卓の人形を使うとBGMの演出も。放課後の青い光の中で、少人数でゆっくり話すのに向いたワールドです。容量約487MBと重いので読み込みには余裕を。PC専用。",
     "official": "Classroom in the evening when everyone is enjoying their life."
   },
   {
@@ -2450,7 +2451,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_09e0c1d4-f2ca-4dff-a7ac-642d338f0189/2/256",
-    "note": "いよわ『一千光年』の初音ミク版VRMV。Tsukarebitoが2026年に公開した作品で、ただ見るのではなく、ペンを持って自分が前へ走ることでMVの線が描かれていく参加型の演出が最大の特徴です。大人数で走れば線が絡み合う景色も圧巻。PC専用。",
+    "note": "いよわ『一千光年』の初音ミク版VRMV。Tsukarebitoが2026年に公開した作品で、ただ見るのではなく、ペンを持って自分が前へ走ることでMVの線が描かれていく参加型の演出が最大の特徴です。大人数で走れば線が絡み合う景色も楽しいポイント。置いていかれないように気を付けて。PC専用。",
     "official": "一千光年 issenkounen いよわ 初音ミクバージョン"
   },
   {
@@ -2468,7 +2469,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bc317f7e-ba58-40da-853f-9d1bf1a3b9aa/2/256",
-    "note": "『テーブルの上のドリンクは、飲みたい人がいるらしいので飲まないでください』という注意書きだけが添えられたVRMV。Uzaki（うざき）が2025年に公開した作品で、説明の少なさも含めて、行ってみてのお楽しみという一作です。PC専用。",
+    "note": "とある曲のVRMV。Uzaki（うざき）が2025年に公開した作品で、行ってみてのお楽しみ。PC専用。『テーブルの上のドリンクは、飲みたい人がいるらしいので飲まないでくださいね？』(ネタ系なのに完成度が異様に高いワールドです)",
     "official": "テーブルの上のドリンクは飲みたい人がいるらしいので飲まないでください。"
   },
   {
@@ -2527,7 +2528,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_542dc6e8-532f-43a6-b77b-a970662bfe97/1/256",
-    "note": "2025年12月に公開された、『XRMV』と銘打つ新しい形式のMVワールド。ru--sanの作品で、最大60人、容量約24MBと軽量なので気軽に立ち寄れます。PC専用。",
+    "note": "2025年12月に公開された、『XRMV』と銘打つ新しい形式のMVワールド。ru--sanの作品で、最大60人、容量約24MBと軽量なので気軽に立ち寄れます。VDを使っている人には特におすすめ。PC専用。",
     "official": "【XRMV】CodeAnswer"
   },
   {
@@ -2548,7 +2549,7 @@ window.WORLDS = [
       "ファンメイド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_05b08bc0-2845-4c78-9d02-e49dd9f2d24e/1/256",
-    "note": "『デザイン feat. Miku』を題材にしたファンメイドのVRMV／パーティクルライブ。点滅や強い光、大量のパーティクルによる激しい演出が特徴なので、光の刺激に弱い人は注意。没入感の高い一曲ものを楽しみたい人向けです。",
+    "note": "『デザイン feat. Miku』を題材にしたファンメイドのVRMV／パーティクルライブ。点滅や強い光、大量のパーティクルによる激しい演出が特徴なので、光の刺激に弱い人は注意。没入感の高い一曲ものを楽しみたい人向けです。見る場合は絶対にデスクトップで！！！！VRだと耐性ある人でも酔います！！！！",
     "official": "本ライブには点滅・強い光・大量のパーティクル演出が含まれます。原曲：「デザイン feat. Miku」。ファンメイド作品です。"
   },
   {
@@ -2608,7 +2609,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ddfd12b2-31a3-4865-a1c9-e713fdd375b0/3/256",
-    "note": "「祈り、願う」がテーマの静かなチルワールドに、ベランダで再生できるVRMVを併設。Manon（麦茶）が2024年に公開した作品で、一人でゆっくり祈るような時間を過ごしながら、光のパーティクル演出にも浸れる二面性のある一作です。PC専用。",
+    "note": "「祈り、願う」がテーマの静かなチルワールドに、ベランダで再生できるVRMVを併設。Manon（麦茶）が2024年に公開した作品で、一人でゆっくり祈るような時間を過ごせて、光のパーティクル演出も楽しめる一作です。PC専用。",
     "official": "祈り、願うchillワールドです、よかったらおいで。ベランダにVRMVがあります。"
   },
   {
@@ -2651,7 +2652,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9e0dcf3b-ca72-43fd-ad63-d304418033b6/1/256",
-    "note": "学校の裏の古い駐輪場から、富士山と麓の町並みを見晴らす景観ワールド。『僕が死のうと思ったのは』をイメージしたApathyの作品で、タイトルとは裏腹に、静けさと悲しさ、ほのかな暖かさが漂う薄明の情景が続きます。リアルに時間が流れていく冷たい空気が印象的で、駐輪場の裏の缶に触れると…というお楽しみも。一人で静かに浸りたい人に。PC専用。",
+    "note": "学校の裏の古い駐輪場から、富士山と麓の町並みを見晴らす景観ワールド。『僕が死のうと思ったのは』をイメージしたApathyの作品で、タイトルとは裏腹に、静けさと悲しさ、ほのかな暖かさが漂う薄明の情景が続きます。リアルに時間が流れていく冷たい空気が印象的で、一人で静かに浸りたい人に。PC専用。駐輪場の裏の缶に触れると…？",
     "official": "Old Bicycle parking lot behind the school."
   },
   {
@@ -2713,7 +2714,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6860442c-7b02-46c4-906d-ad0adc3b3fc9/3/256",
-    "note": "なきそ feat.初音ミクの大ヒット曲『いますぐ輪廻』のVRMV。Coco_Moの16作目となるVRMVで、原曲MVの再現にオリジナルの演出も加え、Xでは常設のVRMVワールドの中でも最強の作品と評されました。疾走感のあるテクノと輪廻の歌詞世界を、MVの中に入り込んだような感覚で1曲まるごと体験できます。原曲MVは刺激的な表現を含むため、初見は心の準備を。PC専用。",
+    "note": "なきそ feat.初音ミクの大ヒット曲『いますぐ輪廻』のVRMV。Coco_Moの16作目となるVRMVで、原曲MVの再現にオリジナルの演出も加え、Xでは常設のVRMVワールドの中でも特に評価の高い一作です。疾走感のあるテクノと輪廻の歌詞世界を、MVの中に入ったような感覚で1曲まるごと体験できます。原曲MVは刺激的な表現を含むため、初見は心の準備を。PC専用。",
     "official": "16作目 いますぐ輪廻"
   },
   {
@@ -2734,7 +2735,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0864fc57-3c80-4d1b-8b71-4216e8227b26/1/256",
-    "note": "Coco_Moの15作目のVRMV。2025年に公開され、添えられた言葉は『ただ無垢な還元主義』の一節だけで、物語を感じさせる作りです。容量約121MBとやや重め。『いますぐ輪廻』など同作者のVRMVが好きなら押さえたい一作です。PC専用。",
+    "note": "Coco_Moの15作目のVRMV。2025年に公開され、容量約121MBとやや重め。『いますぐ輪廻』など同作者のVRMVが好きなら押さえたい一作です。PC専用。",
     "official": "15作目 ただ無垢な還元主義"
   },
   {
@@ -2775,7 +2776,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_64d2dfa8-536d-4534-8969-451523b8d3b8/5/256",
-    "note": "モノクロでミニマルな世界観のVRMV『TETORIS』。syarotoが2025年に公開した作品で、容量約14MBと非常に軽く、サクッと1曲入り込めます。文字を使ったダークな演出が好きな人に。PC専用。",
+    "note": "VRMV『TETORIS』。syarotoが2025年に公開した作品で、容量約14MBと非常に軽く、サクッと1曲入り込めます。サムネと裏腹に中身はポップなあのボカロ版テトリスが楽しめます。PC専用。",
     "official": "VRMV TETORIS"
   },
   {
@@ -2796,7 +2797,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3e519cf6-7b9c-4554-a197-6895a37d17b8/7/256",
-    "note": "パーティクルライブと戦闘アニメーションの融合第2弾。宇宙船内を舞台に、人型戦闘機が縦横無尽に戦い、歌詞が踊る熱い演出はロボットアニメ好き必見。Quest対応でこのクオリティと評判。見てもよし、合わせて踊ってもよし。",
+    "note": "パーティクルライブと戦闘アニメーションの融合第2弾。宇宙船内を舞台に、人型戦闘機が縦横無尽に戦い、歌詞が踊る熱い演出はロボットアニメ好きなら外せない。Quest対応でこのクオリティと評判。見てもよし、合わせて踊ってもよし。",
     "official": "パーティクルライブと戦闘アニメーションの融合ワールドです！ 見るのもよし、合わせて踊ってみるのもよし、楽しんでくださいな！"
   },
   {
@@ -2817,7 +2818,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_51250b30-adcc-4ed6-b880-83d7ac6e4d75/2/256",
-    "note": "バーチャル3ピースバンドAlternoiseの1stアルバム『現実譚』を、走る電車の中から眺める約20分のパーティクルライブ。曲ごとに車窓の景色と光の演出が切り替わり、終演後は海辺を歩く余韻も。PC専用。",
+    "note": "バーチャル3ピースバンドAlternoiseの1stアルバム『現実譚』を、走る電車の中から眺める約20分のパーティクルライブ。曲ごとに車窓の景色と光の演出が切り替わり、さまざまな視点で見ることができる一作。PC専用。",
     "official": "バーチャル３ピースバンドAlternoiseの1st Full Album 『現実譚』 リリースを記念し作られたパーティクルライブです。電車を通して各曲の世界観を表現した演出をご堪能ください。"
   },
   {
@@ -2836,7 +2837,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_19d505a5-96dd-4258-a6d4-42250c41f06f/1/256",
-    "note": "ぬゆり『命ばっかり』の再現VRMV。『完成度が意味わからん位高い、本当にMVに入ってる感覚』と評される、MANA制作の没入型ミュージックビデオ体験です。",
+    "note": "ぬゆり『命ばっかり』の再現VRMV。MANA制作で、完成度がとても高く、本当にMVの中に入っている感覚が味わえるミュージックビデオです。",
     "official": "VRMV 命ばっかり"
   },
   {
@@ -2898,26 +2899,6 @@ window.WORLDS = [
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5b310283-fc51-4df5-8e3e-41c121d73f87/7/256",
     "note": "アメリカ民謡研究会『讐復を能える。』のMV世界を歩いて巡る体験型ワールド。放送室から始まり、カメラを構えると映像が流れ出す“干渉”ギミックが独特です。アバターにカメラ系のギミックを入れていると、演出がうまく動かない場合があります。映像作家100人2025ノミネート作。",
     "official": "讐復を能える。/アメリカ実行委員会。アバター側にカメラを用いたギミックを導入している場合、ワールド演出に不具合が発生する可能性がございます。"
-  },
-  {
-    "id": "wrld_1fab6c16-7c7a-4e5d-921e-d7a77d625b89",
-    "name": "【VRMV】サクラんBEATS",
-    "category": "particle",
-    "subtype": "VRMV",
-    "capacity": 30,
-    "recommendedCapacity": 6,
-    "favorites": 1031,
-    "visits": 13836,
-    "tags": [
-      "パーティクルライブ",
-      "VRMV",
-      "自然・風景",
-      "音楽・ライブ",
-      "VR酔い注意"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_74bfa7bd-3859-4485-b90a-d8ca68bc209b/5/256",
-    "note": "自作曲をパーティクルライブにした、夢を追うすべての人へ送る応援歌のVRMV。憧れと挫折と小さな希望を歌う1曲に、桜と光の演出が重なります。動きの多い演出なので、作者もVR酔いへの注意を呼びかけています。",
-    "official": "自作曲をパーティクルライブ化。夢を追う人、追うのをやめた人、すべての人へ送る。憧れと挫折と小さな希望の歌。"
   },
   {
     "id": "wrld_696b82bb-1006-44a6-8f14-cc314335c893",
@@ -3062,7 +3043,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_18ea60e3-c66e-4b8e-9df6-425f3b8cac2f/2/256",
-    "note": "かいりきベア×まふまふの共作曲「マオ」をパーティクルライブ化したVRMV。『CQCQ』も手がけたPUNISHER_VRCが2021年に公開した作品で、ダークで中毒性のある原曲の世界観を、光とアニメーションの演出でVR空間に再現する一曲ものです。PC専用。",
+    "note": "かいりきベア×まふまふの共作曲「マオ」をパーティクルライブ化したVRMV。『CQCQ』も手がけたPUNISHER_VRCが2021年に公開した作品で、原曲のダークな雰囲気を、光とアニメーションで畳みかけるように見せる一曲ものです。PC専用。",
     "official": "かいりきベアさんとまふまふさん共作の「マオ」のVRMVです。"
   },
   {
@@ -3084,7 +3065,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_54794eed-f3e1-4f65-9174-9b9bbde2e67b/1/256",
-    "note": "Porter Robinson本人との直接コラボで生まれた公式ワールド。Mochieが手がけた、2020年のアルバム『Nurture』からのシングル『Get Your Wish』の世界に入り込む音楽体験で、容量約11MBと驚くほど軽量です。光の点滅があるとの注意書きもあるので、苦手な人はご注意を。Porterファンなら一度は訪れたい、公認ならではの一作。PC専用。",
+    "note": "Porter Robinson本人との直接コラボで生まれた公式ワールド。Mochieが手がけた、2020年のアルバム『Nurture』からのシングル『Get Your Wish』の世界に入り込む音楽体験で、容量約11MBと驚くほど軽量です。光の点滅があるとの注意書きもあるので、苦手な人はご注意を。PC専用。",
     "official": "Made in direct collaboration with Porter Robinson"
   },
   {
@@ -3104,28 +3085,8 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_03941158-4718-4d43-87da-197c84ac0ee7/3/256",
-    "note": "高速可変機VA1が楽曲『煉獄セレナーデ』に合わせて空を舞い戦う、戦闘アニメーション×パーティクルライブ。シン《symphony》が2023年に公開した作品で、楽曲は魔王魂。メカ戦闘のシナリオ演出をVRで浴びる一作です。Quest対応。",
+    "note": "高速可変機VA1が楽曲『煉獄セレナーデ』に合わせて空を舞い戦う、戦闘アニメーション×パーティクルライブ。シン《symphony》が2023年に公開した作品で、メカ戦闘のシナリオ演出をVRで浴びる一作です。Quest対応。",
     "official": "曲に合わせて戦闘する高速可変機、VariableAircraft1のVRMV！ 楽曲:煉獄セレナーデ 音楽:魔王魂"
-  },
-  {
-    "id": "wrld_a1071eb7-e16c-4a52-bd6e-c0efdb1b5ea5",
-    "name": "CUE[Archive]",
-    "category": "particle",
-    "subtype": "パーティクル",
-    "capacity": 18,
-    "recommendedCapacity": 9,
-    "favorites": 9356,
-    "visits": 93311,
-    "tags": [
-      "パーティクルライブ",
-      "演出・パーティクル",
-      "音楽・ライブ",
-      "一人でゆっくり",
-      "アーカイブ"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_36b66b47-7716-44dc-a559-c551f861edd7/2/256",
-    "note": "0b4k3のXRライブ『CUE』を再構成した常設アーカイブ。単管と蛍光灯、水と布の地下空間が『ow (2022 edit)』に合わせて光り揺れる、GHOSTCLUB系の没入ライブ体験。いつでも一人で入れる名作。",
-    "official": "Music: ow (2022-edit) Director / Composer: 0b4k3, Artist / Coding: phi16"
   },
   {
     "id": "wrld_3dcabc45-b66b-4d38-abaa-d2922ca4d678",
@@ -3146,7 +3107,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_831d3277-b373-4deb-bc6a-04a0227682e0/7/256",
-    "note": "一粒の種の夢から星と生命が花開いていく、歩いて観察する幻想的な音楽体験ワールド。team:beyond_a_bitが2023年に公開した、サンリオVfes発の作品です。国際映画祭でも評価され、Xでも『おすすめを挙げるなら必ず名前が出る』と推されて、訪問は300万を超えました。Quest単体対応で、一人で静かに浸るのがおすすめ。",
+    "note": "一粒の種の夢から星と生命が花開いていく、歩いて観察する幻想的な音楽体験ワールド。team:beyond_a_bitが2023年に公開した、サンリオVfes発の作品です。国際映画祭でも評価され、Xでも『おすすめを挙げるなら必ず名前が出る』と推されて、訪問は300万を超えました。Quest単体対応。パーティクルライブの入り口としておすすめです。",
     "official": "From a seed's dream, tailes unravel. Stars and lives blossom beyond our reach. Created by team:beyond_a_bit."
   },
   {
@@ -3232,7 +3193,7 @@ window.WORLDS = [
       "VR酔い注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b492a40e-9ad5-4a52-96fb-b0dd8e63e622/1/256",
-    "note": "星街すいせいの楽曲『TEMPLATE』を題材にしたファンメイドのパーティクルライブ。歌詞と光の演出が視界いっぱいに展開する、推しの曲の中に入り込むような鑑賞体験です。動きと光が強いので、酔いやすい人・光に敏感な人は注意。",
+    "note": "星街すいせいの楽曲『TEMPLATE』を題材にしたファンメイドのパーティクルライブ。歌詞と光の演出が視界いっぱいに広がります。動きと光が強いので、酔いやすい人・光に敏感な人は注意。",
     "official": "本ワールドは星街すいせいの楽曲「TEMPLATE」のファンメイドパーティクルライブワールドです。酔いやてんかんなどもご注意ください。"
   },
   {
@@ -3254,7 +3215,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6ff60079-235f-4a16-80e0-9fb844d99c5b/7/256",
-    "note": "Endorfin.の『アンダーマリン』を題材にした、K1UCH1初のパーティクルライブ。のちに『実写合成ミュージアム』や数々のVRMVを手がける作者の原点となる2025年の作品で、海の底へ沈んでいくような楽曲の世界を、光の粒子で潜っていく1曲もののVRMVです。最大16人、容量は約132MBと重め。PC専用。",
+    "note": "Endorfin.の『アンダーマリン』を題材にした、K1UCH1初のパーティクルライブ。のちに『実写合成ミュージアム』や数々のVRMVを手がける作者の原点となる2025年の作品で、海の底へ沈んでいくような楽曲の世界を、光の粒子で描く1曲もののVRMVです。最大16人、容量は約132MBと重め。PC専用。",
     "official": "My 1st Particle live world. Music: Endorfin. -「アンダーマリン」"
   },
   {
@@ -3276,7 +3237,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6a163bd2-c1c7-4815-9fb4-5c59d04d7272/1/256",
-    "note": "現実の六甲山を舞台に、夜の峠をドライブで登り、山頂のイルミネーションと約7分のパーティクルライブへ至る体験型ワールド。道中で撮った写真がライブに流れる仕掛けや、たくさんの隠し要素も。PC専用、フレンドや大切な人とどうぞ。",
+    "note": "現実の六甲山を舞台に、夜の峠をドライブで登り、山頂のイルミネーションと約7分のパーティクルライブへ至る体験型ワールド。たくさんの隠し要素も。PC専用、フレンドや大切な人とクリスマスに訪れたいワールドです。",
     "official": "現実の六甲山をモチーフにした、夜景×イルミ×ライブの体験型WORLD。今夜だけの響く夜景を、あなたの目で。沢山の隠し要素お楽しみください。"
   },
   {
@@ -3296,7 +3257,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1dd48915-9689-4bb1-b391-2718dec93b5c/2/256",
-    "note": "人気作家れみーとによるパーティクルライブ。幾何学的な光の演出で1曲の世界に没入するタイプで、VRMV巡りの定番の一つとして名前が挙がる作品です。短時間で気分転換したいときや、フレンドへのVRMV案内にも。",
+    "note": "人気作家れみーとによるパーティクルライブ。幾何学的な光の演出で1曲の世界に没入するタイプで、VRMV巡りの定番の一つとして名前が挙がる作品です。短時間で気分転換したいときや、フレンドへのVRMV案内にも使えます。",
     "official": "VRMV【パノプティコン】"
   },
   {
@@ -3338,7 +3299,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_773be417-f0f0-4d48-9b6f-144a9d2fa120/4/256",
-    "note": "ダンサーがステージで踊る、最もスタンダードな形式のパーティクルライブを数曲まとめて楽しめるワールド。VRMVの第一人者Reimhakによる作品で、ボカロのなじみある曲と初音ミクの登場で、パーティクルライブ初心者にも一番とっつきやすい入門編です。PC専用。",
+    "note": "ダンサーがステージで踊る、最もスタンダードな形式のパーティクルライブを数曲まとめて楽しめるワールド。VRMVの第一人者Reimhakによる作品で、ボカロのなじみある曲と初音ミクの登場で、パーティクルライブ初心者にも一番とっつきやすい入門編です。PC専用。すべての楽曲を見ると何かがあるらしい...?",
     "official": "Some Virtual Live placed in this World! Created by Reimhak"
   },
   {
@@ -3380,7 +3341,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f8dded83-db6a-48d3-a218-a6667f0c4c78/1/256",
-    "note": "tsumikiの「Anonymous fanfare」をReimhakがVRMV化した初期作。2020年に公開され、アップテンポな楽曲に合わせた派手な演出が特徴ですが、強い光の点滅を含むため苦手な方はご注意を。Reimhakの作家遍歴を辿る一作としてもどうぞ。PC専用。",
+    "note": "tsumikiの「Anonymous fanfare」をReimhakがVRMV化した初期作。2020年に公開され、アップテンポな楽曲に合わせた派手な演出が特徴ですが、強い光の点滅を含むため苦手な方はご注意を。Reimhakの作家遍歴を辿る一作としてもおすすめです。PC専用。",
     "official": "Anonymous fanfare - tsumiki / VRMV - Reimhak / WARNING: PHOTOSENSITIVITY / EPILEPSY SEIZURES."
   },
   {
@@ -3458,7 +3419,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_813ed1fd-9c22-4a97-97a6-b91d1556b7d2/2/256",
-    "note": "Leafの楽曲に乗せたパーティクルライブ。にむさんが2026年に公開した作品で、作者が『視界ジャックきつめな場面があります』と予告するほど、視界いっぱいに広がる演出のあるタイプです。強い光や点滅が苦手な人は注意。Quest・iOS対応。",
+    "note": "Leafの楽曲に乗せたパーティクルライブ。にむさんが2026年に公開した作品、ぜひ何も情報を仕入れず見てほしい一作。カオスを楽しめ。強い光や点滅が苦手な人は注意。Quest・iOS対応。",
     "official": "パーティクルライブです。視界ジャックきつめな場面があります。Music:Leaf"
   },
   {
@@ -3478,7 +3439,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e40a54f3-1fa4-486d-9b71-0e3d10aaa6f7/2/256",
-    "note": "初期パーティクルライブの名手MANAによる、Eve『ナンセンス文学』のパーティクルライブ。2020年に公開された作品で、文字と光が疾走するような演出で、文学的な歌詞の世界を全身で浴びる一作です。PC専用。",
+    "note": "初期パーティクルライブの名手MANAによる、Eve『ナンセンス文学』のパーティクルライブ。2020年に公開された作品で、文字と光が疾走するような演出で、文学的な歌詞の世界を描く一作です。PC専用。",
     "official": "Particle Live ナンセンス文学 まな(MANA)が製作したパーティクルライブです。"
   },
   {
@@ -3518,7 +3479,7 @@ window.WORLDS = [
       "大容量注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_000dfc77-0d10-4e6a-9d86-95aad1a291bb/4/256",
-    "note": "VR音楽ユニットCinematic Neon Clubの楽曲と演出を丸ごと体験する、5曲連続のライブワールド。静かな闇から始まり、ネオンのクラブへ膨らんでいく構成と映画級の映像演出が見どころ。容量約1.1GBと非常に重い、腰を据えて観るPC向け大作。",
+    "note": "VR音楽ユニットCinematic Neon Clubの楽曲と演出を丸ごと体験する、5曲連続のライブワールド。静かな闇から始まり、ネオンのクラブへ膨らんでいく構成と映画級の映像演出が見どころ。容量約1.1GBと非常に重く、鑑賞時間もとても長い一作。腰を据えて観るPC向け大作。",
     "official": "L Eve Future is a Cinematic Neon Club Live World"
   },
   {
@@ -3539,7 +3500,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1725eb35-d302-49bb-834b-f7864a2bf7df/1/256",
-    "note": "HIMEHINAの楽曲「キスキツネ」のVRMV。ステア（stir）が2026年に公開した作品で、公式MVの流れを踏まえながらキャラクターをアレンジし、二人一組のペアダンスで魅せる可愛らしいパーティクルライブです。ヒメヒナファン必見の一作。PC専用。",
+    "note": "HIMEHINAの楽曲「キスキツネ」のVRMV。ステア（stir）が2026年に公開した作品で、公式MVの流れを踏まえながらキャラクターをアレンジし、二人一組のペアダンスで魅せる可愛らしいパーティクルライブです。視点が強制的に動かされる演出があるため酔い注意。PC専用。",
     "official": "ヒメヒナのキスキツネのVRMVです。歌唱：HIMEHINA 作詞：Gohgo 作曲：Kengo Minamida"
   },
   {
@@ -3557,7 +3518,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d7e021ff-ecd7-48a7-a97e-8c9143c5a77b/3/256",
-    "note": "真っ暗な空間にネオンのパーティクルが音楽と同期して舞う、没入型ミュージックビジュアライザー。往年のMilkDropを思わせる光と闇のコントラストで、ビートに身を委ねたい夜に。海外メディアも注目の演出ワールド。",
+    "note": "真っ暗な空間にネオンのパーティクルが音楽と同期して舞う、没入型ミュージックビジュアライザー。往年のMilkDropを思わせる光と闇のコントラストで、夜にビートに身を委ねるのに向いています。",
     "official": "Patreon.com/MochieShaders"
   },
   {
@@ -3600,7 +3561,7 @@ window.WORLDS = [
       "ボカロ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4f5a6587-8ab9-42e0-ba48-df073b57bb7b/3/256",
-    "note": "バルーンの名曲『シャルル』のMVをVRで再現した、古参の定番VRMV。公開から年数が経っても訪れる人が絶えない、歌詞と光に包まれる鑑賞ワールドです。",
+    "note": "バルーンの名曲『シャルル』のMVをVRで再現した、古参の定番VRMV。公開から年数が経っても訪れる人が絶えない、歌詞と光に包まれる鑑賞ワールドです。動きが強いので、酔いやすい人は注意",
     "official": "シャルルのMV再現ワールドになります。"
   },
   {
@@ -3619,7 +3580,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e9f198f6-6b3b-4ef2-8209-12e290b91d9f/1/256",
-    "note": "ClariS『ヒトリゴト』（『エロマンガ先生』OP）を、パーティクルライブ作家・約束がワールド化した記念すべき10作目。可愛い世界観に光の演出が溶け込む、曲のファンも初めての人も楽しめる一作です。",
+    "note": "ClariS『ヒトリゴト』（『エロマンガ先生』OP）を、パーティクルライブ作家・約束がワールド化した記念すべき10作目。可愛い世界観に光の演出が溶け込んでいて、曲を知らない人でも入りやすい一作です。",
     "official": "約束の10作目ワールド化した！ 可愛い世界観、感謝の気持ちと大切な思いが溢れています！"
   },
   {
@@ -3641,7 +3602,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_654bf498-de81-4609-be18-95ee6c37944d/1/256",
-    "note": "バーチャルシンガー花譜の『周波数0の合言葉』を使ったパーティクルライブ。さぁもん：Dが2026年に公開した作品で、定員4人の小さな空間で、親しいフレンドとじっくり見るタイプです。同期のため、インスタンス主のスイッチ操作が必要な点に注意。花譜ファン必見の一作。PC専用。",
+    "note": "バーチャルシンガー花譜の『周波数0の合言葉』を使ったパーティクルライブ。さぁもん：Dが2026年に公開した作品で、定員4人の小さな空間で、親しいフレンドとじっくり見るタイプです。同期のため、インスタンス主のスイッチ操作が必要な点に注意。PC専用。",
     "official": "vurtual singer 花譜さんの『周波数0の合言葉』を使ったパーティクルライブです。"
   },
   {
@@ -3661,7 +3622,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_85b45c46-95bb-4266-8a50-47f6c34798e7/2/256",
-    "note": "『わたしのこと、気づいてくれた？』――ホラーな気配をまとう、作者14作目のVRMV。東方アレンジサークル森羅万象の楽曲で、MVの再生数が1000万回を超えた『無意識レクイエム』を、『いますぐ輪廻』のVRMVも手がけるCoco_Moが2025年にVR化しました。気づかれたい“何か”と向き合うような、不穏で没入感のある鑑賞体験。容量379MBと重めなので読み込みに余裕を。PC専用。",
+    "note": "『わたしのこと、気づいてくれた？』――ホラーな気配をまとう、作者14作目のVRMV。東方アレンジサークル森羅万象の楽曲で、MVの再生数が1000万回を超えた『無意識レクイエム』を、『いますぐ輪廻』のVRMVも手がけるCoco_Moが2025年にVR化しました。作中で分岐があるらしく、不穏な空気の鑑賞ワールドです。容量379MBと重めなので読み込みに余裕を。PC専用。",
     "official": "14作目 わたしのこと、気づいてくれた？"
   },
   {
@@ -3702,7 +3663,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_92402615-1bf0-4a5d-b000-82c3f6fd3729/2/256",
-    "note": "薄明の景観ワールドで知られるApathyによる、ヨルシカ『サン』を題材にしたアニメーションワールド。星空と文字の演出の中で楽曲の世界を歩く、静かに浸るタイプの1曲体験です。少人数での鑑賞がおすすめ。PC専用。",
+    "note": "薄明の景観ワールドで知られるApathyによる、ヨルシカ『サン』を題材にしたアニメーションワールド。星空と文字の演出の中で楽曲の世界を歩く、少人数での鑑賞がおすすめ。PC専用。",
     "official": "Animation world: Yorushika - sun (2024 HNY)"
   },
   {
@@ -3723,7 +3684,7 @@ window.WORLDS = [
       "ボカロ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ead62acd-6833-43d8-841b-a3d84e4e3d8a/1/256",
-    "note": "ボカロP・きくおの音楽世界を星くんと巡る公式体験ワールド。圧倒的なVFXで『この夜をこえる』没入感は、ファンならずとも衝撃級。容量が大きいのでPC推奨。Kikuoファンは必訪です。",
+    "note": "ボカロP・きくおの音楽世界を星くんと巡る公式体験ワールド。VFXの密度が高く、楽曲の世界に入り込むような演出はファンでなくても見応えがあります。容量が大きいのでPC推奨です。",
     "official": "-星くんが誘うKikuo音楽体験世界- この夜をこえよう。何度でもこの夜をこえよう。 #よるとうげ #yorutouge"
   },
   {
@@ -3743,7 +3704,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e86d8695-1bbc-43a0-b8c8-02778f2777da/3/256",
-    "note": "ゲーム『South of Midnight』に登場するルーの馬車を再現したワールド。DarkBlade909が2025年に公開した作品で、小さな馬車の中は見た目に反して広く、所狭しと置かれたアンティークの品々を眺めるうちに不思議と温かい気持ちになれます。撮影地にも使われ、原作ファンの聖地巡礼にも。容量約319MB、PC専用。",
+    "note": "ゲーム『South of Midnight』に登場するルーの馬車を再現したワールド。DarkBlade909が2025年に公開した作品で、小さな馬車の中は見た目に反して広く、所狭しと置かれたアンティークの品々を眺めていると不思議と温かい気持ちになれます。撮影地にも使われ、原作ファンの聖地巡礼の場にもなっています。容量約319MB、PC専用。",
     "official": "Hm. Bigger on the inside. From South of Midnight"
   },
   {
@@ -3799,7 +3760,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_80774cdc-a3bc-4b83-9662-a018f1c9759d/1/256",
-    "note": "『Experience（体験）』とだけ名乗る、アルファ版（v1.02）のワールド。Nootauが2024年に公開した作品で、定員60人の広い空間を、多くの人がお気に入りに登録しています。何があるのかは、行って確かめるタイプの一作です。PC専用。",
+    "note": "WindowsXPモチーフのワールド。Nootauが2024年に公開した作品で、VRでWindowsXPの中に入り込む体験ができます。懐かしいあの草原を走り回ることも可能です。PC専用。",
     "official": "Alpha v1.02"
   },
   {
@@ -3926,7 +3887,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_098c90cd-42cb-49e5-a46a-520d2daabbee/2/256",
-    "note": "真っ白な世界にペンで色を塗ると、木や家具が姿を現し、モノクロの景色が鮮やかな風景へと変わっていく体験型アートワールド。『宵闇車両で終末を』など夜や終末のワールドで知られる浜名湖なこが2025年に公開した作品で、描くたびに世界が色づく気持ちよさが魅力。少人数でじっくり創作を楽しみたい人向けです。PC専用。",
+    "note": "真っ白な世界にペンで色を塗ると、木や家具が姿を現し、モノクロの景色が鮮やかな風景へと変わっていく体験型アートワールド。『宵闇車両で終末を』など夜や終末のワールドで知られる浜名湖なこが2025年に公開した作品で、描くたびに世界が色づいていくのが気持ちいい。少人数でじっくり創作を楽しみたい人向けです。PC専用。",
     "official": "白い紙に世界を描け"
   },
   {
@@ -3965,7 +3926,7 @@ window.WORLDS = [
       "高負荷"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_12f56c83-f228-4a72-936a-c0e01139c561/13/256",
-    "note": "投影された擬似晴天の下、分断された工業廃島群をジップラインで渡る探索ワールド。旧端末や特定の番号を受け付ける公衆電話など、物語の気配を残す仕掛けが点在する。環境により重い場合あり。",
+    "note": "投影された擬似晴天の下、分断された工業廃島群をジップラインで渡る探索ワールド。旧端末や公衆電話など、物語の気配を残す仕掛けが点在する。環境により重い場合あり。",
     "official": "投影された擬似晴天の下に横たわる、分断された工業廃島群。一本のジップラインだけが二つの島を繋いでいる。各区画には旧世代端末《VizVid》《ImagePad》が未だ通電状態で残存。記録は更新されず、応答もない。 人影は確認されず。 稼働音だけが、停止できなかった機械群の鼓動として微かに響いている。君"
   },
   {
@@ -4009,7 +3970,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4a1c9fc3-f309-4918-acfa-f3e8f2af048a/1/256",
-    "note": "レーシング場に日本の自然と夏の要素、建物を詰め込んだ箱庭のような世界。_onioniが2026年に公開した作品で、徒歩の散策、レース、路面電車での遊覧と楽しみ方が多様。『また会えたね』の言葉が似合うノスタルジックな空気が漂います。PC専用。",
+    "note": "レーシング場に日本の自然と夏の要素、建物を詰め込んだ箱庭のような世界。_onioniが2026年に公開した作品で、徒歩の散策、レース、路面電車での遊覧と楽しみ方が多様。ノスタルジックな空気が漂います。PC専用。",
     "official": "また会えたね。 いつか思い出になる今日を、もう少しだけ。 Nice to see you again. Let's stay a little longer in this day that will someday become a memory"
   },
   {
@@ -4070,7 +4031,7 @@ window.WORLDS = [
       "映画祭・受賞作"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4ffc3728-597c-4a86-8c8b-e550b3514a2b/3/256",
-    "note": "パンテオン風のホールの中央で、天文時計が実時間で惑星の位置を示し続ける。過去や未来の日付も入力でき、時空を超えた天体観測が楽しめる。ヴェネツィア国際映画祭のXR部門にも選出された、知的好奇心を刺激するワールド。",
+    "note": "パンテオン風のホールの中央で、天文時計が実時間で惑星の位置を示し続ける。過去や未来の日付も入力でき、その日付の惑星の配置を眺められます。ヴェネツィア国際映画祭のXR部門にも選出された作品です。",
     "official": "This astrological clock moves in real-time, showing the current planetary positions from a geocentric perspective. Input any date, past or future. App"
   },
   {
@@ -4091,7 +4052,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b1ba1a87-b5d1-4ed0-8d04-b6d939506e58/1/256",
-    "note": "サークル『第六製鉄部』の世界観を形にした、発達したスチームパンクの帝都。煙る工場と飛行船、近代的で整った帝都の街並みが勇壮です。同世界観アバターの展示・販売も。現在も拡張中の作り込み特化ワールド。PC専用。",
+    "note": "サークル『第六製鉄部』の世界観を形にした、発達したスチームパンクの帝都。煙る工場と飛行船、近代的で整った街並みが広がります。同世界観アバターの展示・販売も。現在も拡張中の作り込み特化ワールド。PC専用。",
     "official": "帝都カール・バラル 議事堂公園周り サークル「第六製鉄部」の世界観を形にしたワールド第一弾です。 まだ完成状態ではありませんが「発達したスチームパンク」をコンセプトに作者脳内のイメージを放出した画作りに特化したワールドです。 同世界観のアバターの展示・販売も行っています。 Karl-Balar Im"
   },
   {
@@ -4151,7 +4112,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2aeec0ac-89cb-4361-9f7c-5dd4ca8c2b5a/4/256",
-    "note": "その名の通り、強い光の点滅が続くリミナルスペース系ワールド。xlxxlが2025年に公開した、『夢遊第六日』に着想を得た作品で、不穏で夢のような空間を進む体験です。点滅が非常に強いので、光に弱い人は入らないでください。Quest対応。",
+    "note": "その名の通り、強い光の点滅が続くリミナルスペース系ワールド。xlxxlが2025年に公開した、『夢遊第六日』に着想を得た作品で、不穏で夢のような空間を体験できます。点滅が非常に強いので、光に弱い人は入らないでください。Quest対応。",
     "official": "FLASHING WARNING! 点滅注意!Inspired by 夢遊第六日 ＠zNz1_o09z"
   },
   {
@@ -4169,7 +4130,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_83d11480-ce03-4097-b348-298072adc516/3/256",
-    "note": "路地裏の占い館でAIタロット占いが受けられるワールド。占えるテーマは日替わりで、1日1回無料。結果文はかなり読み応えがあると好評。利用には『信頼できないURLを許可』設定が必要。Quest対応。",
+    "note": "路地裏の占い館でAIタロット占いが受けられるワールド。占えるテーマは日替わりで、1日1回無料。Quest対応。",
     "official": "その扉の先に、運命はすでに記されている。読むかどうかを決めるのは、あなた自身ーーーー。「運命の路地裏」では、AIが導くタロット占いを1日1回、無料で体験できます。さらに、占える内容は日替わりで変化。占いが好きな人も、ちょっとした刺激を探している人も大歓迎！占いシステムを動作させるため、設定から「信頼"
   },
   {
@@ -4191,27 +4152,6 @@ window.WORLDS = [
     "official": "ペンの多い集会所の夜バージョンです。 ペンの太さが太めに調整されています。ペンの発光も強めです。多彩な表現が可能です。３Dアートも描きやすいです。椅子飛行は大きい壁の裏です。BGMはプレイリストから選べます。QvPens Art Studio"
   },
   {
-    "id": "wrld_c1828717-a7b5-4738-9cd0-8f5fe2a45a08",
-    "category": "misc",
-    "name": "Prologue of NEONOSTALGIA",
-    "subtype": "ノスタルジー",
-    "capacity": 32,
-    "recommendedCapacity": 16,
-    "favorites": 4794,
-    "visits": 30331,
-    "tags": [
-      "SF・近未来",
-      "ノスタルジー",
-      "雨",
-      "夜・夜景",
-      "写真・撮影",
-      "ロールプレイ"
-    ],
-    "thumb": "https://api.vrchat.cloud/api/1/image/file_d16461fc-12f3-45d0-9c50-ebb881ac8e3f/2/256",
-    "note": "無機質な研修室の扉を開けると、雨とネオンに濡れたレトロフューチャーな路地裏が広がります。クラゲが浮かぶ公衆電話ボックスなど撮影スポット満載で、RPイベントの拠点でもある世界観ワールド。VRフォトグラファーの撮影地にも使われていました。ただし2026年11月時点ではVRChatで見つからず、非公開になったか削除されたようです。PC向け。",
-    "official": ""
-  },
-  {
     "id": "wrld_240299fa-7378-463b-a96b-74413aa20cb6",
     "category": "chill",
     "name": "追憶の原風景",
@@ -4229,7 +4169,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_83ab12a5-8f67-45c3-b269-e2875253adf3/2/256",
-    "note": "入道雲の空の下、神社と踏切、あぜ道と自転車が点々と続く、誰かの夏の記憶を歩くワールド。mackerel_misogiが2025年に公開した作品で、置かれた物から物語を想像する楽しさがあり、BGM『神様と出会った日に』（Nofu）がノスタルジーを深めます。一人で静かに浸りたい日に。PC専用。",
+    "note": "入道雲の空の下、神社と踏切、あぜ道と自転車が点々と続く、誰かの夏の記憶を歩くワールド。mackerel_misogiが2025年に公開した作品で、置かれた物から物語を想像する楽しさがあり、一人で静かに浸りたい日に。PC専用。",
     "official": "BGM: 神様と出会った日に / Nofu"
   },
   {
@@ -4312,7 +4252,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_cf963172-1ccf-4527-b50e-e97c902a72ad/9/256",
-    "note": "東映アニメーションとソニーのコラボによる、1999年7月のオタクの六畳間再現。東映アニメーションの新規事業ONN’ON STUDIOSが2023年に公開し、海外のアニメメディアでも話題になりました。手のひらサイズになって部屋を探索でき、フォトグラメトリで再現されたソニー製品や、『おジャ魔女どれみ』『銀河鉄道999』のポスターなど90年代アニメグッズがぎっしり。触ると動く小物もあります。Quest対応。",
+    "note": "東映アニメーションとソニーのコラボによる、1999年7月のオタクの六畳間再現。東映アニメーションの新規事業ONN’ON STUDIOSが2023年に公開し、海外のアニメメディアでも話題になりました。手のひらサイズになって部屋を探索でき、フォトグラメトリで再現されたソニー製品や、『おジャ魔女どれみ』『銀河鉄道999』のポスターなど90年代アニメグッズがぎっしり。隠し要素もいくつか仕込まれています。Quest対応。",
     "official": "1999年7月のソニー製品やアニメグッズが並ぶオタク部屋 Otaku room with Sony products and anime goods in July 1999"
   },
   {
@@ -4451,7 +4391,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4dd0fc35-4447-47da-8705-8cc63bc14a6c/3/256",
-    "note": "緑に飲み込まれた廃駅に、眩しい陽射しと舞い散る木の葉。時間が止まったような静けさとピアノのBGMが、寂しいはずの廃墟を温かくするHANI.作の景観ワールドです。水に浸かった線路の先には廃団地が続き、Xでは、かつての人の営みを閉じ込めた宝箱のような世界と紹介されています。撮影向き、少人数で静かに。PC専用。",
+    "note": "緑に飲み込まれた廃駅に、眩しい陽射しと舞い散る木の葉。時間が止まったような静けさとピアノのBGMが、寂しいはずの廃墟を温かくするHANI.作の景観ワールドです。水に浸かった線路の先には廃団地が続き、かつての人の営みを閉じ込めた宝箱のような世界が広がっています。撮影向き、少人数で静かに。PC専用。",
     "official": "BGM:sea no -足跡"
   },
   {
@@ -4473,7 +4413,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1894faa2-ac3d-4b2a-bcf6-0ef9314e6ff2/1/256",
-    "note": "草原にポツンと置き去りにされた、植物に侵食された廃電車のチルワールド。猫屋敷やよいが2020年に公開した作品で、車内まで草が生い茂り、風と雨音だけが聞こえる終末感が魅力です。車内の水たまりや吊り革、散らばる枕木を眺め、寝転んで空を見上げれば、文明の儚さと生命の力強さを味わえます。ASMR動画の撮影に使われたことも。PC専用。",
+    "note": "草原にポツンと置き去りにされた、植物に侵食された廃電車のチルワールド。猫屋敷やよいが2020年に公開した作品で、車内まで草が生い茂り、風と雨音だけが聞こえる終末感のある空間です。車内の水たまりや吊り革、散らばる枕木を眺めたり、寝転んで空を見上げたりして過ごせます。PC専用。",
     "official": "古いさびた電車。BGM : 雨音の静か written by shimtone"
   },
   {
@@ -4494,7 +4434,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3fdc7118-32bd-48c7-8d6f-93323e90e0f0/2/256",
-    "note": "消えたフレンドを探す、定員1名の一人専用探索ワールド。留奈が2024年に公開した作品で、「いなくなってしまった僕の大切なフレンドを探すお手伝いをしてください」という依頼から始まります。静かなはずの部屋で手がかりを追う、不穏な空気の物語で、Xでも「とてもよかった」と紹介されました。ホラー寄りの演出があります。PC専用。",
+    "note": "消えたフレンドを探す、定員1名の一人専用探索ワールド。留奈が2024年に公開した作品で、「いなくなってしまった僕の大切なフレンドを探すお手伝いをしてください」という依頼から始まります。静かなはずの部屋で手がかりを追う、不穏な空気の物語。ホラー寄りの演出があります。PC専用。",
     "official": "いなくなってしまった僕の大切なフレンドを探すお手伝いをしてください ＃Lunar_NFH"
   },
   {
@@ -4555,7 +4495,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d1775a78-1f2d-4eb3-8827-8f19d5225ad1/6/256",
-    "note": "山中にひっそりと佇む廃神社のワールド。VRChatのフォトグラファーとしても活動するえこちん（ecochin）が2024年に公開した作品で、朽ちた社と山の静けさに、のる作のBGM『朱き山祇』が重なります。配信や撮影した写真の展示もOK。静謐な和の景観を一人で眺めたいときに。PC専用。",
+    "note": "山中にひっそりと佇む廃神社のワールド。VRChatのフォトグラファーとしても活動するえこちん（ecochin）が2024年に公開した作品で、朽ちた社と山の静けさが印象に残ります。配信や撮影した写真の展示もOK。静かな和の景観ワールドです。PC専用。",
     "official": "ワールドでの配信・撮影した写真の展示OKです。BGM「朱き山祇 by のる」"
   },
   {
@@ -4630,7 +4570,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ca8b84de-e679-4cd6-9e7a-173ad3340428/3/256",
-    "note": "韓国のシンガーソングライターGYE0M（겸）とのコラボで生まれた、音楽イメージのシネマティックワールド。별 보기の作品で、アーティストのステージ演出やアルバムアート、歌詞動画にも使う舞台として作られました。霧と苔に覆われた古代の石造建築、抱き合う石像、ピアノ。切ないピアノの旋律とともに一人で浸る鑑賞型です。PC専用。",
+    "note": "韓国のシンガーソングライターGYE0M（겸）とのコラボで生まれた、音楽イメージのシネマティックワールド。별 보기の作品で、アーティストのステージ演出やアルバムアート、歌詞動画にも使う舞台として作られました。霧と苔に覆われた古代の石造建築、抱き合う石像。切ないピアノの旋律とともに一人で浸る鑑賞型です。PC専用。",
     "official": "Love is a tragedy to me. / with Music artist 'GYE0M' collaboration."
   },
   {
@@ -4650,7 +4590,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e1c36591-1eb5-4d5d-b17f-3c7c55eb62cb/9/256",
-    "note": "リアルな地下鉄の入口を抜けると広がるライブ会場型ワールド。タイルに反射する光と身体に響く重低音で、MV視聴や音楽鑑賞が『パブリック随一』と評される。ホラーではないので安心して滞在できる。PC専用。",
+    "note": "リアルな地下鉄の入口を抜けると広がるライブ会場型ワールド。タイルに反射する光と身体に響く重低音が特徴で、MV視聴や音楽鑑賞に向いています。ホラーではないので安心して滞在できます。撮影にもどうぞ。PC専用。",
     "official": "Not horror world"
   },
   {
@@ -4710,7 +4650,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d8db9791-dfd0-4b12-8f59-ec3932d35024/2/256",
-    "note": "終末の気配が漂う、駅の待合室のワールド。電車くん太郎（Densha_Taro）が2025年に公開した、こぢんまりとした待合室で、作者は誰かを待ったりのんびりしたりするのに使ってほしいと紹介しています。建設中の巨大都市を望むホームと不穏な掲示物に満ちた待合室で、30分ごとに上空を巨大な月が通過します。動画プレイヤーもあり、フレンドとの待ち合わせや静かな滞在にも。PC専用。",
+    "note": "終末の気配が漂う、駅の待合室のワールド。電車くん太郎（Densha_Taro）が2025年に公開した、こぢんまりとした待合室。建設中の巨大都市を望むホームと不穏な掲示物に満ちた待合室で、30分ごとに起こるとある演出も。動画プレイヤーもあり、フレンドとの待ち合わせや静かな滞在にも。PC専用。",
     "official": ""
   },
   {
@@ -4730,7 +4670,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_21f602bd-53e6-4166-9005-8792856383d8/43/256",
-    "note": "自然に還っていく書斎の遺構と森を巡る、滅びの美のチルワールド。差し込む光と水面のリアルさに感動の声多数。月のオブジェクトで夜モードに切り替えればピアノのある幻想的な夜景に。PC専用。",
+    "note": "自然に還っていく書斎の遺構と森を巡る、滅びの美のチルワールド。差し込む光と水面の表現が好評です。月のオブジェクトで夜モードに切り替えればピアノのある幻想的な夜景に。PC専用。",
     "official": "Anyway, time passes and generations change. ［ Special thanks to 'HANI.' ］"
   },
   {
@@ -4830,7 +4770,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_560ebbce-f6fa-4013-ae5e-819deed85181/4/256",
-    "note": "波の音が穏やかな、夏の夜の港町。1時間ごとに小・中・特大と量が変わる花火が夜空を彩り、写真映えも抜群と評判です。花火の時刻は別ワールド『まろの森（夏祭）』と連動していて、スケジュールボードで確認できます。音声ライブ配信にも対応。画面が強く光る場面があるので点滅注意。PC専用・容量約287MB。",
+    "note": "波の音が穏やかな、夏の夜の港町。1時間ごとに小・中・特大と量が変わる花火が夜空を彩り、写真映えすると評判です。花火の時刻は別ワールド『まろの森（夏祭）』と連動していて、スケジュールボードで確認できます。音声ライブ配信にも対応。画面が強く光る場面があるので点滅注意。PC専用・容量約287MB。",
     "official": "【Season10】夏、海、お盆、花火、音声ライブ配信可（iwaSync, TopazChat）。1時間ごとに花火の量が「小・中・特大」の3段階でランダムに変化します。花火の打ち上げ時刻は別ワールド「まろの森（夏祭）」と連動してますのでスケジュールボードを確認してください。画面が一時的に強く光る場面"
   },
   {
@@ -4853,7 +4793,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9daac084-f18f-4e9d-bae2-05bc9f7bdab5/3/256",
-    "note": "どこか懐かしい日本の街を歩く景観ワールド。Atto_あっとが2022年に公開した作品です。ホバーボードで移動でき、小道の先で『神隠し』に遭うと、少しだけ違う世界へ。怖さよりも不思議さが際立つ体験で、初心者ツアーの撮影地にも使われています。PC専用。",
+    "note": "どこか懐かしい日本の街を歩く景観ワールド。Atto_あっとが2022年に公開した作品です。ホバーボードで移動でき、小道の先で『神隠し』に遭うと、少しだけ違う世界へ。怖さよりも不思議さが際立つ体験で、初心者ツアーにオススメ。PC専用。",
     "official": "いつしか「神隠し症候群」と呼ばれるようになった。"
   },
   {
@@ -4873,7 +4813,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b1c6ba5c-838f-4815-be9e-a8bb21de287d/1/256",
-    "note": "深海を走る列車の車窓から、魚やウミガメ、マンタを眺めるチルワールド。懐かしいピアノBGMは切り替え可能で、深海の静寂に切り替えることも。プライベートで一人静かに過ごす時間が絶賛される。PC専用。",
+    "note": "深海を走る列車の車窓から、魚やウミガメ、マンタを眺めるチルワールド。懐かしいピアノBGMは切り替え可能で、深海の静寂に切り替えることも。プライベートで一人静かに過ごす使い方が好評です。PC専用。",
     "official": "a dreamy train running deep into the sea"
   },
   {
@@ -4954,7 +4894,7 @@ window.WORLDS = [
       "海洋恐怖症注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_618f8c41-3cbc-447c-8d56-801bb0783e5c/3/256",
-    "note": "Fins作、潜水艦で深海へ潜る約20分のライド型アトラクション（Spookality 2019出展作）。静かな海底探索から、やがて暗い深海のドキドキへ。1〜2人用でプライベートインスタンス推奨、デートにも人気です。海洋恐怖症の人は注意。音を聞きながら最後までどうぞ。",
+    "note": "Fins作、潜水艦で深海へ潜る約20分のライド型アトラクション（Spookality 2019出展作）。静かな海底探索から、やがて暗い深海の探検へ。海洋恐怖症の人は注意。(海底2万マイルが好きな人におすすめ)",
     "official": "Take a ride to the depths below, 1-2 player world, please use a private instance. - Spookality 2019 Updated for 2018 Unity. fixed FBT station"
   },
   {
@@ -4994,7 +4934,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5ed72ae3-85ed-4b5b-a324-e95a53086bd5/4/256",
-    "note": "広大な大自然を少人数で散策する、没入感たっぷりの景観ワールド。AnkoRomochi-JPが2024年に公開した作品で、美しい森やキャンプ場があり、歩いてみるとあちこちに発見があります。鳩のアバターで飛び回るのが楽しいという声も。定員15人。容量約504MBと非常に重いので、読み込みに余裕を持ってどうぞ。PC専用。",
+    "note": "広大な大自然を少人数で散策する景観ワールド。AnkoRomochi-JPが2024年に公開した作品で、美しい森やキャンプ場があり、歩いてみるとあちこちに発見があります。鳩のアバターで飛び回るのが楽しいという声も。定員15人。容量約504MBと非常に重いので、読み込みに余裕を持ってどうぞ。PC専用。",
     "official": "［Mochi Earth］ Immerse yourself in the vastness of nature. 広大な自然に囲まれて癒されよう！ちょっと重いかも！"
   },
   {
@@ -5057,7 +4997,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_15784fd2-6e37-4b93-968d-2458dfa9415c/11/256",
-    "note": "幻想的な光と花に包まれた並木道と、提灯が灯る坂道の町を歩く景観ワールド。『Severance / 断絶』なども手がける_Harimの作品で、添えられた一言は「君に会いに行く道が、なんて美しいんだろう」。温かいオレンジ色の明かりと木漏れ日がノスタルジックで、まるでおとぎ話に迷い込んだような撮影散歩が楽しめます。PC専用。",
+    "note": "幻想的な光と花に包まれた並木道と、提灯が灯る坂道の町を歩く景観ワールド。『Severance / 断絶』なども手がける_Harimの作品。温かいオレンジ色の明かりと木漏れ日がノスタルジックで、まるでおとぎ話に迷い込んだような撮影散歩が楽しめます。PC専用。",
     "official": "The way I take to see you is so beautifully breathtaking. 君に会いに行く道が、なんて美しいんだろう"
   },
   {
@@ -5095,7 +5035,7 @@ window.WORLDS = [
       "大容量注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b670d454-8f75-4f19-a0ba-173e4021b4fa/2/256",
-    "note": "黄昏に染まる廃校舎を歩く、静かな探索ワールド。『物語を想像できて印象深い』と評される余白の多い空間。約490MBとかなり重いのでダウンロードに注意。",
+    "note": "黄昏に染まる廃校舎を歩く、静かな探索ワールド。系統的にはリミナル系。約490MBとかなり重いのでダウンロードに注意。",
     "official": ""
   },
   {
@@ -5176,7 +5116,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2ba8b44f-a059-4aff-8d56-6707a054752a/2/256",
-    "note": "腕を振れば、煙のようにふわりと流れが変わる――プレイヤーの動きに反応するインタラクティブなパーティクルを眺めるワールド。yuri_tsが2026年に公開した作品で、スーパーブルームで表情も一変し、時間を忘れて見入る美しさです。写真の撮影地にも選ばれています。PC専用。",
+    "note": "腕を振れば、煙のようにふわりと流れが変わる――プレイヤーの動きに反応するインタラクティブなパーティクルを眺めるワールド。yuri_tsが2026年に公開した作品で、スーパーブルームで表情も一変し、時間を忘れて見入ってしまいます。写真撮影にも向いています。PC専用。",
     "official": "風をつかまえたんだ"
   },
   {
@@ -5215,7 +5155,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_11b1ae88-426e-40d6-a2fd-18a03dd92cff/2/256",
-    "note": "1991年のユニバーサル・スタジオの名物ライドを再現したワールド。作りは簡素だが懐かしさで数分間楽しめる、と海外レビューで紹介される。一人でも複数人でも可。近年の別ワールド『BTTF the Ride』とは別物。PC専用。",
+    "note": "1991年のユニバーサル・スタジオの名物ライドを再現したワールド。作りは簡素だが懐かしさで数分間楽しめます。一人でも複数人でも可。近年の別ワールド『BTTF the Ride』とは別物。PC専用。",
     "official": "Great Scott Relive the classic 1991 Universal Studios ride based on the popular movie, Back to the Future."
   },
   {
@@ -5237,7 +5177,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_dbd49d81-a966-455c-b366-0cf54c1655a4/3/256",
-    "note": "映画『サマーウォーズ』の仮想世界OZを、一からすべて再現したワールド。音楽も作者による自作アレンジです。序盤の飛行ギミックで自由に飛び回れ、2026年の大型更新では暗号解読や管理棟への潜入など体験ギミックが大幅に追加され、衝撃的と評判。Quest対応。",
+    "note": "映画『サマーウォーズ』の仮想世界OZを、一からすべて再現したワールド。音楽も作者による自作アレンジです。序盤の飛行ギミックで自由に飛び回れ、2026年の大型更新では暗号解読や管理棟への潜入など体験ギミックが大幅に追加され話題に。Quest対応。",
     "official": "サマーウォーズの仮想世界【OZ】を一からすべて再現してみました。音楽も自作アレンジです.本家同様、大量のシステムで構築されてます。ぜひ体験してみてくださいね。"
   },
   {
@@ -5256,7 +5196,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_77b8a72b-9052-4966-b134-2bd420b4b555/4/256",
-    "note": "無重力の宇宙船の中をふわりと漂う体験ワールド。容量わずか約4MBと超軽量で、Questでもサクッと宇宙飛行士気分が味わえます。フレンドと無重力でふざけ合うだけでも楽しい、定番の宇宙船です。",
+    "note": "無重力の宇宙船の中をふわりと漂う体験ワールド。容量わずか約4MBと超軽量で、Questでもサクッと宇宙飛行士気分が味わえます。フレンドと無重力でふざけ合うだけでも楽しい、超酔い注意、耐性あっても15分もすれば倒れます。",
     "official": "Just Zero Gravity Spaceship"
   },
   {
@@ -5278,7 +5218,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bd96f8ce-be34-4e37-8cd7-9dfc2241b3e6/7/256",
-    "note": "Fins作『District Roboto』の続編。7倍の広さになったロボットの街を歩き、NPCとの会話や収集要素、解放できるアバター、隠された秘密から世界の暗い歴史を読み解く超大作です。映画祭ノミネートの圧倒的なクオリティ。容量約668MB、PC専用。",
+    "note": "Fins作『District Roboto』の続編。7倍の広さになったロボットの街を歩き、NPCとの会話や収集要素、解放できるアバター、隠された秘密から世界の暗い歴史を読み解く超大作です。映画祭にノミネートされた作品で、作り込みの密度が際立ちます。容量約668MB、PC専用。",
     "official": "The sequel to District Roboto, Complex 7 features a world 7 times larger, full of NPC, collectible, unlockable avatars, and hidden secrets. Discover t"
   },
   {
@@ -5319,7 +5259,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1cdc5ba7-95c4-4379-a3c4-816d579d34e1/5/256",
-    "note": "水没した田舎町と線路、木漏れ日の森を巡る、懐かしさ濃縮の景観ワールド。透き通る水面と半壊の電車は新海誠映画のようだと評判で、時間帯切替で表情も変わる。写真撮影に最適。PC専用。",
+    "note": "水没した田舎町と線路、木漏れ日の森を巡る、懐かしい空気の景観ワールド。透き通る水面と半壊の電車は新海誠映画のようだと評判で、時間帯切替で表情も変わる。写真撮影に向いています。PC専用。",
     "official": "Time is art and masterpiece is you. （Time change updated）"
   },
   {
@@ -5338,7 +5278,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_32b9920d-3286-48c1-a99a-2433fbf3a2c9/2/256",
-    "note": "悪のVR怪人組織『悪役結社ヴァリアール』の世界を巡るライド型アトラクション。列に並んで装甲ビークルに乗り込み、物語の導入から本編までUSJ級の演出と没入感で楽しめます。ヴァリアールを知らなくても大丈夫。1回の乗車は1〜6人（最大8人）で、観光モードではコースを歩いて怪人を間近に見られます。PC専用。",
+    "note": "悪のVR怪人組織『悪役結社ヴァリアール』の世界を巡るライド型アトラクション。列に並んで装甲ビークルに乗り込み、物語の導入から本編までをライドで巡ります。ヴァリアールを知らなくても大丈夫。1回の乗車は1〜6人（最大8人）で、観光モードではコースを歩いて怪人を間近に見られます。PC専用。",
     "official": "悪のVR怪人組織『悪役結社ヴァリアール』。その世界に全身で没入できる珠玉の大迫力ライドアトラクションワールド。 ヴァリアールに関する事前知識不要。 装甲ビークルに搭乗し、いざ万魔殿の奥底へ！ 《乗員》1～6名（最大8名） Twitter ＠VRHeel"
   },
   {
@@ -5418,7 +5358,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_88a93db1-2bd3-4d54-aaa2-b98ea1106ee8/11/256",
-    "note": "満開の桜と花畑、川と海と灯台まで広がる春の散策ワールド。『夏空の休息地』など「休息地」シリーズを手がけるレイリア（Leiria_vrc）が2025年に公開した、春の街とお花見の一作です。ジップラインで移動したり高台から桜を見下ろしたり、猫たちに会いながらのんびりお花見散歩ができ、ギミックもたくさん。写真撮影にも。Quest・iOS対応。",
+    "note": "満開の桜と花畑、川と海と灯台まで広がる春の散策ワールド。『夏空の休息地』など「休息地」シリーズを手がけるレイリア（Leiria_vrc）が2025年に公開した、春の街とお花見の一作です。ジップラインで移動したり高台から桜を見下ろしたり、猫たちに会いながらのんびりお花見散歩ができ、ギミックもたくさんあり、写真撮影にも向いています。Quest・iOS対応。",
     "official": "はるだー! さくらだー! ねこだー!"
   },
   {
@@ -5440,7 +5380,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_32fb6206-9db2-4f2e-8e5c-db6a7c4276c9/3/256",
-    "note": "2つの彗星が流れる満天の星空と草原の景観ワールド。しーの（T_Shiino）作で、赤と青の彗星と流星雨に『君の名は。』を思い出したという声もある、ロマンチックな空は写真映えも抜群です。心を静かに満たしたい夜に。BGMは魔王魂。リメイク版の『星屑の原２』も公開されています。Quest対応・軽量で初心者にもおすすめ。",
+    "note": "2つの彗星が流れる満天の星空と草原の景観ワールド。しーの（T_Shiino）作で、赤と青の彗星と流星雨が空を彩ります。静かに星空を眺めたいときの行き先に。Quest対応・軽量で、初心者でも入りやすいです。",
     "official": "雨上がりは大気中の塵が少なくなって星空が良く見えるそうですね。 BGM:end of the day／written by:魔王魂 様"
   },
   {
@@ -5460,7 +5400,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fc47a21b-1598-406c-b694-95213d23e0c8/3/256",
-    "note": "監視カメラ越しの三人称視点でミニマルな空間を歩く、suzuki_i作の実験的ワールド。2022年に公開され、操作の向きまで監視カメラから見た方向に変わるので、自分の姿を客観視しながら謎を解いていきます。いつもの一人称から引き剥がされる感覚と、隠し部屋で視点が戻る瞬間の快感が忘れられません。デスクトップではF12キーにも秘密が。PC専用。",
+    "note": "監視カメラ越しの三人称視点でミニマルな空間を歩く、suzuki_i作の実験的ワールド。2022年に公開され、操作の向きまで監視カメラから見た方向に変わるので、自分の姿を客観視しながら散策できます。いつもの一人称から引き剥がされる感覚と、隠し部屋で視点が戻る瞬間の快感が忘れられません。デスクトップではF12キーにも秘密が。PC専用。",
     "official": "Pressing F12 in desktop mode breaks the screen."
   },
   {
@@ -5480,7 +5420,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_429a3496-4794-4e8a-94e4-f0dd33eb9993/1/256",
-    "note": "好きな曲をビデオプレイヤーで流すと、音の波形に反応して光のパーティクルが湖上に広がる音楽体験ワールド。m1chieが2021年に公開した作品で、写真の撮影地としても使われています。スケートで滑ったり空飛ぶクジラに乗ったり、フレンドの推し曲を囲む時間も格別。PC専用。",
+    "note": "好きな曲をビデオプレイヤーで流すと、音の波形に反応して光のパーティクルが湖上に広がる音楽体験ワールド。m1chieが2021年に公開した作品で、写真の撮影地としても使われています。スケートで滑ったり空飛ぶクジラに乗ったり、フレンドの推し曲をみんなで聴いたりもできます。PC専用。",
     "official": "Have a special time with your favorite music."
   },
   {
@@ -5500,7 +5440,7 @@ window.WORLDS = [
       "写真・撮影"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a1a54c11-464c-46a5-b742-66b652c16165/2/256",
-    "note": "満天の星空が水面に細かく映り込む、HANI.作の夜の終着駅。流星群の名の通り、神秘的な星景と静かな水辺が広がる景観ワールドで、『非現実的で神秘的な風景に感動した』との訪問記も。撮影にも。",
+    "note": "満天の星空が水面に細かく映り込む、HANI.作の夜の終着駅。流星群の名の通り、星空と静かな水辺が広がる景観ワールドで、撮影にも向いた一作です。",
     "official": "流星群の終着駅-The last station of meteor shower"
   },
   {
@@ -5540,7 +5480,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7210689c-5244-4d1d-baed-e35ec3e49340/4/256",
-    "note": "人工雨が降り注ぐ、未来の地下大都市を走り回るワールド。階層が連なる巨大ビル群と立体交差する通路の迫力が魅力で、素早く2回移動すると加速する仕掛けや多段ジャンプで自由に探索できます。アリーナやレストランもあり、椅子はジャンプ長押しで降りられます。PC専用、容量重め。",
+    "note": "人工雨が降り注ぐ、未来の地下大都市を走り回るワールド。階層が連なる巨大ビル群と立体交差する通路は圧巻で、素早く2回移動すると加速する仕掛けや多段ジャンプで自由に探索できます。アリーナやレストランもあり、椅子はジャンプ長押しで降りられます。PC専用、容量重め。",
     "official": "ふしぎ地中大都市での走行を楽しもう！！ 2度すばやく移動で加速、椅子はジャンプ長押しで降りる アリーナ内にてiwaSync3及びAudioLink使用 使用アセットは通路内の中央 Enjoy running in the mysterious underground metropolis! Move"
   },
   {
@@ -5603,7 +5543,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6ffce690-59ee-45f5-865f-e1f3f3725034/2/256",
-    "note": "深くまで、潜ってはいけない――静かな水の底へ降りていくようなチルのワールド。Sakana_Chanが2025年に公開した作品で、暗さと静けさの中、どこまで潜るかは自分次第という緊張感が漂います。PC専用。",
+    "note": "深くまで、潜ってはいけない――静かな水の底へ降りていくようなチルのワールド。Sakana_Chanが2025年に公開した作品で、暗さと静けさの中、どこまで潜るかは自分次第。PC専用。",
     "official": "Do not dive into deep."
   },
   {
@@ -5623,7 +5563,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_61c2af9d-79c9-4c95-86ac-7811336f5d5b/2/256",
-    "note": "車かジップラインで雲海を越え、日の出を見に行く景観ワールド。初日の出配信のロケ地にも使われた、朝焼けと雲の海の絶景スポット。",
+    "note": "車かジップラインで雲海を越え、日の出を見に行く景観ワールド。朝焼けと雲の海が広がり、VRで初詣気分を味わえるスポットです。",
     "official": "雲海を越えて日の出を見に行きましょう。登る方法は車とジップラインの2種類があります。Let's go over the sea of clouds and see the sunrise. There are two ways to climb: car and zipline."
   },
   {
@@ -5644,7 +5584,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c6148d4c-e2fe-42a8-883a-815d130d78f4/1/256",
-    "note": "霧と青いネオンに沈む未来都市を歩く、Ozen制作の景観ワールド。『Freeze』などの都市ワールドも手がけるオーゼンOzenが2023年に公開した作品で、ビルの屋上の端から始まり、壊れた鉄骨から落ちた先にネオン広告だらけの街が広がります。広い街並みを彷徨う『都市を探索する』体験が主役で、撮影地にも使われています。容量約464MBと重いので注意。PC専用。",
+    "note": "霧と青いネオンに沈む未来都市を歩く、Ozen制作の景観ワールド。『Freeze』などの都市ワールドも手がけるオーゼンOzenが2023年に公開した作品で、ビルの屋上の端から始まり、壊れた鉄骨から落ちた先にネオン広告だらけの街が広がります。広い街並みを彷徨う『都市を探索する』体験が主役で、撮影におすすめ。容量約464MBと重いので注意。PC専用。",
     "official": "made by Ozen"
   },
   {
@@ -5666,7 +5606,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5c091cd3-e28f-4999-ad47-7400e8556bae/19/256",
-    "note": "桜と古びた鳥居が佇む、朽ちた神域の景観ワールド。_Harim作で、滝の流れる大きな鳥居をくぐった先の景色は、Xでもぜひ VRモードで自分の目で確かめてほしいと勧められています。狐像に触れると昼夜が切り替わり、桜の舞い方まで変わります。高さ方向に展開するダイナミックな構成で、隠しスポット探しも楽しい撮影名所。PC専用。",
+    "note": "桜と古びた鳥居が佇む、朽ちた神域の景観ワールド。_Harim作で、滝の流れる大きな鳥居をくぐった先の景色が見どころです。狐像に触れると昼夜が切り替わり、桜の舞い方まで変わります。高さ方向に展開するダイナミックな構成で、隠しスポット探しも楽しい撮影名所。PC専用。",
     "official": "A life severed from the world, lowering oneself. ［ bgm: \"Song of a Succubus\" https://www.youtube.com/＠NECORDMUSIC ］"
   },
   {
@@ -5756,7 +5696,7 @@ window.WORLDS = [
       "VR酔い注意"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d82d4e33-15bb-4a97-8250-7cd527edef8e/1/256",
-    "note": "ヨツミフレームが2021年に公開した長編ストーリーゲーム。穏やかな夏の水族館や神社から一転、不穏なSFアクションへと展開し、『夏に夏を壊せる』体験がXでも話題になりました。1〜2時間ほど飛んだり跳ねたりして動き回るので、VR酔いしやすい人は注意。精神的負荷の注意表示があり、チェックポイントも少なめです。物語の解説も多く書かれていて、フレンドと一緒に挑むのがおすすめ。",
+    "note": "ヨツミフレームが2021年に公開した長編ストーリーゲーム。穏やかな夏の水族館や神社から一転、何やら不穏な気配が...？1〜2時間ほど飛んだり跳ねたりして動き回るので、VR酔いしやすい人は注意。物語の解説も多く書かれていて、フレンドと一緒に挑むのがおすすめです。",
     "official": "Break the Summer. Break the tower. Complete the Meridian Loop. A story about reality and humanity."
   },
   {
@@ -5915,7 +5855,7 @@ window.WORLDS = [
       "狭い部屋"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_050bc633-e3c7-461a-93c2-7eb4b66669cf/2/256",
-    "note": "名前の通り、ワールドのほぼ全てが見渡せるほど激狭な一人暮らしの部屋。狭いのに動画プレイヤーやペンなど必要なものは全部あり、2〜3人で寄り合うと密度の高い賑やかさに。V睡にも使われる、妙に落ち着く狭さです。『80人入れたら作者までお知らせください』という遊び心も。",
+    "note": "名前の通り、ワールドのほぼ全てが見渡せるほど激狭な一人暮らしの部屋。狭いのに動画プレイヤーやペンなど必要なものは全部あり、2〜3人で寄り合うと密度の高い賑やかさに。V睡にも使われる、妙に落ち着く狭さです。ぜひ80人でいってみては？",
     "official": "あなたの鼓動をもっと近くで感じるために、私は激狭物件に住み続けたいのです 80人入れたら作者までお知らせください RBS Sleepkit/YamaPlayer/ImagePad"
   },
   {
@@ -5956,7 +5896,7 @@ window.WORLDS = [
       "夕暮れ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f2db9489-ac42-40ae-b8a0-593ee028c2c4/2/256",
-    "note": "夕暮れの街でマンホールを押すと、街全体が静かに水に沈むワールド。水没した街並みはロマンティックで癒やされると評判です。水中の景色は撮影にも人気。ただし水没後は重めなのでご注意を。",
+    "note": "夕暮れの街でマンホールを押すと、街全体が静かに水に沈むワールド。水没した街並みの眺めが好評で、水中の景色は撮影にも人気。ただし水没後は重めなのでご注意を。",
     "official": "マンホールを押すと街が水に沈むギミックのあるワールドです。 Click the manhole to flood the street."
   },
   {
@@ -5996,7 +5936,7 @@ window.WORLDS = [
       "絵画"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5c9449fc-02df-4e63-9a5e-7adceb19e7dc/2/256",
-    "note": "Jaehyuk LeeのTilt Brush作品が並ぶ、VRChat配信者GreatMoonAroma演出のギャラリー。絵に触れるとその中へ入れる仕掛けが圧巻で、『VRでしかできない』と絶賛される名作です。全方位から眺め、好きな画角で撮る楽しみもあります。",
+    "note": "Jaehyuk LeeのTilt Brush作品が並ぶ、VRChat配信者GreatMoonAroma演出のギャラリー。絵に触れるとその中へ入れる仕掛けがあり、『VRでしかできない』と評される一作です。全方位から眺め、好きな画角で撮る楽しみもあります。",
     "official": "This is gallery of tilt brush's art by artist 'Jaehyuk Lee', and directing by VRC streamer GreatMoonAroma. if you like 3d art. enjoy!"
   },
   {
@@ -6016,7 +5956,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a0dd2118-a01b-417e-a6ea-ea3a7bbc63f2/1/256",
-    "note": "大規模音楽フェスのステージに立つ気分を味わえる、巨大スタジアム型ライブ会場。照明システム『KohadaLX』も作るこはだ（kohadachan）による、cluster版もある会場のVRChat版で、2025年に公開されました。DJイベントや歌配信の会場として実際に使われてきた実績があり、自分が主役のイベントや撮影にぴったりです。PC専用。",
+    "note": "大規模音楽フェスのステージに立つ気分を味わえる、巨大スタジアム型ライブ会場。照明システム『KohadaLX』も作るこはだ（kohadachan）による、cluster版もある会場のVRChat版で、2025年に公開されました。DJイベントや歌配信の会場として実際に使われてきた実績があり、自分のイベントや撮影の会場としても使えます。PC専用。",
     "official": "This is a world where anyone can experience the feeling of being the star of a large-scale music festival!"
   },
   {
@@ -6057,7 +5997,7 @@ window.WORLDS = [
       "初心者向き"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_cc3066d8-0379-4f5c-8352-dfb591fa3313/1/256",
-    "note": "巨大水槽と天井までの本棚に囲まれた、大人の秘密基地のようなチルワールド。場所ごとに変わる音楽、クラゲ漂う夜の海を望むベッドルームも評判です。フレンドとゆっくり語らう夜にどうぞ。",
+    "note": "巨大水槽と天井までの本棚に囲まれた、大人の秘密基地のようなチルワールド。場所ごとに変わる音楽、クラゲ漂う夜の海を望むベッドルームも評判です。フレンドとゆっくり語らう夜にも向いています。",
     "official": "\"Where words fail, music speaks\""
   },
   {
@@ -6121,7 +6061,7 @@ window.WORLDS = [
       "アニメ・キャラ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ff737d8d-bef6-4e76-b2e5-70abdba35598/1/256",
-    "note": "『超かぐや姫！』星降る夜のMV世界に入り込む非公式再現ワールド。光る鳥居と魚が泳ぐ幻想的な海を巡り、ミニライブチケット探しも楽しめる、作品ファンの撮影と周回に。",
+    "note": "『超かぐや姫！』星降る夜のMV世界に入り込む非公式再現ワールド。光る鳥居と魚が泳ぐ幻想的な海を巡り、ミニライブチケット探しも楽しめます。作品ファンの撮影や周回にも向いています。",
     "official": "超かぐや姫！ 星降る夜のOfficialMVの再現ワールド！ ミニライブチケット探してみてください！ 写真沢山とれるようにしておいたので、楽しんでください！ Super Kaguya-hime! Step into the recreated world of the official Hoshif"
   },
   {
@@ -6221,7 +6161,7 @@ window.WORLDS = [
       "再現ワールド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c6b519ec-141a-4edb-83f3-2fc3dc39c2e1/5/256",
-    "note": "再現度の高い新宿駅前で路上ライブができる、『VRChatで最も有名な路上ライブ専用ワールド』を目指す音楽特化ワールド。昼でも人が集まる賑わいがあり、弾き語りを歌う側にも聴く側にも出会いがあります。音楽好きなら気軽に参加を。",
+    "note": "再現度の高い新宿駅前で路上ライブができる、『VRChatで最も有名な路上ライブ専用ワールド』を目指す音楽特化ワールド。昼でも人が集まる賑わいがあり、弾き語りを歌う側にも聴く側にも出会いがあります。音楽好きなら気軽に参加できます。",
     "official": "［ X -≻ ＃VRSJK ］ VRC新宿ワールドへようこそ！ VRChatで最も有名な路上ライブ専用ワールドを目指しています。 音楽が好きな方は、ぜひお気軽にご参加ください！ VRC신주쿠 월드입니다. VRChat에서 가장 유명한 버스킹 월드를 목표로 하고있습니다. 음악을 좋아하신다면"
   },
   {
@@ -6305,7 +6245,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6f61b4e7-671d-466b-b24f-33ea377b5a6c/1/256",
-    "note": "雪の降る高層マンションの一室で過ごす、狭くて生活感のあるチルワールド。『タイトル通り、こういう部屋に住みたい』と紹介される癒やしの空間で、冬の夜に一人でゆっくりするのにぴったり。Quest対応。",
+    "note": "雪の降る高層マンションの一室で過ごす、狭くて生活感のあるチルワールド。冬の夜に一人でゆっくり過ごすのに向いています。Quest対応。",
     "official": "peak male happiness."
   },
   {
@@ -6774,7 +6714,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_50eda44e-1113-43a8-a5dc-e6ede6c2a66a/13/256",
-    "note": "最大8人で遊べる自動化UNO。ルール説明が丁寧で初心者も入りやすく、PC・Quest・デスクトップ混在でも遊べます。くつろぎながらフレンドに+4を叩き込む、定番のカードゲームです。",
+    "note": "最大8人で遊べる自動化UNO。ルール説明が丁寧で初心者も入りやすく、PC・Quest・デスクトップ混在でも遊べます。くつろぎながらフレンドに+4を叩き込む、定番のカードゲームです。途中参加不可な点は注意",
     "official": "Automatic UNO! Card game. Sit back, relax, and give your friends ＋4s! Supports Desktop and up to 8 players."
   },
   {
@@ -6943,7 +6883,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6d3a9a46-ca24-4343-81a4-eb41e1b4b95e/1/256",
-    "note": "佐賀・武雄の実在テーマパークを3Dスキャンも交えて再現したワールド。元そば店主のVRクリエイター、VR蕎麦屋タナベ（tanabe）が2025年に公開した作品で、動く乗り物6種と、乗り物を吹っ飛ばす『蕎麦屋スイッチ』のカオスが名物です。夜に切り替えると一転ホラー気分に。Quest対応。",
+    "note": "佐賀・武雄の実在テーマパークを3Dスキャンも交えて再現したワールド。元そば店主のVRクリエイター、VR蕎麦屋タナベ（tanabe）が2025年に公開した作品で、動く乗り物6種と、乗り物を吹っ飛ばす『蕎麦屋スイッチ』のカオスが名物です。夜に切り替えると一転ホラー気分に。複数人のフレンドと一緒に回るのがオススメ。Quest対応。",
     "official": "VRメルヘン村"
   },
   {
@@ -7132,7 +7072,7 @@ window.WORLDS = [
       "ギミック"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f38551f5-f7b6-4e7d-a3c6-f3bc08ec38e6/3/256",
-    "note": "面接官と応募者に分かれて面接ごっこができる会場ワールド。不採用ボタンを押すと応募者が床ごと落ちる仕掛けで場が沸きます。待合の椅子や休憩室もあり、ネタ会場にも実際の面談・集会にも。落下ギミック注意。",
+    "note": "面接官と応募者に分かれて面接ごっこができる会場ワールド。待合の椅子や休憩室もあり、ネタの面接ごっこにも、実際の面談や集会の場にも使えます。落下ギミック注意。",
     "official": "面接会場。採用不採用のボタンがあります。不採用だと落ちます。休憩室と自動販売機あります。何かの面接をする際もそうじゃなくても使ってください。【注意】落下ギミックがあります。6/20ミニアップデート！ Interview venue. There are buttons for Hired and N"
   },
   {
@@ -7283,7 +7223,7 @@ window.WORLDS = [
       "ファンメイド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7f6daa76-03f5-4b4e-96fd-bdd8c8ac8d9f/1/256",
-    "note": "緊張感と予測不能さが魅力の原作にインスパイアされた「Buckshot Roulette」の世界へ。",
+    "note": "原作『Buckshot Roulette』にインスパイアされたGmod移植ワールド。先が読めない駆け引きと緊張感が特徴の対戦ゲームです。",
     "official": "Step into Buckshot Roulette, Inspired by the tense and unpredictable gameplay of the original, this world is a VRChat remake of the Gmod map by Drowne"
   },
   {
@@ -7299,7 +7239,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8b50b873-c4a5-4f42-bfdc-ed07c034b397/4/256",
-    "note": "配られたカードでなろう小説のタイトル作成するゲームです。 11/16カード内容が他の人に見えないバグを修正しました。",
+    "note": "配られたカードでなろう小説のタイトルを作成するゲームです。11/16カード内容が他の人に見えないバグを修正しました。",
     "official": "配られたカードでなろう小説のタイトル作成するゲームです。 11/16カード内容が他の人に見えないバグを修正しました。11/18カード同期がうまくいかないバグを修正しました。11/19少人数時のリセット処理を軽くしました"
   },
   {
@@ -7406,7 +7346,7 @@ window.WORLDS = [
       "睡眠・V睡"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_36e5aeab-9fe2-4207-b408-6e00182b9c7d/3/256",
-    "note": "窓の外に都市と魚が漂う海を眺めてゆったり過ごせる、チル・睡眠向けの小さな部屋。静かに景色を眺めたい夜や、少人数で休息したいときに似合うワールド。",
+    "note": "窓の外に都市と魚が漂う海を眺めて過ごせる、チル・睡眠向けの小さな部屋。一人で景色を眺めたり、少人数で静かに休んだりするのに向いています。",
     "official": "窓の外に広がる都市と魚を眺めながらゆったり過ごせるチル/睡眠ワールドです。YamaPlayer/QvPen/RTab/RBS ｜ This is a chill/sleep world where you can relax while gazing at the cityscape and fis"
   },
   {
@@ -7446,7 +7386,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8f0716df-a1e6-47eb-ba6e-c6b05368fbd0/1/256",
-    "note": "初夏の光に包まれたヨーロッパ風の水辺の街並みを散策できるワールド。映画のような黒帯の演出で始まり、カフェテラスや隠れたゲストルームも。写真撮影と歓談に人気の、昼下がりの散歩が似合う場所です。PC専用。",
+    "note": "初夏のヨーロッパ風の水辺の街並みを散策できるワールド。映画のような黒帯の演出で始まり、カフェテラスや隠れたゲストルームもあります。写真撮影や歓談でよく使われている場所です。PC専用。",
     "official": "緑豊かな木々と初夏の香りに包まれた、小さな街並みです。 ご歓談や写真撮影、あるいは何もせずとも、日差しを浴びてのんびりとお過ごしください。"
   },
   {
@@ -7508,7 +7448,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_18f00000-654f-4935-85be-956e1e9d8e55/2/256",
-    "note": "『生きるとは』とだけ添えられた、海とパーティクルの演出で生きることを静かに問いかける体験型ワールド。ワールド素材の制作でも知られるぱんだ/graph*（pandagraphics）が2025年に公開した作品で、言葉が少ない分、受け取り方は人それぞれです。Quest対応。",
+    "note": "海とパーティクルの演出で「生きること」をテーマにした体験型ワールド。ワールド素材の制作でも知られるぱんだ/graph*（pandagraphics）が2025年に公開した作品で、言葉による説明は少なく、解釈は訪れた人に委ねられています。Quest対応。",
     "official": "生きるとは"
   },
   {
@@ -7528,7 +7468,7 @@ window.WORLDS = [
       "少人数"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0d4b7f0d-19f8-41dc-97c7-cd2837026101/7/256",
-    "note": "海中に沈んだ小さなお部屋にこもる、最大5人の少人数チルワールド。静かに過ごしたい時やV睡に。入口のドアを開ければ海の外へも出られます。販売ワールドが元になった、狭さが心地いい一軒。",
+    "note": "海中に沈んだ小さな部屋にこもる、最大5人の少人数チルワールド。静かに過ごしたい時やV睡に。入口のドアを開ければ海の外へも出られます。もとは販売ワールドで、狭さがかえって落ち着く部屋です。",
     "official": "海中に沈んだ小さなお部屋です。少人数で静かな時間を過ごしたいときに ／ 入口のドアを調べると・・・ ／ 販売ワールド「MoffConRoom」「水底 -Minasoko-」使用"
   },
   {
@@ -7549,7 +7489,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4b615d3f-1bbe-441b-a9cc-69f660b8314e/3/256",
-    "note": "空の上を飛ぶエアバスA321の機内で過ごすチルワールド。ponluxime作で、入ると空港からの離陸アニメーションが流れ、ずっと聞こえるエンジン音が臨場感たっぷりです。プライベートジェットのような豪華な客室に、2つのベッドルームやビリヤード、動画プレイヤーやアーケードもあり、窓の外を眺めながらフレンドとまったり過ごせます。Quest・iOS対応。",
+    "note": "空の上を飛ぶエアバスA321の機内で過ごすチルワールド。ponluxime作で、入ると空港からの離陸アニメーションが流れ、エンジン音がずっと聞こえます。客室はプライベートジェット風で、2つのベッドルームやビリヤード、動画プレイヤーやアーケードもあり、窓の外を眺めながらフレンドと過ごせます。Quest・iOS対応。",
     "official": "A very cozy Airbus A321. Relax in the skies with VRChat Airlines in The Chill Airbus. Contains a Video Player, Pens, Stress toys, an Arcade, and two P"
   },
   {
@@ -7570,7 +7510,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a3ce2ce5-6da8-40f1-b151-3e79d59768c6/7/256",
-    "note": "半個室で落ち着いて飲める大衆居酒屋ワールド。かきぴーが2026年に公開した作品で、焼き鳥と創作料理を囲み、飲み放題2時間2000円〜と書かれたメニューを眺めながら、フレンドと居酒屋ごっこで盛り上がれます。PC専用。",
+    "note": "半個室で落ち着いて飲める大衆居酒屋ワールド。かきぴーが2026年に公開した作品で、焼き鳥と創作料理を囲み、フレンドと居酒屋ごっこで盛り上がれます。ほぼトリキ。PC専用。",
     "official": "飲み放題2h2000円~（生＋500円）"
   },
   {
@@ -7590,7 +7530,7 @@ window.WORLDS = [
       "写真・撮影"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_69734ada-498e-411c-ab91-a57de95fe453/3/256",
-    "note": "遠くで祭囃子が聞こえる、夏の夜のワールド。セミの声と、近くないからこそ懐かしい祭りの気配に包まれて、ただ帰ってきたような気持ちで過ごせます。公式説明は『ただいま』の一言だけ。",
+    "note": "遠くで祭囃子が聞こえる、夏の夜のワールド。セミの声と、近くないからこそ懐かしい祭りの気配に包まれて、ただ帰ってきたような気持ちで過ごせます。",
     "official": "ただいま"
   },
   {
@@ -7611,7 +7551,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_dd69bdcf-9abd-4f04-97bd-07a744a0dd0c/1/256",
-    "note": "人気ワールド『NPC.ASMR』のアバター特盛版。多数のNPCアバターによる耳かきASMRや添い寝で癒やされる、Quest・iOS対応のV睡ワールド。テクスチャ圧縮でディテールは元版より控えめ。",
+    "note": "人気ワールド『NPC.ASMR』のアバター特盛版。多数のNPCアバターによる耳かきASMRや添い寝で癒やされる、Quest・iOS対応のV睡ワールド。",
     "official": "多分、人気ワールドであろう［NPC.ASMR］のアバター特盛版です。極限までテクスチャ圧縮しているのでNPC.ASMRよりディテールが落ちてます。毎日、ASMRを聴きまくる時間がないのでプレイリストは不定期更新にします。"
   },
   {
@@ -7633,7 +7573,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_83364dc6-f0a0-4a5f-9db8-ca65d6c103cf/2/256",
-    "note": "暗い水族館のような空間で魚を眺めながら落ち着ける、Quest対応の軽量な雰囲気ワールド。LoliKamiが2026年に公開した作品で、スリープ（ダーク）モード付きのベッドもあり、眺めて癒やされ、そのままVR睡眠にも向きます。",
+    "note": "暗い水族館のような空間で魚を眺めながら落ち着ける、Quest対応の軽量ワールド。LoliKamiが2026年に公開した作品で、スリープ（ダーク）モード付きのベッドもあり、眺めているうちにそのままVR睡眠に入る使い方もできます。",
     "official": "A optimized ambience world with fish to look at and a bed with Sleep（Dark） Mode."
   },
   {
@@ -7654,7 +7594,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5134c984-ae87-41f8-8b8f-4dc34385c3a5/1/256",
-    "note": "暖かな灯りの夜行列車で、おだやかな終末を眺めるワールド。『夜の果てへの旅』『暗夜行路』など夜の街のワールドで知られる浜名湖なこが2026年に公開した作品です。走る車内の静けさと窓の外の闇の対比が美しく、写真撮影の行き先として繰り返し選ばれています。誰かと並んで座って、他愛ない話をする夜に。PC専用。",
+    "note": "暖かな灯りの夜行列車で、おだやかな終末を眺めるワールド。『夜の果てへの旅』『暗夜行路』など夜の街のワールドで知られる浜名湖なこが2026年に公開した作品です。走る車内の静けさと窓の外の闇の対比が美しく、写真撮影にもよく使われています。誰かと並んで座って他愛ない話をする、そんな夜に向いています。PC専用。",
     "official": "おだやかな終末"
   },
   {
@@ -7674,7 +7614,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d135e0c9-0521-4216-88c4-3cccbf92bc9c/2/256",
-    "note": "9人の子どもたちの秘密基地。ガラクタの山に囲まれたジャンクヤードに、子どもだけの居場所があります。Glory Nyaが2026年に公開した作品で、少しミステリアスな空気の中、童心に帰ってフレンドと探検してみてください。PC専用。",
+    "note": "子どもたちの秘密基地。ガラクタの山に囲まれたジャンクヤードに、子どもだけの居場所があります。Glory Nyaが2026年に公開した作品で、少しミステリアスな空気があり、フレンドと探検する楽しみ方もできます。977.26 MBとかなり重いため注意。PC専用。",
     "official": "The secret base of the nine children."
   },
   {
@@ -7695,7 +7635,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ac4f2948-5f9e-4c19-9725-bc87a2290a16/4/256",
-    "note": "下駄箱や身長ラインまで再現された保育園で、園児気分に戻れるワールド。積み木やぬいぐるみ、懐かしい絵本がいっぱいで、小さいアバターで行くと没入感が増します。お布団でお昼寝も。Quest対応。",
+    "note": "下駄箱や身長ラインまで再現された保育園で、園児気分に戻れるワールド。積み木やぬいぐるみ、懐かしい絵本がいっぱいで、小さいアバターで行くと園児の目線そのままになります。お布団でお昼寝も。Quest対応。",
     "official": "VRC立しゅうまつ保育園へようこそ！ カラフルな積み木やふわふわのぬいぐるみ、懐かしさあふれる絵本など、たくさんのオモチャをご用意しました！！ 友達と一緒に、笑顔が溢れる楽しい園児ライフを満喫してください！ Welcome to VRC Tate Weekend Preschool! We have"
   },
   {
@@ -7715,7 +7655,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_da7a0c0b-20c4-4cfa-9e5d-05f610426010/6/256",
-    "note": "天窓から降る雨で水かさがゆっくり増し、穏やかに沈んでいく空間。約1時間で水位が最大になる設計は、眠りに落ちるまでの時間と寄り添うよう。睡眠とリラックスのための一作。",
+    "note": "天窓から降る雨で水かさがゆっくり増し、穏やかに沈んでいく空間。約1時間で水位が最大になる設計で、眠りに落ちるまでの時間に合わせたような作りになっています。睡眠とリラックスのための一作。",
     "official": "天窓から降る雨がゆっくりと水かさを増し、穏やかに沈んでいく空間。睡眠やリラックスにどうぞ。約一時間で水位が最大になります。Rain gently falls through the skylight, gradually raising the water level as you peaceful"
   },
   {
@@ -7735,7 +7675,7 @@ window.WORLDS = [
       "夏"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_da4c718c-4a67-41b6-9a40-b472f4d7d6f2/5/256",
-    "note": "夏空の下、かき氷など夏の楽しさをぎゅっと詰め込んだ自然公園。フレンドと夏らしい小物で遊べば、そのまま夏の思い出の1ページになります。青空と緑に包まれて、写真撮影やのんびり散歩にもどうぞ。出現してすぐは少し重めですが、中間エリアまで進むと軽くなります。",
+    "note": "夏空の下、かき氷など夏らしい要素を詰め込んだ自然公園。フレンドと夏らしい小物で遊んだり、写真撮影やのんびり散歩をしたりできます。出現してすぐは少し重めですが、中間エリアまで進むと軽くなります。",
     "official": "夏の楽しさをぎゅーっと詰め込みました！お友達と沢山の夏の思い出を作りましょー！【リスポーンすぐは少し重いかもしれませんが、中間エリアまで行くとワールド全体が少し軽くなります】【ギミック/各自QVペン完備】"
   },
   {
@@ -7795,7 +7735,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b7a26675-a4e9-47be-b1f9-3f0b8e3dfe21/1/256",
-    "note": "蒼とネオンの街並みに雨が降る、少人数向けのチル＆睡眠ワールド。青く染まった夜の景色を眺めながら、雨音の中で静かに眠りにつけます。心音が聞こえる仕掛けや天井のモニターもある、雨と眠りのワールドで知られる作者の定番の寝室です。",
+    "note": "蒼とネオンの街並みに雨が降る、少人数向けのチル＆睡眠ワールド。青く染まった夜の景色を眺めながら、雨音の中で静かに眠りにつけます。心音が聞こえる仕掛けや天井のモニターもあり、作者が得意とする「雨と眠り」をテーマにした寝室です。",
     "official": "蒼とネオンの街並みと雨がテーマの少人数向けchill＆睡眠用ワールドです。VIzvid/心音システム/天井モニター/imagePad/EventCalendar/joinログ/QVPen"
   },
   {
@@ -7815,7 +7755,7 @@ window.WORLDS = [
       "写真・撮影"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4fb46d53-128d-4d94-b6e1-11206fff1651/3/256",
-    "note": "星空の下で眠ることに特化した、V睡コンセプトのワールド。星鯨が泳ぐ夜の海と星空を眺めながら眠りにつけます。『おやすみ伝言板』もあり、少人数で静かに過ごしたい夜のための幻想的な空間です。",
+    "note": "星空の下で眠ることに特化した、V睡コンセプトのワールド。星鯨が泳ぐ夜の海と星空を眺めながら眠りにつけます。『おやすみ伝言板』もあり、少人数で静かに過ごすのに向いています。",
     "official": "V睡特化をコンセプトとしたワールドです。 星空のもとで眠りにつこう。嫌なこともきっと忘れられるさ。 YamaPlayer / QVPen / RBS_SleepKit2 / FilpCamera/ おやすみ伝言板 / どこでもアニメーションシステム / Bed Barrier"
   },
   {
@@ -7835,7 +7775,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0aea550b-b809-4bda-bf1a-a705e19cd322/1/256",
-    "note": "水族館の大水槽をイメージした水中チルワールド。そいる。が2026年に公開した作品で、RBS SleepKit 2を備え、魚を眺めながらのんびり過ごしたり、そのままV睡したりできます。水の景色に静かに浸りたい夜にどうぞ。PC専用。",
+    "note": "水族館の大水槽をイメージした水中チルワールド。そいる。が2026年に公開した作品で、RBS SleepKit 2を備え、魚を眺めながらのんびり過ごしたり、そのままV睡したりできます。PC専用。",
     "official": "水族館の大水槽をイメージしたチルワールドです。RBS2もあるのでV睡にもどうぞ！"
   },
   {
@@ -7853,7 +7793,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_82f89208-5f8a-48b6-bf9c-413de4acacc9/2/256",
-    "note": "『どこかでガタゴト』とだけ添えられた、小さなチルワールド。ガオ5656が2026年に公開した作品で、どこからか聞こえる音に耳を澄ませながら、ぼんやり過ごしたい人に。PC専用。",
+    "note": "キャンピングカーモチーフのチルワールド。ガオ5656が2026年に公開した作品で、どこからか聞こえる音に耳を澄ませながら、ぼんやり過ごしたい人に向いています。PC専用。",
     "official": "どこかでガタゴト"
   },
   {
@@ -7874,7 +7814,7 @@ window.WORLDS = [
       "ネタ・ミーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_01ba896b-8a5b-4253-910d-23e862d065a5/5/256",
-    "note": "人が増えるほどギュウギュウになる、狭さが売りの小部屋ワールド。身長115cm以下の小さいアバター推奨で、ちびっ子同士が密集する光景自体が楽しい、ネタ寄りのチル空間です。『狭すぎてポータルを置けなかった』ほどの狭さ。",
+    "note": "人が増えるほどギュウギュウになる、狭さが売りの小部屋ワールド。身長115cm以下の小さいアバター推奨で、ちびっ子同士が密集する光景自体が楽しい、ネタ寄りのチル空間です。狭すぎてポータルを置けません。",
     "official": "v1.2.1 人が増えるとすし詰めになります！身長115cm以下アバター推奨！狭すぎてポータル置けませんでした。 YamaPlayer / QvPen / Mirror / SleepKit2 / imagePad / FlipCamera / Audiolink / AudioReverbFilt"
   },
   {
@@ -7894,7 +7834,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_732c89bd-d9e3-4460-999f-91cc856680e0/1/256",
-    "note": "V睡のために作られたワールド。おじしが2026年に公開した作品で、各種ペンやカメラ、ビデオレター録画ギミックを備え、寝る前の書き置きや思い出の記録まで残せます。フレンドと静かに眠りにつきたい夜にどうぞ。Quest対応。",
+    "note": "V睡のために作られたワールド。おじしが2026年に公開した作品で、各種ペンやカメラ、ビデオレター録画ギミックを備え、寝る前の書き置きや思い出の記録まで残せます。フレンドと一緒にV睡したいときにも使えます。Quest対応。",
     "official": "V睡用に作ったワールド。QvPen / UnyStyles / FlipCamera / ビデオレター録画ギミック / VizVid / ImagePad / Rtab /多機能ブランケット"
   },
   {
@@ -7914,7 +7854,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5b244bdc-6702-47e5-8bc4-2b4aaa74ecb5/2/256",
-    "note": "アニメで見るような修学旅行の旅館の部屋を再現。並んだ布団でひそひそ話、自己紹介サイコロで話題作り、大量の枕投げから消灯してV睡まで。スイッチ式の肝試し要素もある、鉄板の夜。",
+    "note": "アニメで見るような修学旅行の旅館の部屋を再現。並んだ布団でひそひそ話、自己紹介サイコロで話題作り、大量の枕投げから消灯してV睡まで。怒られないように静かに楽しんでくださいね？",
     "official": "大量のまくら投げ、動画プレイヤー、ミラー、V睡用ギミックあります！肝試し要素も？"
   },
   {
@@ -7935,7 +7875,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e93ea4e1-02e6-46ec-9cdb-6368f7f5bf98/4/256",
-    "note": "定員5人のせまい部屋でごゆるりと過ごすチルワールド。Kerorin2734が2026年に公開した作品で、暗めの紫の光に包まれた小空間は距離の近さが魅力。少人数で静かに話したり、そのまま眠ったりするのに向いています。PC専用。",
+    "note": "定員5人のせまい部屋でゆるりと過ごすチルワールド。Kerorin2734が2026年に公開した作品で、暗めの紫の光に包まれた小空間は、フレンドとの距離が自然と近くなります。少人数で静かに話したり、そのまま眠ったりするのに向いています。PC専用。",
     "official": "せまいへやで ごゆるりと"
   },
   {
@@ -7956,7 +7896,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ac42822c-84b7-4315-a5c6-9539b2129ec5/4/256",
-    "note": "星と、波の音と。満天の星空が綺麗な孤島のチルワールドです。！すらいむ！が2026年に公開した作品で、ほぼ岩だけの小島に部屋が作られた、秘密基地のようなワクワク感があります。ワールドを暗くしたりカーテンで光を遮ったりとV睡に必要な機能もそろい、静かに過ごしたい夜や眠る前のひとときにぴったり。Quest・iOS対応。",
+    "note": "星と、波の音と。満天の星空が綺麗な孤島のチルワールドです。！すらいむ！が2026年に公開した作品で、ほぼ岩だけの小島に部屋が作られています。ワールドを暗くしたりカーテンで光を遮ったりとV睡に必要な機能もそろい、静かに過ごしたい夜や眠る前に向いています。Quest・iOS対応。",
     "official": "星と、波の音と。"
   },
   {
@@ -7976,7 +7916,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_914c2441-f42b-4bb3-9a86-2a4c08cc769a/3/256",
-    "note": "ちょっと不気味なキッズスペースで過ごす、少し不穏なチルワールド。紹介では『慣れればチルできるかも』と評されるリミナルな一作です。隠しギミックには精神的に重いテーマを示唆する演出があるので、探索は心の準備を（直接的な描写やジャンプスケアはありません）。",
+    "note": "ちょっと不気味なキッズスペースで過ごす、少し不穏なチルワールド。（直接的な描写やジャンプスケアはありません）。",
     "official": "第6作目。少し不穏なチルワです。隠しギミックに精神的に重いテーマを示唆する演出があります。直接的な描写・ジャンプスケアはありません。キッズスペースでゆっくりお休みください。今後も更新予定です。/ My sixth world. A slightly unsettling chill world.Co"
   },
   {
@@ -7996,7 +7936,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f62a3edc-b32a-4a9a-a0a6-c4307fc5e60b/1/256",
-    "note": "水槽のある落ち着いた寝室で過ごす、静かなチルワールド。BaiMaoNyaが2026年に公開した作品で、泳ぐ魚を眺めながら横になれば、水のゆらぎに包まれて自然とまぶたが重くなります。一人で静かに眠りにつきたい夜のV睡や、少人数の雑談に。PC専用。",
+    "note": "水槽のある落ち着いた寝室で過ごす、静かなチルワールド。BaiMaoNyaが2026年に公開した作品で、泳ぐ魚を眺めながら横になれる、一人で静かに眠りにつきたい夜のV睡や、少人数の雑談に向いた部屋です。PC専用。",
     "official": "Calm bedroom with Aquarium"
   },
   {
@@ -8018,7 +7958,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_db4f7d41-9f95-4fd3-9fb5-b8abaa65c10f/1/256",
-    "note": "降りしきる雨と夜をモチーフにした、こぢんまりとしたBAR。窓を流れる雨とライティングの美しさが撮影派にも好評です。グランドピアノのあるステージも備えた大人の隠れ家で、Boothの『same不動産開発』で販売されているワールドでもあります。Quest対応。",
+    "note": "降りしきる雨と夜をモチーフにした、こぢんまりとしたBAR。窓を流れる雨とライティングが撮影派にも好評です。グランドピアノのあるステージも備え、Boothの『same不動産開発』で販売されているワールドでもあります。Quest対応。",
     "official": "降りしきる雨と夜がモチーフのこぢんまりとしたBARワールドです。Booth「same不動産開発」より2/6発売開始です。A cozy BAR world inspired by the night and the sound of pouring rain. Launching Feb 6th vi"
   },
   {
@@ -8078,7 +8018,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7ab0ba14-b26a-4cbd-96c2-ac6900f7969d/1/256",
-    "note": "ネオンの光が揺らめく水中の巣のようなチルワールド。_KONJACが2025年に公開した作品で、定員20人のこぢんまりした空間で、青い光に包まれながら静かに過ごしたり、少人数でゆっくり語らったりするのに向いています。PC専用。",
+    "note": "ネオンの光が揺らめく水中の巣のようなチルワールド。_KONJACが2025年に公開した作品で、定員20人のこぢんまりした空間。青い光の中で静かに過ごしたり、少人数で語らったりするのに向いています。PC専用。",
     "official": "水中のチルワです。"
   },
   {
@@ -8098,7 +8038,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_82c735f0-07c8-4c81-ae21-e3a7c14a0b57/2/256",
-    "note": "泳ぐ魚と美術品を同時に眺められる、青の美術館。水のゆらぎとアートに囲まれながら、お酒を片手にゆったり過ごせます。展示ワールドを実際に巡った人のおすすめ集にも選ばれた、静かに長居できる一軒です。座った椅子は、ジャンプボタンの長押しで降りられます。",
+    "note": "泳ぐ魚と美術品を同時に眺められる、青の美術館。水のゆらぎとアートに囲まれながら、お酒を片手に過ごせます。展示ワールドを実際に巡った人のおすすめ集にも選ばれた、静かに長居できる場所です。座った椅子は、ジャンプボタンの長押しで降りられます。",
     "official": "泳ぐ魚や美術品を眺めながら、お酒を飲んだり、ゆったり過ごせるワールドです。【SIT判定のある椅子は、JUMPボタン長押しで降りられます】It is a world where you can relax and drink alcohol while looking at swimming fish"
   },
   {
@@ -8119,7 +8059,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b02fbb05-6326-439e-b444-755ac4a199a4/15/256",
-    "note": "木の温もりと紅葉に包まれた、秋の夜のチルワールド。高台の窓からは星空と街の灯りが広がり、休憩スポットとミラーも充実。どこでも寝転べる居心地の良さが評判で、Boothでも販売されています。Quest対応。",
+    "note": "木の温もりと紅葉に包まれた、秋の夜のチルワールド。高台の窓からは星空と街の灯りが広がり、休憩スポットとミラーも充実。どこでも寝転べる作りで、Boothでも販売されています。Quest対応。",
     "official": "A chill world wrapped in the warmth of wood and the colors of greenery and autumn leaves. Now available on Booth as Autumn Midnight. 木の温もりと緑や紅葉の彩りに包まれ"
   },
   {
@@ -8140,7 +8080,7 @@ window.WORLDS = [
       "夕暮れ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_88993012-220b-44cd-9457-5e1c1b692a64/3/256",
-    "note": "夕日の放課後の教室で、掃除用具入れのロッカーに二人で隠れるラブコメ的シチュエーションを体験できるワールド。ゼロ距離まで近づける設定で密着のドキドキ感が味わえ、大きな反響を呼んだ。",
+    "note": "夕日の放課後の教室で、掃除用具入れのロッカーに二人で隠れるラブコメ的シチュエーションを体験できるワールド。ゼロ距離まで近づける設定で、密着したときのドキドキ感を楽しめます。ロッカーを開けて教室に出ることも可能です。",
     "official": "「！？」「どうしよう！誰か来る！」「とにかくこっち！」「ちょっ！こんな狭いところ」「いいから早く！」"
   },
   {
@@ -8160,7 +8100,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_87998165-e3e9-4c4a-bcee-f609ed64c662/4/256",
-    "note": "McLaren P1を配した小さなガレージ兼ラウンジで過ごす、モダンで少しダークなチルワールド。Freewillpack76が2024年に公開した作品で、ポラロイドカメラでの撮影も楽しめます。車好き同士の雑談や、愛車とアバターの記念撮影にどうぞ。Quest対応。",
+    "note": "McLaren P1を配した小さなガレージ兼ラウンジで過ごす、モダンで少しダークなチルワールド。Freewillpack76が2024年に公開した作品で、ポラロイドカメラでの撮影も楽しめます。車好き同士の雑談や、車とアバターの記念撮影にも向いています。Quest対応。",
     "official": "Small garage / lounge featuring the beautiful McLaren P1, added Polaroid camera"
   },
   {
@@ -8180,7 +8120,7 @@ window.WORLDS = [
       "フレンドと"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6f9dc139-9707-4bb0-8000-bb42c49d82bc/6/256",
-    "note": "夜の高速道路を走る夜行バスの車内で過ごすチルワールド。道路を自動で生成し、14種類の車が自動運転で走る独自のシステムで、窓の外に車の流れが続きます。一人でぼんやり眺めるのも、大所帯で貸し切って旅気分を味わうのも楽しい、移動する小さな部屋です。",
+    "note": "夜の高速道路を走る夜行バスの車内で過ごすチルワールド。道路を自動で生成し、窓の外に様々な車が流れていきます。一人でぼんやり眺めるのも、大所帯で貸し切って旅気分を味わうのも楽しい、移動する小さな部屋です。",
     "official": "一人で夜行バスも、大所帯貸し切りで夜行バスも楽しいと思ったので作りました。 誰かと話すも良し、黙々と車の流れを見るも良し。 独自開発した道路自動生成システムと、道路交通・自動運転システムを搭載しています。 現在14種の車両が実装されています。 道路状況はやんわりと同期していますが、基本ローカルに近い"
   },
   {
@@ -8201,7 +8141,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0cdee8db-1ba4-4109-95b4-e786c3d31930/1/256",
-    "note": "見上げる夜景と月、青く澄んだ水中都市を眺めるチルラウンジ。BARとしての一杯と、水の中にいるような静けさが同居する夜の隠れ家です。V睡にも。Quest・iOS対応。",
+    "note": "見上げる夜景と月、青く澄んだ水中都市を眺めるチルラウンジ。BARで一杯飲むような雰囲気と、水の中にいるような静けさが同居する夜の場所です。V睡にも。Quest・iOS対応。",
     "official": "見上げる夜景と月。青く澄んだ水中都市のチルラウンジです。 日常を忘れられる「落ち着く空間」をコンセプトに、静かに語り合えるBarカウンターと、そのままV睡できるスペースをご用意しました。 深海の底に沈む「淡夜」で、ゆったりとした優しい夜をお楽しみください。 Look up at the city n"
   },
   {
@@ -8222,7 +8162,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0eddf331-33f7-4e9c-9989-60926cfa6acd/4/256",
-    "note": "マンタやクラゲが泳ぐ深海に潜る、水中都市風の景観ワールド。海底散歩道やスイミングで自由に漂い、カプセルの中でゆらゆら過ごす感覚が人気です。VR睡眠用のベッドも。電車に乗りたいときは、同じ作者の『Deep Sea Train』へ。PC専用。",
+    "note": "マンタやクラゲが泳ぐ深海に潜る、水中都市風の景観ワールド。海底散歩道やスイミングで自由に漂え、カプセルの中でゆらゆら過ごせます。VR睡眠用のベッドも。電車に乗りたいときは、同じ作者の『Deep Sea Train』へ。PC専用。",
     "official": "Look At The Beautiful Deep Sea World. If you want to take the train of this world, go to Deep Sea Train World（Emperor AngelFish 90） （Double Saddle Fis"
   },
   {
@@ -8243,7 +8183,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_89872b90-9045-40bc-8d02-fe856ab7c423/1/256",
-    "note": "洞窟の中にひっそりと湧く隠れ家温泉。NOMAが2025年に公開した作品で、岩に囲まれた静かな湯で、フレンドと語らう夜にぴったりです。重く感じる時は赤い椅子のタブレットで軽量化設定もできます。Quest対応。",
+    "note": "洞窟の中にひっそりと湧く隠れ家温泉。NOMAが2025年に公開した作品で、岩に囲まれた静かな湯で、フレンドと語らう夜に向いています。重く感じる時は赤い椅子のタブレットで軽量化設定もできます。Quest対応。",
     "official": "There is a tablet available at the red chair that allows for various settings, including World optimization. If you find it too heavy, please feel fre"
   },
   {
@@ -8265,7 +8205,7 @@ window.WORLDS = [
       "ボードゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ffdded84-5f51-41de-bc28-a5a30061f07c/6/256",
-    "note": "Moffco作、昭和のスナックを宇宙に持っていったような飲み屋ワールド。お酒やカラオケのステージで賑わう1Fと、ママの部屋で麻雀ができる2Fがあり、V睡できるベッドも備えています。フレンドと静かに語る夜にも、VR飲み会の会場にもどうぞ。",
+    "note": "Moffco作、昭和のスナックを宇宙に持っていったような飲み屋ワールド。お酒やカラオケのステージで賑わう1Fと、ママの部屋で麻雀ができる2Fがあり、V睡できるベッドも備えています。フレンドと静かに語る夜にも、VR飲み会の会場にも使えます。",
     "official": "昭和のスナックです。お酒やカラオケステージ、タバコやおしぼりがある店内と2Fはママの部屋で麻雀TANKIが楽しめます。V睡できるベッドも備えます。Qvpenあります"
   },
   {
@@ -8325,7 +8265,7 @@ window.WORLDS = [
       "夜・夜景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_de6026a4-40a9-4eae-81f8-c325036b19e1/5/256",
-    "note": "音楽と自然の孤島『ノクターナディア』。都会の夜景を遠くに望む庭園と温室のある秘密の花園で、ピアノやバーのある大人の夜を。ロマンチックな雰囲気で撮影にも人気です。",
+    "note": "音楽と自然の孤島『ノクターナディア』。都会の夜景を遠くに望む庭園と温室のある秘密の花園で、ピアノやバーのある大人の夜を過ごせます。ロマンチックな雰囲気で撮影にも人気です。",
     "official": "- ノクターナディア - Island of Music and Nature"
   },
   {
@@ -8430,7 +8370,7 @@ window.WORLDS = [
       "乗り物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d7090017-454e-46f4-86fb-511460c3c0ad/3/256",
-    "note": "夜の森を進む馬車に揺られ、蹄の音と薪ストーブの火に癒やされるチルワールド。環境音やポスプロの調整メニュー、V睡ギミックも完備。屋根の上に登って星空を眺めるのもおすすめです。",
+    "note": "夜の森を進む馬車に揺られ、蹄の音と薪ストーブの火でくつろげるチルワールド。環境音やポスプロの調整メニュー、V睡ギミックも完備。屋根の上に登れば星空も眺められます。",
     "official": "蹄の音を聞きながらうとうとと。 メニューからカーテン、アバターライト、ポスプロ、環境音のON/OFFや調整ができます QVペン/V睡ギミック/YamaPlayerあり"
   },
   {
@@ -8451,7 +8391,7 @@ window.WORLDS = [
       "ホームワールド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_14b42dfd-e34a-4238-ad75-fa421c44e541/3/256",
-    "note": "夜の湖畔にクラゲが漂い、空中を巨大なクジラが静かに泳ぐ夢のような海辺。MoguLiveのおすすめにも選ばれた幻想景観で、奥のコテージはホームワールドにも人気です。",
+    "note": "夜の湖畔にクラゲが漂い、空中を巨大なクジラが静かに泳ぐ、海辺の幻想景観ワールド。MoguLiveのおすすめにも選ばれ、奥のコテージはホームワールドとして使う人も多い場所です。",
     "official": "Welcome to Dream Ocean. Your dreamy, cozy home world by the sea! Enjoy endless relaxing music and experience the perfect blend of high FPS and a beaut"
   },
   {
@@ -8472,7 +8412,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_353b6d73-2bbc-4a4d-b4c6-00baee74cee2/2/256",
-    "note": "「静かに言葉と向き合いたかった」という一文が印象的な、雨の読書部屋。上下ミュートで動画が干渉せず、ロフトと鍵付きの奥部屋には青空文庫も。写真投稿も盛んな、言葉と雨音に浸るチルワールドです。",
+    "note": "「静かに言葉と向き合いたかった」という一文が印象的な、雨の読書部屋。上下ミュートで動画が干渉せず、ロフトと鍵付きの奥部屋には青空文庫も。写真投稿も盛んな、言葉と雨音の中で読書できるチルワールドです。",
     "official": "『俺はただ、静かに言葉と向き合いたかっただけ。』 メイン部屋は上下ミュート機能あり、違う動画を再生しても干渉しません。 奥の部屋もミュート機能、そしてロック機能、インターホン、カメラもついてます。 imagePad FlipCamera QvPen 青空文庫 『＃多分雨VRC で撮った写真ポストして"
   },
   {
@@ -8493,7 +8433,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b4207f84-a913-4ede-b333-c2a208f61297/3/256",
-    "note": "Fins作、青が鮮やかな洋館のワールド。海と空のサファイアのような青をテーマに、扉の向こうにクラシックな部屋や幻想的な庭園が続き、2026年の公開時にはXで「信じられないほど美しい」と絶賛されました。藤の花、水に覆われた床と睡蓮、花の絵のアトリエなど、どこを切り取っても絵になる撮影向きの空間です。容量約393MBと重めなのでご注意を。PC専用。",
+    "note": "Fins作、青が鮮やかな洋館のワールド。海と空のサファイアのような青をテーマに、扉の向こうにクラシックな部屋や幻想的な庭園が続き、2026年の公開時にはXで「信じられないほど美しい」と話題になりました。藤の花、水に覆われた床と睡蓮、花の絵のアトリエなど、撮影向きの場所が多い空間です。容量約393MBと重めなのでご注意を。PC専用。",
     "official": "Something once shaped by pressure, now to bloom like flowers. It does not ask to be admired, only to exist. 02/01/26 : HOTFIXED Massive Performance Is"
   },
   {
@@ -8512,7 +8452,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d2557330-b806-4a02-9767-14860ae019f4/4/256",
-    "note": "実時間に合わせて上昇する軌道エレベーターで、宇宙ステーションや深宇宙ゲートを目指すチルな宇宙旅行。S_ASAGIRI制作で、重力の再現や展望スペースから見る地球が圧巻です。いったん離れても、次に新しいインスタンスを立てると前回の続きの高さから始まるので、少しずつ登る楽しみ方も。",
+    "note": "実時間に合わせて上昇する軌道エレベーターで、宇宙ステーションや深宇宙ゲートを目指すチルな宇宙旅行。S_ASAGIRI制作で、重力の再現や展望スペースから見る地球の眺めが見どころです。いったん離れても、次に新しいインスタンスを立てると前回の続きの高さから始まるので、少しずつ登る楽しみ方もできます。",
     "official": "実時間に合わせて動く軌道エレベータです。ゆったりお過ごしください。 ワールドをいったん離れても、次に新しいインスタンスを立てた時は前回最後にいた場所から始まります。 Created by S_ASAGIRI"
   },
   {
@@ -8554,7 +8494,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_73d1222f-a07d-44d8-b71e-da2f27ad3023/7/256",
-    "note": "夜明けの光が差す花畑と、オーロラと星空が混ざる幻想的な空の景観ワールド。焚き火からミラーを出して眺める時間は格別で、海外レビューでも絶賛された美しさです。PC専用。",
+    "note": "夜明けの光が差す花畑と、オーロラと星空が混ざる幻想的な空の景観ワールド。焚き火からミラーを出して眺める時間が心地よく、海外のレビューでも景観の美しさが評価されました。PC専用。",
     "official": "深まった闇は光を呑み込めず、かえってその光をいっそう鮮やかに浮かび上がらせる。The deepening darkness cannot swallow the light; rather, it only makes it shine more clearly."
   },
   {
@@ -8575,7 +8515,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d034821a-0dc3-4de7-b506-048c9d636082/3/256",
-    "note": "高級ホテルのスイートルームのような空間で、寄ってくる猫と静かに過ごせる8人までのチルワールド。puri_sanが2025年に公開した作品で、添えられた一言は「寝息が聞こえるほど近くに、猫の温もり」。湯気で曇るガラス風呂を手で拭うギミックや、ベッド前の動画プレイヤー、隠し要素探しも楽しい一作です。Quest対応。",
+    "note": "高級ホテルのスイートルームのような空間で、寄ってくる猫と静かに過ごせる8人までのチルワールド。puri_sanが2025年に公開した作品で、湯気で曇るガラス風呂を手で拭うギミックや、ベッド前の動画プレイヤー、隠し要素探しも楽しい一作です。Quest対応。",
     "official": "寝息が聞こえるほど近くに、猫の温もり。あなただけのスイートルーム。HashTag ＃Kohaku_iro3D"
   },
   {
@@ -8595,7 +8535,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_768dff28-1eda-4ee1-960e-dec35ca63ac6/3/256",
-    "note": "Finsの物語の始まりの場所。頭上のガラス越しに魚が泳ぐ海中の小さな寝室で、ベッドに寝転べば幸せな気分で眠れる。2024年の公開時にはVRChat公式のXでも紹介されました。『District Roboto』などの過去作の遺物探しも楽しい、神秘的で綺麗な一部屋。PC専用。",
+    "note": "Finsの物語の始まりの場所。頭上のガラス越しに魚が泳ぐ海中の小さな寝室で、ベッドに寝転んで眠れます。2024年の公開時にはVRChat公式のXでも紹介されました。『District Roboto』などの過去作の遺物探しも楽しい、神秘的で綺麗な一部屋。PC専用。",
     "official": "A place where all the stories begin. A small, underwater-themed bedroom with basic necessities, you might found some relic from past adventures. May y"
   },
   {
@@ -8614,7 +8554,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3e568501-6142-4e6f-a3fb-f70bce726011/5/256",
-    "note": "自宅に本格的なBarがあるような、大人のプライベートラウンジ。大きなビデオプレイヤーで音楽や映画を流しながら、ゆったり語らう夜にぴったりです。寝室は声が外に漏れない仕様で、Quest対応。",
+    "note": "自宅に本格的なBarがあるような、大人のプライベートラウンジ。大きなビデオプレイヤーで音楽や映画を流しながら、ゆったり語らう夜に向いています。寝室は声が外に漏れない仕様で、Quest対応。",
     "official": "お家でBarを楽しめるQuest対応ワールドです。寝室は中にいる人の声が外に聞こえなくなっています。VRCLightVolumesに対応させました。This is a Quest compatible world where you can enjoy a bar at home. The voic"
   },
   {
@@ -8656,7 +8596,7 @@ window.WORLDS = [
       "雪・冬"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_eaabf1c7-51ef-41bc-b554-60c98a9b4411/3/256",
-    "note": "都会の夜景とオーロラを望む、静かな夜のチルワールド。上の階では夜景を眺めながらシーシャも楽しめ、ベッドルームからはオーロラが見えます。フレンドとじっくり話したい夜や、オーロラを見ながらのV睡に。",
+    "note": "都会の夜景とオーロラを望む、静かな夜のチルワールド。上の階では夜景を眺めながらシーシャも楽しめ、ベッドルームからはオーロラが見えます。フレンドとじっくり話したい夜や、オーロラを見ながらのV睡にも向いています。",
     "official": "Please have a quiet night. 凛冽の空が映す、六花の幽舞は漆黒の天鵞絨に降り積もり、すべてを純白に染め上げる。凍てつく冬の微かな吐息に心を預け、刹那の佳景、君と過ごすこの時間を、心象のスノードームに閉じ込め、永遠を願う。【VRChat向けワールド】MellowRoundy /"
   },
   {
@@ -8677,7 +8617,7 @@ window.WORLDS = [
       "狭い部屋"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f25bf415-0324-416d-a57e-d5c64a164934/3/256",
-    "note": "雨音に包まれる、かなり狭めの睡眠部屋。大きな窓からの夜景と低い天井が作るマニアックな落ち着きが好評です。カーテンを閉めて薄暗くすれば、そのままV睡にどうぞ。",
+    "note": "雨音に包まれる、かなり狭めの睡眠部屋。大きな窓からの夜景と低い天井が作るマニアックな落ち着きが好評です。カーテンを閉めて薄暗くすれば、そのままV睡できます。",
     "official": "small sleep room with rain, close the curtains and enjoy the dim≺3 下雨睡覺小房間 QvPen/VideoPlayer/NightMode/VRC Light Volumes"
   },
   {
@@ -8697,7 +8637,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_23900fe9-b89d-4465-9700-c76fb404f092/4/256",
-    "note": "作者が初めて作ったチルワールド。Quest単体でもV睡しやすいシンプルなナイトモードやYamaPlayer、AudioLinkを備えた、素朴で居心地のいい手作りの部屋です。",
+    "note": "作者Yurisu_0903作のチルワールド。Quest単体でもV睡しやすいシンプルなナイトモードやYamaPlayer、AudioLinkを備えた、素朴で居心地のいい手作りの部屋です。",
     "official": "初めて作ったワールドです。 チルワールドとしてお使いください Quest単機の方のV睡用のシンプルナイトモードを導入しています シンプルかつ便利にそんなワールドに仕上がりましたので、是非お越しください YamaPlayer／Audiolink／QVPen 26／03／25 パブリック化しました！あり"
   },
   {
@@ -8717,7 +8657,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_82319573-b27b-4d8a-bf44-ee45aa3be6cd/6/256",
-    "note": "好きな音楽を持ち寄って聴くことに特化した部屋。もくそんが2026年に公開した作品で、VizVidプレイヤーとAudioLink対応で、流す曲に合わせて光の演出が反応します。フレンドと推し曲を共有したり、一人でプレイリストに浸ったりする夜に。Quest対応。",
+    "note": "好きな音楽を持ち寄って聴くことに特化した部屋。もくそんが2026年に公開した作品で、VizVidプレイヤーとAudioLink対応で、流す曲に合わせて光の演出が反応します。フレンドと推し曲を共有したり、一人でプレイリストをじっくり聴いたりするのに向いています。Quest対応。",
     "official": "VIZVID、Audiolink"
   },
   {
@@ -8737,7 +8677,7 @@ window.WORLDS = [
       "集会・交流"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f05ff79e-aab4-485b-97ae-ff1a2a5cc6aa/12/256",
-    "note": "ASMRイベント『癒しなで』の小物が並ぶ部屋。耳かきや焚き火、深海の音など多彩なASMRギミックで『力が抜けていく』と評判です。入口のドアからシアタールームへ移れて、動画鑑賞やシーシャも。ワールド音量は80%くらいがおすすめです。",
+    "note": "ASMR用の小物が並ぶ部屋。耳かきや焚き火、深海の音など多彩なASMRギミックで評判です。入口のドアからシアタールームへ移れて、動画鑑賞やシーシャも。ワールド音量は80%くらいがおすすめです。",
     "official": "ASMR用の小物がたくさん置いてあります 音の大きさはワールド音量で調整お願いします 80％くらいがおすすめです ASMRを楽しんでもらえたらうれしいです！ 入口のドアからシアタールームにワープできます"
   },
   {
@@ -8778,7 +8718,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_702b26c9-4c6a-4210-b627-5f8a8b9d5aa8/14/256",
-    "note": "雪原を走る蒸気機関車の中で、クリスマスの夜を過ごすワールド。Smokinbonesが約1年かけて作った思い入れの一作で、2025年の冬に公開されました。車両ごとに違う内装を巡り、屋根の上や最後尾テラスからオーロラを眺める贅沢なチルタイムを。VRフォトグラファーの撮影地にも選ばれています。Quest対応。",
+    "note": "雪原を走る蒸気機関車の中で、クリスマスの夜を過ごすワールド。Smokinbonesが約1年かけて作った思い入れの一作で、2025年の冬に公開されました。車両ごとに内装が違い、屋根の上や最後尾のテラスからはオーロラが見えます。VRフォトグラファーの撮影地にも選ばれています。Quest対応。",
     "official": "Ride on the Polar Express through the arctic on a peaceful Christmas night :3 This world was a passion project I've been working on for about a year,"
   },
   {
@@ -8801,7 +8741,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5b6501ac-5cce-4a28-a8b9-d35501c69c24/1/256",
-    "note": "容量わずか0.54MBの超軽量な海辺。なのに焚き火、釣り、花火、動画、V睡用テントまで全部入りで『なぜ入るのか分からない』と驚かれる名作。Quest対応でホームワールドにも人気です。",
+    "note": "容量わずか0.54MBの超軽量な海辺。なのに焚き火、釣り、花火、動画、V睡用テントまで全部入り。Quest対応でホームワールドにも人気です。",
     "official": "キロバイトで構成された仮想の海辺。極限まで削られた容量の中に、必要なものは全て揃っています。"
   },
   {
@@ -8822,7 +8762,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8a071cc6-c589-4268-9f5b-013fed8d9cd0/1/256",
-    "note": "猫と人がごろごろくつろげるおうち。三色団子が2025年に、VRCに生息する猫たちのためにと寝床をたくさん用意して公開したワールドです。明るすぎない落ち着いた明かりと、クッションや寝床がいっぱいの部屋は、作業しながらおしゃべりしたり写真を撮ったりする普段使いに最適。Quest・iOS対応。",
+    "note": "猫と人がごろごろくつろげるおうち。三色団子が2025年に、VRCに生息する猫たちのためにと寝床をたくさん用意して公開したワールドです。明るすぎない落ち着いた明かりと、クッションや寝床がいっぱいの部屋で、作業しながらおしゃべりしたり写真を撮ったりできます。Quest・iOS対応。",
     "official": "Cats! Fluffy beds await you, come relax!"
   },
   {
@@ -8928,7 +8868,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_eec570a6-ea30-4b58-b60b-a67bb0d3e9dd/8/256",
-    "note": "元喫茶店の居抜きを住まいにした、雨の街を望むレトロなワールド。カウンターやプロジェクター、暖炉のあるベッドルームまで作り込みが細かく、『どこで撮っても絵になる』と評判の落ち着いた空間です。",
+    "note": "元喫茶店の居抜きを住まいにした、雨の街を望むレトロなワールド。カウンターやプロジェクター、実際に打てるタイプライターに暖炉のあるベッドルームまで作り込みが細かく、落ち着いた空間です。",
     "official": "喫茶店の居抜きです。一日の終わり、または始めに。"
   },
   {
@@ -8948,7 +8888,7 @@ window.WORLDS = [
       "シューター・FPS"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8b3965b9-899d-4bcc-a3cc-b2e22628913d/3/256",
-    "note": "のんびりくつろいでいたはずが、ランダムな時間に窓ガラスを割って特殊部隊が突入してくる話題のチルワールド。4回に分けて来る部隊を武器庫の銃で全滅させると、ミサイルを撃ってくるヘリも帰っていきます。チルを取り返すまでのギャップの激しさはVRならでは。",
+    "note": "のんびりくつろいでいたはずが、ランダムな時間に窓ガラスを割って特殊部隊が突入してくるチルワールド。4回に分けて来る部隊を武器庫の銃で全滅させると、ミサイルを撃ってくるヘリも帰っていきます。チルを取り戻すまで戦うことになります。",
     "official": "ランダムな時間で特殊部隊が突入してきます。 4回に分けて突入してくるので全滅させて撤退させましょう！ ミサイル撃ってくるヘリは部隊が全滅すると帰っていきます"
   },
   {
@@ -8990,7 +8930,7 @@ window.WORLDS = [
       "カフェ・飲食"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ae6bdbdb-0f9c-43c5-95d7-b2fa98dc4d0d/3/256",
-    "note": "ASMR機能のある本格シーシャを嗜める、大人のチルワールド。睡眠用ベッドやミュートエリアに加え、占いや麻雀パズル、ロシアンタコ焼きまで。煙と静けさに浸りたい夜に、少人数でどうぞ。",
+    "note": "ASMR機能のある本格シーシャを嗜めるチルワールド。睡眠用ベッドやミュートエリアに加え、占いや麻雀パズル、ロシアンタコ焼きまであります。煙を楽しみながら静かに過ごしたい夜に、少人数でどうぞ。",
     "official": "ASMR機能のある本格シーシャを置いています。 睡眠用ベッド nightモード イメージパッド yamaplayer QVペンを完備 ジョインログ 飲み物 麻雀パズル ベッド部屋にミュートエリアもあります ロシアンタコ焼きと占い付きが紅茶が入りました！ シーシャの使い方を動画プレイヤーに入れました"
   },
   {
@@ -9030,7 +8970,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_869ee10d-57e4-464a-ab2d-01506659b973/3/256",
-    "note": "日本のどこかにある高台の洋館で、移りゆく雨模様と遠くの街の灯りを眺めるチルワールド。紫陽花の庭とカフェ・ラウンジのあるロマンチックな雰囲気で、撮影スポットとしても人気です。",
+    "note": "日本のどこかにある高台の洋館で、移りゆく雨模様と遠くの街の灯りを眺めるチルワールド。紫陽花の庭とカフェ・ラウンジがあり、撮影スポットとしても人気です。",
     "official": "日本のどこかにある高台の洋館で、移りゆく雨模様と遠くの街の灯りを眺めながら、心ほどけるひとときをお過ごしください。 ｜ Hillside Manor - A Japanese Rainy Evening Retreat ｜ Hashtag : ＃Gunjo3D"
   },
   {
@@ -9090,7 +9030,7 @@ window.WORLDS = [
       "一人でゆっくり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_483fb79a-d4e1-4035-aef6-9a7dca5b6845/2/256",
-    "note": "真っ白な部屋に大きな幻想樹が現れ、静かな水面と空を泳ぐクジラが漂う幻想的なチルワールド。白に映える景色は撮影にも向いていて、静かに景色を眺めて過ごしたいときに。",
+    "note": "真っ白な部屋に大きな幻想樹が現れ、静かな水面と空を泳ぐクジラが漂うチルワールド。白に映える景色は撮影にも向いています。",
     "official": "白室に現れる幻想樹と静かな水の世界。 空を泳ぐクジラと幾何学構造体が漂う、チル＆撮影向けワールド。 ソロ・少人数での滞在におすすめ。"
   },
   {
@@ -9110,7 +9050,7 @@ window.WORLDS = [
       "水族館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bac6102a-ebd2-4bf2-a1b0-0510a2c8d9bd/3/256",
-    "note": "Fins作の海中水族館。大パノラマの水槽をマンタやクジラが泳ぎ、その迫力と美しさは水族館系随一と評判です。バーや宿泊フロア、図鑑まであり、眺めて学んで長居できる一作。",
+    "note": "Fins作の海中水族館。大パノラマの水槽をマンタやクジラが泳ぎ、その迫力と美しさで評判です。バーや宿泊フロア、図鑑まであり、眺めるだけでなく長く滞在できます。",
     "official": "Aquarius is a multi-biomes aquarium experience, come and gaze upon the marine life, and learn something new. Updated to support Red Sim's Light Volume"
   },
   {
@@ -9152,7 +9092,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6d7d30c7-3977-4add-ad13-8168fb0c9977/5/256",
-    "note": "満月に映えるトラス橋と川面の灯篭が美しい、秋の温泉旅館ワールドの夜バージョン。昼版は『本当に泊まりたい温泉旅館』と評される作り込みで、実際に焼けるBBQや打ち上げ花火と一緒に秋の夜長をゆっくり過ごせます。ナイトモードや花火はハンドメニュー（デスクトップはTabキー）から。PC専用。",
+    "note": "満月に映えるトラス橋と川面の灯篭が美しい、秋の温泉旅館ワールドの夜バージョン。実際に焼けるBBQや打ち上げ花火と一緒に秋の夜長をゆっくり過ごせます。ナイトモードや花火はハンドメニュー（デスクトップはTabキー）から。PC専用。",
     "official": "夜とトラス橋とモダンな温泉！実際に焼けるBBQも！ ハンドメニューでナイトモードとか打ち上げ花火がオンオフできるよ！ ［HandMenu］VR:2Click LeftTrigger / Desktop:Tab Key"
   },
   {
@@ -9195,7 +9135,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a0e9ee15-285d-4e7e-b683-b049033e1a7b/2/256",
-    "note": "超音速プライベートジェットの機内で豪華な空の旅を楽しむワールド。大型ビデオプレイヤーやベッドルームを備え、飛行音を聞きながらのV睡にも使えると紹介されています。Quest対応。",
+    "note": "超音速プライベートジェットの機内で過ごせるワールド。大型ビデオプレイヤーやベッドルームを備え、飛行音を聞きながらのV睡にも使えます。Quest対応。",
     "official": "Enjoy your supersonic journey through the skies."
   },
   {
@@ -9216,7 +9156,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c21372ad-1f54-40dd-b16e-afbe327854e6/6/256",
-    "note": "木々の隙間から降る星明かりが自然の屋根を作る、夜の森のワールド。민소담_が2025年に公開した作品で、HANI.への謝辞も添えられています。焚き火のある静かな空間で星空を眺めたり、アバター撮影の背景にしたりと、静かに過ごしたい夜に。訪問は80万超。PC専用。",
+    "note": "木々の隙間から降る星明かりが自然の屋根を作る、夜の森のワールド。민소담_が2025年に公開した作品。焚き火のある静かな空間で星空を眺めたり、アバター撮影の背景にしたりと、静かに過ごしたい夜に。訪問は80万超。PC専用。",
     "official": "나무 사이의 별빛이 만드는 자연의 지붕 ｜ A natural roof made by starlight between trees ｜ Thx to HANI."
   },
   {
@@ -9296,7 +9236,7 @@ window.WORLDS = [
       "自然・風景"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_53869e46-7f61-4eed-a81e-9b843bc1bd44/7/256",
-    "note": "明け方の空を静かに昇る熱気球のワールド。ゴンドラのカフェでコーヒーを飲み、気嚢内を上がればピアノのある不思議な部屋や隠し場所も。夜明けの絶景を一人で噛みしめたい人に。",
+    "note": "明け方の空を静かに昇る熱気球のワールド。ゴンドラのカフェでコーヒーを飲み、気嚢内を上がればピアノのある不思議な部屋や隠し場所もあります。夜明けの景色を一人で静かに眺めたい人に。",
     "official": "明け方の空を旅する熱気球のワールドです。 「新しい世界に踏み出すときの高揚や不安、祈りのような想いを抱えて、熱を宿した気球は、風を感じながら夜明けの空を静かに昇っていきます。」"
   },
   {
@@ -9337,7 +9277,7 @@ window.WORLDS = [
       "雨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_07f5af8c-f600-4ce3-9798-85beb57f7814/3/256",
-    "note": "街の夜景を望む屋根裏の寝床。すべての照明を自由に調光できるので、眠りにつく前の明るさにぴったり合わせられます。雨のギミックも加わり、静かな夜をのんびり過ごしたい人やV睡にどうぞ。",
+    "note": "街の夜景を望む屋根裏の寝床。すべての照明を自由に調光できるので、眠りにつく前の好みの明るさに調整できます。雨のギミックも加わり、静かな夜をのんびり過ごしたい人やV睡にどうぞ。",
     "official": "すべての照明は自由に調光できます。街の夜景と共にのんびりとお過ごしください。All lighting can be dimmed freely. Please relax and enjoy your time. v1.0.2 2025/10/02 雨ギミック追加など"
   },
   {
@@ -9358,7 +9298,7 @@ window.WORLDS = [
       "ホームワールド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_79caf039-3917-494c-8794-5beb219b0a48/6/256",
-    "note": "深海×近未来をテーマにした多機能ホームワールド。アラーム機能付きのV睡空間、秘密のBar、のんびりできる大広間を備え、深海の住人になった気分で長居できる、これから更新も予定される空間です。",
+    "note": "深海×近未来をテーマにした多機能ホームワールド。アラーム機能付きのV睡空間、秘密のBar、のんびりできる大広間を備え、深海の住人になった気分で長居できる空間です。",
     "official": "深海×近未来をテーマにした多機能ホーム用ワールドです。V睡空間（アラーム機能有り）,秘密のBar,のんびりできる大広間。 その他機能はアップデート予定。 Themed around Deepsea × near-future, this is a multi-functional home worl"
   },
   {
@@ -9460,7 +9400,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a3a86237-7426-491a-a28d-29ba0dd02740/1/256",
-    "note": "ガイコツたちの動きだけを頼りに、どれがニセモノのフレンドかを当てるゲーム。動きの癖がバレて大盛り上がりします。3人以上推奨で、フルトラがあるとより楽しめます。遊び方は動画プレイヤーの元ネタ動画で確認できます。PC専用。",
+    "note": "相手の動きだけを頼りに、どれがニセモノのフレンドかを当てるゲーム。動きの癖がバレて大盛り上がりします。3人以上推奨で、フルトラがあるとより楽しめます。遊び方は動画プレイヤーの元ネタ動画で確認できます。PC専用。",
     "official": "動きだけで、「どれがニセモノのフレンドか」を当ててもらうゲームです。３人以上推奨です～。 遊び方がわからない人は動画プレイヤーのプレイリストで元ネタ動画が見れます！"
   },
   {
@@ -9566,7 +9506,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_484004b4-69cc-4b64-b99f-d17831bf08a5/1/256",
-    "note": "レーザー銃を手に深海へ潜る、採掘×PvEアクション。jackburfyが2026年に公開した作品で、Xでは、VRChatでサブノーティカのような遊びができると驚かれました。素材を持ち帰って装備を強化するほど深く潜れますが、倒れると収穫をロストする緊張感も。ソロや少人数でじっくり潜りたい人におすすめ。最大10人、Quest・iOS対応。",
+    "note": "レーザー銃を手に深海へ潜る、採掘×PvEアクション。jackburfyが2026年に公開した作品。素材を持ち帰って装備を強化するほど深く潜れますが、倒れると収穫をロストする緊張感も。ソロや少人数でじっくり潜りたい人におすすめ。最大10人、Quest・iOS対応。",
     "official": "Grab your laser and dive into the deep. Mine valuable resources, battle sea creatures, return to base with your haul, and upgrade your gear so your cr"
   },
   {
@@ -9672,7 +9612,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5c39de9f-10ae-4e03-8619-0abc89ee6d6a/2/256",
-    "note": "ドラゴンを倒して育ち、転生を繰り返して強くなる周回型の放置RPG。Maki Maki作で、VRChat公式のXでも紹介された、訪問780万超の大人気作です。ガチャやペット、転生後に解放される要素などシステムが山ほどあり、Xでは放置で鍵を貯めてガチャを回す稼ぎ方や、ペットを育てて転生を速める進め方が飛び交う一方、「いまだに攻略が分からない」という声も。日本語説明がないので、最初はガイド片手にどうぞ。Quest対応。",
+    "note": "ドラゴンを倒して育ち、転生を繰り返して強くなる周回型の放置RPG。Maki Maki作で、VRChat公式のXでも紹介された、訪問780万超の大人気作です。ガチャやペット、転生後に解放される要素などシステムが山ほどあり、Xでは放置で鍵を貯めてガチャを回す稼ぎ方や、ペットを育てて転生を速める進め方が飛び交う一方、「いまだに攻略が分からない」という声も。最初はガイド片手にどうぞ。Quest対応。",
     "official": "Idle game. 放置ゲーの勇者に転生してしまった"
   },
   {
@@ -9750,7 +9690,7 @@ window.WORLDS = [
       "やり込み"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_32c72b6b-2d1b-4d19-8fba-581735500ad2/5/256",
-    "note": "竿を育ててレアな魚を釣りまくる、本格派の釣りゲーム。2万種以上の魚と図鑑埋めがあり、ボートで島や砂漠など複数のエリアを巡れます。2026年2月の公開から約2週間で訪問144万を超えてXのトレンドに入り、攻略記事も多数。気づけば数時間溶けるやり込み系で、基本は一人で黙々と、たまにフレンドと渦周回も。少しホラーな要素もあります。",
+    "note": "竿を育ててレアな魚を釣りまくる、本格派の釣りゲーム。2万種以上の魚と図鑑埋めがあり、ボートで島や砂漠など複数のエリアを巡れます。2026年2月の公開から約2週間で訪問144万を超えてXのトレンドに入り、攻略記事も多数。気づけば数時間溶けるやり込み系で、基本は一人で黙々と、たまにフレンドと渦周回も。少しホラーな要素も？",
     "official": "［Enjoy a full progression system and catch over 20000＋ unique fish! ］·［ CATCH ≻ SELL ≻ UPGRADE! ］·［Start Fishing and become the strongest Angler!］FISH"
   },
   {
@@ -9790,7 +9730,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_0e968135-30be-41b3-bbe1-4cafe3bb70e6/3/256",
-    "note": "軍艦を操って戦う、VRChat初の艦隊戦ゲーム。『VRChat BattleField』なども手がけるとみー（Tommy）作で、Patreon限定の先行公開を経て2025年に一般公開されました。駆逐・巡洋・戦艦から艦を選べば最大24人の大海戦に。魚雷を抱えて突っ込む駆逐艦が楽しいという声もあり、本家World of Warshipsよりずっとシンプルで、カジュアルに海戦ごっこが楽しめます。ゲーム系の集まりでもよく遊ばれています。Quest対応。",
+    "note": "軍艦を操って戦う、VRChat初の艦隊戦ゲーム。『VRChat BattleField』なども手がけるとみー（Tommy）作で、Patreon限定の先行公開を経て2025年に一般公開されました。駆逐・巡洋・戦艦から艦を選べば最大24人の大海戦に。魚雷を抱えて突っ込む駆逐艦や戦艦ですべてをなぎ倒すプレイも、本家World of Warshipsよりずっとシンプルで、カジュアルに海戦ごっこが楽しめます。ゲーム系の集まりでもよく遊ばれています。Quest対応。",
     "official": "総員、戦闘配置！ カジュアルに遊べる、World of Warshipsのような艦隊戦ゲームです。 Action stations! Casual naval shooter game like World of Warships. ［24Players, Desktop / Android com"
   },
   {
@@ -9933,7 +9873,7 @@ window.WORLDS = [
       "探索"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_57f015a0-3681-43a6-adf3-0fc614e8ccf6/5/256",
-    "note": "霧に包まれた浜辺から始まる、長い徒歩とバイクの旅。北風の聴こえる方向を目指して進む、静かで没入感のある移動系チルワールドです。ワールド内の曲はすべて作者セリアの自作曲。退出時の位置は保存されますが、リスポーンするとリセットされるので注意。",
+    "note": "霧に包まれた浜辺から始まる、長い徒歩とバイクの旅。北風の聴こえる方向を目指して進む、静かな移動系チルワールドです。ワールド内の曲はすべて作者セリアの自作曲。退出時の位置は保存されますが、リスポーンするとリセットされるので注意。",
     "official": "霧に包まれた浜辺で長い長い徒歩旅・バイク旅ができます。北風の聴こえる方向へ進んでください。ワールド退出時に位置情報が保存されますが、リスポーンでリセットされますのでご注意。なお、ワールド内楽曲は全てセリアの自作曲です。"
   },
   {
@@ -9952,7 +9892,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8748abb2-81db-4f00-a3bc-722b5379dca5/3/256",
-    "note": "足場やトラップを置いてコースを作り、誰より早くゴールを目指す2〜4人対戦。まかん｜coffeeによる『Ultimate Chicken Horse』へのリスペクト作で、遊んだ人が「アルチキそのまますぎて面白かった」と言うほどの再現度です。置いた足場は次のラウンドにも残るので、自分に有利に、他人には意地悪に置くほど後半はカオスで盛り上がります。ルール把握に1戦使うつもりで。Quest対応。",
+    "note": "足場やトラップを置いてコースを作り、誰より早くゴールを目指す2〜4人対戦。まかん｜coffeeによる『Ultimate Chicken Horse』へのリスペクト作で、再現度はとても高いです。置いた足場は次のラウンドにも残るので、自分に有利に、他人には意地悪に置くほど後半はカオスで盛り上がります。ルール把握に1戦使うつもりで。Quest対応。",
     "official": "Multiplayer PvP game （2~4） - Create a path that gives you an advantage and reach the goal faster than anyone else!"
   },
   {
@@ -10265,7 +10205,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_9163ee63-177a-420b-a023-dfef508b2c8b/26/256",
-    "note": "空母からF-14トムキャットなどの艦載機を飛ばせる、Zweikaku作の空戦ワールド。地上基地もあり、ミサイルを撃ち合うドッグファイトも楽しめます。VRChat公式のXでも紹介され、訪問は680万超。本格シミュレーターより気軽なアーケード寄りの操縦感で、居合わせた人と編隊飛行したり空戦したりして何時間も過ごせる、という声も。飛行機好きのフレンド同士でどうぞ。Quest対応。",
+    "note": "空母からF-14トムキャットなどの艦載機を飛ばせる、Zweikaku作の空戦ワールド。地上基地もあり、ミサイルを撃ち合うドッグファイトも楽しめます。VRChat公式のXでも紹介され、訪問は680万超。本格シミュレーターより気軽なアーケード寄りの操縦感で、居合わせた人と編隊飛行したり空戦したりして何時間も過ごせます。飛行機好きのフレンド同士でどうぞ。Quest対応。",
     "official": "Aircraft Carrier Jets: F-14 ｜ Dominate the skies with the Iconic Tomcat and more."
   },
   {
@@ -10640,7 +10580,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ae89c05a-c80d-4ef7-868f-7e91fd60fca4/1/256",
-    "note": "石を叩いて『業（カルマ）』を稼ぐクリッカー系ワールド。ポイントで設備や装備を整え、労働と放置で延々と増やしていく。Quest対応で一人作業チルにも最適なシュールな一作。",
+    "note": "石を叩いて『業（カルマ）』を稼ぐクリッカー系ワールド。ポイントで設備や装備を整え、労働と放置で延々と増やしていく。Quest対応で、一人で黙々と作業するチルにも向いたシュールなワールド。",
     "official": "［JP/EN］ オッオッ おまえらの業をかぞえるのに丁度いいなんかができたぞ。これあ 白い海に囲まれたクリッカーワールドだ。 鋲で岩を叩き、業（krm）を増やしていけ。設備を買って自動化し、倍率上げて、グングンな。 Alright, I made the perfect little thing f"
   },
   {
@@ -10682,7 +10622,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5013c185-bcd3-4bf8-ab10-266ffc643bf8/3/256",
-    "note": "VRChat内通貨ギミック『Udon Chips』の機能を詰め込んだ、Quest対応のカジノワールド。チップを賭けて遊ぶカジノゲームをフレンドとワイワイ楽しめます。訪問数も多い定番どころです。",
+    "note": "VRChat内通貨ギミック『Udon Chips』の機能を詰め込んだ、Quest対応のカジノワールド。チップを賭けて遊ぶカジノゲームを、フレンドと集まって遊べる。訪問数も多い。",
     "official": "Udon Chipsの機能を詰め込んで Quest対応したワールド"
   },
   {
@@ -11206,7 +11146,7 @@ window.WORLDS = [
       "ホームワールド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a1489a9c-dced-49d2-b267-9a1d643c45be/18/256",
-    "note": "料理からゲームまで何でも揃う、普段使いの万能ホームワールド。料理やケーキ作り、オリジナルの動画タブレット、拡張メニューの30種以上のゲーム、アバター展示まであり、動作がとても軽くて長居しやすい定番の一軒です。フレンドとまったりするのに最適。",
+    "note": "料理からゲームまで何でも揃う、普段使いの万能ホームワールド。料理やケーキ作り、オリジナルの動画タブレット、拡張メニューの30種以上のゲーム、アバター展示まであり、動作が軽くて長居しやすい。フレンドとまったり過ごすホームに。",
     "official": "色んな人が普段使いしやすいワールドを目指して作りました！オリジナルで使いやすい動画タブレット、拡張メニューに30以上のゲーム、料理ギミック、アバター展示もあります。動作負荷も非常に軽いです。（更新日:26/05/11）"
   },
   {
@@ -11249,7 +11189,7 @@ window.WORLDS = [
       "動物"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2ae6f97e-ba80-44ee-a64f-902182a4fa32/7/256",
-    "note": "惑星ポリゴニア『アメシノギの森』の第一調査拠点。森の生物を観察して図鑑を埋めていく探索ワールドで、まだ開発中のため図鑑には空きがあります。容量約135MB、定員30人。",
+    "note": "惑星ポリゴニア『アメシノギの森』の第一調査拠点。森の生物を観察して図鑑を埋めていく探索ワールド。容量約135MB、定員30人。",
     "official": "［WIP］ 惑星ポリゴニア \"アメシノギの森\" 第一調査拠点 調査中のため図鑑に空きあり（固着生物20/21、動点生物17/18）"
   },
   {
@@ -11270,7 +11210,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_23359d02-17ad-4f14-aeb0-078905507f64/1/256",
-    "note": "豪華クルーズを舞台に、制限時間60分で謎を解く本格脱出ゲーム。解くほどにストーリーが動き、ドキドキの展開は必見と評判です。難易度は高めなので、フレンドと協力して挑戦を。途中参加不可・PC専用。",
+    "note": "豪華クルーズを舞台に、制限時間60分で謎を解く本格脱出ゲーム。謎を解き進めるほどにストーリーが動き、終盤の展開に驚いたという声が多い。難易度は高めなので、フレンドと協力して挑戦を。途中参加不可・PC専用。",
     "official": "あなたは、余興「人生逆転クルーズ」をクリアし、残りの人生を遊んで過ごすことができるのか！？/ 制限時間60分 / グローバル動作 / 途中参加不可 ＃VRC_人生逆転"
   },
   {
@@ -11353,7 +11293,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e64ab59f-00e8-4704-a561-98d0ea69c76c/33/256",
-    "note": "ランダムな怪物とランダムな舞台で3分間生き残る、最大16人のサバイバルホラー。敵は140種以上、特殊ラウンドも豊富で、仕組みを理解するほど沼ります。重いワールドで、点滅やジャンプスケアもあります。フレンド＋かグループで、悲鳴を上げながらどうぞ。PC専用。",
+    "note": "ランダムな怪物とランダムな舞台で3分間生き残る、最大16人のサバイバルホラー。敵は140種以上、特殊ラウンドも豊富で、仕組みを理解するほど沼ります。重いワールドで、点滅やジャンプスケアもあります。フレンド同士やグループで、悲鳴を上げながらどうぞ。PC専用。",
     "official": "Friends＋ or Group heavily recommended. ｜（HEAVY WORLD）This world contains flashing lights and jumpscares.｜ A chaotic udon survival game. Supports 16 pl"
   },
   {
@@ -11471,7 +11411,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fa554a7f-33b8-477b-afcf-02426154a525/1/256",
-    "note": "前作で探索した巨大なブルータリズムのウォーターパークから、今度は『家に帰る』番。MyroPが2026年7月に公開した『NUCLEUS』の続編で、前作よりずっと物語性が増し、Xでは、VRChatのリミナル系として全てが最高峰のクオリティと評されました。スライダーや浮き輪で巡るリミナルスペース探索で、ホラー演出はないのに不気味です。アイテム全回収なら2時間超。自動チェックポイントや合流・テレポート機能、明るさ調整、VR酔い対策まであるのも親切。PC専用。",
+    "note": "前作で探索した巨大なブルータリズムのウォーターパークから、今度は『家に帰る』番。MyroPが2026年7月に公開した『NUCLEUS』の続編で、前作よりずっと物語性が増し、XではVRChatのリミナル系ワールドとして最高峰のクオリティと評されました。スライダーや浮き輪で巡るリミナルスペース探索で、ホラー演出はないのに不気味です。アイテム全回収なら2時間超。自動チェックポイントや合流・テレポート機能、明るさ調整、VR酔い対策まであるのも親切。PC専用。",
     "official": "Part II : You finished exploring the brutalist waterpark, now it's time to go home..."
   },
   {
@@ -11507,7 +11447,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c3e9ecf4-4b82-4cf1-9765-fadc7fc69ebb/5/256",
-    "note": "青空文庫の16,377冊を日本十進分類法どおりに並べた図書館。ねむり木が2023年に公開した作品で、本を手に取って実際に読め、検索機で探すこともできます。Xでは「実際に読める本がある図書館」と驚かれ、本格的な図書館ワールドとして評価されています。白を基調とした静かな空間で、本棚を眺めて本と出会う体験を再現。Quest対応。",
+    "note": "青空文庫の16,377冊が並べられた図書館。ねむり木が2023年に公開した作品で、本を手に取ってそのまま読むことができ、検索機で探すこともできる。白を基調とした静かな空間で、本棚を眺めながら本と出会える、本格的な図書館ワールドとして評価されている。Quest対応。",
     "official": ""
   },
   {
@@ -11526,7 +11466,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_656a7604-94ec-4f88-b0be-4b9939fe6380/3/256",
-    "note": "閉鎖された精神科病院前のバス停を巡る、約15分のサイコホラー（7Days WorldWorks参加作）。驚かし演出はなく、物語を見られる6か所のポイントで、案内役のAI音声が静かに狂っていきます。作者は『ホラーワールドではありません』としていますが、内容はれっきとしたホラーです。一部のギミックは壊れています。PC専用。",
+    "note": "閉鎖された精神科病院前のバス停を巡る、約15分のサイコホラー（7Days WorldWorks参加作）。驚かし演出はなく、物語を見られるポイントを回り終点を目指します。終点は写真撮影にオススメ。一部のギミックは壊れています。PC専用。",
     "official": "1/13ギミック修正しました。7Days WorldWorks参加作品。 （ホラーワールドではありません。） ワールド内に物語が視聴できるポイントが6箇所あります。 使用素材：VOICEVOX冥鳴ひまり。 一部ギミックが壊れています。"
   },
   {
@@ -11547,7 +11487,7 @@ window.WORLDS = [
       "映画祭・受賞作"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2788572f-b07d-4ec7-a4d5-6722fa2e32f3/2/256",
-    "note": "部屋の中に同じ部屋があり、その中の自分がまた部屋にいる。再帰構造でスケール感が狂う不思議な体験ワールド。ヴェネツィア国際映画祭のWorlds Gallery選出作で、大小アバター撮影にも。",
+    "note": "部屋の中に同じ部屋があり、その中の自分がまた部屋にいる。再帰構造でスケール感が狂う不思議な体験ワールド。ヴェネツィア国際映画祭のWorlds Gallery選出作で、大小さまざまなアバターでの撮影にも向いている。",
     "official": "A room in a room in a room. And it comes with toys!"
   },
   {
@@ -11568,7 +11508,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_c97e9c3b-93c8-4434-8287-986bb6395343/2/256",
-    "note": "海底に暮らすように過ごせる、静かなアパートメント。gat8が2026年に公開した作品で、大きな窓の外では魚や海の植物が漂い、薄暗い室内から眺めていると時間がゆっくり流れます。深海の静けさに浸りたい夜のチルや撮影にどうぞ。Quest対応。",
+    "note": "海底に暮らすように過ごせる、静かなアパートメント。gat8が2026年に公開した作品で、大きな窓の外では魚や海の植物が漂い、薄暗い室内から眺めていると時間がゆっくり流れます。夜、静かに過ごしたいときのチルや撮影に。Quest対応。",
     "official": "海底の静かな時間"
   },
   {
@@ -11653,7 +11593,7 @@ window.WORLDS = [
       "制作途中"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_d38834b4-541b-433a-8ef7-c161ffbb590e/3/256",
-    "note": "飛行機に限らず『飛行するもの』なら何でも集める博物館ワールド。展示はChapter制で、まずは空を飛ぶ生き物を集めたChapter1が公開されています。自分のペースで眺めて回れる展示です。",
+    "note": "飛行機に限らず『飛行するもの』なら何でも集める博物館ワールド。展示はChapter制で、まずは空を飛ぶ生き物を集めたChapter1が公開されています。自分のペースで眺めて回れる展示です。なお、現在も作成中のワールドで、完成版ではない点に注意。",
     "official": "飛行するものならなんでも集める博物館ワールドです。 制作が長くなりそうなのでChapter1:生物を公開します。"
   },
   {
@@ -11752,7 +11692,7 @@ window.WORLDS = [
       "体験型"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8e6307c1-ffd4-4704-b257-b17d5938b47a/2/256",
-    "note": "数十人のVRクリエイターの思い出を、一人の主人公の物語に編んだ展示型の体験。1時間弱で多彩な世界を巡り、VRChat文化と創作への情熱に触れられます。始めたばかりの人に向けた、ここでの暮らし方の紹介も。日英中対応、Venice Immersive出展作。",
+    "note": "数十人のVRクリエイターの思い出を、一人の主人公の物語に編んだ展示型の体験。1時間弱で多彩な世界を巡り、VRChat文化と創作への情熱に触れられます。始めたばかりの人に向けた、ここでの暮らし方の紹介もある。日英中対応、Venice Immersive出展作。",
     "official": "Shared memories from VRC players. Lifestyle showcases for newcomers. 丨Available in English, Chinese and Japanese."
   },
   {
@@ -11815,7 +11755,7 @@ window.WORLDS = [
       "解説あり"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_4fa70754-7d3c-4ec8-ba4e-c98f64082888/10/256",
-    "note": "実在の南極キャンプ『ユニオングレイシャー』を再現した博物館ワールド。南極の自然や観測の情報がボードでしっかり学べ、『勉強になった』と評判です。英語対応。PC版のほかQuest専用版も別にあります。",
+    "note": "実在の南極キャンプ『ユニオングレイシャー』を再現した博物館ワールド。南極の自然や観測の情報を、ボードでしっかり学ぶことができます。英語対応。PC版のほかQuest専用版も別にあります。",
     "official": "To all of you living in English-speaking countries, thank you for your patience! The VR Antarctic Museum is finally available in English! 南極に行ってみたいですか"
   },
   {
@@ -11835,7 +11775,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6bedc640-35ee-4c8b-95aa-f052ea943242/2/256",
-    "note": "チョコチップクッキーで世界の歴史の『重み』を体験する、ネタ系ミュージアム。数学とユーモアで知られるYM（ワイエム）が2023年に公開したポスター展示で、真面目な歴史とお菓子の落差が笑いを誘います。フレンドとツッコミながら巡るのがおすすめ。Quest対応。",
+    "note": "チョコチップクッキーで世界の歴史の『重み』を体験する、ネタ系ミュージアム。数学とユーモアで知られるYM（ワイエム）が2023年に公開した展示系ワールドで、真面目な歴史とお菓子の落差が笑いを誘います。フレンドとツッコミながら巡るのがおすすめ。Quest対応。",
     "official": "チョコチップクッキーで歴史の重みを体験しましょう。（1/29軽量化アップデート）"
   },
   {
@@ -11896,7 +11836,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_f9e23f35-4f9c-4a7d-88ea-a20bb1262227/3/256",
-    "note": "宇宙機をテーマにした美術館ワールド。whiteflareが2019年に公開した古参の展示で、容量約42MBと軽めなので気軽に覗けます。Quest・iOS対応。",
+    "note": "宇宙機をテーマにした展示ワールド。whiteflareが2019年に公開した古参の展示で、容量約42MBと軽めなので気軽に覗けます。Quest・iOS対応。",
     "official": "Spacecraft Museum 宇宙機美術館"
   },
   {
@@ -11919,7 +11859,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_eccfbbb8-4355-4c19-a72e-01ace0e6c2e7/1/256",
-    "note": "『超かぐや姫！』の楽曲『星降る海』（Aqu3ra／月見ヤチヨ cv.早見沙織）のファンメイド・パーティクルライブ。竹林の鳥居をくぐると始まる約4分のひとり用で、曲のあとはワールドを自由に巡れます。もう一度見るときはリジョインを。強い点滅あり。PC専用。",
+    "note": "『超かぐや姫！』の楽曲『星降る海』（Aqu3ra／月見ヤチヨ cv.早見沙織）のファンメイド・パーティクルライブ。竹林の鳥居をくぐると始まる約4分のパーティクルライブ、曲のあとはワールドを自由に巡れます。もう一度見るときはリジョインを。強い点滅あり。PC専用。",
     "official": "「星降る海」Aqu3ra / 月見ヤチヨ （cv. 早見沙織） 『超かぐや姫！』より。ファンメイドのパーティクルライブです。約4分・ひとり用・PC専用。強い光の点滅を含みます。竹林の鳥居をくぐると始まります。曲のあとはワールドを自由に巡れます。もう一度見るときはリジョインしてください。 A fan-"
   },
   {
@@ -11940,7 +11880,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bf7b83de-6371-4546-827b-03ccc8022677/1/256",
-    "note": "水没都市を舞台にしたパリピ砲系ワールド。ぎどちゃが2026年に公開した作品で、重低音に合わせた視界ジャックやビームなど過激な演出が特徴のジャンルです。推奨はDesktop、VRでも一応見られます。人を選ぶ刺激の強さが魅力。PC専用。",
+    "note": "水没都市を舞台にしたパリピ砲系ワールド。ぎどちゃが2026年に公開した作品で、重低音に合わせた視界ジャックやビームなど過激な演出が特徴のジャンルです。推奨はDesktop、VRでも一応見られます。刺激の強さゆえに人を選ぶ。PC専用。",
     "official": "パリピ砲なワールドです。推奨はDesktopですが、VRでも一応見れます。"
   },
   {
@@ -11961,7 +11901,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_68dcd21c-f1d7-4d6e-bfb9-cdd1debdaf8c/2/256",
-    "note": "Animusicの有名デモ『Pipe Dream』をVRChatに再現したワールド。2001年にSIGGRAPHで上映され、のちにGPUのデモにもなった名作を、양카（YangCar）が2026年に再現しました。パイプから飛び出す金属球が弦や打楽器を正確に打ち鳴らし、軽快な曲を奏でます。球の行方を目で追うのが楽しい、眺める音楽機械。最大12人、PC専用。",
+    "note": "Animusicの有名デモ『Pipe Dream』をVRChatに再現したワールド。2001年にSIGGRAPHで上映され、のちにGPUのデモにもなった名作を、양카（YangCar）が2026年に再現。パイプから飛び出す金属球が弦や打楽器を正確に打ち鳴らし、軽快な曲を奏でます。球の行方を目で追うのが楽しい、眺める音楽機械。最大12人、PC専用。",
     "official": "Recreation of the Animusic's famous tech demo 'Pipe Dream'"
   },
   {
@@ -11981,7 +11921,7 @@ window.WORLDS = [
       "ファンメイド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_301a45cb-f467-4c11-8f60-0806dfc3fa05/2/256",
-    "note": "Mili『world.execute(me);』を、本人の許可を得てシェーダーで視覚化したファンメイドVRMV。グリッチと歌詞の演出がプログラミング的な楽曲世界と完璧に噛み合い、『観るより体感する』と評された名作。1曲じっくりどうぞ。",
+    "note": "Mili『world.execute(me);』を、本人の許可を得てシェーダーで視覚化したファンメイドVRMV。グリッチと歌詞の演出がプログラミング的な楽曲の世界観とよく噛み合っている。1曲じっくりどうぞ。",
     "official": "Fan made VRMV.Shader visualization of World.Execute（me）;by Mili"
   },
   {
@@ -12022,7 +11962,7 @@ window.WORLDS = [
       "ボカロ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7e4f9506-0a01-40f2-9b21-66ac8becec7f/6/256",
-    "note": "れるりりの超高速ボカロ曲『脳漿炸裂ガール』（初音ミク＆GUMI）のVRMV。言葉が怒涛のように押し寄せる原曲の疾走感を、VRのパーティクル演出で浴びる一作です。1万人訪問を記念して、ロビーには原作MVを再現したVRMVも。お気に入り率の高さも目立つ人気作です。",
+    "note": "れるりりの超高速ボカロ曲『脳漿炸裂ガール』（初音ミク＆GUMI）のVRMV。言葉が怒涛のように押し寄せる原曲の疾走感を、VRのパーティクル演出で浴びる一作です。",
     "official": "【VRMV】脳漿炸裂ガール - れるりりfeat.初音ミク＆GUMI / Brain Fluid Explosion Girl - rerulili feat.miku＆gumi 10,000人visit記念にロビーに原作を再現したvrmvを公開しました"
   },
   {
@@ -12068,7 +12008,7 @@ window.WORLDS = [
       "アーカイブ"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_fccae672-90b8-40bd-9b4e-5af9b78ca062/1/256",
-    "note": "2025年夏に二夜開催された『バーチャル河川敷夏祭り』の会場アーカイブ。公式テーマソングのParticleLive『Daybreak Dream』が見られるほか、郷愁のある河川敷の祭り会場は写真撮影にも最適。あの夏の余韻に浸れます。",
+    "note": "2025年夏に二夜開催された『バーチャル河川敷夏祭り』の会場アーカイブ。公式テーマソングのParticleLive『Daybreak Dream』が見られるほか、郷愁のある河川敷の祭り会場は写真撮影にも向いている。",
     "official": "2025年8月30日~31日に開催されたバーチャル河川敷夏祭りの会場です。 公式テーマソングのParticleLive「Daybreak Dream」が視聴可能です。写真撮影にご利用下さい。"
   },
   {
@@ -12090,7 +12030,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ecfbaa33-608c-4435-be51-0dc9bc0a9385/10/256",
-    "note": "月乃・打打だいずの楽曲を、海辺を舞台に体験するVRMV。『実写合成ミュージアム』のK1UCH1がワールドを手がけ、2026年7月の海の日にプレミア公開されました。海を漂うボトルになる視点演出が見どころで、夕日へ移る景色と光の粒が美しい。ライブ後はそのままチルできる、二度おいしい一作です。PC専用。",
+    "note": "月乃・打打だいずの楽曲を、海辺を舞台に体験するVRMV。『実写合成ミュージアム』のK1UCH1がワールドを手がけ、2026年7月の海の日にプレミア公開されました。夕日へ移る景色と光の粒が美しい。ライブの後はそのままチルもできる。PC専用。",
     "official": "そんな海がー私は、 ＃VR彼海"
   },
   {
@@ -12155,7 +12095,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_82ca72eb-3664-4ac2-ba74-41d935b777fa/5/256",
-    "note": "水深8,000mの研究所を目指し、さらに深い深淵へ潜る約20分の深海ホラーライド。テーマパーク級の乗り場から海底エレベーターに乗り、巨大な窓の向こうの発光生物と異変を見届けます。座席は6席（立ち乗りならそれ以上も可）。日英対応、PC専用。",
+    "note": "水深8,000mの研究所を目指し、さらに深い深淵へ潜る約20分の深海ホラーライド。テーマパーク級の乗り場から海底エレベーターに乗り、巨大な窓越しに発光生物を観察できる。座席は6席（立ち乗りならそれ以上も可）。日英対応、PC専用。",
     "official": "人類は、深海の最深部を「HADAL（冥府）」と呼んだ。 そこが世界の底であり、それ以上深い場所など存在しないと信じていた。 もし冥府の底に広がる深淵があるならば、その場所を目にした人類は誰もがこう呼ぶだろう。 TARTARUS - 奈落の深淵 座席6席／立ち乗りなら6人以上も可 （所要時間：約20分"
   },
   {
@@ -12295,7 +12235,7 @@ window.WORLDS = [
       "宇宙・空"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8bccae27-b916-4698-9752-1ba5ae0f39c2/2/256",
-    "note": "空をテーマにしたゆうり氏の風景ワールドで、世界のどこかに大切な手紙と花が置いてあるという。小さな探し物と静かな景色を楽しむ、一人でゆっくり巡りたいチル寄りのワールド。",
+    "note": "空をテーマにしたゆうり氏の風景ワールド。世界のどこかに大切な手紙と花が置いてある。小さな探し物と静かな景色を楽しむ、一人でゆっくり巡りたいチル寄りのワールド。",
     "official": "ワールドのどこかに大切な手紙と花が置いてあります。その花に触れて外にでると...。「明日は晴れるといいな」"
   },
   {
@@ -12334,7 +12274,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_614ac504-8b24-46e4-a38b-cc979fb1941b/5/256",
-    "note": "BOOTHショップ『kai 9』と『NewRarity』のコラボで作られた、洞窟の中に広がる水族館。青い光に照らされた岩壁と泡の音に包まれ、階段を下ればいくつもの大水槽が待っています。魚のカスタムもでき、海底にいるような静けさの中で、一人でも誰かとでも癒やされます。Quest対応。",
+    "note": "BOOTHショップ『kai 9』と『NewRarity』のコラボで作られた、洞窟の中に広がる水族館。青い光に照らされた岩壁と泡の音に包まれ、階段を下ればいくつもの大水槽が待っています。海底にいるような静けさの中で、一人でも誰かとでも静かに過ごせます。Quest対応。",
     "official": "BOOTHショップ『kai 9』と『NewRarity』のコラボサンプルワールドになります。 洞窟の中の水族館をイメージした巨大水槽の展示ワールドになります。 This is a collaboration sample world created by the BOOTH shops kai 9 "
   },
   {
@@ -12374,7 +12314,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8de5547f-f8ff-40e8-a9fc-e821a1a06ed0/2/256",
-    "note": "ぽこピーと一緒に宇宙を冒険する、約35分のイマーシブ映画館。VRChat版は360度映像ではなく、自分が物語の中にいる立体視の体験として作り込まれています。笑える掛け合いと迫力が魅力で、字幕は5言語に対応。有料チケット制、PC専用。",
+    "note": "ぽこピーと一緒に宇宙を冒険する、約35分のイマーシブ映画館。VRChat版は360度映像ではなく、自分が物語の中にいるような立体視の体験として作られています。掛け合いの笑いどころと迫力のある演出が見どころで、字幕は5言語に対応。有料チケット制、PC専用。",
     "official": "ぽこピープラネタリアとは？ VR体験の新しいカタチとしてデザインされたイマーシブ映画館です。 観客のあなたも物語のすぐそばへ。ぽこピーと一緒に冒険の世界へ没入する、新しい映像体験をお届けします。 ----- Subtitles：日本語 / English / 한국어 / 简体中文 / 繁體中文 / "
   },
   {
@@ -12395,7 +12335,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5b9954e8-1d01-42e3-8df6-980955570682/2/256",
-    "note": "『海物語』のマリンちゃんから生まれたアイマリンの、完全没入VRライブ第2弾。0b4k3×Gugenkaの映像による公演で、2026年11月21・22日に各日3回開催されました。後夜祭は複数インスタンス同期のDJ/VJイベント。無料、PCVRのみ。",
+    "note": "『海物語』のマリンちゃんから生まれたアイマリンの、完全没入VRライブ第2弾。0b4k3×Gugenkaの映像による公演で、2026年11月21・22日に各日3回開催されました。PC専用。(現在は上映されていません)",
     "official": "2026年5月に大盛況で幕を閉じたVR LIVEの第2弾となる「iMARINE VR LIVE 2026 vol.2」の開催が決定！ 0b4k3 × Gugenkaがタッグを組んだ映像を初披露！ 2026年11月21日（土）、22日（日）の2日間、各日3回公演でお届けします。 【DAY1】11月21"
   },
   {
@@ -12417,7 +12357,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_7fb3acfc-af41-40c1-93ef-a148c4f92b4a/3/256",
-    "note": "アバターバンドFZMZの公式ワールド。メンバー像との撮影スポットや楽器に触れるブース、意味深な数字の仕掛けまで、世界観を隅々まで探索できる。ヴェネツィア国際映画祭XR部門選出。PC専用・無料。",
+    "note": "アバターバンドFZMZの公式ワールド。メンバー像との撮影スポットや楽器に触れるブース、意味深な数字の仕掛けなど、ファン向けの探索要素が詰まっています。ヴェネツィア国際映画祭XR部門選出。PC専用・無料。",
     "official": "FZMZ （ファゾムズ） official VR world https://fzmz.jp/"
   },
   {
@@ -12436,7 +12376,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_20a81058-6425-4ea8-a0ef-86edef3add19/8/256",
-    "note": "作者さんかくけいの『みんなありがとうねほんまにBIGLOVE』という言葉が添えられた、温かい雰囲気のポータルワールド。2026年に公開され、次のワールド探しの入口にどうぞ。PC専用。",
+    "note": "作者さんかくけいのポータルワールド。2026年公開。各ワールドと、そのワールドで撮られた写真を一緒に眺めながら選べるので、行ったことのないワールド探しの入口にどうぞ。PC専用。",
     "official": "みんなありがとうねほんまにBIGLOVE"
   },
   {
@@ -12457,7 +12397,7 @@ window.WORLDS = [
       "ファンメイド"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1bccbc98-5d60-41dc-aef8-64fde5468f54/2/256",
-    "note": "カンザキイオリの名曲『あの夏が飽和する。』をもとに、VRChatで撮影・編集した映画風の二次創作MVを上映するワールド。原曲ファンがMVの世界に入って浸れる一作です。作者自身の解釈を含むので、苦手な人は注意。",
+    "note": "カンザキイオリの名曲『あの夏が飽和する。』をもとに、VRChatで撮影・編集した映画風の二次創作MVを上映するワールド。原曲のファンが、MVの世界を中から眺められる一作です。作者自身の解釈を含むので、苦手な人は注意。",
     "official": "こちらは、カンザキイオリ様の「あの夏が飽和する。」をもとに、VRChatでの撮影と編集を通して映画風に描いた二次創作MVを上映するワールドです。 注意：自己解釈が含まれます、苦手な方は注意してください。"
   },
   {
@@ -12480,7 +12420,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_ae3f40b7-7426-40b8-998f-2cce31452bc4/1/256",
-    "note": "VEE所属・月白 累の単独ライブ「latent」を再構成したアーカイブ体験。2026年3月に映像配信なし・定員70名で開かれたVRChat限定ライブを、企画・空間設計を担ったMIGIRIが常設ワールドとして公開しました。実験室のような箱庭空間で歌とポエトリーリーディングを至近距離で観測でき、初回は入場制限に達した熱狂作。ロンドンの映画祭Raindance Immersiveにも選ばれています。PC専用。",
+    "note": "VEE所属・月白 累の単独ライブ「latent」を再構成したアーカイブ体験。2026年3月に映像配信なし・定員70名で開かれたVRChat限定ライブを、企画・空間設計を担ったMIGIRIが常設ワールドとして公開しました。実験室のような箱庭空間で歌とポエトリーリーディングを至近距離で観測でき、初回は入場制限に達するほどの人気を集めました。ロンドンの映画祭Raindance Immersiveにも選ばれています。PC専用。",
     "official": "In Project ［ latent ］ // archive_, Geppaku Luis singing figure and the spatial structure of Hakoniwa are reconstructed within a VR environment and pla"
   },
   {
@@ -12500,7 +12440,7 @@ window.WORLDS = [
       "水族館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a45c271a-9213-4b42-a7fc-744606bf2b53/1/256",
-    "note": "エリアごとに海や深海、磯の生き物まで見られる水族館。現実では地上に出せない深海生物を一挙に見られ、水槽に手を入れるようなVRならではの近さも楽しい。雰囲気の良さで癒やされる展示ワールド。",
+    "note": "エリアごとに海や深海、磯の生き物まで見られる水族館。現実では地上に出せない深海生物をまとめて見られ、水槽に手を入れるようなVRならではの近さも楽しい展示ワールドです。",
     "official": "たくさんの方に多くの生き物を知ってほしいと思い制作しました。現実に存在し実際には見ることが難しい生き物も展示しているので是非ご覧ください！皆様のご来館をお待ちしております！Welcome to Nemuarium Aquarium!"
   },
   {
@@ -12539,7 +12479,7 @@ window.WORLDS = [
       "シューター・FPS"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8d37e2ac-8824-4a25-9898-3ed0b4f1c8f1/3/256",
-    "note": "武器ギミックを買ったものの、なかなか使う機会がない...」そんな悩みを解決するために制作したワールドです。",
+    "note": "「武器ギミックを買ったものの、なかなか使う機会がない...」そんな悩みを解決するために制作したワールドです。",
     "official": "武器ギミックを買ったものの、なかなか使う機会がない...」そんな悩みを解決するために制作したワールドです。お気に入りのギミックのお披露目や試し撃ち、フレンドとの対戦・撮影など、気兼ねなく武器を扱える場所としてご活用ください。 推奨人数:4人～ バグが起きた場合インスタンスを立て直してください。 イベ"
   },
   {
@@ -12590,7 +12530,7 @@ window.WORLDS = [
       "ホラー・不気味"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a9a905cc-d52e-4b88-8a15-5b8f3c194c40/2/256",
-    "note": "ケージの中に入り、海の生き物達を観察できるワールドです。 是非深海の様子を楽しんでください。",
+    "note": "ケージの中に入って、海の生き物たちを観察できるワールドです。深海の様子を間近で見られます。",
     "official": "ケージの中に入り、海の生き物達を観察できるワールドです。 是非深海の様子を楽しんでください。 ケージ内でのフィッシュウォッチングはルートがあり全３ルートになります。 サメや海洋恐怖症の方はお気を付けください。 苦手な方は船の上から巨大画面でケージ内を見る事も出来ます。"
   },
   {
@@ -12675,7 +12615,7 @@ window.WORLDS = [
       "日本"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_365ed958-d6b6-4882-ac7b-6b3cfca422d9/8/256",
-    "note": "北陸（新潟、富山、石川、福井）の魅力が詰まったワールドです。観光地や美味しいグルメをバーチャルで体感してみてください！",
+    "note": "北陸（新潟、富山、石川、福井）の観光地やグルメをバーチャルで巡れるワールドです。",
     "official": "北陸（新潟、富山、石川、福井）の魅力が詰まったワールドです。観光地や美味しいグルメをバーチャルで体感してみてください！ 毎月第4土曜開催 VRC北陸集会もよろしくね［個人制作のワールドであり、各自治体等との関わりはありません］"
   },
   {
@@ -12693,7 +12633,7 @@ window.WORLDS = [
       "ローグライト"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_b43ab9e0-e05d-4302-ba06-0517ad04bee0/2/256",
-    "note": "打って、強化して、18ホールを生き残れ！パターゴルフ×ローグライク 11/14 VIVEコントローラーでプレイできないに対応しました。",
+    "note": "打って、強化して、18ホールを生き残れ！パターゴルフ×ローグライク。11/14にVIVEコントローラーでプレイできない不具合に対応しました。",
     "official": "打って、強化して、18ホールを生き残れ！パターゴルフ×ローグライク 11/14 VIVEコントローラーでプレイできないに対応しました。ボールが途中で打てなくなるのを対応しました。 ＃ローグパット ＃ROUGEPUTT"
   },
   {
@@ -12745,7 +12685,7 @@ window.WORLDS = [
       "水族館"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_8aa662a4-6648-405b-8949-883a762cc0b7/7/256",
-    "note": "ゆるくて変わった海の生き物たちが暮らす、不思議な水族館へようこそ！ よーく観察しながら、異変を見つけて出口を目指そう！",
+    "note": "ゆるくて変わった海の生き物たちが暮らす水族館で異変探しをするワールド。よく観察しながら異変を見つけて、出口を目指します。",
     "official": "ゆるくて変わった海の生き物たちが暮らす、不思議な水族館へようこそ！ よーく観察しながら、異変を見つけて出口を目指そう！ あなたは無事に水族館から出られるかな？ Welcome to a mysterious aquarium where quirky and unusual sea creature"
   },
   {
@@ -12794,7 +12734,7 @@ window.WORLDS = [
       "ゲーム"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_033ca013-80ad-442f-8258-0cca274a4d91/1/256",
-    "note": "日本語・英語対応の謎解きワールド。想定プレイ時間約約2時間。難易度は中級者〜を想定しています。",
+    "note": "日本語・英語対応の謎解きワールド。想定プレイ時間約2時間。難易度は中級者〜を想定しています。",
     "official": "日本語・英語対応の謎解きワールド。想定プレイ時間約約2時間。難易度は中級者〜を想定しています。3人以上の多人数推奨。 Language: JP / EN - Cooperative Riddle World - Difficulty: Intermediate to Advanced - Estim"
   },
   {
@@ -12896,7 +12836,7 @@ window.WORLDS = [
       "SF・近未来"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e29bae3f-466c-424e-8225-4904b3920987/1/256",
-    "note": "8時間以上遊べる、没入型のアクションアドベンチャー。",
+    "note": "8時間以上遊べるアクションアドベンチャー。",
     "official": "An immersive action-adventure with over 8 hours of gameplay. Take on intense bullet hell combat, punch and fight robots, and tackle platforming challe"
   },
   {
@@ -13241,7 +13181,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_e188c799-7611-4a5f-a029-af80cbb1e1d3/2/256",
-    "note": "『さようなら』を言えなかったあの人へ捧げる、夏の病室のワールド。大神白狼_が2026年に公開した作品で、賑やかに過ごす場所ではなく、別れの記憶に静かに向き合う物語寄りの一軒です。Quest対応。",
+    "note": "『さようなら』を言えなかったあの人へ捧げる、夏の病室のワールド。大神白狼_が2026年に公開した作品で、賑やかに過ごす場所ではなく、別れの記憶に静かに向き合う物語寄りのワールドです。Quest対応。",
     "official": "「さようなら」を言えなかったあの人へ。夏の病室のワールドです。"
   },
   {
@@ -13264,7 +13204,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_1a5f66a9-ddf7-4da7-ba35-eae7f234b79c/5/256",
-    "note": "夕暮れの鏡のような海に浮かぶ杉の小屋で、実在の山並みを眺めて過ごすチルワールド。AlanBackerが2026年に公開した作品で、温泉や広いデッキに加え、海底へ泳いだり雨風を呼んだりもできます。映画ラウンジや撮影スタジオも完備。Quest・iOS対応。",
+    "note": "夕暮れの鏡のような海に浮かぶ杉の小屋で、実在の山並みを眺めて過ごすチルワールド。AlanBackerが2026年に公開した作品で、温泉や広いデッキに加え、海底へ泳いだり雨風を呼んだりもできます。雷雨連打はしないよーに！！映画ラウンジや撮影スタジオも完備。Quest・iOS対応。",
     "official": "A cedar cabin on a mirror sea at golden hour, ringed by real mountains, with baked true reflections. Swim down to the seabed （jump at the deck edge or"
   },
   {
@@ -13286,7 +13226,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_a2ef7d6e-3e8f-45a0-9b19-2cdf5913400d/2/256",
-    "note": "雪山の頂上から雲海と満天の星空を眺める、幻想的なキャンプワールド。『真夜中の標本』も手がける_you5248が2026年に公開した作品で、添えられた一言は「あの日々には、もう手が届かない。それでも、ここからはずっと見えている」。マッチで火をつける焚き火や昼夜切り替え、歩く猫も。動画プレイヤーやベッドもあり、チルにもV睡にも。Quest・iOS対応。",
+    "note": "雪山の頂上から雲海と満天の星空を眺める、幻想的なキャンプワールド。『真夜中の標本』も手がける_you5248が2026年に公開した作品。マッチで火をつける焚き火や昼夜切り替え、歩く猫も。動画プレイヤーやベッドもあり、チルにもV睡にも使えます。Quest・iOS対応。",
     "official": "あの日々には、もう手が届かない。それでも、ここからはずっと見えている。/Those days are out of reach now. Even so, from here they are always in sight."
   },
   {
@@ -13306,7 +13246,7 @@ window.WORLDS = [
       "ギミック"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_2159abee-6eba-44ba-aa80-e461a170919c/3/256",
-    "note": "ボタンを押すと部屋が機械的に分解され、寝室・ラウンジ・月面・工場の4つの雰囲気に組み替わるチルワールド。作り物と分かっていても窓の景色が本物に感じられる、不思議な没入感が体験記でも話題です。",
+    "note": "ボタンを押すと部屋が機械的に分解され、寝室・ラウンジ・月面・工場の4つの雰囲気に組み替わるチルワールド。作り物と分かっていても窓の景色が本物に感じられる不思議さが、体験記でも話題です。",
     "official": "A cozy chill world with 4 different vibes. Hit the button, and watch the space mechanically tear down and reassemble. 4つの部屋があるチルワールドです。ボタンを押して空間を物理的に再"
   },
   {
@@ -13366,7 +13306,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_aea506d7-f381-434d-afe5-a3a44d776470/5/256",
-    "note": "『静かにゆったり過ごせるくつろぎの空間』という作者の言葉どおりのチルワールド。えびさんが2026年に公開した作品で、賑やかさより静けさを求める夜に。PC専用。",
+    "note": "静かにゆったり過ごせるチルワールド。えびさんが2026年に公開した作品で、賑やかさより静けさを求める人向けです。PC専用。",
     "official": "静かにゆったり過ごせるくつろぎの空間"
   },
   {
@@ -13386,7 +13326,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5db2cdc9-c03b-4e5c-85dc-be488e8ca747/17/256",
-    "note": "透き通る青い海と波の音に包まれる南国リゾート。iochiMochiMochiが2026年に公開した作品で、カフェバーでコーヒーを淹れたり、海に入って小魚と泳いだり。ベッドルームや動画プレイヤー、スリープキットも揃う、贅沢なチル空間です。デスクトップではTキーでタブレットを呼び出せます。PC専用。",
+    "note": "透き通る青い海と波の音が聞こえる南国リゾート。iochiMochiMochiが2026年に公開した作品で、カフェバーでコーヒーを淹れたり、海に入って小魚と泳いだり。ベッドルームや動画プレイヤー、スリープキットも揃ったチル空間です。デスクトップではTキーでタブレットを呼び出せます。PC専用。",
     "official": "青い空と海があります。 YamaPlayer / QvPen / FlipCamera / RBS SleepKit 2（デスクトップのタブレット呼び出しはTキーです）"
   },
   {
@@ -13568,7 +13508,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_40b77e14-4217-4b8d-8e17-8a0ec64e9ced/7/256",
-    "note": "白を基調にした静かな空間で、自分のペースでくつろげるチル＆放置系ワールド。動画を見ながら進められる放置ゲームと、小さな物語も入っています。1人でも遊べるワールド特集にも載った、待機や作業の合間に置いておける場所です。Quest対応で、誰かと静かに過ごしたいときにも。",
+    "note": "白を基調にした静かな空間で、自分のペースでくつろげるチル＆放置系ワールド。動画を見ながら進められる放置ゲームと、小さな物語も入っています。1人でも遊べるワールド特集にも載った、待機や作業の合間に置いておける場所です。Quest対応で、誰かと静かに過ごしたいときにも向いています。",
     "official": "A quiet, relaxing world where you can unwind at your own pace. It features an idle game you can enjoy while watching videos, along with a small story "
   },
   {
@@ -13652,7 +13592,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_bfa54815-12c6-435e-bca5-4627de73b5fa/3/256",
-    "note": "世界的なボードゲーム『ルドー』をそのまま遊べるワールド。サイコロを振って自分のコマを先にゴールさせた方が勝ち。CPU対戦もあるので一人でも、フレンドと4人対戦でも。Quest対応。",
+    "note": "世界的なボードゲーム『ルドー』をそのまま遊べるワールド。サイコロを振って自分のコマを先にゴールさせた方が勝ち。CPU対戦もあるので一人でも、フレンドと4人対戦でも。Quest対応。友情は大切に。",
     "official": "ボードゲームのLudoをプレイできるワールドです。友達と一緒に遊んでみてください。CPUと対戦もできます。 This is a world where you can play the board game Ludo. Try playing with your friends. You can a"
   },
   {
@@ -13715,7 +13655,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_5963965b-28d0-41db-ba7c-b28192c30449/2/256",
-    "note": "VRChatで遊ぶ、純粋な人狼ゲーム。占い師や霊媒師のほか、猫又や狂信者などモダンな役職まで全47種があり、役職の説明はマスタールームで確認できます。システムが分かりやすく初心者でも入りやすく、話し合いの推理に集中できるのが魅力。フレンド同士の定期戦にも人気です。5〜20人、Quest対応。",
+    "note": "VRChatで遊ぶ、純粋な人狼ゲーム。占い師や霊媒師のほか、猫又や狂信者などモダンな役職まで全47種があり、役職の説明はマスタールームで確認できます。システムが分かりやすく初心者でも入りやすく、話し合いの推理に集中しやすいです。フレンド同士の定期戦にも人気です。5〜20人、Quest対応。",
     "official": "Japanese styled werewolf game!（jinro） ｜ 人狼ゲームをVRChatで遊ぼう。猫又や狂信者など、モダンな役職も使用可能。 ｜ 各種役職の説明はマスタールームを参照。 特殊役職の一部は、他の人狼ゲームと異なる挙動をもつため、必ずご確認ください ｜ タグ: ＃Tonb"
   },
   {
@@ -13735,7 +13675,7 @@ window.WORLDS = [
       "VR推奨"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_6e761114-7e99-4855-b693-1d1f2f9e6742/8/256",
-    "note": "マガジン交換まで自分の手で操作する、リアル重視のチーム対戦VR FPS。HUDなしの硬派な作りで、仲間と連携する緊迫感のある戦闘が楽しめます。初心者はまずチームデスマッチから。デスクトップでも遊べ（Fキーでリロード）ますが、本領はVRです。",
+    "note": "マガジン交換まで自分の手で操作する、リアル重視のチーム対戦VR FPS。HUDなしの硬派な作りで、仲間と連携する緊迫感のある戦闘が楽しめます。初心者はまずチームデスマッチから。デスクトップでも遊べますが（リロードはFキー）、本領はVRです。",
     "official": "リアルな銃器操作を再現したチーム対戦型VR FPS。仲間と連携しながら、緊迫感のある戦闘を楽しめます。 Xで「＃TGD_VRC」を付けてフィードバックをよろしくお願い致します！！ Desktop user: F key to Reload. デスクトップの方は、「Fキー」で銃のリロードが可能です。"
   },
   {
@@ -13775,7 +13715,7 @@ window.WORLDS = [
       "Quest対応"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_67e82dad-1919-4c34-9b68-d9122d791b51/15/256",
-    "note": "フレンドを殴って吹っ飛ばす、スマブラ風パーティーファイターの第2弾。MintyMimixが2026年に公開した作品で、ダメージがたまるほど遠くへ飛ばされるルールに、さまざまなアイテムや陣取り・ボス戦などのモードも。最大64人、15以上のステージと12種のモードで大人数ほどカオスに盛り上がります。前作は日本の交流イベントでも遊ばれました。練習場で試し撃ちもでき、Quest・iOS対応。",
+    "note": "フレンドを殴って吹っ飛ばす、スマブラ風パーティーファイターの第2弾。MintyMimixが2026年に公開した作品で、ダメージがたまるほど遠くへ飛ばされるルールに、さまざまなアイテムや陣取り・ボス戦などのモードも。最大64人、15以上のステージと12種のモードで大人数ほどカオスに盛り上がります。Quest・iOS対応。",
     "official": "（Release v2.1.9.10）Send your foes flying across soaring skies, erupting volcanoes, and even deep space with a well-timed punch in this platform fighte"
   },
   {
@@ -13859,7 +13799,7 @@ window.WORLDS = [
       "PC専用"
     ],
     "thumb": "https://api.vrchat.cloud/api/1/image/file_3c496469-689f-4ec7-9bbb-9a7daa57e13a/7/256",
-    "note": "RBURシステムで自分で列車を運転できる箱庭鉄道の第2弾、非電化路線版。sinhy99が2026年に公開した作品で、円環状の線路を4種類の列車が走る前作『VRC箱庭鉄道』に続くシリーズです。景色を眺めながらのんびり運転できますが、車両を増やすと重くなる重量級ワールドなので、スペックに注意。PC専用。",
+    "note": "RBURシステムで自分で列車を運転できる箱庭鉄道の第2弾、非電化路線版。sinhy99が2026年に公開した作品で、円環状の線路を4種類の列車が走る前作『VRC箱庭鉄道』に続くシリーズです。景色を眺めながらのんびり運転できますが、車両を増やすと重くなる重量級ワールドなので、スペックに注意が必要です。PC専用。",
     "official": "A drivable railway world powered by the RBUR system. Compared to the original \"Hakoniwa Railway,\" this version focuses more on the scenery. Please not"
   },
   {

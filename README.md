@@ -23,6 +23,8 @@
 | `assets/js/core.js` | 検索・絞り込み・並び替え・詳細表示などの処理 |
 | `assets/css/custom.css` | テンプレートへの上書き（和文フォント・横幅・タイルの見え方など） |
 | `assets/css/main.css` ほか | テンプレート本体（無改変） |
+| `tools/notes.html` | 説明文の見直し用（自分用）。サムネイルと説明文を並べて見て、その場で直せる。直した分はブラウザに保存され、「直した説明文を書き出す」で JSON に。ブラウザの印刷で PDF にもできる |
+| `tools/apply-note-edits.js` | 書き出した JSON を `data.js` の `note` に反映する: `node tools/apply-note-edits.js <ファイル>`（確認だけ）→ `--write` で書き換え |
 
 ## ワールドの追加方法
 `data.js` の `WORLDS` 配列にオブジェクトを追記し、`note`（説明欄）を書くだけです。
